@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahalakshmi Srikanth — Art</title>
+<meta name="description" content="Paintings, drawings, mandalas and rangoli by Mahalakshmi Srikanth. From life's many roles to discovering my artist's soul.">
+<meta property="og:title" content="Mahalakshmi Srikanth — Art">
+<meta property="og:description" content="From life's many roles to discovering my artist's soul.">
+<meta property="og:image" content="seal.png">
+<link rel="icon" href="seal.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="brand" href="#top"><img src="seal.png" alt="" width="40" height="40"><span>Mahalakshmi Srikanth</span></a>
+  <nav><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <img class="hero-seal" src="seal.png" alt="Mahalakshmi Srikanth seal" width="180" height="170">
+      <h1>From life’s many roles<br>to discovering <em>my artist’s soul</em></h1>
+      <p class="lede">Paintings, sketches, mandalas and rangoli — six years of learning, one stroke at a time.</p>
+      <a class="btn" href="#gallery">View the gallery</a>
+    </div>
+    <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About the artist</h2>
+    <div class="about-body">
+      <p>Life has taken me through many different roles—from being a working woman to embracing life as a homemaker. Somewhere along the way, I found something that brought me back to myself: art. What began as a simple hobby after COVID gradually became a journey of creativity, learning, and self-discovery.</p>
+      <p>What began as a hobby soon became much more than that. Art became my stress buster, my escape, and my little space of peace. Every painting has been a new learning experience—sometimes through practice, sometimes through experimentation, and often through simply trying something new.</p>
+      <blockquote>For me, art is not just about the finished painting; it is about the journey of learning, experimenting, evolving, and finding joy in every stroke.</blockquote>
+      <p class="sig">— Mahalakshmi Srikanth</p>
+    </div>
+  </section>
+
+  <section id="journey" class="journey">
+    <h2>The journey</h2>
+    <ol class="timeline">
+      <li><span class="when">Before</span><h3>Life’s many roles</h3><p>From being a working woman to embracing life as a homemaker.</p></li>
+      <li><span class="when">After COVID</span><h3>Sketching &amp; crayons</h3><p>What began as a simple hobby — the first sketches and crayon drawings.</p></li>
+      <li><span class="when">Next</span><h3>Sketch pens</h3><p>Exploring line, pattern and colour with sketch pens.</p></li>
+      <li><span class="when">Then</span><h3>Acrylics</h3><p>Discovering acrylics, experimenting with new techniques, and slowly finding her own way of expressing herself.</p></li>
+      <li><span class="when">Six years on</span><h3>Still learning</h3><p>“I believe there is always something new to discover in art, and that constant learning is what keeps my creativity alive.”</p></li>
+    </ol>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="filters" id="filters" role="tablist"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Get in touch</h2>
+    <p>For enquiries about an artwork, commissions, or just to say hello:</p>
+    <div class="contact-links" id="contact-links"></div>
+  </section>
+</main>
+
+<footer>
+  <img src="seal.png" alt="" width="56" height="53">
+  <p>© <span id="year"></span> Mahalakshmi Srikanth. All rights reserved.</p>
+  <p class="small">All artworks and images on this site are the original work of Mahalakshmi Srikanth and are protected by copyright. They may not be copied, downloaded, reproduced or used in any form without written permission.</p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
