@@ -18,6 +18,7 @@ are detected from the title.
 Edit `CONTACT` at the top of `site/app.js` (email / Instagram handle). Empty = section hidden.
 
 ## Preview / deploy
-    cd site && python3 -m http.server 8765         # http://localhost:8765
-    cd site && vercel deploy                       # preview (login-protected)
-    cd site && vercel deploy --prod                # public
+Live at **https://mah-artworks.pages.dev** (Cloudflare Pages, free).
+
+    cd site && python3 -m http.server 8765         # local preview
+    npx wrangler pages deploy site --project-name mah-artworks --branch main   # publish (run from repo root)
