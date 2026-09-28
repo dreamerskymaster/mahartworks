@@ -73,6 +73,16 @@ function spotlight() {
   });
   stage.addEventListener("pointerleave", () => { if (!revealed()) { auto = true; wander(); } });
 
+  const revealNow = () => {
+    auto = false; cancelAnimationFrame(raf);
+    stage.classList.add("revealed");
+    stage.style.setProperty("--r", "4000px");
+    $("#spot-title").classList.add("show");
+  };
+  // Reduced motion: no suspense, just show the painting.
+  if (window.MS_PREFS && MS_PREFS.calm) revealNow();
+  document.addEventListener("prefs-change", (e) => { if (e.detail.calm) revealNow(); });
+
   $("#spot-reveal").addEventListener("click", (e) => {
     e.stopPropagation();
     auto = false; cancelAnimationFrame(raf);
@@ -91,17 +101,18 @@ function spotlight() {
 function filters() {
   $("#filters").innerHTML = CATS.map(([k, label]) => {
     const n = k === "all" ? art.length : art.filter((a) => a.cat === k).length;
-    return `<button role="tab" data-cat="${k}" aria-selected="${k === current}">${label}<small>${n}</small></button>`;
+    return `<button data-cat="${k}" aria-pressed="${k === current}" aria-selected="${k === current}">${label}<small aria-label="${n} artworks">${n}</small></button>`;
   }).join("");
 }
 
 function render() {
   shown = current === "all" ? art : art.filter((a) => a.cat === current);
   $("#grid").innerHTML = shown.slice(0, limit).map((a, i) =>
-    `<figure class="card" tabindex="0" data-i="${i}">
+    `<figure class="card" tabindex="0" role="button" aria-label="Open ${a.title}" data-i="${i}">
        <img src="img/${a.id}.t.webp" alt="${a.title}" width="${a.w}" height="${a.h}" loading="lazy" draggable="false">
        <span>${a.title}</span></figure>`).join("")
     + (shown.length > limit ? `<button class="btn more" id="more">Show more (${shown.length - limit})</button>` : "");
+  $("#grid-status").textContent = `Showing ${Math.min(limit, shown.length)} of ${shown.length} artworks`;
   // Stagger cards that arrive together so they unveil one after another.
   $("#grid").querySelectorAll(".card").forEach((c, i) => {
     const d = `${(i % 4) * 140}ms`;
@@ -117,10 +128,16 @@ function openLb(i) {
   $("#lb-img").src = `img/${a.id}.webp`;
   $("#lb-img").alt = a.title;
   $("#lb-cap").innerHTML = `${a.title}<small>${fmtDate(a.date)}</small>`;
+  if ($("#lightbox").hidden) lastFocus = document.activeElement;
   $("#lightbox").hidden = false;
   document.body.style.overflow = "hidden";
+  $(".lb-close").focus();
 }
-function closeLb() { $("#lightbox").hidden = true; document.body.style.overflow = ""; }
+let lastFocus = null;
+function closeLb() {
+  $("#lightbox").hidden = true; document.body.style.overflow = "";
+  if (lastFocus) lastFocus.focus();
+}
 
 function contact() {
   const links = [];
@@ -139,7 +156,8 @@ $("#grid").addEventListener("click", (e) => {
   const c = e.target.closest(".card"); if (c) openLb(+c.dataset.i);
 });
 $("#grid").addEventListener("keydown", (e) => {
-  const c = e.target.closest(".card"); if (c && e.key === "Enter") openLb(+c.dataset.i);
+  const c = e.target.closest(".card");
+  if (c && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); openLb(+c.dataset.i); }
 });
 $("#lightbox").addEventListener("click", (e) => {
   if (e.target.closest(".lb-prev")) openLb(lbIndex - 1);
@@ -149,6 +167,11 @@ $("#lightbox").addEventListener("click", (e) => {
 document.addEventListener("keydown", (e) => {
   if ($("#lightbox").hidden) return;
   if (e.key === "Escape") closeLb();
+  if (e.key === "Tab") { // keep focus inside the viewer
+    const f = [...$("#lightbox").querySelectorAll("button")];
+    const i = f.indexOf(document.activeElement);
+    e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
+  }
   if (e.key === "ArrowLeft") openLb(lbIndex - 1);
   if (e.key === "ArrowRight") openLb(lbIndex + 1);
 });

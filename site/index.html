@@ -8,22 +8,24 @@
 <meta property="og:title" content="Mahalakshmi Srikanth — Art">
 <meta property="og:description" content="From life's many roles to discovering my artist's soul.">
 <meta property="og:image" content="seal.png">
-<meta name="theme-color" content="#0d0f1c">
+<meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
 <link rel="icon" href="seal.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fonts.css">
+<script src="prefs.js"></script>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to content</a>
 <div class="grain" aria-hidden="true"></div>
 
 <header class="nav">
-  <a class="brand" href="#top"><img src="seal.png" alt="" width="36" height="34"><span>Mahalakshmi Srikanth</span></a>
-  <nav><a href="#spotlight">Spotlight</a><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a class="brand" href="#top"><img src="seal.png" alt="" width="36" height="34"><span>Mahalakshmi Srikanth</span><span class="sr-only"> — home</span></a>
+  <nav aria-label="Main"><a href="#spotlight">Spotlight</a><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </header>
 
-<main id="top">
+<main id="main">
+  <span id="top"></span>
   <section class="hero">
     <div class="hero-text">
       <p class="eyebrow reveal-line"><span>Paintings · Sketches · Mandalas · Rangoli</span></p>
@@ -44,7 +46,7 @@
       <h2>Some things are worth discovering slowly</h2>
       <p class="hint" id="spot-hint">Move your light across the canvas…</p>
     </div>
-    <div class="spot-stage" id="spot-stage">
+    <div class="spot-stage" id="spot-stage" role="img" aria-labelledby="spot-title">
       <img class="spot-dim" id="spot-dim" alt="" draggable="false">
       <img class="spot-lit" id="spot-lit" alt="" draggable="false">
       <button class="spot-btn" id="spot-reveal">Reveal the painting</button>
@@ -57,7 +59,8 @@
       <p class="eyebrow">The collection</p>
       <h2>Gallery</h2>
     </div>
-    <div class="filters" id="filters" role="tablist"></div>
+    <div class="filters" id="filters" role="group" aria-label="Filter artworks by type"></div>
+    <p class="sr-only" aria-live="polite" id="grid-status"></p>
     <div class="grid" id="grid"></div>
   </section>
 
@@ -103,10 +106,18 @@
   <img src="seal.png" alt="" width="64" height="60">
   <p>© <span id="year"></span> Mahalakshmi Srikanth. All rights reserved.</p>
   <p class="small">All artworks and images on this site are the original work of Mahalakshmi Srikanth and are protected by copyright. They may not be copied, downloaded, reproduced or used in any form without written permission.</p>
-  <p class="love">Made by Ajith, for his only loving Mom <span class="heart">♥</span></p>
+  <ul class="foot-links">
+    <li><a href="policies.html#privacy">Privacy Policy</a></li>
+    <li><a href="policies.html#terms">Terms &amp; Copyright</a></li>
+    <li><a href="policies.html#orders">Orders &amp; Commissions</a></li>
+    <li><a href="policies.html#shipping">Shipping &amp; Returns</a></li>
+    <li><a href="policies.html#grievance">Grievance Officer</a></li>
+    <li><a href="policies.html#accessibility">Accessibility</a></li>
+  </ul>
+  <p class="love">Made by Ajith, for his only loving Mom <span class="heart" aria-hidden="true">♥</span></p>
 </footer>
 
-<div class="lightbox" id="lightbox" hidden>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
   <button class="lb-close" aria-label="Close">×</button>
   <button class="lb-prev" aria-label="Previous">‹</button>
   <figure><img id="lb-img" alt="" draggable="false"><figcaption id="lb-cap"></figcaption></figure>
