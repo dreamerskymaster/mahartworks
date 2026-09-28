@@ -1,7 +1,7 @@
 // Contact details shown in the "Get in touch" section. Leave a value empty to hide it.
 const CONTACT = {
-  email: "",
-  instagram: "",   // handle without @
+  email: "mahasriphoto24@gmail.com",
+  instagram: "mah_artworks",   // handle without @
 };
 
 const CATS = [
