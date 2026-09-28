@@ -14,17 +14,78 @@ const CATS = [
 ];
 const HERO = ["Kathakali Face Framed", "Radha Seeing Krishna Reflection", "Panchamukhi Hanuman Painting",
   "Madhubani Peacock", "Lakshmi On Lotus", "Warli Village Scene Framed"];
+// Paintings the spotlight picks from, one at random per visit.
+const SPOTLIGHT = ["Radha Seeing Krishna Reflection", "Kathakali Face Framed", "Panchamukhi Hanuman Painting",
+  "Seven Running Horses Framed", "Tirupati Balaji Bead Embellished", "Ardhanarishvara Painting"];
 const PAGE = 60;
 
 const art = window.ARTWORKS;
 const $ = (s) => document.querySelector(s);
+const byTitle = (t) => art.find((a) => a.title === t);
 let current = "all", shown = [], limit = PAGE, lbIndex = 0;
 
 const fmtDate = (d) => d ? new Date(d + "T00:00").toLocaleDateString("en-GB", { month: "long", year: "numeric" }) : "";
 
+// Reveal anything with .card / .fade / .stamp as it scrolls into view.
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e) => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add("in");
+    io.unobserve(e.target);
+  });
+}, { rootMargin: "0px 0px -12% 0px", threshold: 0.15 });
+
 function heroArt() {
-  const picks = HERO.map((t) => art.find((a) => a.title === t)).filter(Boolean).slice(0, 5);
-  $("#hero-art").innerHTML = picks.map((a) => `<img src="img/${a.id}.t.webp" alt="">`).join("");
+  const picks = HERO.map(byTitle).filter(Boolean).slice(0, 5);
+  $("#hero-art").innerHTML = picks.map((a) => `<figure><img src="img/${a.id}.t.webp" alt=""></figure>`).join("");
+}
+
+function spotlight() {
+  const pool = SPOTLIGHT.map(byTitle).filter(Boolean);
+  const a = pool[Math.floor(Math.random() * pool.length)];
+  const stage = $("#spot-stage");
+  $("#spot-dim").src = $("#spot-lit").src = `img/${a.id}.webp`;
+  $("#spot-title").textContent = a.title;
+  // Keep tall paintings within one screen.
+  const fit = () => { stage.style.width = Math.min(760, innerWidth - 32, (innerHeight * 0.78 * a.w) / a.h) + "px"; };
+  fit(); addEventListener("resize", fit);
+
+  let r = 110, auto = true, t = 0, raf;
+  const set = (x, y) => { stage.style.setProperty("--x", x + "%"); stage.style.setProperty("--y", y + "%"); };
+  // A slow wandering light until someone takes over (also the phone experience).
+  const wander = () => {
+    if (!auto) return;
+    t += 0.006;
+    set(50 + 32 * Math.sin(t * 1.3), 50 + 30 * Math.sin(t * 0.9 + 1));
+    raf = requestAnimationFrame(wander);
+  };
+  new IntersectionObserver(([e]) => {
+    cancelAnimationFrame(raf);
+    if (e.isIntersecting && auto) wander();
+  }).observe(stage);
+
+  const revealed = () => stage.classList.contains("revealed");
+  stage.addEventListener("pointermove", (e) => {
+    if (e.pointerType === "touch" || revealed()) return;
+    auto = false; cancelAnimationFrame(raf);
+    const b = stage.getBoundingClientRect();
+    set(((e.clientX - b.left) / b.width) * 100, ((e.clientY - b.top) / b.height) * 100);
+  });
+  stage.addEventListener("pointerleave", () => { if (!revealed()) { auto = true; wander(); } });
+
+  $("#spot-reveal").addEventListener("click", (e) => {
+    e.stopPropagation();
+    auto = false; cancelAnimationFrame(raf);
+    stage.classList.add("revealed");
+    $("#spot-hint").textContent = "…and there it is.";
+    const grow = () => {
+      r *= 1.06;
+      stage.style.setProperty("--r", r + "px");
+      if (r < 2400) requestAnimationFrame(grow);
+      else $("#spot-title").classList.add("show");
+    };
+    grow();
+  });
 }
 
 function filters() {
@@ -41,6 +102,13 @@ function render() {
        <img src="img/${a.id}.t.webp" alt="${a.title}" width="${a.w}" height="${a.h}" loading="lazy" draggable="false">
        <span>${a.title}</span></figure>`).join("")
     + (shown.length > limit ? `<button class="btn more" id="more">Show more (${shown.length - limit})</button>` : "");
+  // Stagger cards that arrive together so they unveil one after another.
+  $("#grid").querySelectorAll(".card").forEach((c, i) => {
+    const d = `${(i % 4) * 140}ms`;
+    c.style.transitionDelay = d;
+    c.querySelector("img").style.transitionDelay = d;
+    io.observe(c);
+  });
 }
 
 function openLb(i) {
@@ -56,8 +124,8 @@ function closeLb() { $("#lightbox").hidden = true; document.body.style.overflow 
 
 function contact() {
   const links = [];
-  if (CONTACT.email) links.push(`<a class="btn" href="mailto:${CONTACT.email}">Email</a>`);
-  if (CONTACT.instagram) links.push(`<a class="btn" href="https://instagram.com/${CONTACT.instagram}" target="_blank" rel="noopener">Instagram</a>`);
+  if (CONTACT.email) links.push(`<a class="btn" href="mailto:${CONTACT.email}">✉ ${CONTACT.email}</a>`);
+  if (CONTACT.instagram) links.push(`<a class="btn" href="https://instagram.com/${CONTACT.instagram}" target="_blank" rel="noopener">Instagram · @${CONTACT.instagram}</a>`);
   $("#contact-links").innerHTML = links.join("");
   if (!links.length) $("#contact").hidden = true;
 }
@@ -86,6 +154,8 @@ document.addEventListener("keydown", (e) => {
 });
 // Discourage casual saving; the watermark is the real protection.
 document.addEventListener("contextmenu", (e) => { if (e.target.tagName === "IMG") e.preventDefault(); });
+addEventListener("scroll", () => $(".nav").classList.toggle("solid", scrollY > 40), { passive: true });
 
 $("#year").textContent = new Date().getFullYear();
-heroArt(); filters(); render(); contact();
+document.querySelectorAll(".fade, .stamp").forEach((el) => io.observe(el));
+heroArt(); spotlight(); filters(); render(); contact();
