@@ -8,73 +8,108 @@
 <meta property="og:title" content="Mahalakshmi Srikanth — Art">
 <meta property="og:description" content="From life's many roles to discovering my artist's soul.">
 <meta property="og:image" content="seal.png">
+<meta name="theme-color" content="#0d0f1c">
 <link rel="icon" href="seal.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Mulish:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="grain" aria-hidden="true"></div>
+
 <header class="nav">
-  <a class="brand" href="#top"><img src="seal.png" alt="" width="40" height="40"><span>Mahalakshmi Srikanth</span></a>
-  <nav><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <a class="brand" href="#top"><img src="seal.png" alt="" width="36" height="34"><span>Mahalakshmi Srikanth</span></a>
+  <nav><a href="#spotlight">Spotlight</a><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
 </header>
 
 <main id="top">
   <section class="hero">
     <div class="hero-text">
-      <img class="hero-seal" src="seal.png" alt="Mahalakshmi Srikanth seal" width="180" height="170">
-      <h1>From life’s many roles<br>to discovering <em>my artist’s soul</em></h1>
-      <p class="lede">Paintings, sketches, mandalas and rangoli — six years of learning, one stroke at a time.</p>
-      <a class="btn" href="#gallery">View the gallery</a>
+      <p class="eyebrow reveal-line"><span>Paintings · Sketches · Mandalas · Rangoli</span></p>
+      <h1>
+        <span class="reveal-line"><span>From life’s many roles</span></span>
+        <span class="reveal-line"><span>to discovering</span></span>
+        <span class="reveal-line"><span><em>my artist’s soul</em></span></span>
+      </h1>
+      <p class="lede reveal-line"><span>Six years of learning, experimenting and finding joy — one stroke at a time.</span></p>
+      <a class="btn fadein" href="#spotlight">Step inside ↓</a>
     </div>
     <div class="hero-art" id="hero-art" aria-hidden="true"></div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About the artist</h2>
-    <div class="about-body">
-      <p>Life has taken me through many different roles—from being a working woman to embracing life as a homemaker. Somewhere along the way, I found something that brought me back to myself: art. What began as a simple hobby after COVID gradually became a journey of creativity, learning, and self-discovery.</p>
-      <p>What began as a hobby soon became much more than that. Art became my stress buster, my escape, and my little space of peace. Every painting has been a new learning experience—sometimes through practice, sometimes through experimentation, and often through simply trying something new.</p>
-      <blockquote>For me, art is not just about the finished painting; it is about the journey of learning, experimenting, evolving, and finding joy in every stroke.</blockquote>
-      <p class="sig">— Mahalakshmi Srikanth</p>
+  <section id="spotlight" class="spotlight">
+    <div class="spot-head">
+      <p class="eyebrow">Spotlight</p>
+      <h2>Some things are worth discovering slowly</h2>
+      <p class="hint" id="spot-hint">Move your light across the canvas…</p>
     </div>
-  </section>
-
-  <section id="journey" class="journey">
-    <h2>The journey</h2>
-    <ol class="timeline">
-      <li><span class="when">Before</span><h3>Life’s many roles</h3><p>From being a working woman to embracing life as a homemaker.</p></li>
-      <li><span class="when">After COVID</span><h3>Sketching &amp; crayons</h3><p>What began as a simple hobby — the first sketches and crayon drawings.</p></li>
-      <li><span class="when">Next</span><h3>Sketch pens</h3><p>Exploring line, pattern and colour with sketch pens.</p></li>
-      <li><span class="when">Then</span><h3>Acrylics</h3><p>Discovering acrylics, experimenting with new techniques, and slowly finding her own way of expressing herself.</p></li>
-      <li><span class="when">Six years on</span><h3>Still learning</h3><p>“I believe there is always something new to discover in art, and that constant learning is what keeps my creativity alive.”</p></li>
-    </ol>
+    <div class="spot-stage" id="spot-stage">
+      <img class="spot-dim" id="spot-dim" alt="" draggable="false">
+      <img class="spot-lit" id="spot-lit" alt="" draggable="false">
+      <button class="spot-btn" id="spot-reveal">Reveal the painting</button>
+    </div>
+    <p class="spot-title" id="spot-title"></p>
   </section>
 
   <section id="gallery" class="gallery">
-    <h2>Gallery</h2>
+    <div class="sec-head">
+      <p class="eyebrow">The collection</p>
+      <h2>Gallery</h2>
+    </div>
     <div class="filters" id="filters" role="tablist"></div>
     <div class="grid" id="grid"></div>
   </section>
 
+  <section id="journey" class="journey">
+    <div class="sec-head">
+      <p class="eyebrow">Six years</p>
+      <h2>The journey</h2>
+    </div>
+    <ol class="timeline">
+      <li class="fade"><span class="when">Before</span><h3>Life’s many roles</h3><p>From being a working woman to embracing life as a homemaker.</p></li>
+      <li class="fade"><span class="when">After COVID</span><h3>Sketching &amp; crayons</h3><p>What began as a simple hobby — the first sketches and crayon drawings.</p></li>
+      <li class="fade"><span class="when">Next</span><h3>Sketch pens</h3><p>Exploring line, pattern and colour with sketch pens.</p></li>
+      <li class="fade"><span class="when">Then</span><h3>Acrylics</h3><p>With every new medium, something different — new techniques, and slowly, her own way of expressing herself.</p></li>
+      <li class="fade"><span class="when">Today</span><h3>Still learning</h3><p>“There is always something new to discover in art, and that constant learning is what keeps my creativity alive.”</p></li>
+    </ol>
+  </section>
+
+  <section id="about" class="about">
+    <div class="paper fade">
+      <p class="eyebrow">About the artist</p>
+      <h2>In her words</h2>
+      <p>Life has taken me through many different roles—from being a working woman to embracing life as a homemaker. Somewhere along the way, I found something that brought me back to myself: art. What began as a simple hobby after COVID gradually became a journey of creativity, learning, and self-discovery.</p>
+      <p>I started with sketching and crayons, then explored sketch pens, and eventually discovered acrylics. With every new medium, I learned something different, experimented with new techniques, and slowly found my own way of expressing myself through art.</p>
+      <p>What began as a hobby soon became much more than that. Art became my stress buster, my escape, and my little space of peace. Every painting has been a new learning experience—sometimes through practice, sometimes through experimentation, and often through simply trying something new.</p>
+      <p>Six years into this journey, I continue to learn and explore every day. I believe there is always something new to discover in art, and that constant learning is what keeps my creativity alive.</p>
+      <blockquote>For me, art is not just about the finished painting; it is about the journey of learning, experimenting, evolving, and finding joy in every stroke.</blockquote>
+      <p>From life’s many roles to discovering my artist’s soul, every canvas reflects a part of my journey. 🎨❤️</p>
+      <img class="stamp" id="stamp" src="stamp-blue.png" alt="Mahalakshmi Srikanth stamp" width="210" height="213">
+    </div>
+  </section>
+
   <section id="contact" class="contact">
-    <h2>Get in touch</h2>
-    <p>For enquiries about an artwork, commissions, or just to say hello:</p>
+    <div class="sec-head">
+      <p class="eyebrow">Say hello</p>
+      <h2>Get in touch</h2>
+    </div>
+    <p>For enquiries about an artwork, commissions, or just to share some love.</p>
     <div class="contact-links" id="contact-links"></div>
   </section>
 </main>
 
 <footer>
-  <img src="seal.png" alt="" width="56" height="53">
+  <img src="seal.png" alt="" width="64" height="60">
   <p>© <span id="year"></span> Mahalakshmi Srikanth. All rights reserved.</p>
   <p class="small">All artworks and images on this site are the original work of Mahalakshmi Srikanth and are protected by copyright. They may not be copied, downloaded, reproduced or used in any form without written permission.</p>
+  <p class="love">Made by Ajith, for his only loving Mom <span class="heart">♥</span></p>
 </footer>
 
 <div class="lightbox" id="lightbox" hidden>
   <button class="lb-close" aria-label="Close">×</button>
   <button class="lb-prev" aria-label="Previous">‹</button>
-  <figure><img id="lb-img" alt=""><figcaption id="lb-cap"></figcaption></figure>
+  <figure><img id="lb-img" alt="" draggable="false"><figcaption id="lb-cap"></figcaption></figure>
   <button class="lb-next" aria-label="Next">›</button>
 </div>
 
