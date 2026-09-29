@@ -1,5 +1,93 @@
 window.ARTWORKS = [
 {
+"id": "tinted-glass-painting-on-canvas",
+"title": "Tinted Glass Painting on Canvas",
+"cat": "paintings",
+"date": "2026-09-28",
+"w": 1200,
+"h": 656
+},
+{
+"id": "the-more-you-will-see",
+"title": "The More You Will See",
+"cat": "drawings",
+"date": "2026-09-28",
+"w": 1200,
+"h": 937
+},
+{
+"id": "kathakali-with-flowers-on-onam",
+"title": "Kathakali with Flowers on Onam",
+"cat": "rangoli",
+"date": "2026-09-28",
+"w": 1200,
+"h": 938
+},
+{
+"id": "kadva-chauth",
+"title": "Kadva Chauth",
+"cat": "rangoli",
+"date": "2026-09-28",
+"w": 1080,
+"h": 1043
+},
+{
+"id": "girl-on-swing-under-moon",
+"title": "Girl on Swing Under Moon",
+"cat": "paintings",
+"date": "2026-09-28",
+"w": 1200,
+"h": 900
+},
+{
+"id": "woman-in-red-dress-with-handbag",
+"title": "Woman in Red Dress with Handbag",
+"cat": "paintings",
+"date": "2026-09-27",
+"w": 928,
+"h": 1200
+},
+{
+"id": "sitting-women-on-black-canvas",
+"title": "Sitting Women on Black Canvas",
+"cat": "paintings",
+"date": "2026-09-27",
+"w": 1200,
+"h": 1146
+},
+{
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-09-27",
+"w": 1200,
+"h": 973
+},
+{
+"id": "my-son-s-merit-list-award-function",
+"title": "My Son\u2019s Merit List Award Function",
+"cat": "paintings",
+"date": "2026-09-27",
+"w": 1200,
+"h": 968
+},
+{
+"id": "musician-and-ram-sita-folk-art",
+"title": "Musician and Ram Sita Folk Art",
+"cat": "paintings",
+"date": "2026-09-27",
+"w": 559,
+"h": 1200
+},
+{
+"id": "boy-hanging-on-perimal-feet",
+"title": "Boy Hanging on Perimal Feet",
+"cat": "paintings",
+"date": "2026-09-27",
+"w": 944,
+"h": 1200
+},
+{
 "id": "lotus-and-kolam-rangolis",
 "title": "Lotus And Kolam Rangolis",
 "cat": "rangoli",
@@ -32,20 +120,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "hanuman-jayanti-rangoli",
-"title": "Hanuman Jayanti Rangoli",
-"cat": "rangoli",
-"date": "2026-04-02",
-"w": 900,
-"h": 1200
-},
-{
 "id": "jai-shri-ram-hanuman-rangoli",
 "title": "Jai Shri Ram Hanuman Rangoli",
 "cat": "rangoli",
 "date": "2026-04-02",
 "w": 1200,
 "h": 900
+},
+{
+"id": "hanuman-jayanti-rangoli",
+"title": "Hanuman Jayanti Rangoli",
+"cat": "rangoli",
+"date": "2026-04-02",
+"w": 900,
+"h": 1200
 },
 {
 "id": "folk-art-mother-and-child-pair",
@@ -56,20 +144,20 @@ window.ARTWORKS = [
 "h": 902
 },
 {
-"id": "happy-womens-day-flower-rangoli",
-"title": "Happy Womens Day Flower Rangoli",
-"cat": "rangoli",
-"date": "2026-03-08",
-"w": 1200,
-"h": 935
-},
-{
 "id": "swastik-geometric-rangoli",
 "title": "Swastik Geometric Rangoli",
 "cat": "rangoli",
 "date": "2026-03-08",
 "w": 1200,
 "h": 885
+},
+{
+"id": "happy-womens-day-flower-rangoli",
+"title": "Happy Womens Day Flower Rangoli",
+"cat": "rangoli",
+"date": "2026-03-08",
+"w": 1200,
+"h": 935
 },
 {
 "id": "happy-republic-day-girl-rangoli",
@@ -104,12 +192,12 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "peacocks-om-star-rangoli",
-"title": "Peacocks Om Star Rangoli",
-"cat": "rangoli",
-"date": "2025-11-28",
-"w": 1200,
-"h": 897
+"id": "tirupati-balaji-and-deities-embossed",
+"title": "Tirupati Balaji And Deities Embossed",
+"cat": "paintings",
+"date": "2025-12-18",
+"w": 1040,
+"h": 1200
 },
 {
 "id": "peacocks-star-rangoli",
@@ -118,6 +206,14 @@ window.ARTWORKS = [
 "date": "2025-11-28",
 "w": 1200,
 "h": 984
+},
+{
+"id": "peacocks-om-star-rangoli",
+"title": "Peacocks Om Star Rangoli",
+"cat": "rangoli",
+"date": "2025-11-28",
+"w": 1200,
+"h": 897
 },
 {
 "id": "tirupati-balaji-with-hanging-diyas",
@@ -152,14 +248,6 @@ window.ARTWORKS = [
 "h": 886
 },
 {
-"id": "butterfly-rangoli",
-"title": "Butterfly Rangoli",
-"cat": "rangoli",
-"date": "2025-10-25",
-"w": 1200,
-"h": 929
-},
-{
 "id": "cube-pattern-flower-rangoli",
 "title": "Cube Pattern Flower Rangoli",
 "cat": "rangoli",
@@ -168,12 +256,12 @@ window.ARTWORKS = [
 "h": 1051
 },
 {
-"id": "shubh-labh-painted-diya-holders",
-"title": "Shubh Labh Painted Diya Holders",
-"cat": "crafts",
-"date": "2025-10-17",
+"id": "butterfly-rangoli",
+"title": "Butterfly Rangoli",
+"cat": "rangoli",
+"date": "2025-10-25",
 "w": 1200,
-"h": 443
+"h": 929
 },
 {
 "id": "six-point-star-rangoli",
@@ -182,6 +270,14 @@ window.ARTWORKS = [
 "date": "2025-10-17",
 "w": 1200,
 "h": 958
+},
+{
+"id": "shubh-labh-painted-diya-holders",
+"title": "Shubh Labh Painted Diya Holders",
+"cat": "crafts",
+"date": "2025-10-17",
+"w": 1200,
+"h": 443
 },
 {
 "id": "interlocked-squares-rangoli",
@@ -200,20 +296,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "blue-and-purple-star-rangoli",
-"title": "Blue And Purple Star Rangoli",
-"cat": "rangoli",
-"date": "2025-10-10",
-"w": 949,
-"h": 1200
-},
-{
 "id": "orange-hexagon-rangoli",
 "title": "Orange Hexagon Rangoli",
 "cat": "rangoli",
 "date": "2025-10-10",
 "w": 1200,
 "h": 752
+},
+{
+"id": "blue-and-purple-star-rangoli",
+"title": "Blue And Purple Star Rangoli",
+"cat": "rangoli",
+"date": "2025-10-10",
+"w": 949,
+"h": 1200
 },
 {
 "id": "interlocked-star-rangoli",
@@ -240,16 +336,16 @@ window.ARTWORKS = [
 "h": 971
 },
 {
-"id": "colorful-flower-rangoli",
-"title": "Colorful Flower Rangoli",
+"id": "white-kolam-with-purple-dots",
+"title": "White Kolam With Purple Dots",
 "cat": "rangoli",
 "date": "2025-09-14",
 "w": 676,
 "h": 1200
 },
 {
-"id": "white-kolam-with-purple-dots",
-"title": "White Kolam With Purple Dots",
+"id": "colorful-flower-rangoli",
+"title": "Colorful Flower Rangoli",
 "cat": "rangoli",
 "date": "2025-09-14",
 "w": 676,
@@ -312,14 +408,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "blue-and-pink-swirl-rangoli",
-"title": "Blue And Pink Swirl Rangoli",
-"cat": "rangoli",
-"date": "2025-08-17",
-"w": 1200,
-"h": 847
-},
-{
 "id": "star-and-lotus-rangoli",
 "title": "Star And Lotus Rangoli",
 "cat": "rangoli",
@@ -336,12 +424,12 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "blue-circle-rangoli-with-flowers",
-"title": "Blue Circle Rangoli With Flowers",
+"id": "blue-and-pink-swirl-rangoli",
+"title": "Blue And Pink Swirl Rangoli",
 "cat": "rangoli",
-"date": "2025-07-27",
+"date": "2025-08-17",
 "w": 1200,
-"h": 677
+"h": 847
 },
 {
 "id": "shivling-om-hibiscus-rangoli",
@@ -350,6 +438,14 @@ window.ARTWORKS = [
 "date": "2025-07-27",
 "w": 1200,
 "h": 813
+},
+{
+"id": "blue-circle-rangoli-with-flowers",
+"title": "Blue Circle Rangoli With Flowers",
+"cat": "rangoli",
+"date": "2025-07-27",
+"w": 1200,
+"h": 677
 },
 {
 "id": "hibiscus-and-jasmine-rangoli",
@@ -384,12 +480,12 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "ganesha-colorful-lotus-rangoli",
-"title": "Ganesha Colorful Lotus Rangoli",
+"id": "ganesha-star-rangoli",
+"title": "Ganesha Star Rangoli",
 "cat": "rangoli",
 "date": "2025-06-14",
 "w": 1200,
-"h": 851
+"h": 958
 },
 {
 "id": "ganesha-lotus-rangoli",
@@ -400,12 +496,12 @@ window.ARTWORKS = [
 "h": 865
 },
 {
-"id": "ganesha-star-rangoli",
-"title": "Ganesha Star Rangoli",
+"id": "ganesha-colorful-lotus-rangoli",
+"title": "Ganesha Colorful Lotus Rangoli",
 "cat": "rangoli",
 "date": "2025-06-14",
 "w": 1200,
-"h": 958
+"h": 851
 },
 {
 "id": "vat-purnima-rangoli",
@@ -528,20 +624,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "hanuman-jai-shri-ram-kolam",
-"title": "Hanuman Jai Shri Ram Kolam",
-"cat": "rangoli",
-"date": "2025-04-11",
-"w": 1200,
-"h": 677
-},
-{
 "id": "jai-shri-hanuman-rangoli",
 "title": "Jai Shri Hanuman Rangoli",
 "cat": "rangoli",
 "date": "2025-04-11",
 "w": 1200,
 "h": 979
+},
+{
+"id": "hanuman-jai-shri-ram-kolam",
+"title": "Hanuman Jai Shri Ram Kolam",
+"cat": "rangoli",
+"date": "2025-04-11",
+"w": 1200,
+"h": 677
 },
 {
 "id": "white-knot-kolam",
@@ -552,20 +648,20 @@ window.ARTWORKS = [
 "h": 677
 },
 {
-"id": "colorful-knot-rangoli",
-"title": "Colorful Knot Rangoli",
-"cat": "rangoli",
-"date": "2025-04-08",
-"w": 1200,
-"h": 875
-},
-{
 "id": "lotus-and-shankh-rangoli",
 "title": "Lotus And Shankh Rangoli",
 "cat": "rangoli",
 "date": "2025-04-08",
 "w": 1200,
 "h": 979
+},
+{
+"id": "colorful-knot-rangoli",
+"title": "Colorful Knot Rangoli",
+"cat": "rangoli",
+"date": "2025-04-08",
+"w": 1200,
+"h": 875
 },
 {
 "id": "jai-shri-ram-rangoli",
@@ -584,20 +680,20 @@ window.ARTWORKS = [
 "h": 1102
 },
 {
-"id": "ganesha-flower-kolam",
-"title": "Ganesha Flower Kolam",
-"cat": "rangoli",
-"date": "2025-03-11",
-"w": 1200,
-"h": 800
-},
-{
 "id": "om-kolam-with-swirls",
 "title": "Om Kolam With Swirls",
 "cat": "rangoli",
 "date": "2025-03-11",
 "w": 1200,
 "h": 948
+},
+{
+"id": "ganesha-flower-kolam",
+"title": "Ganesha Flower Kolam",
+"cat": "rangoli",
+"date": "2025-03-11",
+"w": 1200,
+"h": 800
 },
 {
 "id": "happy-womens-day-rangoli",
@@ -608,20 +704,20 @@ window.ARTWORKS = [
 "h": 1024
 },
 {
-"id": "ganesha-kolam",
-"title": "Ganesha Kolam",
-"cat": "rangoli",
-"date": "2025-02-16",
-"w": 1200,
-"h": 848
-},
-{
 "id": "ganesha-om-rangoli",
 "title": "Ganesha Om Rangoli",
 "cat": "rangoli",
 "date": "2025-02-16",
 "w": 1200,
 "h": 1082
+},
+{
+"id": "ganesha-kolam",
+"title": "Ganesha Kolam",
+"cat": "rangoli",
+"date": "2025-02-16",
+"w": 1200,
+"h": 848
 },
 {
 "id": "flamenco-dancer-stained-glass-style",
@@ -640,16 +736,16 @@ window.ARTWORKS = [
 "h": 973
 },
 {
-"id": "snowflake-kolam",
-"title": "Snowflake Kolam",
+"id": "star-kolam-with-swirls",
+"title": "Star Kolam With Swirls",
 "cat": "rangoli",
 "date": "2024-12-20",
 "w": 676,
 "h": 1200
 },
 {
-"id": "star-kolam-with-swirls",
-"title": "Star Kolam With Swirls",
+"id": "snowflake-kolam",
+"title": "Snowflake Kolam",
 "cat": "rangoli",
 "date": "2024-12-20",
 "w": 676,
@@ -688,20 +784,20 @@ window.ARTWORKS = [
 "h": 1151
 },
 {
-"id": "family-kitchen-scene",
-"title": "Family Kitchen Scene",
-"cat": "drawings",
-"date": "2024-11-13",
-"w": 1200,
-"h": 826
-},
-{
 "id": "rajasthani-women-with-pots",
 "title": "Rajasthani Women With Pots",
 "cat": "paintings",
 "date": "2024-11-13",
 "w": 1200,
 "h": 895
+},
+{
+"id": "family-kitchen-scene",
+"title": "Family Kitchen Scene",
+"cat": "drawings",
+"date": "2024-11-13",
+"w": 1200,
+"h": 826
 },
 {
 "id": "mother-and-child-folk-painting",
@@ -752,20 +848,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "ganesha-and-krishna-round-mirror-art",
-"title": "Ganesha And Krishna Round Mirror Art",
-"cat": "crafts",
-"date": "2024-11-01",
-"w": 1143,
-"h": 1200
-},
-{
 "id": "krishna-janmashtami-rangoli",
 "title": "Krishna Janmashtami Rangoli",
 "cat": "rangoli",
 "date": "2024-11-01",
 "w": 1200,
 "h": 964
+},
+{
+"id": "ganesha-and-krishna-round-mirror-art",
+"title": "Ganesha And Krishna Round Mirror Art",
+"cat": "crafts",
+"date": "2024-11-01",
+"w": 1143,
+"h": 1200
 },
 {
 "id": "happy-diwali-peacock-rangoli",
@@ -776,14 +872,6 @@ window.ARTWORKS = [
 "h": 980
 },
 {
-"id": "jagannath-rangoli",
-"title": "Jagannath Rangoli",
-"cat": "rangoli",
-"date": "2024-10-30",
-"w": 1200,
-"h": 1007
-},
-{
 "id": "white-geometric-kolam",
 "title": "White Geometric Kolam",
 "cat": "rangoli",
@@ -792,12 +880,12 @@ window.ARTWORKS = [
 "h": 855
 },
 {
-"id": "happy-dhanteras-kalash-rangoli",
-"title": "Happy Dhanteras Kalash Rangoli",
+"id": "jagannath-rangoli",
+"title": "Jagannath Rangoli",
 "cat": "rangoli",
-"date": "2024-10-29",
+"date": "2024-10-30",
 "w": 1200,
-"h": 853
+"h": 1007
 },
 {
 "id": "happy-dhanteras-swastik-rangoli",
@@ -806,6 +894,14 @@ window.ARTWORKS = [
 "date": "2024-10-29",
 "w": 1200,
 "h": 999
+},
+{
+"id": "happy-dhanteras-kalash-rangoli",
+"title": "Happy Dhanteras Kalash Rangoli",
+"cat": "rangoli",
+"date": "2024-10-29",
+"w": 1200,
+"h": 853
 },
 {
 "id": "birds-on-branches-nine-panels",
@@ -837,6 +933,14 @@ window.ARTWORKS = [
 "cat": "drawings",
 "date": "2024-10-22",
 "w": 964,
+"h": 1200
+},
+{
+"id": "mountains-under-moon-pen-art",
+"title": "Mountains Under Moon Pen Art",
+"cat": "drawings",
+"date": "2024-10-21",
+"w": 903,
 "h": 1200
 },
 {
@@ -888,6 +992,14 @@ window.ARTWORKS = [
 "h": 1168
 },
 {
+"id": "white-lotus-kolam",
+"title": "White Lotus Kolam",
+"cat": "rangoli",
+"date": "2024-09-23",
+"w": 1200,
+"h": 1151
+},
+{
 "id": "radha-krishna-walking-under-tree",
 "title": "Radha Krishna Walking Under Tree",
 "cat": "paintings",
@@ -896,12 +1008,12 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "white-lotus-kolam",
-"title": "White Lotus Kolam",
+"id": "shree-rangoli-with-flowers",
+"title": "Shree Rangoli With Flowers",
 "cat": "rangoli",
-"date": "2024-09-23",
+"date": "2024-09-06",
 "w": 1200,
-"h": 1151
+"h": 947
 },
 {
 "id": "mini-radha-krishna-canvas-on-easel",
@@ -976,20 +1088,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "baby-ganesha-with-parvati-drawing",
-"title": "Baby Ganesha With Parvati Drawing",
-"cat": "drawings",
-"date": "2024-07-24",
-"w": 1200,
-"h": 758
-},
-{
 "id": "lets-grow-old-together-couple",
 "title": "Lets Grow Old Together Couple",
 "cat": "drawings",
 "date": "2024-07-24",
 "w": 868,
 "h": 1200
+},
+{
+"id": "baby-ganesha-with-parvati-drawing",
+"title": "Baby Ganesha With Parvati Drawing",
+"cat": "drawings",
+"date": "2024-07-24",
+"w": 1200,
+"h": 758
 },
 {
 "id": "village-women-carrying-pots-drawing",
@@ -1080,19 +1192,19 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "orange-and-blue-round-mandala",
-"title": "Orange And Blue Round Mandala",
-"cat": "mandalas",
-"date": "2023-12-19",
-"w": 1200,
-"h": 1200
-},
-{
 "id": "square-spiral-line-illusion",
 "title": "Square Spiral Line Illusion",
 "cat": "drawings",
 "date": "2023-12-19",
 "w": 1081,
+"h": 1200
+},
+{
+"id": "orange-and-blue-round-mandala",
+"title": "Orange And Blue Round Mandala",
+"cat": "mandalas",
+"date": "2023-12-19",
+"w": 1200,
 "h": 1200
 },
 {
@@ -1120,20 +1232,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "ganesha-names-spiral-calligraphy",
-"title": "Ganesha Names Spiral Calligraphy",
-"cat": "paintings",
-"date": "2023-12-15",
-"w": 1200,
-"h": 914
-},
-{
 "id": "pink-and-green-doodle-mandala",
 "title": "Pink And Green Doodle Mandala",
 "cat": "mandalas",
 "date": "2023-12-15",
 "w": 1200,
 "h": 1200
+},
+{
+"id": "ganesha-names-spiral-calligraphy",
+"title": "Ganesha Names Spiral Calligraphy",
+"cat": "paintings",
+"date": "2023-12-15",
+"w": 1200,
+"h": 914
 },
 {
 "id": "fan-leaves-line-pattern",
@@ -1152,11 +1264,11 @@ window.ARTWORKS = [
 "h": 885
 },
 {
-"id": "black-and-white-star-geometric",
-"title": "Black And White Star Geometric",
-"cat": "drawings",
+"id": "three-masks-abstract-faces",
+"title": "Three Masks Abstract Faces",
+"cat": "paintings",
 "date": "2023-11-29",
-"w": 1200,
+"w": 995,
 "h": 1200
 },
 {
@@ -1168,11 +1280,11 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "three-masks-abstract-faces",
-"title": "Three Masks Abstract Faces",
-"cat": "paintings",
+"id": "black-and-white-star-geometric",
+"title": "Black And White Star Geometric",
+"cat": "drawings",
 "date": "2023-11-29",
-"w": 995,
+"w": 1200,
 "h": 1200
 },
 {
@@ -1216,20 +1328,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "blue-krishna-face-with-flute",
-"title": "Blue Krishna Face With Flute",
-"cat": "paintings",
-"date": "2023-11-19",
-"w": 827,
-"h": 1200
-},
-{
 "id": "white-flowers-on-black-canvas",
 "title": "White Flowers On Black Canvas",
 "cat": "paintings",
 "date": "2023-11-19",
 "w": 1200,
 "h": 877
+},
+{
+"id": "lovebirds-and-cage-at-sunset-canvas",
+"title": "Lovebirds And Cage At Sunset Canvas",
+"cat": "paintings",
+"date": "2023-11-19",
+"w": 1200,
+"h": 1200
 },
 {
 "id": "dandiya-dancers-with-durga-eyes",
@@ -1240,11 +1352,11 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "lovebirds-and-cage-at-sunset-canvas",
-"title": "Lovebirds And Cage At Sunset Canvas",
+"id": "blue-krishna-face-with-flute",
+"title": "Blue Krishna Face With Flute",
 "cat": "paintings",
 "date": "2023-11-19",
-"w": 1200,
+"w": 827,
 "h": 1200
 },
 {
@@ -1264,20 +1376,20 @@ window.ARTWORKS = [
 "h": 947
 },
 {
-"id": "beach-with-sailboat-and-starfish",
-"title": "Beach With Sailboat And Starfish",
-"cat": "drawings",
-"date": "2023-11-09",
-"w": 785,
-"h": 785
-},
-{
 "id": "women-painting-and-photographing-drawing",
 "title": "Women Painting And Photographing Drawing",
 "cat": "drawings",
 "date": "2023-11-09",
 "w": 750,
 "h": 750
+},
+{
+"id": "love-couples-drawing-page",
+"title": "Love Couples Drawing Page",
+"cat": "drawings",
+"date": "2023-11-09",
+"w": 750,
+"h": 562
 },
 {
 "id": "lips-hearts-and-faces-sketchbook-page",
@@ -1296,20 +1408,20 @@ window.ARTWORKS = [
 "h": 562
 },
 {
-"id": "love-couples-drawing-page",
-"title": "Love Couples Drawing Page",
-"cat": "drawings",
-"date": "2023-11-09",
-"w": 750,
-"h": 562
-},
-{
 "id": "ganesha-trishul-and-om-drawing",
 "title": "Ganesha Trishul And Om Drawing",
 "cat": "drawings",
 "date": "2023-11-09",
 "w": 750,
 "h": 562
+},
+{
+"id": "beach-with-sailboat-and-starfish",
+"title": "Beach With Sailboat And Starfish",
+"cat": "drawings",
+"date": "2023-11-09",
+"w": 785,
+"h": 785
 },
 {
 "id": "girl-in-pink-hat-on-stars",
@@ -1408,19 +1520,19 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "bird-and-branches-on-hexagon-tile",
-"title": "Bird And Branches On Hexagon Tile",
-"cat": "paintings",
-"date": "2023-06-20",
-"w": 1023,
-"h": 1200
-},
-{
 "id": "black-and-white-mandala",
 "title": "Black And White Mandala",
 "cat": "mandalas",
 "date": "2023-06-20",
 "w": 1179,
+"h": 1200
+},
+{
+"id": "bird-and-branches-on-hexagon-tile",
+"title": "Bird And Branches On Hexagon Tile",
+"cat": "paintings",
+"date": "2023-06-20",
+"w": 1023,
 "h": 1200
 },
 {
@@ -1456,16 +1568,16 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "four-color-mandala",
-"title": "Four Color Mandala",
+"id": "orange-and-green-mandala",
+"title": "Orange And Green Mandala",
 "cat": "mandalas",
 "date": "2023-05-29",
 "w": 1200,
 "h": 1200
 },
 {
-"id": "orange-and-green-mandala",
-"title": "Orange And Green Mandala",
+"id": "four-color-mandala",
+"title": "Four Color Mandala",
 "cat": "mandalas",
 "date": "2023-05-29",
 "w": 1200,
@@ -1496,6 +1608,14 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
+"id": "peacock-on-tree-silhouette",
+"title": "Peacock On Tree Silhouette",
+"cat": "drawings",
+"date": "2023-05-22",
+"w": 1200,
+"h": 1200
+},
+{
 "id": "girl-in-blue-dress-brushstrokes",
 "title": "Girl In Blue Dress Brushstrokes",
 "cat": "drawings",
@@ -1512,10 +1632,10 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "peacock-on-tree-silhouette",
-"title": "Peacock On Tree Silhouette",
-"cat": "drawings",
-"date": "2023-05-22",
+"id": "pink-star-mandala",
+"title": "Pink Star Mandala",
+"cat": "mandalas",
+"date": "2023-05-05",
 "w": 1200,
 "h": 1200
 },
@@ -1526,14 +1646,6 @@ window.ARTWORKS = [
 "date": "2023-05-05",
 "w": 1200,
 "h": 906
-},
-{
-"id": "pink-star-mandala",
-"title": "Pink Star Mandala",
-"cat": "mandalas",
-"date": "2023-05-05",
-"w": 1200,
-"h": 1200
 },
 {
 "id": "colorful-mandala-on-desk",
@@ -1584,14 +1696,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "happy-republic-day-dove-rangoli",
-"title": "Happy Republic Day Dove Rangoli",
-"cat": "rangoli",
-"date": "2023-01-26",
-"w": 1058,
-"h": 1058
-},
-{
 "id": "tricolor-flower-rangoli",
 "title": "Tricolor Flower Rangoli",
 "cat": "rangoli",
@@ -1606,6 +1710,14 @@ window.ARTWORKS = [
 "date": "2023-01-26",
 "w": 614,
 "h": 349
+},
+{
+"id": "happy-republic-day-dove-rangoli",
+"title": "Happy Republic Day Dove Rangoli",
+"cat": "rangoli",
+"date": "2023-01-26",
+"w": 1058,
+"h": 1058
 },
 {
 "id": "ganesha-flower-rangoli",
@@ -1736,20 +1848,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "elderly-couple-sitting-line-drawing",
-"title": "Elderly Couple Sitting Line Drawing",
-"cat": "drawings",
-"date": "2022-08-25",
-"w": 1200,
-"h": 836
-},
-{
 "id": "glowing-yellow-mandala",
 "title": "Glowing Yellow Mandala",
 "cat": "mandalas",
 "date": "2022-08-25",
 "w": 1200,
 "h": 1200
+},
+{
+"id": "elderly-couple-sitting-line-drawing",
+"title": "Elderly Couple Sitting Line Drawing",
+"cat": "drawings",
+"date": "2022-08-25",
+"w": 1200,
+"h": 836
 },
 {
 "id": "blue-and-orange-mandala-2",
@@ -1760,19 +1872,19 @@ window.ARTWORKS = [
 "h": 976
 },
 {
-"id": "peacock-line-art",
-"title": "Peacock Line Art",
-"cat": "drawings",
-"date": "2022-08-10",
-"w": 960,
-"h": 1200
-},
-{
 "id": "rainbow-mandala",
 "title": "Rainbow Mandala",
 "cat": "mandalas",
 "date": "2022-08-10",
 "w": 1200,
+"h": 1200
+},
+{
+"id": "peacock-line-art",
+"title": "Peacock Line Art",
+"cat": "drawings",
+"date": "2022-08-10",
+"w": 960,
 "h": 1200
 },
 {
@@ -1784,14 +1896,6 @@ window.ARTWORKS = [
 "h": 1170
 },
 {
-"id": "green-and-orange-mandala",
-"title": "Green And Orange Mandala",
-"cat": "mandalas",
-"date": "2022-08-09",
-"w": 1200,
-"h": 1200
-},
-{
 "id": "shiva-and-radha-krishna-line-art",
 "title": "Shiva And Radha Krishna Line Art",
 "cat": "drawings",
@@ -1800,10 +1904,10 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "colorful-flower-mandala-2",
-"title": "Colorful Flower Mandala",
+"id": "green-and-orange-mandala",
+"title": "Green And Orange Mandala",
 "cat": "mandalas",
-"date": "2022-08-08",
+"date": "2022-08-09",
 "w": 1200,
 "h": 1200
 },
@@ -1814,6 +1918,14 @@ window.ARTWORKS = [
 "date": "2022-08-08",
 "w": 1173,
 "h": 1173
+},
+{
+"id": "colorful-flower-mandala-2",
+"title": "Colorful Flower Mandala",
+"cat": "mandalas",
+"date": "2022-08-08",
+"w": 1200,
+"h": 1200
 },
 {
 "id": "lotus-buds-on-abstract-stripes",
@@ -1840,20 +1952,20 @@ window.ARTWORKS = [
 "h": 921
 },
 {
-"id": "birds-on-tree-on-canvas",
-"title": "Birds On Tree On Canvas",
-"cat": "paintings",
-"date": "2022-08-04",
-"w": 900,
-"h": 1200
-},
-{
 "id": "tom-and-jerry-mouse-drawing",
 "title": "Tom And Jerry Mouse Drawing",
 "cat": "drawings",
 "date": "2022-08-04",
 "w": 1200,
 "h": 599
+},
+{
+"id": "birds-on-tree-on-canvas",
+"title": "Birds On Tree On Canvas",
+"cat": "paintings",
+"date": "2022-08-04",
+"w": 900,
+"h": 1200
 },
 {
 "id": "red-moon-over-blue-sea",
@@ -1896,20 +2008,20 @@ window.ARTWORKS = [
 "h": 1156
 },
 {
-"id": "man-profile-pencil-sketch",
-"title": "Man Profile Pencil Sketch",
-"cat": "drawings",
-"date": "2022-07-17",
-"w": 1200,
-"h": 1083
-},
-{
 "id": "queen-before-and-after-sketch",
 "title": "Queen Before And After Sketch",
 "cat": "drawings",
 "date": "2022-07-17",
 "w": 1200,
 "h": 851
+},
+{
+"id": "man-profile-pencil-sketch",
+"title": "Man Profile Pencil Sketch",
+"cat": "drawings",
+"date": "2022-07-17",
+"w": 1200,
+"h": 1083
 },
 {
 "id": "deer-in-forest-watercolor",
@@ -1928,14 +2040,6 @@ window.ARTWORKS = [
 "h": 852
 },
 {
-"id": "abstract-woman-face-on-brown",
-"title": "Abstract Woman Face On Brown",
-"cat": "paintings",
-"date": "2022-07-10",
-"w": 852,
-"h": 1200
-},
-{
 "id": "stained-glass-arch-window",
 "title": "Stained Glass Arch Window",
 "cat": "paintings",
@@ -1944,11 +2048,11 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "teddy-on-moon-i-miss-you",
-"title": "Teddy On Moon I Miss You",
+"id": "abstract-woman-face-on-brown",
+"title": "Abstract Woman Face On Brown",
 "cat": "paintings",
-"date": "2022-07-09",
-"w": 877,
+"date": "2022-07-10",
+"w": 852,
 "h": 1200
 },
 {
@@ -1960,12 +2064,12 @@ window.ARTWORKS = [
 "h": 891
 },
 {
-"id": "blue-butterflies-and-grass",
-"title": "Blue Butterflies And Grass",
+"id": "teddy-on-moon-i-miss-you",
+"title": "Teddy On Moon I Miss You",
 "cat": "paintings",
-"date": "2022-07-04",
-"w": 1200,
-"h": 885
+"date": "2022-07-09",
+"w": 877,
+"h": 1200
 },
 {
 "id": "swirling-steam-teacup",
@@ -1974,6 +2078,14 @@ window.ARTWORKS = [
 "date": "2022-07-04",
 "w": 851,
 "h": 1200
+},
+{
+"id": "blue-butterflies-and-grass",
+"title": "Blue Butterflies And Grass",
+"cat": "paintings",
+"date": "2022-07-04",
+"w": 1200,
+"h": 885
 },
 {
 "id": "red-poppies-watercolor",
@@ -2056,6 +2168,14 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
+"id": "white-deer-under-moonlit-tree",
+"title": "White Deer Under Moonlit Tree",
+"cat": "paintings",
+"date": "2022-03-13",
+"w": 970,
+"h": 1200
+},
+{
 "id": "plastic-smile-faces-painting",
 "title": "Plastic Smile Faces Painting",
 "cat": "paintings",
@@ -2069,14 +2189,6 @@ window.ARTWORKS = [
 "cat": "paintings",
 "date": "2022-03-13",
 "w": 855,
-"h": 1200
-},
-{
-"id": "white-deer-under-moonlit-tree",
-"title": "White Deer Under Moonlit Tree",
-"cat": "paintings",
-"date": "2022-03-13",
-"w": 970,
 "h": 1200
 },
 {
@@ -2216,12 +2328,12 @@ window.ARTWORKS = [
 "h": 881
 },
 {
-"id": "dancer-in-purple-gown",
-"title": "Dancer In Purple Gown",
+"id": "zentangle-dancer-with-fan",
+"title": "Zentangle Dancer With Fan",
 "cat": "drawings",
 "date": "2022-01-11",
-"w": 865,
-"h": 1200
+"w": 1200,
+"h": 1004
 },
 {
 "id": "swans-on-pond-painting",
@@ -2232,12 +2344,12 @@ window.ARTWORKS = [
 "h": 902
 },
 {
-"id": "zentangle-dancer-with-fan",
-"title": "Zentangle Dancer With Fan",
+"id": "dancer-in-purple-gown",
+"title": "Dancer In Purple Gown",
 "cat": "drawings",
 "date": "2022-01-11",
-"w": 1200,
-"h": 1004
+"w": 865,
+"h": 1200
 },
 {
 "id": "colorful-flower-mandala",
@@ -2296,19 +2408,19 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "cockatiels-on-branch-painting",
-"title": "Cockatiels On Branch Painting",
-"cat": "paintings",
-"date": "2021-12-24",
-"w": 891,
-"h": 1200
-},
-{
 "id": "macaw-parrot-painting",
 "title": "Macaw Parrot Painting",
 "cat": "paintings",
 "date": "2021-12-24",
 "w": 874,
+"h": 1200
+},
+{
+"id": "cockatiels-on-branch-painting",
+"title": "Cockatiels On Branch Painting",
+"cat": "paintings",
+"date": "2021-12-24",
+"w": 891,
 "h": 1200
 },
 {
@@ -2384,6 +2496,22 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
+"id": "woman-in-saree-under-tree",
+"title": "Woman In Saree Under Tree",
+"cat": "drawings",
+"date": "2021-11-04",
+"w": 940,
+"h": 1200
+},
+{
+"id": "woman-in-lehenga-with-butterflies",
+"title": "Woman In Lehenga With Butterflies",
+"cat": "drawings",
+"date": "2021-11-04",
+"w": 915,
+"h": 1200
+},
+{
 "id": "girls-and-diya-sketch-page",
 "title": "Girls And Diya Sketch Page",
 "cat": "drawings",
@@ -2400,20 +2528,12 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "woman-in-lehenga-with-butterflies",
-"title": "Woman In Lehenga With Butterflies",
-"cat": "drawings",
-"date": "2021-11-04",
-"w": 915,
-"h": 1200
-},
-{
-"id": "woman-in-saree-under-tree",
-"title": "Woman In Saree Under Tree",
-"cat": "drawings",
-"date": "2021-11-04",
-"w": 940,
-"h": 1200
+"id": "happy-diwali-swan-rangoli",
+"title": "Happy Diwali Swan Rangoli",
+"cat": "rangoli",
+"date": "2021-11-03",
+"w": 1200,
+"h": 900
 },
 {
 "id": "girl-and-beach-silhouette-sketch",
@@ -2422,14 +2542,6 @@ window.ARTWORKS = [
 "date": "2021-11-03",
 "w": 900,
 "h": 1200
-},
-{
-"id": "happy-diwali-swan-rangoli",
-"title": "Happy Diwali Swan Rangoli",
-"cat": "rangoli",
-"date": "2021-11-03",
-"w": 1200,
-"h": 900
 },
 {
 "id": "diwali-peacocks-and-ganesha",
@@ -2568,20 +2680,20 @@ window.ARTWORKS = [
 "h": 871
 },
 {
-"id": "faces-and-hearts-doodle-page",
-"title": "Faces And Hearts Doodle Page",
-"cat": "drawings",
-"date": "2021-09-23",
-"w": 1200,
-"h": 900
-},
-{
 "id": "ganesha-doodle-grid",
 "title": "Ganesha Doodle Grid",
 "cat": "drawings",
 "date": "2021-09-23",
 "w": 1200,
 "h": 911
+},
+{
+"id": "faces-and-hearts-doodle-page",
+"title": "Faces And Hearts Doodle Page",
+"cat": "drawings",
+"date": "2021-09-23",
+"w": 1200,
+"h": 900
 },
 {
 "id": "ganesha-silhouette-triptych",
@@ -2656,20 +2768,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "bird-and-flowers-circle-art",
-"title": "Bird And Flowers Circle Art",
-"cat": "drawings",
-"date": "2021-09-06",
-"w": 1200,
-"h": 900
-},
-{
 "id": "wedding-couple-under-mandap",
 "title": "Wedding Couple Under Mandap",
 "cat": "drawings",
 "date": "2021-09-06",
 "w": 1200,
 "h": 903
+},
+{
+"id": "bird-and-flowers-circle-art",
+"title": "Bird And Flowers Circle Art",
+"cat": "drawings",
+"date": "2021-09-06",
+"w": 1200,
+"h": 900
 },
 {
 "id": "sad-broken-heart-doodle",
@@ -2712,20 +2824,20 @@ window.ARTWORKS = [
 "h": 900
 },
 {
-"id": "broken-heart-doodles-page",
-"title": "Broken Heart Doodles Page",
-"cat": "drawings",
-"date": "2021-07-29",
-"w": 1200,
-"h": 900
-},
-{
 "id": "man-in-robe-pencil-sketch",
 "title": "Man In Robe Pencil Sketch",
 "cat": "drawings",
 "date": "2021-07-29",
 "w": 900,
 "h": 1200
+},
+{
+"id": "broken-heart-doodles-page",
+"title": "Broken Heart Doodles Page",
+"cat": "drawings",
+"date": "2021-07-29",
+"w": 1200,
+"h": 900
 },
 {
 "id": "ganesha-symbols-drawing-page",
@@ -2736,16 +2848,40 @@ window.ARTWORKS = [
 "h": 900
 },
 {
-"id": "guitar-with-music-notes",
-"title": "Guitar With Music Notes",
+"id": "woman-in-hat-drawing",
+"title": "Woman In Hat Drawing",
+"cat": "drawings",
+"date": "2021-07-25",
+"w": 1200,
+"h": 900
+},
+{
+"id": "woman-and-child-drawing",
+"title": "Woman And Child Drawing",
 "cat": "drawings",
 "date": "2021-07-25",
 "w": 900,
 "h": 1200
 },
 {
-"id": "woman-and-child-drawing",
-"title": "Woman And Child Drawing",
+"id": "panda-bear-drawings",
+"title": "Panda Bear Drawings",
+"cat": "drawings",
+"date": "2021-07-25",
+"w": 1200,
+"h": 900
+},
+{
+"id": "love-doodles-drawing-page",
+"title": "Love Doodles Drawing Page",
+"cat": "drawings",
+"date": "2021-07-25",
+"w": 1200,
+"h": 900
+},
+{
+"id": "guitar-with-music-notes",
+"title": "Guitar With Music Notes",
 "cat": "drawings",
 "date": "2021-07-25",
 "w": 900,
@@ -2760,33 +2896,9 @@ window.ARTWORKS = [
 "h": 900
 },
 {
-"id": "panda-bear-drawings",
-"title": "Panda Bear Drawings",
-"cat": "drawings",
-"date": "2021-07-25",
-"w": 1200,
-"h": 900
-},
-{
-"id": "woman-in-hat-drawing",
-"title": "Woman In Hat Drawing",
-"cat": "drawings",
-"date": "2021-07-25",
-"w": 1200,
-"h": 900
-},
-{
 "id": "butterfly-mandala-flower",
 "title": "Butterfly Mandala Flower",
 "cat": "mandalas",
-"date": "2021-07-25",
-"w": 1200,
-"h": 900
-},
-{
-"id": "love-doodles-drawing-page",
-"title": "Love Doodles Drawing Page",
-"cat": "drawings",
 "date": "2021-07-25",
 "w": 1200,
 "h": 900
@@ -2816,14 +2928,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "girls-painting-and-photography-drawing",
-"title": "Girls Painting And Photography Drawing",
-"cat": "drawings",
-"date": "2021-07-16",
-"w": 1200,
-"h": 900
-},
-{
 "id": "krishna-playing-flute",
 "title": "Krishna Playing Flute",
 "cat": "drawings",
@@ -2832,8 +2936,16 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "dove-and-peacock-sketch-page",
-"title": "Dove And Peacock Sketch Page",
+"id": "girls-painting-and-photography-drawing",
+"title": "Girls Painting And Photography Drawing",
+"cat": "drawings",
+"date": "2021-07-16",
+"w": 1200,
+"h": 900
+},
+{
+"id": "wedding-couple-sketch-page",
+"title": "Wedding Couple Sketch Page",
 "cat": "drawings",
 "date": "2021-07-15",
 "w": 1200,
@@ -2842,30 +2954,6 @@ window.ARTWORKS = [
 {
 "id": "swan-and-peacock-sketch-page",
 "title": "Swan And Peacock Sketch Page",
-"cat": "drawings",
-"date": "2021-07-15",
-"w": 1200,
-"h": 900
-},
-{
-"id": "girl-and-swan-sketch-page",
-"title": "Girl And Swan Sketch Page",
-"cat": "drawings",
-"date": "2021-07-15",
-"w": 1200,
-"h": 900
-},
-{
-"id": "hearts-and-faces-sketch-page",
-"title": "Hearts And Faces Sketch Page",
-"cat": "drawings",
-"date": "2021-07-15",
-"w": 1200,
-"h": 900
-},
-{
-"id": "wedding-couple-sketch-page",
-"title": "Wedding Couple Sketch Page",
 "cat": "drawings",
 "date": "2021-07-15",
 "w": 1200,
@@ -2888,16 +2976,32 @@ window.ARTWORKS = [
 "h": 900
 },
 {
-"id": "woman-in-saree-sketch-page",
-"title": "Woman In Saree Sketch Page",
+"id": "hearts-and-faces-sketch-page",
+"title": "Hearts And Faces Sketch Page",
 "cat": "drawings",
-"date": "2021-06-23",
+"date": "2021-07-15",
 "w": 1200,
 "h": 900
 },
 {
-"id": "assorted-figure-sketches-page",
-"title": "Assorted Figure Sketches Page",
+"id": "girl-and-swan-sketch-page",
+"title": "Girl And Swan Sketch Page",
+"cat": "drawings",
+"date": "2021-07-15",
+"w": 1200,
+"h": 900
+},
+{
+"id": "dove-and-peacock-sketch-page",
+"title": "Dove And Peacock Sketch Page",
+"cat": "drawings",
+"date": "2021-07-15",
+"w": 1200,
+"h": 900
+},
+{
+"id": "woman-in-saree-sketch-page",
+"title": "Woman In Saree Sketch Page",
 "cat": "drawings",
 "date": "2021-06-23",
 "w": 1200,
@@ -2910,6 +3014,14 @@ window.ARTWORKS = [
 "date": "2021-06-23",
 "w": 1200,
 "h": 880
+},
+{
+"id": "assorted-figure-sketches-page",
+"title": "Assorted Figure Sketches Page",
+"cat": "drawings",
+"date": "2021-06-23",
+"w": 1200,
+"h": 900
 },
 {
 "id": "mother-child-mandala-sketch-page",
@@ -2952,20 +3064,20 @@ window.ARTWORKS = [
 "h": 703
 },
 {
-"id": "womens-day-face-rangoli",
-"title": "Womens Day Face Rangoli",
-"cat": "rangoli",
-"date": "2021-03-07",
-"w": 1200,
-"h": 1137
-},
-{
 "id": "womens-day-heart-rangoli",
 "title": "Womens Day Heart Rangoli",
 "cat": "rangoli",
 "date": "2021-03-07",
 "w": 1200,
 "h": 1013
+},
+{
+"id": "womens-day-face-rangoli",
+"title": "Womens Day Face Rangoli",
+"cat": "rangoli",
+"date": "2021-03-07",
+"w": 1200,
+"h": 1137
 },
 {
 "id": "womens-day-butterfly-rangoli",
@@ -2976,163 +3088,27 @@ window.ARTWORKS = [
 "h": 701
 },
 {
-"id": "independence-day-india-rangoli",
-"title": "Independence Day India Rangoli",
-"cat": "rangoli",
+"id": "woman-with-diya-in-floral-arch",
+"title": "Woman With Diya In Floral Arch",
+"cat": "drawings",
+"date": "",
+"w": 753,
+"h": 1024
+},
+{
+"id": "woman-on-tree-swing-with-parrot",
+"title": "Woman On Tree Swing With Parrot",
+"cat": "paintings",
 "date": "",
 "w": 1200,
-"h": 1200
+"h": 913
 },
 {
-"id": "school-teachers-group-painting",
-"title": "School Teachers Group Painting",
+"id": "woman-dancing-with-lotus",
+"title": "Woman Dancing With Lotus",
 "cat": "paintings",
 "date": "",
-"w": 900,
-"h": 1200
-},
-{
-"id": "abstract-cubist-faces",
-"title": "Abstract Cubist Faces",
-"cat": "paintings",
-"date": "",
-"w": 900,
-"h": 1200
-},
-{
-"id": "warli-art-panels",
-"title": "Warli Art Panels",
-"cat": "paintings",
-"date": "",
-"w": 900,
-"h": 1200
-},
-{
-"id": "ganesha-with-devotees-crowd",
-"title": "Ganesha With Devotees Crowd",
-"cat": "paintings",
-"date": "",
-"w": 900,
-"h": 1200
-},
-{
-"id": "patterned-sphere-pen-art",
-"title": "Patterned Sphere Pen Art",
-"cat": "drawings",
-"date": "",
-"w": 900,
-"h": 1200
-},
-{
-"id": "farewell-memories-portrait-painting",
-"title": "Farewell Memories Portrait Painting",
-"cat": "paintings",
-"date": "",
-"w": 900,
-"h": 1200
-},
-{
-"id": "waterfall-and-cherry-blossoms",
-"title": "Waterfall And Cherry Blossoms",
-"cat": "paintings",
-"date": "",
-"w": 930,
-"h": 1200
-},
-{
-"id": "pink-flower-rangoli",
-"title": "Pink Flower Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 1200,
-"h": 677
-},
-{
-"id": "pink-star-rangoli",
-"title": "Pink Star Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 676,
-"h": 1200
-},
-{
-"id": "welcome-couple-door-plaque",
-"title": "Welcome Couple Door Plaque",
-"cat": "crafts",
-"date": "",
-"w": 1200,
-"h": 677
-},
-{
-"id": "tree-silhouette-rainbow-rays",
-"title": "Tree Silhouette Rainbow Rays",
-"cat": "paintings",
-"date": "",
-"w": 950,
-"h": 1200
-},
-{
-"id": "unicorn-silhouette-against-moon",
-"title": "Unicorn Silhouette Against Moon",
-"cat": "paintings",
-"date": "",
-"w": 893,
-"h": 1200
-},
-{
-"id": "waterfall-textured-painting",
-"title": "Waterfall Textured Painting",
-"cat": "paintings",
-"date": "",
-"w": 848,
-"h": 1200
-},
-{
-"id": "kathakali-face-painting",
-"title": "Kathakali Face Painting",
-"cat": "paintings",
-"date": "",
-"w": 868,
-"h": 1200
-},
-{
-"id": "village-couple-by-the-river",
-"title": "Village Couple By The River",
-"cat": "paintings",
-"date": "",
-"w": 947,
-"h": 1200
-},
-{
-"id": "abstract-palette-knife-colors",
-"title": "Abstract Palette Knife Colors",
-"cat": "paintings",
-"date": "",
-"w": 819,
-"h": 1200
-},
-{
-"id": "floral-tree-line-art",
-"title": "Floral Tree Line Art",
-"cat": "drawings",
-"date": "",
-"w": 951,
-"h": 1200
-},
-{
-"id": "village-home-doorway-line-drawing",
-"title": "Village Home Doorway Line Drawing",
-"cat": "drawings",
-"date": "",
-"w": 676,
-"h": 1200
-},
-{
-"id": "peacock-zentangle-doodle",
-"title": "Peacock Zentangle Doodle",
-"cat": "drawings",
-"date": "",
-"w": 676,
+"w": 856,
 "h": 1200
 },
 {
@@ -3144,28 +3120,252 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "purple-lotus-vines-on-green",
-"title": "Purple Lotus Vines On Green",
+"id": "welcome-couple-door-plaque",
+"title": "Welcome Couple Door Plaque",
+"cat": "crafts",
+"date": "",
+"w": 1200,
+"h": 677
+},
+{
+"id": "wedding-garland-ceremony-painting",
+"title": "Wedding Garland Ceremony Painting",
 "cat": "paintings",
 "date": "",
 "w": 970,
 "h": 1200
 },
 {
-"id": "man-in-blazer-portrait",
-"title": "Man In Blazer Portrait",
+"id": "waterfall-textured-painting",
+"title": "Waterfall Textured Painting",
 "cat": "paintings",
 "date": "",
-"w": 1026,
+"w": 848,
 "h": 1200
 },
 {
-"id": "friends-therapy-quote-painting",
-"title": "Friends Therapy Quote Painting",
+"id": "waterfall-and-cherry-blossoms",
+"title": "Waterfall And Cherry Blossoms",
 "cat": "paintings",
 "date": "",
+"w": 930,
+"h": 1200
+},
+{
+"id": "warli-art-panels",
+"title": "Warli Art Panels",
+"cat": "paintings",
+"date": "",
+"w": 900,
+"h": 1200
+},
+{
+"id": "village-life-sunset-scene",
+"title": "Village Life Sunset Scene",
+"cat": "drawings",
+"date": "",
 "w": 1200,
-"h": 877
+"h": 887
+},
+{
+"id": "village-home-doorway-line-drawing",
+"title": "Village Home Doorway Line Drawing",
+"cat": "drawings",
+"date": "",
+"w": 676,
+"h": 1200
+},
+{
+"id": "village-couple-by-the-river",
+"title": "Village Couple By The River",
+"cat": "paintings",
+"date": "",
+"w": 947,
+"h": 1200
+},
+{
+"id": "unicorn-silhouette-against-moon",
+"title": "Unicorn Silhouette Against Moon",
+"cat": "paintings",
+"date": "",
+"w": 893,
+"h": 1200
+},
+{
+"id": "two-girls-on-flower-swings",
+"title": "Two Girls On Flower Swings",
+"cat": "paintings",
+"date": "",
+"w": 888,
+"h": 1180
+},
+{
+"id": "tree-silhouette-rainbow-rays",
+"title": "Tree Silhouette Rainbow Rays",
+"cat": "paintings",
+"date": "",
+"w": 950,
+"h": 1200
+},
+{
+"id": "tree-of-life-lotus-oval-canvas",
+"title": "Tree Of Life Lotus Oval Canvas",
+"cat": "paintings",
+"date": "",
+"w": 966,
+"h": 1200
+},
+{
+"id": "three-elephants-round-canvas-painting",
+"title": "Three Elephants Round Canvas Painting",
+"cat": "paintings",
+"date": "",
+"w": 1161,
+"h": 1200
+},
+{
+"id": "three-childhoods-family-painting",
+"title": "Three Childhoods Family Painting",
+"cat": "paintings",
+"date": "",
+"w": 675,
+"h": 1200
+},
+{
+"id": "teddy-with-gifts-under-stars",
+"title": "Teddy With Gifts Under Stars",
+"cat": "drawings",
+"date": "",
+"w": 794,
+"h": 1024
+},
+{
+"id": "swastik-and-shubh-labh-rangoli",
+"title": "Swastik And Shubh Labh Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 1080,
+"h": 378
+},
+{
+"id": "swans-and-mountains-at-sunset",
+"title": "Swans And Mountains At Sunset",
+"cat": "paintings",
+"date": "",
+"w": 880,
+"h": 1188
+},
+{
+"id": "stylish-girl-in-room",
+"title": "Stylish Girl In Room",
+"cat": "paintings",
+"date": "",
+"w": 968,
+"h": 1080
+},
+{
+"id": "soldier-tribute-indian-flag",
+"title": "Soldier Tribute Indian Flag",
+"cat": "paintings",
+"date": "",
+"w": 920,
+"h": 1200
+},
+{
+"id": "shree-ganesha-puja-family",
+"title": "Shree Ganesha Puja Family",
+"cat": "drawings",
+"date": "",
+"w": 1024,
+"h": 767
+},
+{
+"id": "shiva-om-and-love-sketchbook-page",
+"title": "Shiva Om And Love Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 874
+},
+{
+"id": "shankh-and-lotus-rangoli",
+"title": "Shankh And Lotus Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 960,
+"h": 1200
+},
+{
+"id": "school-teachers-group-painting",
+"title": "School Teachers Group Painting",
+"cat": "paintings",
+"date": "",
+"w": 900,
+"h": 1200
+},
+{
+"id": "saraswati-with-veena-and-swan",
+"title": "Saraswati With Veena And Swan",
+"cat": "drawings",
+"date": "",
+"w": 1080,
+"h": 1098
+},
+{
+"id": "sai-baba-painting",
+"title": "Sai Baba Painting",
+"cat": "paintings",
+"date": "",
+"w": 982,
+"h": 1200
+},
+{
+"id": "river-village-landscape",
+"title": "River Village Landscape",
+"cat": "drawings",
+"date": "",
+"w": 1024,
+"h": 699
+},
+{
+"id": "red-tulips-bush",
+"title": "Red Tulips Bush",
+"cat": "paintings",
+"date": "",
+"w": 767,
+"h": 1024
+},
+{
+"id": "red-lotus-vines-on-yellow",
+"title": "Red Lotus Vines On Yellow",
+"cat": "paintings",
+"date": "",
+"w": 881,
+"h": 1200
+},
+{
+"id": "red-flowers-in-vase",
+"title": "Red Flowers In Vase",
+"cat": "paintings",
+"date": "",
+"w": 884,
+"h": 1180
+},
+{
+"id": "red-and-yellow-flowers",
+"title": "Red And Yellow Flowers",
+"cat": "paintings",
+"date": "",
+"w": 765,
+"h": 1024
+},
+{
+"id": "ram-and-sita-pencil-sketch",
+"title": "Ram And Sita Pencil Sketch",
+"cat": "drawings",
+"date": "",
+"w": 900,
+"h": 1200
 },
 {
 "id": "rajasthani-woman-with-veena",
@@ -3176,11 +3376,115 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "wedding-garland-ceremony-painting",
-"title": "Wedding Garland Ceremony Painting",
+"id": "radha-seeing-krishna-reflection",
+"title": "Radha Seeing Krishna Reflection",
+"cat": "paintings",
+"date": "",
+"w": 947,
+"h": 1136
+},
+{
+"id": "radha-krishna-under-tree-night",
+"title": "Radha Krishna Under Tree Night",
+"cat": "paintings",
+"date": "",
+"w": 894,
+"h": 1200
+},
+{
+"id": "radha-krishna-and-ram-sita-folk-art",
+"title": "Radha Krishna And Ram Sita Folk Art",
+"cat": "paintings",
+"date": "",
+"w": 559,
+"h": 1200
+},
+{
+"id": "purple-lotus-vines-on-green",
+"title": "Purple Lotus Vines On Green",
 "cat": "paintings",
 "date": "",
 "w": 970,
+"h": 1200
+},
+{
+"id": "purple-forest-waterfall",
+"title": "Purple Forest Waterfall",
+"cat": "paintings",
+"date": "",
+"w": 1080,
+"h": 773
+},
+{
+"id": "proposal-at-sunset",
+"title": "Proposal At Sunset",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 865
+},
+{
+"id": "pink-star-rangoli",
+"title": "Pink Star Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 676,
+"h": 1200
+},
+{
+"id": "pink-hibiscus-rangoli",
+"title": "Pink Hibiscus Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 1200,
+"h": 1020
+},
+{
+"id": "pink-flowers-and-blue-butterflies",
+"title": "Pink Flowers And Blue Butterflies",
+"cat": "drawings",
+"date": "",
+"w": 1024,
+"h": 753
+},
+{
+"id": "pink-flower-rangoli",
+"title": "Pink Flower Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 1200,
+"h": 677
+},
+{
+"id": "pink-fan-flowers-pattern",
+"title": "Pink Fan Flowers Pattern",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 782
+},
+{
+"id": "peacock-zentangle-doodle",
+"title": "Peacock Zentangle Doodle",
+"cat": "drawings",
+"date": "",
+"w": 676,
+"h": 1200
+},
+{
+"id": "patterned-sphere-pen-art",
+"title": "Patterned Sphere Pen Art",
+"cat": "drawings",
+"date": "",
+"w": 900,
+"h": 1200
+},
+{
+"id": "panchamukhi-hanuman-painting-2",
+"title": "Panchamukhi Hanuman Painting",
+"cat": "paintings",
+"date": "",
+"w": 956,
 "h": 1200
 },
 {
@@ -3200,59 +3504,11 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "panchamukhi-hanuman-painting-2",
-"title": "Panchamukhi Hanuman Painting",
+"id": "paisley-peacock-folk-design",
+"title": "Paisley Peacock Folk Design",
 "cat": "paintings",
 "date": "",
-"w": 956,
-"h": 1200
-},
-{
-"id": "abstract-leaves-and-suns-four-panels",
-"title": "Abstract Leaves And Suns Four Panels",
-"cat": "paintings",
-"date": "",
-"w": 1181,
-"h": 1200
-},
-{
-"id": "graduation-family-portrait",
-"title": "Graduation Family Portrait",
-"cat": "paintings",
-"date": "",
-"w": 998,
-"h": 1200
-},
-{
-"id": "birds-and-blossoms-heart-canvas",
-"title": "Birds And Blossoms Heart Canvas",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 1117
-},
-{
-"id": "three-elephants-round-canvas-painting",
-"title": "Three Elephants Round Canvas Painting",
-"cat": "paintings",
-"date": "",
-"w": 1161,
-"h": 1200
-},
-{
-"id": "radha-krishna-and-ram-sita-folk-art",
-"title": "Radha Krishna And Ram Sita Folk Art",
-"cat": "paintings",
-"date": "",
-"w": 559,
-"h": 1200
-},
-{
-"id": "family-gathering-line-drawing",
-"title": "Family Gathering Line Drawing",
-"cat": "drawings",
-"date": "",
-"w": 824,
+"w": 965,
 "h": 1200
 },
 {
@@ -3264,228 +3520,12 @@ window.ARTWORKS = [
 "h": 1151
 },
 {
-"id": "friendship-quote-faces-drawing",
-"title": "Friendship Quote Faces Drawing",
+"id": "ocean-waves-in-three-circles",
+"title": "Ocean Waves In Three Circles",
 "cat": "drawings",
 "date": "",
-"w": 1200,
-"h": 1200
-},
-{
-"id": "village-life-sunset-scene",
-"title": "Village Life Sunset Scene",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 887
-},
-{
-"id": "madhubani-fish-and-lotus",
-"title": "Madhubani Fish And Lotus",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 911
-},
-{
-"id": "ardhanarishvara-painting",
-"title": "Ardhanarishvara Painting",
-"cat": "paintings",
-"date": "",
-"w": 996,
-"h": 1200
-},
-{
-"id": "happy-diwali-peacock-and-lanterns",
-"title": "Happy Diwali Peacock And Lanterns",
-"cat": "drawings",
-"date": "",
-"w": 865,
-"h": 1200
-},
-{
-"id": "mountains-under-moon-pen-art",
-"title": "Mountains Under Moon Pen Art",
-"cat": "drawings",
-"date": "",
-"w": 903,
-"h": 1200
-},
-{
-"id": "paisley-peacock-folk-design",
-"title": "Paisley Peacock Folk Design",
-"cat": "paintings",
-"date": "",
-"w": 965,
-"h": 1200
-},
-{
-"id": "family-portrait-three-faces",
-"title": "Family Portrait Three Faces",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 1154
-},
-{
-"id": "dancing-woman-against-brick-wall",
-"title": "Dancing Woman Against Brick Wall",
-"cat": "paintings",
-"date": "",
-"w": 915,
-"h": 1200
-},
-{
-"id": "tirupati-balaji-and-deities-embossed",
-"title": "Tirupati Balaji And Deities Embossed",
-"cat": "paintings",
-"date": "",
-"w": 1040,
-"h": 1200
-},
-{
-"id": "fairy-and-landscape-sketchbook-page",
-"title": "Fairy And Landscape Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 852
-},
-{
-"id": "bride-and-butterfly-sketchbook-page",
-"title": "Bride And Butterfly Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 873
-},
-{
-"id": "half-face-lotus-rangoli",
-"title": "Half Face Lotus Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 1200,
-"h": 990
-},
-{
-"id": "line-art-couples-sketchbook-page",
-"title": "Line Art Couples Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 844
-},
-{
-"id": "faces-lips-and-eyes-sketchbook-page",
-"title": "Faces Lips And Eyes Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 885
-},
-{
-"id": "shiva-om-and-love-sketchbook-page",
-"title": "Shiva Om And Love Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 874
-},
-{
-"id": "navratri-golu-celebration-2",
-"title": "Navratri Golu Celebration",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 1168
-},
-{
-"id": "continuous-line-faces-sketchbook-page",
-"title": "Continuous Line Faces Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 854
-},
-{
-"id": "moon-girl-and-ballerina-sketchbook-page",
-"title": "Moon Girl And Ballerina Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 869
-},
-{
-"id": "music-notes-doodle-sketchbook-page",
-"title": "Music Notes Doodle Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 873
-},
-{
-"id": "heartbreak-doodles-sketchbook-page",
-"title": "Heartbreak Doodles Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 885
-},
-{
-"id": "line-art-figures-sketchbook-page",
-"title": "Line Art Figures Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 833
-},
-{
-"id": "couple-and-light-bulb-sketchbook-page",
-"title": "Couple And Light Bulb Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 871
-},
-{
-"id": "nandi-and-shiva-trishul-canvases",
-"title": "Nandi And Shiva Trishul Canvases",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 843
-},
-{
-"id": "figure-on-cliff-rainbow-crayon",
-"title": "Figure On Cliff Rainbow Crayon",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 900
-},
-{
-"id": "girl-and-lovebirds-sketchbook-page",
-"title": "Girl And Lovebirds Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 843
-},
-{
-"id": "lips-hearts-and-swans-sketchbook-page",
-"title": "Lips Hearts And Swans Sketchbook Page",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 830
-},
-{
-"id": "green-hills-landscape",
-"title": "Green Hills Landscape",
-"cat": "paintings",
-"date": "",
-"w": 964,
-"h": 1200
+"w": 1024,
+"h": 767
 },
 {
 "id": "night-sky-with-hearts-abstract",
@@ -3496,44 +3536,116 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "red-lotus-vines-on-yellow",
-"title": "Red Lotus Vines On Yellow",
+"id": "navratri-golu-celebration-2",
+"title": "Navratri Golu Celebration",
 "cat": "paintings",
-"date": "",
-"w": 881,
-"h": 1200
-},
-{
-"id": "shree-rangoli-with-flowers",
-"title": "Shree Rangoli With Flowers",
-"cat": "rangoli",
 "date": "",
 "w": 1200,
-"h": 947
+"h": 1168
 },
 {
-"id": "abstract-radha-krishna",
-"title": "Abstract Radha Krishna",
+"id": "nandi-and-shiva-trishul-canvases",
+"title": "Nandi And Shiva Trishul Canvases",
 "cat": "paintings",
 "date": "",
-"w": 982,
-"h": 1200
+"w": 1200,
+"h": 843
 },
 {
-"id": "couple-heartbreak-drawing",
-"title": "Couple Heartbreak Drawing",
+"id": "music-notes-doodle-sketchbook-page",
+"title": "Music Notes Doodle Sketchbook Page",
 "cat": "drawings",
 "date": "",
-"w": 1000,
+"w": 1200,
+"h": 873
+},
+{
+"id": "mountain-lake-landscape-in-circle",
+"title": "Mountain Lake Landscape In Circle",
+"cat": "paintings",
+"date": "",
+"w": 1142,
 "h": 1200
 },
 {
-"id": "pink-hibiscus-rangoli",
-"title": "Pink Hibiscus Rangoli",
-"cat": "rangoli",
+"id": "mother-and-daughter-tree-dance",
+"title": "Mother And Daughter Tree Dance",
+"cat": "paintings",
+"date": "",
+"w": 704,
+"h": 974
+},
+{
+"id": "moon-girl-and-ballerina-sketchbook-page",
+"title": "Moon Girl And Ballerina Sketchbook Page",
+"cat": "drawings",
 "date": "",
 "w": 1200,
-"h": 1020
+"h": 869
+},
+{
+"id": "mandala-around-blue-eye",
+"title": "Mandala Around Blue Eye",
+"cat": "mandalas",
+"date": "",
+"w": 675,
+"h": 1200
+},
+{
+"id": "man-in-blazer-portrait",
+"title": "Man In Blazer Portrait",
+"cat": "paintings",
+"date": "",
+"w": 1026,
+"h": 1200
+},
+{
+"id": "madhubani-fish-and-lotus",
+"title": "Madhubani Fish And Lotus",
+"cat": "paintings",
+"date": "",
+"w": 1200,
+"h": 911
+},
+{
+"id": "lovebirds-on-branch-triptych",
+"title": "Lovebirds On Branch Triptych",
+"cat": "paintings",
+"date": "",
+"w": 1024,
+"h": 786
+},
+{
+"id": "lips-hearts-and-swans-sketchbook-page",
+"title": "Lips Hearts And Swans Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 830
+},
+{
+"id": "line-art-figures-sketchbook-page",
+"title": "Line Art Figures Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 833
+},
+{
+"id": "line-art-couples-sketchbook-page",
+"title": "Line Art Couples Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 844
+},
+{
+"id": "krishna-and-sudama-friendship-quote",
+"title": "Krishna And Sudama Friendship Quote",
+"cat": "paintings",
+"date": "",
+"w": 950,
+"h": 1072
 },
 {
 "id": "knot-pattern-rangoli",
@@ -3541,6 +3653,22 @@ window.ARTWORKS = [
 "cat": "rangoli",
 "date": "",
 "w": 944,
+"h": 1200
+},
+{
+"id": "keep-calm-and-choose-peace",
+"title": "Keep Calm And Choose Peace",
+"cat": "drawings",
+"date": "",
+"w": 668,
+"h": 1024
+},
+{
+"id": "kathakali-face-painting",
+"title": "Kathakali Face Painting",
+"cat": "paintings",
+"date": "",
+"w": 868,
 "h": 1200
 },
 {
@@ -3552,51 +3680,51 @@ window.ARTWORKS = [
 "h": 969
 },
 {
-"id": "pink-fan-flowers-pattern",
-"title": "Pink Fan Flowers Pattern",
+"id": "kali-face-drawing",
+"title": "Kali Face Drawing",
+"cat": "drawings",
+"date": "",
+"w": 829,
+"h": 1024
+},
+{
+"id": "jai-shri-ram-hanuman-silhouette",
+"title": "Jai Shri Ram Hanuman Silhouette",
+"cat": "paintings",
+"date": "",
+"w": 375,
+"h": 405
+},
+{
+"id": "indian-independence-tribute",
+"title": "Indian Independence Tribute",
+"cat": "paintings",
+"date": "",
+"w": 1080,
+"h": 1076
+},
+{
+"id": "independence-day-india-rangoli",
+"title": "Independence Day India Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 1200,
+"h": 1200
+},
+{
+"id": "heartbreak-doodles-sketchbook-page",
+"title": "Heartbreak Doodles Sketchbook Page",
 "cat": "drawings",
 "date": "",
 "w": 1200,
-"h": 782
+"h": 885
 },
 {
-"id": "christmas-night-santa-sleigh",
-"title": "Christmas Night Santa Sleigh",
-"cat": "paintings",
+"id": "happy-onam-flower-rangoli",
+"title": "Happy Onam Flower Rangoli",
+"cat": "rangoli",
 "date": "",
-"w": 1200,
-"h": 960
-},
-{
-"id": "three-childhoods-family-painting",
-"title": "Three Childhoods Family Painting",
-"cat": "paintings",
-"date": "",
-"w": 675,
-"h": 1200
-},
-{
-"id": "avengers-superheroes-painting",
-"title": "Avengers Superheroes Painting",
-"cat": "paintings",
-"date": "",
-"w": 1015,
-"h": 1200
-},
-{
-"id": "ganesha-temple-idol-painting",
-"title": "Ganesha Temple Idol Painting",
-"cat": "paintings",
-"date": "",
-"w": 1005,
-"h": 1200
-},
-{
-"id": "mandala-around-blue-eye",
-"title": "Mandala Around Blue Eye",
-"cat": "mandalas",
-"date": "",
-"w": 675,
+"w": 817,
 "h": 1200
 },
 {
@@ -3608,11 +3736,139 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "durga-face-rangoli",
-"title": "Durga Face Rangoli",
+"id": "happy-diwali-peacock-and-lanterns",
+"title": "Happy Diwali Peacock And Lanterns",
+"cat": "drawings",
+"date": "",
+"w": 865,
+"h": 1200
+},
+{
+"id": "half-face-lotus-rangoli",
+"title": "Half Face Lotus Rangoli",
 "cat": "rangoli",
 "date": "",
-"w": 675,
+"w": 1200,
+"h": 990
+},
+{
+"id": "green-hills-landscape",
+"title": "Green Hills Landscape",
+"cat": "paintings",
+"date": "",
+"w": 964,
+"h": 1200
+},
+{
+"id": "graduation-family-portrait",
+"title": "Graduation Family Portrait",
+"cat": "paintings",
+"date": "",
+"w": 998,
+"h": 1200
+},
+{
+"id": "govinda-tirupati-balaji-symbols",
+"title": "Govinda Tirupati Balaji Symbols",
+"cat": "paintings",
+"date": "",
+"w": 1080,
+"h": 818
+},
+{
+"id": "girls-and-flowers-doodle-page",
+"title": "Girls And Flowers Doodle Page",
+"cat": "drawings",
+"date": "",
+"w": 1024,
+"h": 736
+},
+{
+"id": "girl-and-lovebirds-sketchbook-page",
+"title": "Girl And Lovebirds Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 843
+},
+{
+"id": "geometric-triangles-pattern",
+"title": "Geometric Triangles Pattern",
+"cat": "drawings",
+"date": "",
+"w": 944,
+"h": 1200
+},
+{
+"id": "geometric-spiral-line-art",
+"title": "Geometric Spiral Line Art",
+"cat": "drawings",
+"date": "",
+"w": 967,
+"h": 1200
+},
+{
+"id": "ganpati-bappa-line-art",
+"title": "Ganpati Bappa Line Art",
+"cat": "drawings",
+"date": "",
+"w": 879,
+"h": 1200
+},
+{
+"id": "ganesha-with-devotees-crowd",
+"title": "Ganesha With Devotees Crowd",
+"cat": "paintings",
+"date": "",
+"w": 900,
+"h": 1200
+},
+{
+"id": "ganesha-temple-idol-painting",
+"title": "Ganesha Temple Idol Painting",
+"cat": "paintings",
+"date": "",
+"w": 1005,
+"h": 1200
+},
+{
+"id": "ganesha-rangoli-on-black",
+"title": "Ganesha Rangoli On Black",
+"cat": "rangoli",
+"date": "",
+"w": 1080,
+"h": 1107
+},
+{
+"id": "friendship-quote-faces-drawing",
+"title": "Friendship Quote Faces Drawing",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 1200
+},
+{
+"id": "friends-therapy-quote-painting",
+"title": "Friends Therapy Quote Painting",
+"cat": "paintings",
+"date": "",
+"w": 1200,
+"h": 877
+},
+{
+"id": "friends-forever-hug-in-flower",
+"title": "Friends Forever Hug In Flower",
+"cat": "drawings",
+"date": "",
+"w": 888,
+"h": 1180
+},
+{
+"id": "floral-tree-line-art",
+"title": "Floral Tree Line Art",
+"cat": "drawings",
+"date": "",
+"w": 951,
 "h": 1200
 },
 {
@@ -3632,99 +3888,203 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "geometric-spiral-line-art",
-"title": "Geometric Spiral Line Art",
+"id": "fleur-de-lis-pattern",
+"title": "Fleur De Lis Pattern",
 "cat": "drawings",
 "date": "",
-"w": 967,
-"h": 1200
+"w": 767,
+"h": 1024
 },
 {
-"id": "ram-and-sita-pencil-sketch",
-"title": "Ram And Sita Pencil Sketch",
+"id": "fish-border-mandala",
+"title": "Fish Border Mandala",
+"cat": "mandalas",
+"date": "",
+"w": 1080,
+"h": 1113
+},
+{
+"id": "figure-on-cliff-rainbow-crayon",
+"title": "Figure On Cliff Rainbow Crayon",
 "cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 900
+},
+{
+"id": "farewell-memories-portrait-painting",
+"title": "Farewell Memories Portrait Painting",
+"cat": "paintings",
 "date": "",
 "w": 900,
 "h": 1200
 },
 {
-"id": "happy-onam-flower-rangoli",
-"title": "Happy Onam Flower Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 817,
-"h": 1200
-},
-{
-"id": "tree-of-life-lotus-oval-canvas",
-"title": "Tree Of Life Lotus Oval Canvas",
-"cat": "paintings",
-"date": "",
-"w": 966,
-"h": 1200
-},
-{
-"id": "abstract-radha-krishna-with-vines",
-"title": "Abstract Radha Krishna With Vines",
-"cat": "paintings",
-"date": "",
-"w": 966,
-"h": 1200
-},
-{
-"id": "sai-baba-painting",
-"title": "Sai Baba Painting",
-"cat": "paintings",
-"date": "",
-"w": 982,
-"h": 1200
-},
-{
-"id": "abstract-circles-red-and-blue",
-"title": "Abstract Circles Red And Blue",
-"cat": "paintings",
-"date": "",
-"w": 945,
-"h": 1200
-},
-{
-"id": "shankh-and-lotus-rangoli",
-"title": "Shankh And Lotus Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 960,
-"h": 1200
-},
-{
-"id": "woman-dancing-with-lotus",
-"title": "Woman Dancing With Lotus",
-"cat": "paintings",
-"date": "",
-"w": 856,
-"h": 1200
-},
-{
-"id": "birds-on-branch-watercolor",
-"title": "Birds On Branch Watercolor",
+"id": "family-portrait-three-faces",
+"title": "Family Portrait Three Faces",
 "cat": "paintings",
 "date": "",
 "w": 1200,
-"h": 928
+"h": 1154
 },
 {
-"id": "ganpati-bappa-line-art",
-"title": "Ganpati Bappa Line Art",
+"id": "family-gathering-line-drawing",
+"title": "Family Gathering Line Drawing",
 "cat": "drawings",
 "date": "",
-"w": 879,
+"w": 824,
 "h": 1200
 },
 {
-"id": "radha-krishna-under-tree-night",
-"title": "Radha Krishna Under Tree Night",
+"id": "fairy-and-landscape-sketchbook-page",
+"title": "Fairy And Landscape Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 852
+},
+{
+"id": "faces-lips-and-hearts-doodle-page",
+"title": "Faces Lips And Hearts Doodle Page",
+"cat": "drawings",
+"date": "",
+"w": 1080,
+"h": 801
+},
+{
+"id": "faces-lips-and-eyes-sketchbook-page",
+"title": "Faces Lips And Eyes Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 885
+},
+{
+"id": "durga-face-rangoli",
+"title": "Durga Face Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 675,
+"h": 1200
+},
+{
+"id": "dove-with-flowers",
+"title": "Dove With Flowers",
+"cat": "drawings",
+"date": "",
+"w": 1024,
+"h": 767
+},
+{
+"id": "dolphins-leaping-at-sunset",
+"title": "Dolphins Leaping At Sunset",
+"cat": "drawings",
+"date": "",
+"w": 1024,
+"h": 730
+},
+{
+"id": "diwali-diya-rangoli",
+"title": "Diwali Diya Rangoli",
+"cat": "rangoli",
+"date": "",
+"w": 1080,
+"h": 1080
+},
+{
+"id": "dancing-woman-against-brick-wall",
+"title": "Dancing Woman Against Brick Wall",
 "cat": "paintings",
 "date": "",
-"w": 894,
+"w": 915,
+"h": 1200
+},
+{
+"id": "dancing-ganesha",
+"title": "Dancing Ganesha",
+"cat": "drawings",
+"date": "",
+"w": 816,
+"h": 1024
+},
+{
+"id": "couple-kissing-under-umbrella",
+"title": "Couple Kissing Under Umbrella",
+"cat": "drawings",
+"date": "",
+"w": 1168,
+"h": 892
+},
+{
+"id": "couple-hugging-sketch",
+"title": "Couple Hugging Sketch",
+"cat": "drawings",
+"date": "",
+"w": 528,
+"h": 732
+},
+{
+"id": "couple-heartbreak-drawing",
+"title": "Couple Heartbreak Drawing",
+"cat": "drawings",
+"date": "",
+"w": 1000,
+"h": 1200
+},
+{
+"id": "couple-embracing-with-butterfly",
+"title": "Couple Embracing With Butterfly",
+"cat": "paintings",
+"date": "",
+"w": 916,
+"h": 1140
+},
+{
+"id": "couple-and-light-bulb-sketchbook-page",
+"title": "Couple And Light Bulb Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 871
+},
+{
+"id": "continuous-line-faces-sketchbook-page",
+"title": "Continuous Line Faces Sketchbook Page",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 854
+},
+{
+"id": "christmas-night-santa-sleigh",
+"title": "Christmas Night Santa Sleigh",
+"cat": "paintings",
+"date": "",
+"w": 1200,
+"h": 960
+},
+{
+"id": "children-playing-in-rain",
+"title": "Children Playing In Rain",
+"cat": "drawings",
+"date": "",
+"w": 1200,
+"h": 865
+},
+{
+"id": "butterfly-and-vines-in-circle",
+"title": "Butterfly And Vines In Circle",
+"cat": "drawings",
+"date": "",
+"w": 1162,
+"h": 884
+},
+{
+"id": "butterflies-and-flowers-collage",
+"title": "Butterflies And Flowers Collage",
+"cat": "paintings",
+"date": "",
+"w": 1062,
 "h": 1200
 },
 {
@@ -3736,124 +4096,12 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "soldier-tribute-indian-flag",
-"title": "Soldier Tribute Indian Flag",
-"cat": "paintings",
-"date": "",
-"w": 920,
-"h": 1200
-},
-{
-"id": "mountain-lake-landscape-in-circle",
-"title": "Mountain Lake Landscape In Circle",
-"cat": "paintings",
-"date": "",
-"w": 1142,
-"h": 1200
-},
-{
-"id": "woman-on-tree-swing-with-parrot",
-"title": "Woman On Tree Swing With Parrot",
-"cat": "paintings",
+"id": "bride-and-butterfly-sketchbook-page",
+"title": "Bride And Butterfly Sketchbook Page",
+"cat": "drawings",
 "date": "",
 "w": 1200,
-"h": 913
-},
-{
-"id": "butterflies-and-flowers-collage",
-"title": "Butterflies And Flowers Collage",
-"cat": "paintings",
-"date": "",
-"w": 1062,
-"h": 1200
-},
-{
-"id": "fish-border-mandala",
-"title": "Fish Border Mandala",
-"cat": "mandalas",
-"date": "",
-"w": 1080,
-"h": 1113
-},
-{
-"id": "ganesha-rangoli-on-black",
-"title": "Ganesha Rangoli On Black",
-"cat": "rangoli",
-"date": "",
-"w": 1080,
-"h": 1107
-},
-{
-"id": "saraswati-with-veena-and-swan",
-"title": "Saraswati With Veena And Swan",
-"cat": "drawings",
-"date": "",
-"w": 1080,
-"h": 1098
-},
-{
-"id": "diwali-diya-rangoli",
-"title": "Diwali Diya Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 1080,
-"h": 1080
-},
-{
-"id": "indian-independence-tribute",
-"title": "Indian Independence Tribute",
-"cat": "paintings",
-"date": "",
-"w": 1080,
-"h": 1076
-},
-{
-"id": "geometric-triangles-pattern",
-"title": "Geometric Triangles Pattern",
-"cat": "drawings",
-"date": "",
-"w": 944,
-"h": 1200
-},
-{
-"id": "bird-and-flowers-silhouette",
-"title": "Bird And Flowers Silhouette",
-"cat": "drawings",
-"date": "",
-"w": 1080,
-"h": 1030
-},
-{
-"id": "radha-seeing-krishna-reflection",
-"title": "Radha Seeing Krishna Reflection",
-"cat": "paintings",
-"date": "",
-"w": 947,
-"h": 1136
-},
-{
-"id": "friends-forever-hug-in-flower",
-"title": "Friends Forever Hug In Flower",
-"cat": "drawings",
-"date": "",
-"w": 888,
-"h": 1180
-},
-{
-"id": "two-girls-on-flower-swings",
-"title": "Two Girls On Flower Swings",
-"cat": "paintings",
-"date": "",
-"w": 888,
-"h": 1180
-},
-{
-"id": "bamboo-and-flowers-in-circle",
-"title": "Bamboo And Flowers In Circle",
-"cat": "paintings",
-"date": "",
-"w": 1096,
-"h": 956
+"h": 873
 },
 {
 "id": "boat-birds-and-dolphins-landscape",
@@ -3864,174 +4112,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "stylish-girl-in-room",
-"title": "Stylish Girl In Room",
-"cat": "paintings",
-"date": "",
-"w": 968,
-"h": 1080
-},
-{
-"id": "swans-and-mountains-at-sunset",
-"title": "Swans And Mountains At Sunset",
-"cat": "paintings",
-"date": "",
-"w": 880,
-"h": 1188
-},
-{
-"id": "children-playing-in-rain",
-"title": "Children Playing In Rain",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 865
-},
-{
-"id": "proposal-at-sunset",
-"title": "Proposal At Sunset",
-"cat": "drawings",
-"date": "",
-"w": 1200,
-"h": 865
-},
-{
-"id": "couple-embracing-with-butterfly",
-"title": "Couple Embracing With Butterfly",
-"cat": "paintings",
-"date": "",
-"w": 916,
-"h": 1140
-},
-{
-"id": "red-flowers-in-vase",
-"title": "Red Flowers In Vase",
-"cat": "paintings",
-"date": "",
-"w": 884,
-"h": 1180
-},
-{
-"id": "couple-kissing-under-umbrella",
-"title": "Couple Kissing Under Umbrella",
-"cat": "drawings",
-"date": "",
-"w": 1168,
-"h": 892
-},
-{
-"id": "butterfly-and-vines-in-circle",
-"title": "Butterfly And Vines In Circle",
-"cat": "drawings",
-"date": "",
-"w": 1162,
-"h": 884
-},
-{
-"id": "krishna-and-sudama-friendship-quote",
-"title": "Krishna And Sudama Friendship Quote",
-"cat": "paintings",
-"date": "",
-"w": 950,
-"h": 1072
-},
-{
-"id": "abstract-colorful-brushstrokes",
-"title": "Abstract Colorful Brushstrokes",
-"cat": "paintings",
-"date": "",
-"w": 1171,
-"h": 868
-},
-{
-"id": "govinda-tirupati-balaji-symbols",
-"title": "Govinda Tirupati Balaji Symbols",
-"cat": "paintings",
-"date": "",
-"w": 1080,
-"h": 818
-},
-{
-"id": "faces-lips-and-hearts-doodle-page",
-"title": "Faces Lips And Hearts Doodle Page",
-"cat": "drawings",
-"date": "",
-"w": 1080,
-"h": 801
-},
-{
-"id": "kali-face-drawing",
-"title": "Kali Face Drawing",
-"cat": "drawings",
-"date": "",
-"w": 829,
-"h": 1024
-},
-{
-"id": "dancing-ganesha",
-"title": "Dancing Ganesha",
-"cat": "drawings",
-"date": "",
-"w": 816,
-"h": 1024
-},
-{
-"id": "purple-forest-waterfall",
-"title": "Purple Forest Waterfall",
-"cat": "paintings",
-"date": "",
-"w": 1080,
-"h": 773
-},
-{
-"id": "teddy-with-gifts-under-stars",
-"title": "Teddy With Gifts Under Stars",
-"cat": "drawings",
-"date": "",
-"w": 794,
-"h": 1024
-},
-{
-"id": "lovebirds-on-branch-triptych",
-"title": "Lovebirds On Branch Triptych",
-"cat": "paintings",
-"date": "",
-"w": 1024,
-"h": 786
-},
-{
-"id": "ocean-waves-in-three-circles",
-"title": "Ocean Waves In Three Circles",
-"cat": "drawings",
-"date": "",
-"w": 1024,
-"h": 767
-},
-{
-"id": "dove-with-flowers",
-"title": "Dove With Flowers",
-"cat": "drawings",
-"date": "",
-"w": 1024,
-"h": 767
-},
-{
-"id": "red-tulips-bush",
-"title": "Red Tulips Bush",
-"cat": "paintings",
-"date": "",
-"w": 767,
-"h": 1024
-},
-{
-"id": "abstract-faces-in-frames",
-"title": "Abstract Faces In Frames",
-"cat": "drawings",
-"date": "",
-"w": 1024,
-"h": 767
-},
-{
 "id": "boat-and-mountains-landscape",
 "title": "Boat And Mountains Landscape",
 "cat": "drawings",
@@ -4040,44 +4120,36 @@ window.ARTWORKS = [
 "h": 767
 },
 {
-"id": "fleur-de-lis-pattern",
-"title": "Fleur De Lis Pattern",
-"cat": "drawings",
-"date": "",
-"w": 767,
-"h": 1024
-},
-{
-"id": "shree-ganesha-puja-family",
-"title": "Shree Ganesha Puja Family",
-"cat": "drawings",
-"date": "",
-"w": 1024,
-"h": 767
-},
-{
-"id": "red-and-yellow-flowers",
-"title": "Red And Yellow Flowers",
+"id": "birds-on-branch-watercolor",
+"title": "Birds On Branch Watercolor",
 "cat": "paintings",
 "date": "",
-"w": 765,
-"h": 1024
+"w": 1200,
+"h": 928
 },
 {
-"id": "woman-with-diya-in-floral-arch",
-"title": "Woman With Diya In Floral Arch",
-"cat": "drawings",
+"id": "birds-and-blossoms-heart-canvas",
+"title": "Birds And Blossoms Heart Canvas",
+"cat": "paintings",
 "date": "",
-"w": 753,
-"h": 1024
+"w": 1200,
+"h": 1117
 },
 {
-"id": "pink-flowers-and-blue-butterflies",
-"title": "Pink Flowers And Blue Butterflies",
+"id": "bird-and-flowers-silhouette",
+"title": "Bird And Flowers Silhouette",
 "cat": "drawings",
 "date": "",
-"w": 1024,
-"h": 753
+"w": 1080,
+"h": 1030
+},
+{
+"id": "bamboo-and-flowers-in-circle",
+"title": "Bamboo And Flowers In Circle",
+"cat": "paintings",
+"date": "",
+"w": 1096,
+"h": 956
 },
 {
 "id": "ballet-dancer-silhouette",
@@ -4088,67 +4160,83 @@ window.ARTWORKS = [
 "h": 1024
 },
 {
-"id": "girls-and-flowers-doodle-page",
-"title": "Girls And Flowers Doodle Page",
-"cat": "drawings",
-"date": "",
-"w": 1024,
-"h": 736
-},
-{
-"id": "dolphins-leaping-at-sunset",
-"title": "Dolphins Leaping At Sunset",
-"cat": "drawings",
-"date": "",
-"w": 1024,
-"h": 730
-},
-{
-"id": "river-village-landscape",
-"title": "River Village Landscape",
-"cat": "drawings",
-"date": "",
-"w": 1024,
-"h": 699
-},
-{
-"id": "mother-and-daughter-tree-dance",
-"title": "Mother And Daughter Tree Dance",
+"id": "avengers-superheroes-painting",
+"title": "Avengers Superheroes Painting",
 "cat": "paintings",
 "date": "",
-"w": 704,
-"h": 974
+"w": 1015,
+"h": 1200
 },
 {
-"id": "keep-calm-and-choose-peace",
-"title": "Keep Calm And Choose Peace",
-"cat": "drawings",
-"date": "",
-"w": 668,
-"h": 1024
-},
-{
-"id": "swastik-and-shubh-labh-rangoli",
-"title": "Swastik And Shubh Labh Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 1080,
-"h": 378
-},
-{
-"id": "couple-hugging-sketch",
-"title": "Couple Hugging Sketch",
-"cat": "drawings",
-"date": "",
-"w": 528,
-"h": 732
-},
-{
-"id": "jai-shri-ram-hanuman-silhouette",
-"title": "Jai Shri Ram Hanuman Silhouette",
+"id": "ardhanarishvara-painting",
+"title": "Ardhanarishvara Painting",
 "cat": "paintings",
 "date": "",
-"w": 375,
-"h": 405
+"w": 996,
+"h": 1200
+},
+{
+"id": "abstract-radha-krishna-with-vines",
+"title": "Abstract Radha Krishna With Vines",
+"cat": "paintings",
+"date": "",
+"w": 966,
+"h": 1200
+},
+{
+"id": "abstract-radha-krishna",
+"title": "Abstract Radha Krishna",
+"cat": "paintings",
+"date": "",
+"w": 982,
+"h": 1200
+},
+{
+"id": "abstract-palette-knife-colors",
+"title": "Abstract Palette Knife Colors",
+"cat": "paintings",
+"date": "",
+"w": 819,
+"h": 1200
+},
+{
+"id": "abstract-leaves-and-suns-four-panels",
+"title": "Abstract Leaves And Suns Four Panels",
+"cat": "paintings",
+"date": "",
+"w": 1181,
+"h": 1200
+},
+{
+"id": "abstract-faces-in-frames",
+"title": "Abstract Faces In Frames",
+"cat": "drawings",
+"date": "",
+"w": 1024,
+"h": 767
+},
+{
+"id": "abstract-cubist-faces",
+"title": "Abstract Cubist Faces",
+"cat": "paintings",
+"date": "",
+"w": 900,
+"h": 1200
+},
+{
+"id": "abstract-colorful-brushstrokes",
+"title": "Abstract Colorful Brushstrokes",
+"cat": "paintings",
+"date": "",
+"w": 1171,
+"h": 868
+},
+{
+"id": "abstract-circles-red-and-blue",
+"title": "Abstract Circles Red And Blue",
+"cat": "paintings",
+"date": "",
+"w": 945,
+"h": 1200
 }
 ];
