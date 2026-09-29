@@ -15,23 +15,35 @@ Manual fallback, from the repo root:
 
 Preview locally with `cd site && python3 -m http.server 8765`.
 
-## Adding / removing artworks
-1. She adds, renames or deletes photos in the Drive folder.
-2. Update `build/catalog.tsv` (columns: file, type, title, date) to match the folder.
-   Types: `painting`, `drawing`, `craft`; `screenshot`, `photo`, `other` are skipped.
-   Category comes from the title first: *rangoli / kolam / pookalam* → Rangoli & Kolam,
-   *mandala* → Mandalas; otherwise the type decides.
-3. `python3 build/build.py` — resizes, drops near-duplicates, watermarks, writes `site/img/` and `site/data.js`.
-4. Commit and push; Cloudflare publishes.
+## Adding / removing artworks — automatic
+**She just adds, renames or deletes photos in her "my artworks" Drive folder.**
+GitHub Actions (`.github/workflows/sync.yml`) checks the folder every 3 hours, rebuilds, and pushes;
+Cloudflare then publishes. To publish immediately: GitHub → Actions → "Sync artworks from Google Drive" → Run workflow.
 
-Naming rule: **"Sketch"** only for pencil sketches; coloured pen / crayon work is a **"Drawing"**;
-crayon or sketch-pen work belongs in Drawings even if it looks painterly.
+How the sync names things (`build/sync.py`):
+- **Title = her filename**, tidied: "Pongal kolam.jpg" → "Pongal Kolam". Trailing " 2", "(1)", "~3" are dropped.
+- **Category** from words in the name: rangoli/kolam/pookalam → Rangoli & Kolam; mandala → Mandalas;
+  sketch/drawing/pencil/crayon/doodle → Drawings; craft/mirror/embroidery/plate → Crafts; anything else → Paintings.
+- **Renaming keeps the category**: a photo is recognised by its contents (md5), not its name.
+- Photos still named by the camera (`IMG_…`, `Screenshot_…`, `PXL_…`) are **held back** until she renames them.
+- To fix a category by hand, edit the `type` column in `build/catalog.tsv` (painting, drawing, craft,
+  rangoli; `other` hides a file) and push — the sync keeps hand edits.
+
+Access: Google service account `mahartworks-sync@ajithmlopsie7374.iam.gserviceaccount.com`
+(project `ajithmlopsie7374`) with **Viewer** access to the folder; its key is the repo secret
+`GOOGLE_SERVICE_ACCOUNT_JSON`. It can only read.
+
+On the Mac the same scripts read the local Drive folder: `python3 build/sync.py && python3 build/build.py`.
+`build/manifest.json` remembers every image already processed, so only new photos are downloaded.
+
+Naming rule: **"Sketch"** only for pencil sketches; coloured pen / crayon work is a **"Drawing"**.
 
 ## Watermark
     python3 build/build.py --wm 1   # colour seal, see-through, bottom-right (current)
     python3 build/build.py --wm 2   # white stamp, see-through, bottom-right
     python3 build/build.py --wm 3   # big faint stamp across the middle + small colour seal
-Resized originals are cached in `build/cache/` (gitignored), so a re-stamp takes minutes.
+The choice is remembered in `build/manifest.json`. Or switch from GitHub: Actions → Run workflow → watermark 1/2/3
+(re-stamping needs every original, so that run downloads the whole folder, ~15 min).
 
 ## Contact details
 `CONTACT` at the top of `site/app.js` (email / Instagram). Empty = section hidden.

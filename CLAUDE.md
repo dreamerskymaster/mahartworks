@@ -15,7 +15,12 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   (`~/Library/CloudStorage/GoogleDrive-ajithsri2000@gmail.com/.shortcut-targets-by-id/1WPuT5LQUEvd2W90qsTFSUPs--Z4GB3rE/my artworks`).
   Flat folder, no subfolders. **His mom edits it herself** (deletes, renames, adds) — always diff the
   folder against `build/catalog.tsv` before rebuilding; never assume the catalog is current.
-- `build/catalog.tsv` → `build/build.py` → `site/img/*.webp` + `site/data.js`. Never hand-edit `data.js`.
+- Pipeline: `build/sync.py` (Drive → `catalog.tsv`, matched by md5) → `build/build.py` (incremental via
+  `build/manifest.json`) → `site/img/*.webp` + `site/data.js`. Never hand-edit `data.js` or `manifest.json`.
+- **Automatic**: `.github/workflows/sync.yml` runs every 3 h with a read-only service account
+  (`mahartworks-sync@ajithmlopsie7374.iam.gserviceaccount.com`, secret `GOOGLE_SERVICE_ACCOUNT_JSON`) and pushes;
+  it commits as artworks-sync[bot]. Pull before editing locally. Titles come from her filenames; camera-named files wait.
+- Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync preserves them.
 - Every Drive rename is appended to `~/Documents/artwork-rename-backup/rename_log.tsv` (old, new) so it can be undone.
 - `build/cache/` is gitignored and slow to rebuild (Drive downloads on demand); in a worktree, symlink it
   to the main checkout's `build/cache`.
@@ -33,6 +38,4 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 
 ## Open
 - Her watermark choice (1/2/3).
-- 12 new files in Drive not yet catalogued (e.g. "Pongal kolam", "Kadva chauth").
-- Proposed: GitHub Actions + Google service account to auto-sync Drive → site. Not built; Ajith to choose
-  naming (her filenames vs free-tier AI). Free services only.
+- Scheduled workflows in public repos pause after 60 days without commits; re-enable in the Actions tab if she goes quiet.
