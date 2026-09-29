@@ -1,4 +1,4 @@
-build/cache/
+build/cache
 .vercel
 .DS_Store
 .claude/
