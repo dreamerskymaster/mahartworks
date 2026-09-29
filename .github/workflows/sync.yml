@@ -12,6 +12,10 @@ on:
         description: "Watermark style: 1 colour seal, 2 white stamp, 3 big faint + corner (blank = keep)"
         required: false
         default: ""
+      allow_big_removal:
+        description: "Allow removing more than a third of the artworks in one go"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -40,6 +44,8 @@ jobs:
       - name: Compare Drive with the catalog
         id: sync
         run: python3 build/sync.py
+        env:
+          ALLOW_BIG_REMOVAL: ${{ inputs.allow_big_removal && '1' || '' }}
 
       - name: Rebuild gallery
         if: steps.sync.outputs.changed == 'true' || inputs.watermark != ''

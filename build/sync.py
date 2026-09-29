@@ -8,7 +8,7 @@
 
 Prints a summary and, in GitHub Actions, sets the output `changed=true|false`.
 """
-import csv, os, re
+import csv, os, re, sys
 
 import drive
 
@@ -77,6 +77,10 @@ def main():
             added.append(f"{name}  [{rows[-1]['type']}]")
     kept = {r["file"] for r in rows}
     removed = [r["file"] for r in old if r["file"] not in kept]
+    # Safety: an unshared folder or an API hiccup looks like "everything was deleted".
+    if old and (not rows or len(removed) > len(old) / 3) and not os.environ.get("ALLOW_BIG_REMOVAL"):
+        sys.exit(f"Refusing to sync: {len(removed)} of {len(old)} artworks would disappear. "
+                 "Check the service account can see the folder, or set ALLOW_BIG_REMOVAL=1 if this is real.")
 
     changed = sorted(map(repr, (dict((k, r.get(k, "")) for k in FIELDS) for r in rows))) != \
         sorted(map(repr, (dict((k, r.get(k, "")) for k in FIELDS) for r in old)))
