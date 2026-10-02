@@ -2712,6 +2712,12 @@
 "px": 3232804,
 "w": 1200
 },
+"d5d280aff2d512a66bb8f50c3960858d": {
+"h": 1739556146336733073,
+"hgt": 1200,
+"px": 8031968,
+"w": 991
+},
 "d5e436e3c5b759e1dc77f4b51b45a567": {
 "h": 7720077328661450519,
 "hgt": 1200,
@@ -4770,6 +4776,10 @@
 ],
 "rajasthani-women-with-pots": [
 "035b7ad9482b81ee950638afe36cd811",
+1
+],
+"raksha-bandhan": [
+"d5d280aff2d512a66bb8f50c3960858d",
 1
 ],
 "ram-and-sita-pencil-sketch": [
