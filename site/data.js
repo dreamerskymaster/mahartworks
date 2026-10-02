@@ -1,5 +1,13 @@
 window.ARTWORKS = [
 {
+"id": "raksha-bandhan",
+"title": "Raksha Bandhan",
+"cat": "paintings",
+"date": "2026-10-02",
+"w": 991,
+"h": 1200
+},
+{
 "id": "the-more-you-will-see",
 "title": "The More You Will See",
 "cat": "drawings",
