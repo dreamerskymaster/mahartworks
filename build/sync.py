@@ -27,12 +27,10 @@ DRAWING = re.compile(r"sketch|drawing|doodle|pencil|crayon|pen art|zentangle|lin
 CRAFT = re.compile(r"craft|mirror|embroider|lippan|plate|diya holder|door plaque|clay|mehndi|quilling", re.I)
 
 
-def ext_of(name):
-    return os.path.splitext(name.strip())[1].strip().lower()
-
-
 def title_of(name):
-    base = os.path.splitext(name.strip())[0]
+    base, e = os.path.splitext(name.strip())
+    if e.lower() not in EXTS:                  # no extension, or a dot inside the title
+        base = name.strip()
     base = re.sub(r"(\s*\(\d+\)|~\d+|\s+\d+)$", "", base.strip())       # "x (2)", "x~3", "x 2"
     words = re.sub(r"[_\s]+", " ", base).strip().split(" ")
     out = []
@@ -67,7 +65,7 @@ def main():
     listing = drive.listing()
     names = {n for n, _, _ in listing}
     for name, md5, modified in listing:
-        if ext_of(name) not in EXTS:
+        if drive.ext(name) not in EXTS:
             skipped.append(repr(name))
             continue
         known = by_file.get(name) if by_file.get(name, {}).get("md5") in ("", None, md5) else None
