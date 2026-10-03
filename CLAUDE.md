@@ -15,9 +15,9 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   (`~/Library/CloudStorage/GoogleDrive-ajithsri2000@gmail.com/.shortcut-targets-by-id/1WPuT5LQUEvd2W90qsTFSUPs--Z4GB3rE/my artworks`).
   Flat folder, no subfolders. **His mom edits it herself** (deletes, renames, adds) — always diff the
   folder against `build/catalog.tsv` before rebuilding; never assume the catalog is current.
-- Pipeline: `build/sync.py` (Drive → `catalog.tsv`, matched by md5) → `build/build.py` (incremental via
+- Pipeline: `build/sync.py` (Drive → `catalog.tsv`, matched by md5; jpg/png/webp/heic/gif/pdf, every skipped file is logged) → `build/build.py` (incremental via
   `build/manifest.json`) → `site/img/*.webp` + `site/data.js`. Never hand-edit `data.js` or `manifest.json`.
-- **Automatic**: `.github/workflows/sync.yml` runs every 3 h with a read-only service account
+- **Automatic**: `.github/workflows/sync.yml` runs hourly (GitHub often starts it late) with a read-only service account
   (`mahartworks-sync@ajithmlopsie7374.iam.gserviceaccount.com`, secret `GOOGLE_SERVICE_ACCOUNT_JSON`) and pushes;
   it commits as artworks-sync[bot]. Pull before editing locally. Titles come from her filenames; camera-named files wait.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync preserves them.
