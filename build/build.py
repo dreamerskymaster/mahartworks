@@ -85,7 +85,7 @@ def main():
     wm = watermark.STYLES[wm_no]
 
     rows = [r for r in csv.DictReader(open(os.path.join(HERE, "catalog.tsv")), delimiter="\t")
-            if r["type"] not in SKIP_TYPES and os.path.splitext(r["file"].strip())[1].strip().lower() in EXTS]
+            if r["type"] not in SKIP_TYPES and drive.ext(r["file"]) in EXTS]
 
     # Facts per original (size, duplicate hash) are remembered, so CI only downloads new photos.
     cands, facts = [], {}
