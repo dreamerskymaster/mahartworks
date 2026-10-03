@@ -8,6 +8,14 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
+"id": "31382542-620b-4a2c-a8db-01373b38f161",
+"title": "31382542-620b-4a2c-a8db-01373b38f161",
+"cat": "paintings",
+"date": "2026-10-02",
+"w": 991,
+"h": 1200
+},
+{
 "id": "the-more-you-will-see",
 "title": "The More You Will See",
 "cat": "drawings",
