@@ -522,6 +522,12 @@
 "px": 3686400,
 "w": 1200
 },
+"2e00d3a55bd6a09641b32193ee10268a": {
+"h": 10564070010728451987,
+"hgt": 656,
+"px": 836212,
+"w": 1200
+},
 "2ecb4b35ab9d775619dfd67ef25472c4": {
 "h": 18083870397105408,
 "hgt": 1200,
@@ -2244,6 +2250,12 @@
 "px": 12059392,
 "w": 676
 },
+"b38656d0e8f8c0a92741c75c998c3382": {
+"h": 17429336720420598611,
+"hgt": 1200,
+"px": 19766916,
+"w": 1200
+},
 "b4dc0b4d90cfa4cc8762ca101fef4dcc": {
 "h": 8414525474626487908,
 "hgt": 1200,
@@ -3622,6 +3634,10 @@
 ],
 "cubist-faces-crayon-drawing": [
 "2ff98e78fa66841407b7d9ea80a3befe",
+1
+],
+"culture-of-india": [
+"b38656d0e8f8c0a92741c75c998c3382",
 1
 ],
 "dancer-and-moon-couple-drawing": [
@@ -5098,6 +5114,10 @@
 ],
 "three-masks-abstract-faces": [
 "8d729b18c0dedb3cdee30ce711768aa5",
+1
+],
+"tinted-glass-painting-on-canvas": [
+"2e00d3a55bd6a09641b32193ee10268a",
 1
 ],
 "tirupati-balaji-and-deities-embossed": [
