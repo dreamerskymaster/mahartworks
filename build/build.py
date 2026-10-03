@@ -18,7 +18,7 @@ MANIFEST = os.path.join(HERE, "manifest.json")  # per-image facts + what each ou
 WATERMARK = 1                                # 1 colour seal, 2 white stamp, 3 big faint + corner
 FULL, THUMB = 1200, 480
 SKIP_TYPES = {"screenshot", "photo", "other", "document"}
-EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
+EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic", ".heif", ".gif", ".pdf"}
 
 
 def category(t, title):
@@ -35,7 +35,13 @@ def category(t, title):
 
 
 def load(path):
-    if path.lower().endswith(".heic"):
+    ext = os.path.splitext(path.strip())[1].strip().lower()
+    if ext == ".pdf":                            # a scanned artwork: use the first page
+        import fitz
+        with fitz.open(path) as doc:
+            pix = doc[0].get_pixmap(dpi=200)
+            return Image.frombytes("RGB", (pix.width, pix.height), pix.samples)
+    if ext in (".heic", ".heif"):
         try:
             from pillow_heif import register_heif_opener
             register_heif_opener()
@@ -79,7 +85,7 @@ def main():
     wm = watermark.STYLES[wm_no]
 
     rows = [r for r in csv.DictReader(open(os.path.join(HERE, "catalog.tsv")), delimiter="\t")
-            if r["type"] not in SKIP_TYPES and os.path.splitext(r["file"])[1].lower() in EXTS]
+            if r["type"] not in SKIP_TYPES and os.path.splitext(r["file"].strip())[1].strip().lower() in EXTS]
 
     # Facts per original (size, duplicate hash) are remembered, so CI only downloads new photos.
     cands, facts = [], {}

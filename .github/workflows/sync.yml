@@ -1,11 +1,11 @@
-# Every 3 hours: read the "my artworks" Drive folder, rebuild the gallery if anything changed,
+# Every hour (GitHub often runs scheduled jobs late): read the "my artworks" Drive folder, rebuild the gallery if anything changed,
 # and push to main — Cloudflare Pages publishes every push. Run by hand from the Actions tab
 # ("Run workflow") to publish straight away or to switch the watermark style.
 name: Sync artworks from Google Drive
 
 on:
   schedule:
-    - cron: "17 */3 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       watermark:
@@ -31,9 +31,9 @@ jobs:
     env:
       GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
