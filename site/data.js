@@ -1,15 +1,15 @@
 window.ARTWORKS = [
 {
-"id": "raksha-bandhan",
-"title": "Raksha Bandhan",
+"id": "stone-painting",
+"title": "Stone Painting",
 "cat": "paintings",
-"date": "2026-10-02",
-"w": 991,
-"h": 1200
+"date": "2026-10-03",
+"w": 1200,
+"h": 628
 },
 {
-"id": "31382542-620b-4a2c-a8db-01373b38f161",
-"title": "31382542-620b-4a2c-a8db-01373b38f161",
+"id": "raksha-bandhan",
+"title": "Raksha Bandhan",
 "cat": "paintings",
 "date": "2026-10-02",
 "w": 991,
