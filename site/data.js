@@ -16,6 +16,14 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
+"id": "tinted-glass-painting-on-canvas",
+"title": "Tinted Glass Painting on Canvas",
+"cat": "paintings",
+"date": "2026-09-28",
+"w": 1200,
+"h": 656
+},
+{
 "id": "the-more-you-will-see",
 "title": "The More You Will See",
 "cat": "drawings",
@@ -46,6 +54,14 @@ window.ARTWORKS = [
 "date": "2026-09-28",
 "w": 1200,
 "h": 900
+},
+{
+"id": "culture-of-india",
+"title": "Culture of India",
+"cat": "paintings",
+"date": "2026-09-28",
+"w": 1200,
+"h": 1200
 },
 {
 "id": "woman-in-red-dress-with-handbag",
