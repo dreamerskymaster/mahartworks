@@ -5,6 +5,9 @@
 - A new file gets its title from her filename and a type guessed from the words in it.
 - Files still carrying camera names (IMG_1234, Screenshot_…) are left off until she renames them.
 - Files deleted from Drive are dropped.
+- Anything skipped (unsupported type, camera name, duplicate copy) is printed with its exact name,
+  so a file never goes missing silently. Stray spaces around names ("x .heic ") are ignored.
+- A second copy of a picture that is still listed under its old name is a copy, not a rename.
 
 Prints a summary and, in GitHub Actions, sets the output `changed=true|false`.
 """
@@ -15,7 +18,7 @@ import drive
 HERE = os.path.dirname(os.path.abspath(__file__))
 CATALOG = os.path.join(HERE, "catalog.tsv")
 FIELDS = ["file", "type", "title", "date", "md5"]
-EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic"}
+EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic", ".heif", ".gif", ".pdf"}
 
 CAMERA = re.compile(r"^(img|image|dsc|pxl|photo|preview|screenshot|fb_img|inshot|picsart|snapchat|whatsapp|"
                     r"vid|adobe scan|-?\d|[0-9a-f]{8}-)", re.I)
@@ -25,7 +28,9 @@ CRAFT = re.compile(r"craft|mirror|embroider|lippan|plate|diya holder|door plaque
 
 
 def title_of(name):
-    base = os.path.splitext(name)[0]
+    base, e = os.path.splitext(name.strip())
+    if e.lower() not in EXTS:                  # no extension, or a dot inside the title
+        base = name.strip()
     base = re.sub(r"(\s*\(\d+\)|~\d+|\s+\d+)$", "", base.strip())       # "x (2)", "x~3", "x 2"
     words = re.sub(r"[_\s]+", " ", base).strip().split(" ")
     out = []
@@ -56,20 +61,28 @@ def main():
     old = list(csv.DictReader(open(CATALOG), delimiter="\t"))
     by_file = {r["file"]: r for r in old}
     by_md5 = {r["md5"]: r for r in old if r.get("md5")}
-    rows, added, renamed, waiting = [], [], [], []
-    for name, md5, modified in drive.listing():
-        if os.path.splitext(name)[1].lower() not in EXTS:
+    rows, added, renamed, waiting, skipped, copies = [], [], [], [], [], []
+    listing = drive.listing()
+    names = {n for n, _, _ in listing}
+    for name, md5, modified in listing:
+        if drive.ext(name) not in EXTS:
+            skipped.append(repr(name))
             continue
         known = by_file.get(name) if by_file.get(name, {}).get("md5") in ("", None, md5) else None
+        if not known and by_md5.get(md5) and by_md5[md5]["file"] in names:
+            copies.append(f"{name} (same picture as {by_md5[md5]['file']})")    # a copy, not a rename
+            continue
         known = known or by_md5.get(md5)
         if known:
             r = dict(known, md5=md5)
             if known["file"] != name:
-                r.update(file=name, title=title_of(name))
+                r["file"] = name
+                if not CAMERA.match(name.strip()):    # renamed to IMG_/UUID: keep the old title
+                    r["title"] = title_of(name)
                 renamed.append(f"{known['file']} -> {name}")
             rows.append(r)
-        elif CAMERA.match(name):
-            waiting.append(name)
+        elif CAMERA.match(name.strip()):
+            waiting.append(repr(name))
         else:
             t = title_of(name)
             rows.append({"file": name, "type": guess_type(t), "title": t,
@@ -90,7 +103,8 @@ def main():
         w.writerows(sorted(rows, key=lambda r: r["file"].lower()))
 
     for label, items in (("added", added), ("renamed", renamed), ("removed", removed),
-                         ("waiting for a real name", waiting)):
+                         ("waiting for a real name", waiting), ("skipped, not a picture", skipped),
+                         ("skipped, duplicate copy", copies)):
         print(f"{label}: {len(items)}")
         for i in items:
             print("   ", i)
