@@ -16,6 +16,11 @@ SRC = DOWNLOADS if USE_API else LOCAL
 
 _svc = None
 _ids = {}
+_mimes = {}
+# Drive names can lack an extension ("culture of india " — the Mac app adds one locally),
+# so the type falls back to the file's MIME type.
+MIME_EXT = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp", "image/heic": ".heic",
+            "image/heif": ".heif", "image/gif": ".gif", "application/pdf": ".pdf"}
 
 
 def _service():
@@ -49,19 +54,33 @@ def listing():
     while True:
         r = _service().files().list(
             q=f"'{FOLDER_ID}' in parents and trashed = false and mimeType != 'application/vnd.google-apps.folder'",
-            fields="nextPageToken, files(id, name, md5Checksum, modifiedTime)", pageSize=1000,
+            fields="nextPageToken, files(id, name, md5Checksum, modifiedTime, mimeType)", pageSize=1000,
             pageToken=token, supportsAllDrives=True, includeItemsFromAllDrives=True).execute()
         for f in r["files"]:
             _ids[f["name"]] = f["id"]
+            _mimes[f["name"]] = f.get("mimeType", "")
             out.append((f["name"], f.get("md5Checksum", ""), f["modifiedTime"][:10]))
         token = r.get("nextPageToken")
         if not token:
             return sorted(out)
 
 
+def ext(name):
+    """'.jpg', '.heic', … from the filename, else from the Drive MIME type ('' if neither)."""
+    e = os.path.splitext(name.strip())[1].strip().lower()
+    if e in MIME_EXT.values() or e in (".jpeg",):
+        return e
+    if USE_API and not _mimes:
+        listing()
+    return MIME_EXT.get(_mimes.get(name), e)
+
+
 def path(name):
-    """Local path to an original, downloading it first in CI."""
+    """Local path to an original, downloading it first in CI (with an extension the loader knows)."""
     p = os.path.join(SRC, name)
+    if USE_API:
+        e = ext(name)
+        p = os.path.join(SRC, name.strip() + ("" if name.strip().lower().endswith(e) else e))
     if USE_API and not os.path.exists(p):
         from googleapiclient.http import MediaIoBaseDownload
         if not _ids:
