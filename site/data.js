@@ -1,5 +1,21 @@
 window.ARTWORKS = [
 {
+"id": "sea-stone-shell-painting",
+"title": "Sea Stone Shell Painting",
+"cat": "paintings",
+"date": "2026-10-10",
+"w": 1200,
+"h": 1200
+},
+{
+"id": "krishna-playing-flute-2",
+"title": "Krishna Playing Flute",
+"cat": "paintings",
+"date": "2026-10-10",
+"w": 900,
+"h": 1200
+},
+{
 "id": "stone-painting",
 "title": "Stone Painting",
 "cat": "paintings",
@@ -1792,8 +1808,8 @@ window.ARTWORKS = [
 "h": 787
 },
 {
-"id": "floral-vine-wall-art",
-"title": "Floral Vine Wall Art",
+"id": "floral-vine-wall-glass-painting-art",
+"title": "Floral Vine Wall Glass Painting Art",
 "cat": "crafts",
 "date": "2022-12-24",
 "w": 442,
@@ -2784,8 +2800,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "shubh-labh-om-torana",
-"title": "Shubh Labh Om Torana",
+"id": "shubh-labh-om-toranapainting",
+"title": "Shubh Labh Om Toranapainting",
 "cat": "crafts",
 "date": "2021-09-11",
 "w": 1200,
@@ -3432,14 +3448,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "radha-krishna-and-ram-sita-folk-art",
-"title": "Radha Krishna And Ram Sita Folk Art",
-"cat": "paintings",
-"date": "",
-"w": 559,
-"h": 1200
-},
-{
 "id": "purple-lotus-vines-on-green",
 "title": "Purple Lotus Vines On Green",
 "cat": "paintings",
@@ -3598,6 +3606,14 @@ window.ARTWORKS = [
 "date": "",
 "w": 1200,
 "h": 873
+},
+{
+"id": "music-dance-glass-painting",
+"title": "Music & Dance Glass Painting",
+"cat": "paintings",
+"date": "",
+"w": 559,
+"h": 1200
 },
 {
 "id": "mountain-lake-landscape-in-circle",
@@ -3912,8 +3928,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "floral-hummingbirds-glass-door",
-"title": "Floral Hummingbirds Glass Door",
+"id": "floral-hummingbirds-painting-on-glass-door",
+"title": "Floral Hummingbirds Painting on Glass Door",
 "cat": "paintings",
 "date": "",
 "w": 675,
