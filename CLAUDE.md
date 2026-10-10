@@ -20,6 +20,10 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Automatic**: `.github/workflows/sync.yml` runs hourly (GitHub often starts it late) with a read-only service account
   (`mahartworks-sync@ajithmlopsie7374.iam.gserviceaccount.com`, secret `GOOGLE_SERVICE_ACCOUNT_JSON`) and pushes;
   it commits as artworks-sync[bot]. Pull before editing locally. Titles come from her filenames; camera-named files wait.
+- **Schedule:** GitHub's own cron (`17 * * * *`) is best-effort and in Oct 2026 fired only every 4–8 h, so uploads
+  looked "missing" for hours. Cloudflare Worker `mah-artworks-scheduler` (`scheduler/`, cron `*/20 * * * *`) calls
+  workflow_dispatch instead; it needs Worker secret `GITHUB_TOKEN` (fine-grained PAT, this repo only, Actions: write).
+  Deploy with `cd scheduler && npx wrangler deploy`. Videos (.mp4) are skipped by design — the site is images only.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync preserves them.
 - Every Drive rename is appended to `~/Documents/artwork-rename-backup/rename_log.tsv` (old, new) so it can be undone.
 - `build/cache/` is gitignored and slow to rebuild (Drive downloads on demand); in a worktree, symlink it
