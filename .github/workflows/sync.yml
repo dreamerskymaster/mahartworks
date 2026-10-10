@@ -1,6 +1,8 @@
-# Every hour (GitHub often runs scheduled jobs late): read the "my artworks" Drive folder, rebuild the gallery if anything changed,
-# and push to main — Cloudflare Pages publishes every push. Run by hand from the Actions tab
-# ("Run workflow") to publish straight away or to switch the watermark style.
+# Read the "my artworks" Drive folder, rebuild the gallery if anything changed, and push — Cloudflare Pages
+# publishes every push. Each run starts the next one 20 minutes later (job `next`), so the site keeps up
+# with her uploads; GitHub's own cron is best-effort (it fired every 4-8 h) and only restarts the chain if
+# it ever breaks. Run by hand from the Actions tab to publish straight away or to switch the watermark.
+# To pause everything: Actions -> this workflow -> "..." -> Disable workflow.
 name: Sync artworks from Google Drive
 
 on:
@@ -59,3 +61,22 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Sync from Drive: ${{ steps.sync.outputs.summary }}"
           git push
+
+  # Start the next sync in 20 minutes, using the built-in token (no personal token needed).
+  next:
+    needs: sync
+    if: always()
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      actions: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      GH_REPO: ${{ github.repository }}
+    steps:
+      - run: sleep 1200
+      - name: Queue the next run (unless one is already waiting)
+        run: |
+          waiting=$(gh run list --workflow sync.yml --branch "${{ github.ref_name }}" --status queued --json databaseId --jq length)
+          if [ "$waiting" != "0" ]; then echo "A run is already queued."; exit 0; fi
+          gh workflow run sync.yml --ref "${{ github.ref_name }}"
