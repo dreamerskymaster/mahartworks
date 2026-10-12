@@ -30,11 +30,11 @@
     btn.setAttribute("aria-expanded", "false");
     btn.setAttribute("aria-controls", "a11y-panel");
     btn.innerHTML = `${icon}<span>Display</span>`;
-    const wrap = document.createElement("div");
-    wrap.className = "nav-right";
-    nav.querySelector("nav") && wrap.appendChild(nav.querySelector("nav"));
-    wrap.appendChild(btn);
-    nav.appendChild(wrap);
+    btn.setAttribute("aria-label", "Display and accessibility settings");
+    let tools = nav.querySelector(".nav-tools");
+    if (!tools) { tools = document.createElement("div"); tools.className = "nav-tools"; nav.appendChild(tools); }
+    tools.prepend(btn);
+    document.querySelectorAll("#year").forEach((el) => { el.textContent = new Date().getFullYear(); });
 
     const panel = document.createElement("div");
     panel.id = "a11y-panel";

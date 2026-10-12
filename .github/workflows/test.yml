@@ -1,0 +1,41 @@
+# Checks the site on every push and pull request: Python tests (sync rules, watermark, site data and
+# links) and browser tests on phone, tablet and laptop screen sizes (layout, spotlight, gallery, viewer,
+# settings). The Drive sync pushes are skipped: sync.yml already runs the Python tests before those.
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: build/requirements.txt
+      - run: pip install -r build/requirements.txt
+      - name: Python tests
+        run: python3 -m unittest discover -s tests -v
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tests/e2e/package-lock.json
+      - run: npm ci --prefix tests/e2e
+      - name: Browser tests (phone, tablet, laptop)
+        run: npm test --prefix tests/e2e
+        env:
+          CHROME: /usr/bin/google-chrome
