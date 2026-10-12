@@ -8,6 +8,14 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-10-12",
+"w": 1200,
+"h": 973
+},
+{
 "id": "navratri-rangoli",
 "title": "Navratri Rangoli",
 "cat": "rangoli",
@@ -110,14 +118,6 @@ window.ARTWORKS = [
 "date": "2026-09-27",
 "w": 1200,
 "h": 1146
-},
-{
-"id": "pongal-kolam",
-"title": "Pongal Kolam",
-"cat": "rangoli",
-"date": "2026-09-27",
-"w": 1200,
-"h": 973
 },
 {
 "id": "my-son-s-merit-list-award-function",
