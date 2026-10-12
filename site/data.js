@@ -40,14 +40,6 @@ window.ARTWORKS = [
 "h": 656
 },
 {
-"id": "the-more-you-will-see",
-"title": "The More You Will See",
-"cat": "drawings",
-"date": "2026-09-28",
-"w": 1200,
-"h": 937
-},
-{
 "id": "kathakali-with-flowers-on-onam",
 "title": "Kathakali with Flowers on Onam",
 "cat": "rangoli",
@@ -62,6 +54,14 @@ window.ARTWORKS = [
 "date": "2026-09-28",
 "w": 1080,
 "h": 1043
+},
+{
+"id": "happy-sad-face-in-one",
+"title": "Happy & Sad Face in One",
+"cat": "drawings",
+"date": "2026-09-28",
+"w": 1200,
+"h": 937
 },
 {
 "id": "girl-on-swing-under-moon",
@@ -96,7 +96,7 @@ window.ARTWORKS = [
 "h": 1146
 },
 {
-"id": "pongal-kolam-2",
+"id": "pongal-kolam",
 "title": "Pongal Kolam",
 "cat": "rangoli",
 "date": "2026-09-27",
@@ -1208,14 +1208,6 @@ window.ARTWORKS = [
 "h": 959
 },
 {
-"id": "pongal-kolam",
-"title": "Pongal Kolam",
-"cat": "rangoli",
-"date": "2024-01-15",
-"w": 540,
-"h": 1200
-},
-{
 "id": "cinderella-in-garden",
 "title": "Cinderella In Garden",
 "cat": "paintings",
@@ -1872,8 +1864,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "krishna-with-cows-pichwai-style",
-"title": "Krishna With Cows Pichwai Style",
+"id": "ganesha-cows",
+"title": "Ganesha & Cows",
 "cat": "paintings",
 "date": "2022-09-16",
 "w": 1200,
@@ -2056,14 +2048,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "woman-with-lion-pencil-sketch",
-"title": "Woman With Lion Pencil Sketch",
-"cat": "drawings",
-"date": "2022-07-17",
-"w": 1200,
-"h": 1156
-},
-{
 "id": "queen-before-and-after-sketch",
 "title": "Queen Before And After Sketch",
 "cat": "drawings",
@@ -2072,12 +2056,20 @@ window.ARTWORKS = [
 "h": 851
 },
 {
-"id": "man-profile-pencil-sketch",
-"title": "Man Profile Pencil Sketch",
+"id": "hiden-in-face",
+"title": "Hiden in Face",
 "cat": "drawings",
 "date": "2022-07-17",
 "w": 1200,
 "h": 1083
+},
+{
+"id": "beauty-beast",
+"title": "Beauty& Beast",
+"cat": "drawings",
+"date": "2022-07-17",
+"w": 1200,
+"h": 1156
 },
 {
 "id": "deer-in-forest-watercolor",
@@ -2208,8 +2200,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "three-dancing-women-folk-art",
-"title": "Three Dancing Women Folk Art",
+"id": "african-dancers",
+"title": "African Dancers",
 "cat": "paintings",
 "date": "2022-03-30",
 "w": 897,
@@ -2432,16 +2424,16 @@ window.ARTWORKS = [
 "h": 833
 },
 {
-"id": "blue-folk-art-bird",
-"title": "Blue Folk Art Bird",
+"id": "bird-stencil-painting",
+"title": "Bird Stencil Painting",
 "cat": "crafts",
 "date": "2022-01-10",
 "w": 1131,
 "h": 1200
 },
 {
-"id": "teddy-bear-door-art",
-"title": "Teddy Bear Door Art",
+"id": "ganesha-glass-door-painting",
+"title": "Ganesha Glass Door Painting",
 "cat": "crafts",
 "date": "2022-01-09",
 "w": 532,
@@ -2488,8 +2480,8 @@ window.ARTWORKS = [
 "h": 839
 },
 {
-"id": "person-releasing-birds-painting",
-"title": "Person Releasing Birds Painting",
+"id": "freedom-painting",
+"title": "Freedom Painting",
 "cat": "paintings",
 "date": "2021-12-19",
 "w": 1200,
@@ -2672,8 +2664,8 @@ window.ARTWORKS = [
 "h": 878
 },
 {
-"id": "jagannath-rangoli-with-diyas",
-"title": "Jagannath Rangoli With Diyas",
+"id": "dushera-rangoli",
+"title": "Dushera Rangoli",
 "cat": "rangoli",
 "date": "2021-10-15",
 "w": 1200,
@@ -2736,20 +2728,20 @@ window.ARTWORKS = [
 "h": 871
 },
 {
-"id": "ganesha-doodle-grid",
-"title": "Ganesha Doodle Grid",
-"cat": "drawings",
-"date": "2021-09-23",
-"w": 1200,
-"h": 911
-},
-{
 "id": "faces-and-hearts-doodle-page",
 "title": "Faces And Hearts Doodle Page",
 "cat": "drawings",
 "date": "2021-09-23",
 "w": 1200,
 "h": 900
+},
+{
+"id": "astavinayak",
+"title": "Astavinayak",
+"cat": "drawings",
+"date": "2021-09-23",
+"w": 1200,
+"h": 911
 },
 {
 "id": "ganesha-silhouette-triptych",
@@ -2776,16 +2768,16 @@ window.ARTWORKS = [
 "h": 900
 },
 {
-"id": "krishna-with-cow-by-river",
-"title": "Krishna With Cow By River",
+"id": "ganesha-with-cow-by-river",
+"title": "Ganesha with Cow by River",
 "cat": "paintings",
 "date": "2021-09-15",
 "w": 1200,
 "h": 1200
 },
 {
-"id": "lovebirds-and-fireworks",
-"title": "Lovebirds And Fireworks",
+"id": "birds-in-night",
+"title": "Birds in Night",
 "cat": "drawings",
 "date": "2021-09-14",
 "w": 1080,
@@ -2808,8 +2800,8 @@ window.ARTWORKS = [
 "h": 900
 },
 {
-"id": "ganesha-modak-face-art",
-"title": "Ganesha Modak Face Art",
+"id": "ganesha-in-kalas",
+"title": "Ganesha in Kalas",
 "cat": "drawings",
 "date": "2021-09-11",
 "w": 1200,
@@ -2832,8 +2824,8 @@ window.ARTWORKS = [
 "h": 903
 },
 {
-"id": "bird-and-flowers-circle-art",
-"title": "Bird And Flowers Circle Art",
+"id": "madhubani",
+"title": "Madhubani",
 "cat": "drawings",
 "date": "2021-09-06",
 "w": 1200,
@@ -3112,12 +3104,20 @@ window.ARTWORKS = [
 "h": 540
 },
 {
-"id": "peacock-and-om-rangoli",
-"title": "Peacock And Om Rangoli",
+"id": "shivratri-kolam",
+"title": "Shivratri Kolam",
 "cat": "rangoli",
 "date": "2021-03-11",
 "w": 1200,
 "h": 703
+},
+{
+"id": "womens-day-rangoli",
+"title": "Womens Day Rangoli",
+"cat": "rangoli",
+"date": "2021-03-07",
+"w": 1200,
+"h": 701
 },
 {
 "id": "womens-day-heart-rangoli",
@@ -3134,14 +3134,6 @@ window.ARTWORKS = [
 "date": "2021-03-07",
 "w": 1200,
 "h": 1137
-},
-{
-"id": "womens-day-butterfly-rangoli",
-"title": "Womens Day Butterfly Rangoli",
-"cat": "rangoli",
-"date": "2021-03-07",
-"w": 1200,
-"h": 701
 },
 {
 "id": "woman-with-diya-in-floral-arch",
@@ -3349,14 +3341,6 @@ window.ARTWORKS = [
 "cat": "rangoli",
 "date": "",
 "w": 960,
-"h": 1200
-},
-{
-"id": "school-teachers-group-painting",
-"title": "School Teachers Group Painting",
-"cat": "paintings",
-"date": "",
-"w": 900,
 "h": 1200
 },
 {
@@ -3608,6 +3592,14 @@ window.ARTWORKS = [
 "h": 843
 },
 {
+"id": "my-sons-merit-award",
+"title": "My Sons Merit Award",
+"cat": "paintings",
+"date": "",
+"w": 900,
+"h": 1200
+},
+{
 "id": "music-notes-doodle-sketchbook-page",
 "title": "Music Notes Doodle Sketchbook Page",
 "cat": "drawings",
@@ -3630,6 +3622,14 @@ window.ARTWORKS = [
 "date": "",
 "w": 1142,
 "h": 1200
+},
+{
+"id": "mother-child",
+"title": "Mother & Child",
+"cat": "paintings",
+"date": "",
+"w": 916,
+"h": 1140
 },
 {
 "id": "mother-and-daughter-tree-dance",
@@ -3880,19 +3880,19 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "ganesha-with-devotees-crowd",
-"title": "Ganesha With Devotees Crowd",
-"cat": "paintings",
-"date": "",
-"w": 900,
-"h": 1200
-},
-{
 "id": "ganesha-temple-idol-painting",
 "title": "Ganesha Temple Idol Painting",
 "cat": "paintings",
 "date": "",
 "w": 1005,
+"h": 1200
+},
+{
+"id": "ganesha-social-media",
+"title": "Ganesha & Social Media",
+"cat": "paintings",
+"date": "",
+"w": 900,
 "h": 1200
 },
 {
@@ -4088,14 +4088,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "couple-embracing-with-butterfly",
-"title": "Couple Embracing With Butterfly",
-"cat": "paintings",
-"date": "",
-"w": 916,
-"h": 1140
-},
-{
 "id": "couple-and-light-bulb-sketchbook-page",
 "title": "Couple And Light Bulb Sketchbook Page",
 "cat": "drawings",
@@ -4221,6 +4213,14 @@ window.ARTWORKS = [
 "cat": "paintings",
 "date": "",
 "w": 1015,
+"h": 1200
+},
+{
+"id": "art-lies-even-in-simple-lines",
+"title": "Art Lies Even in Simple Lines",
+"cat": "drawings",
+"date": "",
+"w": 903,
 "h": 1200
 },
 {
