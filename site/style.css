@@ -149,7 +149,7 @@ section { padding: clamp(3.5rem, 9vw, 7.5rem) var(--gutter); }
   --text: #ece6d8; --muted: #a9a6ba; --gold: #d4ae5c; --gold-dim: rgba(212, 174, 92, .35); --on-gold: #0d0f1c; }
 .spot-head h2 { max-width: 18ch; margin: 0 auto; }
 .hint { color: var(--muted); font-style: italic; font-family: var(--serif); font-size: 1.25rem; margin: 1rem 0 2.2rem; }
-.spot-stage { position: relative; width: min(100%, 760px); margin: 0 auto; cursor: crosshair; touch-action: pan-y;
+.spot-stage { position: relative; width: min(100%, 760px); max-width: 100%; margin: 0 auto; cursor: crosshair; touch-action: pan-y;
   --x: 50%; --y: 50%; --r: 110px; user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;
   border-radius: 4px; overflow: hidden; box-shadow: 0 0 0 1px rgba(212, 174, 92, .12), 0 40px 90px rgba(0, 0, 0, .6); }
 .spot-stage:focus-visible { outline-offset: 6px; }

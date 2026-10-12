@@ -97,8 +97,9 @@ function spotlight() {
   };
   const fit = () => {
     if (!a) return;
-    const vw = document.documentElement.clientWidth;
-    const w = Math.min(760, vw - 32, (innerHeight * 0.68 * a.w) / a.h);
+    const sec = stage.parentElement, cs = getComputedStyle(sec);
+    const room = sec.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);   // inside the margins
+    const w = Math.min(760, room, (innerHeight * 0.68 * a.w) / a.h);
     stage.style.width = Math.round(w) + "px";
     stage.style.aspectRatio = `${a.w} / ${a.h}`;       // known size before the image arrives: no jump
     base = Math.max(70, Math.min(140, w * 0.2));
