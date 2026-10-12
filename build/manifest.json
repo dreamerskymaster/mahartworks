@@ -108,12 +108,6 @@
 "px": 1721344,
 "w": 1200
 },
-"0bd2aa6044988044b1b375d1786427a8": {
-"h": 1250106320972762445,
-"hgt": 1200,
-"px": 7441070,
-"w": 903
-},
 "0bef983b20bfee15a1b60d3b755a5f03": {
 "h": 12968349154190087412,
 "hgt": 865,
@@ -270,6 +264,12 @@
 "px": 1125918,
 "w": 827
 },
+"18c5d52f2755e2f35fb47bdb8ee9c304": {
+"h": 154849116444386160,
+"hgt": 1200,
+"px": 9071798,
+"w": 1042
+},
 "18d05ed9f0843317ab50ae93a1bfa56b": {
 "h": 14744382985094737032,
 "hgt": 1013,
@@ -341,6 +341,12 @@
 "hgt": 1200,
 "px": 3025308,
 "w": 1168
+},
+"1e3ad4062847f2e544df000403b0f41c": {
+"h": 7921509527137810101,
+"hgt": 973,
+"px": 6712041,
+"w": 1200
 },
 "1ec6f8ffdbf09d4c67ac16b85e654869": {
 "h": 2256141980210628608,
@@ -2346,6 +2352,12 @@
 "px": 785408,
 "w": 1024
 },
+"bf4d40bebdf7c82fbca96519ef29516f": {
+"h": 12352243428321295896,
+"hgt": 1200,
+"px": 49449024,
+"w": 1200
+},
 "bfbcfbe9e1a8fd2c5f2b7507da14c171": {
 "h": 14478751606821343221,
 "hgt": 900,
@@ -3318,6 +3330,10 @@
 "cbe5a65aed6bec5d0d43e296a3ac8097",
 1
 ],
+"all-in-one-dieties": [
+"70ddaf08fde45c0cc746fe7929a1d9cc",
+1
+],
 "all-seeing-eye-painted-metal-box": [
 "65bd521dd17d8f0ec6b11fbe28f7a46f",
 1
@@ -3364,6 +3380,10 @@
 ],
 "beauty-beast": [
 "5646bad38f1f1001557157b49ff70d1a",
+1
+],
+"best-out-waste-tissue-art": [
+"ecbeb5cfd912ba0d7543c7f478d938ad",
 1
 ],
 "bird-and-branches-on-hexagon-tile": [
@@ -3726,16 +3746,16 @@
 "9bbe8155f261af33ffe289d65d7141bb",
 1
 ],
-"durga-face-painting": [
-"1cf8569182c0084289968fb91299fc35",
-1
-],
 "durga-face-rangoli": [
 "1f83cc82298383eae90f315f73e14c20",
 1
 ],
 "dushera-rangoli": [
 "417d0a9f3d9ef84a7b279cddd3e24075",
+1
+],
+"dusshera-rangoli": [
+"61836783af9bb465bff964d76fd13f7b",
 1
 ],
 "elderly-couple-sitting-line-drawing": [
@@ -3842,6 +3862,14 @@
 "9acc2fa949b551235ff61c7778f637ce",
 1
 ],
+"folk-dancer": [
+"b329fffe9b863c0a070412a8ecc0d12a",
+1
+],
+"forest-waterfall-diamond-arr": [
+"f40ea471da75636d9fe34e4b6d10cbb9",
+1
+],
 "four-color-mandala": [
 "ed99b275ad2d9a473c4b13102d3636f3",
 1
@@ -3878,16 +3906,20 @@
 "1151236fd98ff6c191da2a3e3947b6bb",
 1
 ],
+"ganesh-jayanti-rangoli": [
+"a62f9d56b94fb987479c2b1a0b4c9901",
+1
+],
 "ganesha-and-durga-glitter-art": [
 "6e960bfb8c89f303810ae20f927aa1ac",
 1
 ],
-"ganesha-and-krishna-round-mirror-art": [
-"c082e38cabc39122cfaf62b84c6befd4",
-1
-],
 "ganesha-and-swan-mandala-sketches": [
 "62dcc237c18ec6768a0fe84b1d41af5f",
+1
+],
+"ganesha-balaji-painting": [
+"28fd1d3cd57332fab45d3eeceadc3719",
 1
 ],
 "ganesha-butterfly-rangoli": [
@@ -3986,20 +4018,12 @@
 "bfbcfbe9e1a8fd2c5f2b7507da14c171",
 1
 ],
-"ganesha-square-rangoli": [
-"a62f9d56b94fb987479c2b1a0b4c9901",
-1
-],
 "ganesha-star-rangoli": [
 "70a03c926d27a7d5c4c6cb134c6d4f41",
 1
 ],
 "ganesha-symbols-drawing-page": [
 "1ec6f8ffdbf09d4c67ac16b85e654869",
-1
-],
-"ganesha-temple-idol-painting": [
-"28fd1d3cd57332fab45d3eeceadc3719",
 1
 ],
 "ganesha-triptych": [
@@ -4274,16 +4298,8 @@
 "ca268c54ce1fef42a2b96118340c8529",
 1
 ],
-"jagannath-and-trishul-rangoli": [
-"61836783af9bb465bff964d76fd13f7b",
-1
-],
 "jagannath-puppets-folk-art": [
 "4a2fe6dc29131b404cf56fea06389e41",
-1
-],
-"jagannath-rangoli": [
-"e2f3e6651abcafd8cac30e1cf08bd2e8",
 1
 ],
 "jai-shri-hanuman-rangoli": [
@@ -4306,12 +4322,12 @@
 "09c5e43bfbb3e6deb46030a99a30e341",
 1
 ],
-"kalash-kolam-rangoli": [
-"54f7d5cf76a7a6c21d807b4855d7bb20",
-1
-],
 "kali-face-drawing": [
 "5fa0dbc38a5521c65471c13c96e20623",
+1
+],
+"kartigai-rangoli": [
+"35c4c12afab9e5e80f473166bea044b3",
 1
 ],
 "karva-chauth-rangoli": [
@@ -4350,12 +4366,24 @@
 "65b8dbb7145c8518c1c70c0a1d4302ff",
 1
 ],
+"krishna-jayanti-rangoli": [
+"e2f3e6651abcafd8cac30e1cf08bd2e8",
+1
+],
 "krishna-playing-flute": [
 "a565c1380c6ed967e77489d99ea2994e",
 1
 ],
 "krishna-playing-flute-2": [
 "3d3a123046312142bcf1ed1ad74bb0ce",
+1
+],
+"krishna-shank": [
+"c082e38cabc39122cfaf62b84c6befd4",
+1
+],
+"krishna-sudhama": [
+"6f5730553e3c6646c4ef0cb9b5a12bd1",
 1
 ],
 "lake-village-pencil-sketch-in-circle": [
@@ -4384,10 +4412,6 @@
 ],
 "line-art-figures-sketchbook-page": [
 "dcc35f3ee98f9b262252dec43ffb7112",
-1
-],
-"lips-and-figures-sketchbook-page": [
-"249e36a366bf5f07445f6d211d9f62b6",
 1
 ],
 "lips-hearts-and-faces-sketchbook-page": [
@@ -4546,8 +4570,8 @@
 "13955a6fbab170aa83170d1a7ab71b7e",
 1
 ],
-"mountains-under-moon-pen-art": [
-"0bd2aa6044988044b1b375d1786427a8",
+"murali-art": [
+"1cf8569182c0084289968fb91299fc35",
 1
 ],
 "music-dance-glass-painting": [
@@ -4584,6 +4608,10 @@
 ],
 "navratri-golu-celebration-2": [
 "a8ea32952d51453b65ab76dc7188b775",
+1
+],
+"navratri-rangoli": [
+"bf4d40bebdf7c82fbca96519ef29516f",
 1
 ],
 "never-ever-let-me-go-couple": [
@@ -4678,10 +4706,6 @@
 "90583f7cd1026fc86097f2c78f718eb7",
 1
 ],
-"paper-dress-dancer-sculpture": [
-"ecbeb5cfd912ba0d7543c7f478d938ad",
-1
-],
 "patterned-sphere-pen-art": [
 "965d3116aff203a357f5befb6d515cd6",
 1
@@ -4722,7 +4746,7 @@
 "31055d1b2cd57faf0fb601d683db68ee",
 1
 ],
-"peacocks-om-star-rangoli": [
+"peacocks-ganpati-star-rangoli": [
 "fb74eabf4b04df349ea1c08c6d9c2114",
 1
 ],
@@ -4783,7 +4807,11 @@
 1
 ],
 "pongal-kolam": [
-"92c980d87843f9abb1397c7714d6104f",
+"1e3ad4062847f2e544df000403b0f41c",
+1
+],
+"pongal-rangoli": [
+"54f7d5cf76a7a6c21d807b4855d7bb20",
 1
 ],
 "proposal-at-sunset": [
@@ -4794,10 +4822,6 @@
 "cc17112f2127721ad385f3102b56fa33",
 1
 ],
-"purple-forest-waterfall": [
-"f40ea471da75636d9fe34e4b6d10cbb9",
-1
-],
 "purple-lotus-vines-on-green": [
 "c6d3c9895bbcd103c852d8d80ed947f8",
 1
@@ -4806,20 +4830,12 @@
 "cbaaf7639cc4995e22c2caf5b910828d",
 1
 ],
-"radha-krishna-folk-art-square-canvas": [
-"b329fffe9b863c0a070412a8ecc0d12a",
-1
-],
 "radha-krishna-silhouette-painting": [
 "f4d313c0474c19338b61a3ca7166da84",
 1
 ],
 "radha-krishna-under-tree-night": [
 "ccc5479235f0af13201b15358a5f2a8c",
-1
-],
-"radha-krishna-walking-under-tree": [
-"6f5730553e3c6646c4ef0cb9b5a12bd1",
 1
 ],
 "radha-krishna-with-deer": [
@@ -4856,10 +4872,6 @@
 ],
 "raksha-bandhan": [
 "d5d280aff2d512a66bb8f50c3960858d",
-1
-],
-"ram-and-sita-pencil-sketch": [
-"c52e751f5e07edc4f20497203424a51d",
 1
 ],
 "red-and-blue-mandala": [
@@ -4942,6 +4954,10 @@
 "a4867d8e61662d7011f27e1942a08e43",
 1
 ],
+"saibaba-on-canvas": [
+"18c5d52f2755e2f35fb47bdb8ee9c304",
+1
+],
 "saraswati-diamond-painting-kit": [
 "d5e436e3c5b759e1dc77f4b51b45a567",
 1
@@ -4956,6 +4972,10 @@
 ],
 "seven-running-horses-framed": [
 "39c1373f79e1a199f32bfb75e4e29aaa",
+1
+],
+"shadow-art": [
+"249e36a366bf5f07445f6d211d9f62b6",
 1
 ],
 "shankh-and-lotus-rangoli": [
@@ -5034,10 +5054,6 @@
 "12b308f48077490fb8b8751738de2c94",
 1
 ],
-"snowflake-kolam": [
-"8ca1a6671a7c75ce02820109c8ab0b58",
-1
-],
 "soldier-tribute-indian-flag": [
 "b8ed7087b2f95761adc317a3de1d8f3a",
 1
@@ -5068,10 +5084,6 @@
 ],
 "star-of-david-rangoli": [
 "4669884eb08c80401bfc395c990e10d4",
-1
-],
-"star-rangoli-with-candles": [
-"35c4c12afab9e5e80f473166bea044b3",
 1
 ],
 "starry-beach-drawing": [
@@ -5144,10 +5156,6 @@
 ],
 "tinted-glass-painting-on-canvas": [
 "2e00d3a55bd6a09641b32193ee10268a",
-1
-],
-"tirupati-balaji-and-deities-embossed": [
-"70ddaf08fde45c0cc746fe7929a1d9cc",
 1
 ],
 "tirupati-balaji-bead-embellished": [
@@ -5228,6 +5236,10 @@
 ],
 "village-women-carrying-pots-drawing": [
 "ebaf98e44559639027d70aba062cd520",
+1
+],
+"vithal-rakumai-sketch": [
+"c52e751f5e07edc4f20497203424a51d",
 1
 ],
 "warli-art-panels": [
@@ -5388,6 +5400,10 @@
 ],
 "womens-day-rangoli": [
 "c29bf940526e74db526a16365afaf008",
+1
+],
+"xmas-rangoli": [
+"8ca1a6671a7c75ce02820109c8ab0b58",
 1
 ],
 "yellow-and-red-mandala": [
