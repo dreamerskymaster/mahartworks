@@ -1,7 +1,8 @@
 """Bring build/catalog.tsv in line with the Drive folder.
 
-- A file whose contents we already know (same md5) keeps its type and date; if she renamed it,
-  the title follows her new filename.
+- A file whose contents we already know (same md5) keeps its date; if she renamed it, the title
+  follows her new filename, and so does the category when the new name says one (kolam, sketch,
+  painting, craft…). Hidden items (type `other`: collages, photos) stay hidden.
 - A new file gets its title from her filename and a type guessed from the words in it.
 - Files still carrying camera names (IMG_1234, Screenshot_…) are left off until she renames them.
 - Files deleted from Drive are dropped.
@@ -40,14 +41,24 @@ def title_of(name):
     return " ".join(out)
 
 
-def guess_type(title):
+PAINTING = re.compile(r"painting|canvas|acrylic|watercolou?r|oil|madhubani|warli|pichwai", re.I)
+
+
+def type_named(title):
+    """The category her filename asks for, or None if it names none."""
     if re.search(r"rangoli|kolam|pookalam", title, re.I):
         return "rangoli"
     if CRAFT.search(title):
         return "craft"
     if DRAWING.search(title):
         return "drawing"
-    return "painting"     # rangoli / kolam are picked out from the title at build time
+    if PAINTING.search(title):
+        return "painting"
+    return None
+
+
+def guess_type(title):
+    return type_named(title) or "painting"
 
 
 def date_of(name, modified):
@@ -79,6 +90,8 @@ def main():
                 r["file"] = name
                 if not CAMERA.match(name.strip()):    # renamed to IMG_/UUID: keep the old title
                     r["title"] = title_of(name)
+                    if r["type"] != "other" and type_named(r["title"]):
+                        r["type"] = type_named(r["title"])
                 renamed.append(f"{known['file']} -> {name}")
             rows.append(r)
         elif CAMERA.match(name.strip()):

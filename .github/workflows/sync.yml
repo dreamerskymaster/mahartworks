@@ -22,12 +22,13 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: sync
-  cancel-in-progress: false
-
 jobs:
   sync:
+    # Only main is published. (A copy of this chain once ran on a PR branch and blocked main for 2 days.)
+    if: github.ref_name == github.event.repository.default_branch
+    concurrency:
+      group: sync
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 60
     env:
@@ -42,6 +43,9 @@ jobs:
           cache-dependency-path: build/requirements.txt
 
       - run: pip install -r build/requirements.txt
+
+      - name: Tests
+        run: python3 -m unittest discover -s tests -v
 
       - name: Compare Drive with the catalog
         id: sync
@@ -63,9 +67,11 @@ jobs:
           git push
 
   # Start the next sync in 20 minutes, using the built-in token (no personal token needed).
+  # If a newer run exists (a manual click or the hourly backup), that one carries the chain instead,
+  # so there is only ever one chain.
   next:
     needs: sync
-    if: always()
+    if: always() && github.ref_name == github.event.repository.default_branch
     runs-on: ubuntu-latest
     timeout-minutes: 30
     permissions:
@@ -75,8 +81,9 @@ jobs:
       GH_REPO: ${{ github.repository }}
     steps:
       - run: sleep 1200
-      - name: Queue the next run (unless one is already waiting)
+      - name: Queue the next run (unless a newer one already exists)
         run: |
-          waiting=$(gh run list --workflow sync.yml --branch "${{ github.ref_name }}" --status queued --json databaseId --jq length)
-          if [ "$waiting" != "0" ]; then echo "A run is already queued."; exit 0; fi
+          newer=$(gh run list --workflow sync.yml --branch "${{ github.ref_name }}" --limit 20 \
+            --json databaseId,status --jq '[.[] | select(.databaseId > ${{ github.run_id }} and .status != "completed")] | length')
+          if [ "$newer" != "0" ]; then echo "A newer run carries on."; exit 0; fi
           gh workflow run sync.yml --ref "${{ github.ref_name }}"
