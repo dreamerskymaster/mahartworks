@@ -342,12 +342,6 @@
 "px": 3025308,
 "w": 1168
 },
-"1e3ad4062847f2e544df000403b0f41c": {
-"h": 9768235971919767269,
-"hgt": 1200,
-"px": 7200000,
-"w": 540
-},
 "1ec6f8ffdbf09d4c67ac16b85e654869": {
 "h": 2256141980210628608,
 "hgt": 900,
@@ -3308,6 +3302,10 @@
 "84c36b5994fa27c6d99874ae1764fca4",
 1
 ],
+"african-dancers": [
+"d67b4071aa7b052de97bc1aa65097c38",
+1
+],
 "african-woman-carrying-pot": [
 "652221769bfd5d88d5631742afd938a6",
 1
@@ -3328,8 +3326,16 @@
 "0c05d945e29779106348d08b33d68b95",
 1
 ],
+"art-lies-even-in-simple-lines": [
+"c4b9e1cf73d481c80a1fefb340a18901",
+1
+],
 "assorted-figure-sketches-page": [
 "ca1fc4070718cfb54b4917ca5c395efa",
+1
+],
+"astavinayak": [
+"aa6b15c93b907611de9bcfb30e54ef4c",
 1
 ],
 "avengers-superheroes-painting": [
@@ -3356,20 +3362,28 @@
 "d2232ba9897f6a4c545017167ac0a1f0",
 1
 ],
-"bird-and-branches-on-hexagon-tile": [
-"700995d14456e7de5a4f42be6ddc6d99",
+"beauty-beast": [
+"5646bad38f1f1001557157b49ff70d1a",
 1
 ],
-"bird-and-flowers-circle-art": [
-"95d8811725cc25be115de1357780d893",
+"bird-and-branches-on-hexagon-tile": [
+"700995d14456e7de5a4f42be6ddc6d99",
 1
 ],
 "bird-and-flowers-silhouette": [
 "83464371ec92ceba0995d40a86f27da5",
 1
 ],
+"bird-stencil-painting": [
+"4c6edbdaa34b15ea8bb88a66ffd3033e",
+1
+],
 "birds-and-blossoms-heart-canvas": [
 "1940b1277b1f48f88e9364e12ba8ca49",
+1
+],
+"birds-in-night": [
+"815cd0b7ea703443d702b4d18c05fae4",
 1
 ],
 "birds-on-branch-watercolor": [
@@ -3442,10 +3456,6 @@
 ],
 "blue-face-with-flowers-glow-art": [
 "cf5db7cdf8eec1a55d5799c108729dc1",
-1
-],
-"blue-folk-art-bird": [
-"4c6edbdaa34b15ea8bb88a66ffd3033e",
 1
 ],
 "blue-krishna-face-with-flute": [
@@ -3612,10 +3622,6 @@
 "8580522b1a41bdd593ae681a160ab20d",
 1
 ],
-"couple-embracing-with-butterfly": [
-"4d5ccb7899ce616a4065c48f1f478511",
-1
-],
 "couple-heartbreak-drawing": [
 "0396356bd7d70707e860d5fbabffbef0",
 1
@@ -3726,6 +3732,10 @@
 ],
 "durga-face-rangoli": [
 "1f83cc82298383eae90f315f73e14c20",
+1
+],
+"dushera-rangoli": [
+"417d0a9f3d9ef84a7b279cddd3e24075",
 1
 ],
 "elderly-couple-sitting-line-drawing": [
@@ -3840,6 +3850,10 @@
 "d544b7ab6493475961066720dc190035",
 1
 ],
+"freedom-painting": [
+"cdf0c82f6ecc127cd4fa066f8347f70d",
+1
+],
 "friends-forever-hug-in-flower": [
 "89c9efdab0c0f60c5b651465b3bda23f",
 1
@@ -3884,8 +3898,8 @@
 "bfdcf9df5dd3784d8cccf4deef495c98",
 1
 ],
-"ganesha-doodle-grid": [
-"aa6b15c93b907611de9bcfb30e54ef4c",
+"ganesha-cows": [
+"f51b92b419555aa3cebf60250ae0336f",
 1
 ],
 "ganesha-face-rangoli": [
@@ -3906,6 +3920,14 @@
 ],
 "ganesha-flower-rangoli": [
 "a2dc1609223bd6364ee7915693af9016",
+1
+],
+"ganesha-glass-door-painting": [
+"d5126912dbf96687f045f46632717274",
+1
+],
+"ganesha-in-kalas": [
+"a3d5192e8e7ce67f5cfe9e98fd443cfc",
 1
 ],
 "ganesha-kolam": [
@@ -3932,10 +3954,6 @@
 "0a8a717480a99a5153dc7be7b23d5bf1",
 1
 ],
-"ganesha-modak-face-art": [
-"a3d5192e8e7ce67f5cfe9e98fd443cfc",
-1
-],
 "ganesha-names-diamond-painting": [
 "f225d38fa125795b8b88379714cc54d6",
 1
@@ -3958,6 +3976,10 @@
 ],
 "ganesha-silhouette-triptych": [
 "6e6d8124dde15e8dc8beb055a6e7cee4",
+1
+],
+"ganesha-social-media": [
+"e7c7b1d755ba6b42aa72b115a14bbf16",
 1
 ],
 "ganesha-spiral-zentangle": [
@@ -3992,8 +4014,8 @@
 "dd8ba8a42889e2d56da6a1d28e32609e",
 1
 ],
-"ganesha-with-devotees-crowd": [
-"e7c7b1d755ba6b42aa72b115a14bbf16",
+"ganesha-with-cow-by-river": [
+"2ecb4b35ab9d775619dfd67ef25472c4",
 1
 ],
 "ganpati-bappa-line-art": [
@@ -4196,6 +4218,10 @@
 "b24fddcca736d33ac40c25dbc7a43553",
 1
 ],
+"happy-sad-face-in-one": [
+"538c4e52e945118770cd4eeac72f50c1",
+1
+],
 "happy-womens-day-flower-rangoli": [
 "2a2453f14275e6fe71d9b82028793912",
 1
@@ -4222,6 +4248,10 @@
 ],
 "hibiscus-on-colorful-tiles": [
 "118842d966c68a6b699b52c8b39345e2",
+1
+],
+"hiden-in-face": [
+"1ffc91d6e4469f188fe8846db07f386e",
 1
 ],
 "hummingbird-stained-glass-style": [
@@ -4254,10 +4284,6 @@
 ],
 "jagannath-rangoli": [
 "e2f3e6651abcafd8cac30e1cf08bd2e8",
-1
-],
-"jagannath-rangoli-with-diyas": [
-"417d0a9f3d9ef84a7b279cddd3e24075",
 1
 ],
 "jai-shri-hanuman-rangoli": [
@@ -4330,14 +4356,6 @@
 ],
 "krishna-playing-flute-2": [
 "3d3a123046312142bcf1ed1ad74bb0ce",
-1
-],
-"krishna-with-cow-by-river": [
-"2ecb4b35ab9d775619dfd67ef25472c4",
-1
-],
-"krishna-with-cows-pichwai-style": [
-"f51b92b419555aa3cebf60250ae0336f",
 1
 ],
 "lake-village-pencil-sketch-in-circle": [
@@ -4424,10 +4442,6 @@
 "6c3595f1a0ecda734829614518f5e4cf",
 1
 ],
-"lovebirds-and-fireworks": [
-"815cd0b7ea703443d702b4d18c05fae4",
-1
-],
 "lovebirds-heart-rangoli": [
 "5089b74c8d5b260232111ecdc5df8d09",
 1
@@ -4446,6 +4460,10 @@
 ],
 "macaw-parrot-painting": [
 "99ea4d0679fe7a1581bbead172d14ec8",
+1
+],
+"madhubani": [
+"95d8811725cc25be115de1357780d893",
 1
 ],
 "madhubani-fish-and-lotus": [
@@ -4470,10 +4488,6 @@
 ],
 "man-portrait-pencil-sketch": [
 "ffe108905e47199efcaf00372d07b1b4",
-1
-],
-"man-profile-pencil-sketch": [
-"1ffc91d6e4469f188fe8846db07f386e",
 1
 ],
 "mandala-around-blue-eye": [
@@ -4516,6 +4530,10 @@
 "83387741fd61412f175aac8e83052a8d",
 1
 ],
+"mother-child": [
+"4d5ccb7899ce616a4065c48f1f478511",
+1
+],
 "mother-child-mandala-sketch-page": [
 "d172663a958d9feee9ee4442428d906e",
 1
@@ -4546,6 +4564,10 @@
 ],
 "my-son-s-merit-list-award-function": [
 "940513066cfbc8e94ae4ba26a7c07ee8",
+1
+],
+"my-sons-merit-award": [
+"d26b6d28057848efb7efffaf1b1035de",
 1
 ],
 "nandi-and-shiva-trishul-canvases": [
@@ -4672,10 +4694,6 @@
 "0dbf54d324022ccc2b856cb5a1a9dc70",
 1
 ],
-"peacock-and-om-rangoli": [
-"58618c9cb3fb2d807a225a54ee3d752a",
-1
-],
 "peacock-feather-rangoli": [
 "0d9ebd63ebf0fdf179fbaac0bddc7702",
 1
@@ -4714,10 +4732,6 @@
 ],
 "people-in-beach": [
 "f0434f7675852fbc2fe16acb04b0fa6e",
-1
-],
-"person-releasing-birds-painting": [
-"cdf0c82f6ecc127cd4fa066f8347f70d",
 1
 ],
 "pink-and-blue-mandala": [
@@ -4769,10 +4783,6 @@
 1
 ],
 "pongal-kolam": [
-"1e3ad4062847f2e544df000403b0f41c",
-1
-],
-"pongal-kolam-2": [
 "92c980d87843f9abb1397c7714d6104f",
 1
 ],
@@ -4940,10 +4950,6 @@
 "795738a9931f5dba81445e0f4d4fa353",
 1
 ],
-"school-teachers-group-painting": [
-"d26b6d28057848efb7efffaf1b1035de",
-1
-],
 "sea-stone-shell-painting": [
 "a1594a3781f90573360941847d8c9c9b",
 1
@@ -4986,6 +4992,10 @@
 ],
 "shivling-om-hibiscus-rangoli": [
 "9d4fbc54d01f83a790a56a992446e00f",
+1
+],
+"shivratri-kolam": [
+"58618c9cb3fb2d807a225a54ee3d752a",
 1
 ],
 "shree-ganesha-diya-rangoli": [
@@ -5112,10 +5122,6 @@
 "db0c993f61ea80d29319afb80f38fbcf",
 1
 ],
-"teddy-bear-door-art": [
-"d5126912dbf96687f045f46632717274",
-1
-],
 "teddy-on-moon-i-miss-you": [
 "99cd8afa111a191efd116b053133bcca",
 1
@@ -5124,16 +5130,8 @@
 "8ce2ae75317ad680e042780543b19367",
 1
 ],
-"the-more-you-will-see": [
-"538c4e52e945118770cd4eeac72f50c1",
-1
-],
 "three-childhoods-family-painting": [
 "35adf7b19381d4ec78ae88d4f7a276a4",
-1
-],
-"three-dancing-women-folk-art": [
-"d67b4071aa7b052de97bc1aa65097c38",
 1
 ],
 "three-elephants-round-canvas-painting": [
@@ -5368,10 +5366,6 @@
 "586c77e188f55c86e20ab9a4ad62ee40",
 1
 ],
-"woman-with-lion-pencil-sketch": [
-"5646bad38f1f1001557157b49ff70d1a",
-1
-],
 "woman-with-swirl-hair-zentangle": [
 "12d4ee8b2ed00b6916dc0cfa6dfc3225",
 1
@@ -5384,16 +5378,16 @@
 "a88cb5ce6fd4195aee117a070d17a392",
 1
 ],
-"womens-day-butterfly-rangoli": [
-"c29bf940526e74db526a16365afaf008",
-1
-],
 "womens-day-face-rangoli": [
 "a6559da81058b5f442aecd977c0b95c7",
 1
 ],
 "womens-day-heart-rangoli": [
 "18d05ed9f0843317ab50ae93a1bfa56b",
+1
+],
+"womens-day-rangoli": [
+"c29bf940526e74db526a16365afaf008",
 1
 ],
 "yellow-and-red-mandala": [
