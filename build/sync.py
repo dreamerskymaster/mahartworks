@@ -69,7 +69,8 @@ def date_of(name, modified):
 
 
 def main():
-    old = list(csv.DictReader(open(CATALOG), delimiter="\t"))
+    with open(CATALOG) as f:
+        old = list(csv.DictReader(f, delimiter="\t"))
     by_file = {r["file"]: r for r in old}
     by_md5 = {r["md5"]: r for r in old if r.get("md5")}
     rows, added, renamed, waiting, skipped, copies = [], [], [], [], [], []
