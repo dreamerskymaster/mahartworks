@@ -1,5 +1,29 @@
 window.ARTWORKS = [
 {
+"id": "saibaba-on-canvas",
+"title": "Saibaba on Canvas",
+"cat": "paintings",
+"date": "2026-10-12",
+"w": 1042,
+"h": 1200
+},
+{
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-10-12",
+"w": 1200,
+"h": 973
+},
+{
+"id": "navratri-rangoli",
+"title": "Navratri Rangoli",
+"cat": "rangoli",
+"date": "2026-10-12",
+"w": 1200,
+"h": 1200
+},
+{
 "id": "sea-stone-shell-painting",
 "title": "Sea Stone Shell Painting",
 "cat": "paintings",
@@ -94,14 +118,6 @@ window.ARTWORKS = [
 "date": "2026-09-27",
 "w": 1200,
 "h": 1146
-},
-{
-"id": "pongal-kolam",
-"title": "Pongal Kolam",
-"cat": "rangoli",
-"date": "2026-09-27",
-"w": 1200,
-"h": 973
 },
 {
 "id": "my-son-s-merit-list-award-function",
@@ -232,8 +248,8 @@ window.ARTWORKS = [
 "h": 1178
 },
 {
-"id": "durga-face-painting",
-"title": "Durga Face Painting",
+"id": "murali-art",
+"title": "Murali Art",
 "cat": "paintings",
 "date": "2026-01-17",
 "w": 676,
@@ -248,8 +264,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "tirupati-balaji-and-deities-embossed",
-"title": "Tirupati Balaji And Deities Embossed",
+"id": "all-in-one-dieties",
+"title": "All in One Dieties",
 "cat": "paintings",
 "date": "2025-12-18",
 "w": 1040,
@@ -264,8 +280,8 @@ window.ARTWORKS = [
 "h": 984
 },
 {
-"id": "peacocks-om-star-rangoli",
-"title": "Peacocks Om Star Rangoli",
+"id": "peacocks-ganpati-star-rangoli",
+"title": "Peacocks Ganpati Star Rangoli",
 "cat": "rangoli",
 "date": "2025-11-28",
 "w": 1200,
@@ -384,8 +400,8 @@ window.ARTWORKS = [
 "h": 969
 },
 {
-"id": "jagannath-and-trishul-rangoli",
-"title": "Jagannath And Trishul Rangoli",
+"id": "dusshera-rangoli",
+"title": "Dusshera Rangoli",
 "cat": "rangoli",
 "date": "2025-09-24",
 "w": 1200,
@@ -432,20 +448,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "ganesha-square-rangoli",
-"title": "Ganesha Square Rangoli",
-"cat": "rangoli",
-"date": "2025-08-27",
-"w": 1200,
-"h": 804
-},
-{
 "id": "ganesha-face-rangoli",
 "title": "Ganesha Face Rangoli",
 "cat": "rangoli",
 "date": "2025-08-27",
 "w": 1200,
 "h": 951
+},
+{
+"id": "ganesh-jayanti-rangoli",
+"title": "Ganesh Jayanti Rangoli",
+"cat": "rangoli",
+"date": "2025-08-27",
+"w": 1200,
+"h": 804
 },
 {
 "id": "radha-krishna-with-flute",
@@ -624,8 +640,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "radha-krishna-folk-art-square-canvas",
-"title": "Radha Krishna Folk Art Square Canvas",
+"id": "folk-dancer",
+"title": "Folk Dancer",
 "cat": "paintings",
 "date": "2025-05-19",
 "w": 676,
@@ -784,12 +800,20 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "kalash-kolam-rangoli",
-"title": "Kalash Kolam Rangoli",
+"id": "pongal-rangoli",
+"title": "Pongal Rangoli",
 "cat": "rangoli",
 "date": "2025-01-14",
 "w": 1200,
 "h": 973
+},
+{
+"id": "xmas-rangoli",
+"title": "Xmas Rangoli",
+"cat": "rangoli",
+"date": "2024-12-20",
+"w": 676,
+"h": 1200
 },
 {
 "id": "star-kolam-with-swirls",
@@ -800,16 +824,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "snowflake-kolam",
-"title": "Snowflake Kolam",
-"cat": "rangoli",
-"date": "2024-12-20",
-"w": 676,
-"h": 1200
-},
-{
-"id": "star-rangoli-with-candles",
-"title": "Star Rangoli With Candles",
+"id": "kartigai-rangoli",
+"title": "Kartigai Rangoli",
 "cat": "rangoli",
 "date": "2024-12-13",
 "w": 1200,
@@ -888,19 +904,27 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "paper-dress-dancer-sculpture",
-"title": "Paper Dress Dancer Sculpture",
+"id": "dot-mandala-orange-and-blue",
+"title": "Dot Mandala Orange And Blue",
+"cat": "mandalas",
+"date": "2024-11-02",
+"w": 1147,
+"h": 1200
+},
+{
+"id": "best-out-waste-tissue-art",
+"title": "Best Out Waste Tissue Art",
 "cat": "crafts",
 "date": "2024-11-02",
 "w": 1068,
 "h": 1200
 },
 {
-"id": "dot-mandala-orange-and-blue",
-"title": "Dot Mandala Orange And Blue",
-"cat": "mandalas",
-"date": "2024-11-02",
-"w": 1147,
+"id": "krishna-shank",
+"title": "Krishna & Shank",
+"cat": "crafts",
+"date": "2024-11-01",
+"w": 1143,
 "h": 1200
 },
 {
@@ -910,14 +934,6 @@ window.ARTWORKS = [
 "date": "2024-11-01",
 "w": 1200,
 "h": 964
-},
-{
-"id": "ganesha-and-krishna-round-mirror-art",
-"title": "Ganesha And Krishna Round Mirror Art",
-"cat": "crafts",
-"date": "2024-11-01",
-"w": 1143,
-"h": 1200
 },
 {
 "id": "happy-diwali-peacock-rangoli",
@@ -936,8 +952,8 @@ window.ARTWORKS = [
 "h": 855
 },
 {
-"id": "jagannath-rangoli",
-"title": "Jagannath Rangoli",
+"id": "krishna-jayanti-rangoli",
+"title": "Krishna Jayanti Rangoli",
 "cat": "rangoli",
 "date": "2024-10-30",
 "w": 1200,
@@ -989,14 +1005,6 @@ window.ARTWORKS = [
 "cat": "drawings",
 "date": "2024-10-22",
 "w": 964,
-"h": 1200
-},
-{
-"id": "mountains-under-moon-pen-art",
-"title": "Mountains Under Moon Pen Art",
-"cat": "drawings",
-"date": "2024-10-21",
-"w": 903,
 "h": 1200
 },
 {
@@ -1056,8 +1064,8 @@ window.ARTWORKS = [
 "h": 1151
 },
 {
-"id": "radha-krishna-walking-under-tree",
-"title": "Radha Krishna Walking Under Tree",
+"id": "krishna-sudhama",
+"title": "Krishna Sudhama",
 "cat": "paintings",
 "date": "2024-09-23",
 "w": 757,
@@ -1432,6 +1440,14 @@ window.ARTWORKS = [
 "h": 750
 },
 {
+"id": "shadow-art",
+"title": "Shadow Art",
+"cat": "drawings",
+"date": "2023-11-09",
+"w": 750,
+"h": 562
+},
+{
 "id": "love-couples-drawing-page",
 "title": "Love Couples Drawing Page",
 "cat": "drawings",
@@ -1442,14 +1458,6 @@ window.ARTWORKS = [
 {
 "id": "lips-hearts-and-faces-sketchbook-page",
 "title": "Lips Hearts And Faces Sketchbook Page",
-"cat": "drawings",
-"date": "2023-11-09",
-"w": 750,
-"h": 562
-},
-{
-"id": "lips-and-figures-sketchbook-page",
-"title": "Lips And Figures Sketchbook Page",
 "cat": "drawings",
 "date": "2023-11-09",
 "w": 750,
@@ -3208,6 +3216,14 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
+"id": "vithal-rakumai-sketch",
+"title": "Vithal Rakumai Sketch",
+"cat": "drawings",
+"date": "",
+"w": 900,
+"h": 1200
+},
+{
 "id": "village-life-sunset-scene",
 "title": "Village Life Sunset Scene",
 "cat": "drawings",
@@ -3400,14 +3416,6 @@ window.ARTWORKS = [
 "h": 1024
 },
 {
-"id": "ram-and-sita-pencil-sketch",
-"title": "Ram And Sita Pencil Sketch",
-"cat": "drawings",
-"date": "",
-"w": 900,
-"h": 1200
-},
-{
 "id": "rajasthani-woman-with-veena",
 "title": "Rajasthani Woman With Veena",
 "cat": "paintings",
@@ -3438,14 +3446,6 @@ window.ARTWORKS = [
 "date": "",
 "w": 970,
 "h": 1200
-},
-{
-"id": "purple-forest-waterfall",
-"title": "Purple Forest Waterfall",
-"cat": "paintings",
-"date": "",
-"w": 1080,
-"h": 773
 },
 {
 "id": "proposal-at-sunset",
@@ -3880,14 +3880,6 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "ganesha-temple-idol-painting",
-"title": "Ganesha Temple Idol Painting",
-"cat": "paintings",
-"date": "",
-"w": 1005,
-"h": 1200
-},
-{
 "id": "ganesha-social-media",
 "title": "Ganesha & Social Media",
 "cat": "paintings",
@@ -3902,6 +3894,14 @@ window.ARTWORKS = [
 "date": "",
 "w": 1080,
 "h": 1107
+},
+{
+"id": "ganesha-balaji-painting",
+"title": "Ganesha & Balaji Painting",
+"cat": "paintings",
+"date": "",
+"w": 1005,
+"h": 1200
 },
 {
 "id": "friendship-quote-faces-drawing",
@@ -3926,6 +3926,14 @@ window.ARTWORKS = [
 "date": "",
 "w": 888,
 "h": 1180
+},
+{
+"id": "forest-waterfall-diamond-arr",
+"title": "Forest & Waterfall Diamond Arr",
+"cat": "paintings",
+"date": "",
+"w": 1080,
+"h": 773
 },
 {
 "id": "floral-tree-line-art",
