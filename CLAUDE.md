@@ -22,9 +22,18 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   it commits as artworks-sync[bot]. Pull before editing locally. Titles come from her filenames; camera-named files wait.
 - **Schedule:** GitHub's own cron is best-effort (in Oct 2026 it fired only every 4–8 h), so each sync run's
   `next` job sleeps 20 min and dispatches the following run with the built-in `github.token` (actions: write).
-  The hourly cron only restarts the chain if a run is ever lost. Free: the repo is public, so minutes are unlimited.
-  Pause with Actions → Disable workflow. Videos (.mp4) are skipped by design — the site is images only.
-- Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync preserves them.
+  The hourly cron only restarts the chain if a run is ever lost; a run that sees a newer one stops, so there is
+  one chain. Both jobs are gated to `main` and `concurrency` is on the `sync` job only (so the 20-min sleep never
+  blocks a manual run). Free: public repo. Pause with Actions → Disable workflow.
+- **Never run sync.yml on a non-main branch.** On 2026-10-10 PR #2 was merged minutes before its last commit;
+  the chain kept running on the PR branch for 2 days, committing her renames there and cancelling every main run
+  via the shared concurrency group. Check `gh run list --workflow sync.yml` for branch runs if the site goes stale.
+- **Renames:** title follows her new filename; type follows it too when the name has a category word
+  (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
+- **Tests:** `python3 -m unittest discover -s tests -v` (22 cases); CI runs them before syncing — add a case for
+  any new naming rule.
+- Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync keeps them
+  unless she renames the file with a different category word.
 - Every Drive rename is appended to `~/Documents/artwork-rename-backup/rename_log.tsv` (old, new) so it can be undone.
 - `build/cache/` is gitignored and slow to rebuild (Drive downloads on demand); in a worktree, symlink it
   to the main checkout's `build/cache`.
@@ -32,7 +41,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 ## Content rules
 - "Sketch" = pencil only; coloured pen/crayon = "Drawing". Rangoli/kolam/mandala are title-detected,
   so avoid those words in titles of paintings (a "Kolam Border" canvas once landed in Rangoli).
-- Watermark: colour MS seal (style 1) until she picks; options in README. Originals are never stamped.
+- Watermark: colour MS seal (style 1), confirmed by Ajith 2026-10-12. Originals are never stamped.
 - Her story in About is her own words — quote verbatim, don't edit.
 - Footer line "Made by Ajith, for his only loving Mom" stays.
 - `site/policies.html` is written for an Indian sole proprietor (DPDP Act 2023, Consumer Protection
@@ -41,5 +50,5 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - No trackers, cookies or third-party requests (fonts are self-hosted) — the privacy policy says so.
 
 ## Open
-- Her watermark choice (1/2/3).
+- Watermark: **decided 2026-10-12 — colour MS seal (style 1)**, see-through, bottom-right, on every picture.
 - Scheduled workflows in public repos pause after 60 days without commits; re-enable in the Actions tab if she goes quiet.

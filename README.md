@@ -3,7 +3,7 @@
 Live at **https://mah-artworks.pages.dev** · repo `dreamerskymaster/mahartworks`
 
 Static site in `site/` (plain HTML/CSS/JS, no build step on the server). The gallery images
-are generated on a Mac from her "my artworks" Google Drive folder, which the build only reads.
+are generated (by GitHub Actions, or on a Mac) from her "my artworks" Google Drive folder, which the build only reads.
 
 ## Publishing
 The Cloudflare Pages project `mah-artworks` is connected to this repo: **every push to `main`
@@ -16,18 +16,39 @@ Manual fallback, from the repo root:
 Preview locally with `cd site && python3 -m http.server 8765`.
 
 ## Adding / removing artworks — automatic
-**She just adds, renames or deletes photos in her "my artworks" Drive folder.**
-GitHub Actions (`.github/workflows/sync.yml`) checks the folder every 3 hours, rebuilds, and pushes;
-Cloudflare then publishes. To publish immediately: GitHub → Actions → "Sync artworks from Google Drive" → Run workflow.
+**She just adds, renames or deletes photos in her "my artworks" Drive folder.** Within about
+20 minutes the change is live, with her MS seal watermark on every picture.
+
+How it runs (`.github/workflows/sync.yml`, on `main` only):
+1. **Tests** (`tests/`) run first; if they fail, nothing is published.
+2. `build/sync.py` compares Drive with `build/catalog.tsv`; `build/build.py` stamps and resizes only new photos.
+3. The bot commits and pushes to `main`; Cloudflare Pages publishes.
+4. The `next` job waits 20 minutes and starts the next run with GitHub's built-in token (no personal token).
+   GitHub's hourly cron is only a backup that restarts this chain if it ever stops. There is only ever one chain:
+   a run that sees a newer one hands over to it.
+
+To publish immediately: GitHub → Actions → "Sync artworks from Google Drive" → Run workflow.
+To pause everything: same page → "…" → Disable workflow.
 
 How the sync names things (`build/sync.py`):
 - **Title = her filename**, tidied: "Pongal kolam.jpg" → "Pongal Kolam". Trailing " 2", "(1)", "~3" are dropped.
 - **Category** from words in the name: rangoli/kolam/pookalam → Rangoli & Kolam; mandala → Mandalas;
-  sketch/drawing/pencil/crayon/doodle → Drawings; craft/mirror/embroidery/plate → Crafts; anything else → Paintings.
-- **Renaming keeps the category**: a photo is recognised by its contents (md5), not its name.
-- Photos still named by the camera (`IMG_…`, `Screenshot_…`, `PXL_…`) are **held back** until she renames them.
-- To fix a category by hand, edit the `type` column in `build/catalog.tsv` (painting, drawing, craft,
-  rangoli; `other` hides a file) and push — the sync keeps hand edits.
+  sketch/drawing/pencil/crayon/doodle → Drawings; craft/mirror/embroidery/plate → Crafts;
+  painting/canvas/acrylic/watercolour → Paintings; no category word → Paintings.
+- **Renaming** updates the title, and the category too when the new name has a category word
+  ("… kolam" moves it to Rangoli & Kolam). With no such word it keeps its category. A photo is
+  recognised by its contents (md5), not its name, so its date is kept.
+- Photos still named by the camera (`IMG_…`, `Screenshot_…`, `PXL_…`, UUIDs) are **held back** until she renames them.
+- Videos (`.mp4`) are skipped by design — the site shows pictures only.
+- Hidden items (`other`: collages, phone photos) stay hidden even if renamed. To fix a category by hand,
+  edit the `type` column in `build/catalog.tsv` (painting, drawing, craft, rangoli, other) and push.
+- Safety stop: a run that would remove more than a third of the artworks publishes nothing.
+
+## Tests
+    python3 -m unittest discover -s tests -v
+`tests/test_sync.py` replays add / rename / delete / copy / video / camera-name / safety cases against a
+fake Drive listing; `tests/test_build.py` checks the seal is stamped bottom-right, see-through, and the
+gallery sections. CI runs them before every sync.
 
 Access: Google service account `mahartworks-sync@ajithmlopsie7374.iam.gserviceaccount.com`
 (project `ajithmlopsie7374`) with **Viewer** access to the folder; its key is the repo secret
