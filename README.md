@@ -44,20 +44,35 @@ How the sync names things (`build/sync.py`):
   edit the `type` column in `build/catalog.tsv` (painting, drawing, craft, rangoli, other) and push.
 - Safety stop: a run that would remove more than a third of the artworks publishes nothing.
 
+## The site (`site/`)
+Plain HTML/CSS/JS, no framework or build step; designed phone-first and checked at 360, 390, 768 and 1440 px.
+- **Home:** hero with her words and five artworks, stats, the **Spotlight** easter egg, gallery, journey,
+  her letter (sealed with her stamp), contact, footer with policies and the dedication.
+- **Spotlight:** a painting in the dark; the light follows the cursor (laptop), the finger (phone) or the
+  arrow keys. "Reveal the painting", then "Try another painting". Picks from `SPOTLIGHT` in `site/app.js`;
+  titles that no longer exist are skipped, and it falls back to any paintings.
+- **Gallery:** category chips (swipeable on phones), search, 48 at a time with "Show more". Phones show titles
+  under each piece; laptops show them on hover.
+- **Viewer:** arrows / swipe, counter, Share (phone share sheet, else copies the link). Each artwork has a link,
+  `https://mah-artworks.pages.dev/#art/<id>`, that opens it directly.
+- **Display panel:** theme, text size, reduce motion, contrast, readable font, underline links.
+- Installable as a phone app (`manifest.webmanifest`, `icons/`); link previews use `og.jpg`.
+  Regenerate both with `python3 build/make_assets.py`.
+- `site/_headers`: security headers (strict CSP: no inline scripts, nothing third-party) and caching.
+
 ## Tests
-    python3 -m unittest discover -s tests -v
-`tests/test_sync.py` replays add / rename / delete / copy / video / camera-name / safety cases against a
-fake Drive listing; `tests/test_build.py` checks the seal is stamped bottom-right, see-through, and the
-gallery sections. CI runs them before every sync.
+    python3 -m unittest discover -s tests -v          # 35 cases
+    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 30 browser cases (needs Chrome)
+- `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
+- `tests/test_build.py`: the seal is stamped bottom-right and see-through; gallery sections.
+- `tests/test_site.py`: every artwork has both images, no orphans, all links and anchors resolve, no inline
+  scripts (CSP), meta/manifest/icons, her About text unchanged.
+- `tests/e2e/`: real Chrome on two phones, a tablet and a laptop: no errors or broken files, no sideways scroll,
+  menu, spotlight (mouse, finger, keys, reduced motion), filters, search, viewer, shared links, share, settings.
+  `server.mjs` serves `site/` like Cloudflare Pages, including the `_headers` CSP.
 
-Access: Google service account `mahartworks-sync@ajithmlopsie7374.iam.gserviceaccount.com`
-(project `ajithmlopsie7374`) with **Viewer** access to the folder; its key is the repo secret
-`GOOGLE_SERVICE_ACCOUNT_JSON`. It can only read.
-
-On the Mac the same scripts read the local Drive folder: `python3 build/sync.py && python3 build/build.py`.
-`build/manifest.json` remembers every image already processed, so only new photos are downloaded.
-
-Naming rule: **"Sketch"** only for pencil sketches; coloured pen / crayon work is a **"Drawing"**.
+CI: `.github/workflows/test.yml` runs both suites on every push and pull request; `sync.yml` runs the
+Python suite before each Drive sync.
 
 ## Watermark
     python3 build/build.py --wm 1   # colour seal, see-through, bottom-right (current)

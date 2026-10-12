@@ -2,15 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mahalakshmi Srikanth — Art</title>
 <meta name="description" content="Paintings, drawings, mandalas and rangoli by Mahalakshmi Srikanth. From life's many roles to discovering my artist's soul.">
+<link rel="canonical" href="https://mah-artworks.pages.dev/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mahalakshmi Srikanth Art">
+<meta property="og:url" content="https://mah-artworks.pages.dev/">
 <meta property="og:title" content="Mahalakshmi Srikanth — Art">
-<meta property="og:description" content="From life's many roles to discovering my artist's soul.">
-<meta property="og:image" content="seal.png">
+<meta property="og:description" content="Paintings, sketches, mandalas and rangoli. From life's many roles to discovering my artist's soul.">
+<meta property="og:image" content="https://mah-artworks.pages.dev/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Mahalakshmi Srikanth">
 <meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
 <meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
-<link rel="icon" href="seal.png">
+<link rel="icon" href="icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="Mahalakshmi Art">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mahalakshmi Srikanth","jobTitle":"Artist","url":"https://mah-artworks.pages.dev/","image":"https://mah-artworks.pages.dev/og.jpg","email":"mailto:mahasriphoto24@gmail.com","sameAs":["https://instagram.com/mah_artworks"]}</script>
 <link rel="stylesheet" href="fonts/fonts.css">
 <script src="prefs.js"></script>
 <link rel="stylesheet" href="style.css">
@@ -21,7 +33,10 @@
 
 <header class="nav">
   <a class="brand" href="#top"><img src="seal.png" alt="" width="36" height="34"><span>Mahalakshmi Srikanth</span><span class="sr-only"> — home</span></a>
-  <nav aria-label="Main"><a href="#spotlight">Spotlight</a><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <nav id="site-menu" class="menu" aria-label="Main"><a href="#spotlight">Spotlight</a><a href="#gallery">Gallery</a><a href="#journey">Journey</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  <div class="nav-tools">
+    <button class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
 </header>
 
 <main id="main">
@@ -35,23 +50,35 @@
         <span class="reveal-line"><span><em>my artist’s soul</em></span></span>
       </h1>
       <p class="lede reveal-line"><span>Six years of learning, experimenting and finding joy — one stroke at a time.</span></p>
-      <a class="btn fadein" href="#spotlight">Step inside ↓</a>
+      <div class="hero-cta fadein">
+        <a class="btn btn-solid" href="#gallery">View the collection</a>
+        <a class="btn" href="#contact">Commission a piece</a>
+      </div>
     </div>
     <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+  </section>
+
+  <section class="stats" aria-label="At a glance">
+    <div><strong id="stat-works">500+</strong><span>artworks</span></div>
+    <div><strong id="stat-forms">5</strong><span>art forms</span></div>
+    <div><strong>2020</strong><span>painting since</span></div>
   </section>
 
   <section id="spotlight" class="spotlight">
     <div class="spot-head">
       <p class="eyebrow">Spotlight</p>
       <h2>Some things are worth discovering slowly</h2>
-      <p class="hint" id="spot-hint">Move your light across the canvas…</p>
+      <p class="hint" id="spot-hint">Move your cursor across the canvas…</p>
     </div>
-    <div class="spot-stage" id="spot-stage" role="img" aria-labelledby="spot-title">
+    <div class="spot-stage" id="spot-stage" tabindex="0" aria-describedby="spot-hint" aria-label="A painting hidden in the dark. Use the arrow keys to move the light.">
       <img class="spot-dim" id="spot-dim" alt="" draggable="false">
       <img class="spot-lit" id="spot-lit" alt="" draggable="false">
-      <button class="spot-btn" id="spot-reveal">Reveal the painting</button>
     </div>
-    <p class="spot-title" id="spot-title"></p>
+    <div class="spot-actions">
+      <button class="btn btn-solid" id="spot-reveal">Reveal the painting</button>
+      <button class="btn" id="spot-next" hidden>Try another painting</button>
+    </div>
+    <p class="spot-title" id="spot-title" aria-live="polite"></p>
   </section>
 
   <section id="gallery" class="gallery">
@@ -59,9 +86,16 @@
       <p class="eyebrow">The collection</p>
       <h2>Gallery</h2>
     </div>
-    <div class="filters" id="filters" role="group" aria-label="Filter artworks by type"></div>
-    <p class="sr-only" aria-live="polite" id="grid-status"></p>
+    <div class="toolbar" id="toolbar">
+      <div class="filters" id="filters" role="group" aria-label="Filter artworks by type"></div>
+      <label class="search"><span class="sr-only">Search artworks</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <input id="search" type="search" placeholder="Search — e.g. Ganesha, kolam" autocomplete="off" enterkeyhint="search">
+      </label>
+    </div>
+    <p class="grid-status" aria-live="polite" id="grid-status"></p>
     <div class="grid" id="grid"></div>
+    <p class="empty" id="empty" hidden>No artworks match that search. <button class="link" id="clear-search">Show everything</button></p>
   </section>
 
   <section id="journey" class="journey">
@@ -97,7 +131,7 @@
       <p class="eyebrow">Say hello</p>
       <h2>Get in touch</h2>
     </div>
-    <p>For enquiries about an artwork, commissions, or just to share some love.</p>
+    <p>For enquiries about an artwork, a commission, or just to share some love — she replies personally.</p>
     <div class="contact-links" id="contact-links"></div>
   </section>
 </main>
@@ -118,11 +152,18 @@
 </footer>
 
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
-  <button class="lb-close" aria-label="Close">×</button>
-  <button class="lb-prev" aria-label="Previous">‹</button>
+  <div class="lb-top">
+    <span class="lb-count" id="lb-count"></span>
+    <div>
+      <button class="lb-share" id="lb-share" aria-label="Share this artwork"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg><span>Share</span></button>
+      <button class="lb-close" aria-label="Close">×</button>
+    </div>
+  </div>
+  <button class="lb-prev" aria-label="Previous artwork">‹</button>
   <figure><img id="lb-img" alt="" draggable="false"><figcaption id="lb-cap"></figcaption></figure>
-  <button class="lb-next" aria-label="Next">›</button>
+  <button class="lb-next" aria-label="Next artwork">›</button>
 </div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
 <script src="data.js"></script>
 <script src="app.js"></script>
