@@ -72,8 +72,13 @@ describe("fits the screen", () => {
         const p = await open(device, { path });
         for (const y of [0, 0.25, 0.5, 0.75, 1]) {
           await p.evaluate((f) => window.scrollTo(0, document.body.scrollHeight * f), y); await sleep(150);
-          const [sw, cw] = await p.evaluate(() => [document.documentElement.scrollWidth, document.documentElement.clientWidth]);
-          assert.ok(sw <= cw, `${device} ${path} at ${y * 100}%: page is ${sw}px wide on a ${cw}px screen`);
+          const [sw, cw, wide] = await p.evaluate(() => {
+            const W = document.documentElement.clientWidth;
+            const wide = [...document.querySelectorAll("body *")].filter((el) => el.getBoundingClientRect().right > W + 1)
+              .slice(-6).map((el) => `${el.tagName.toLowerCase()}${el.id ? "#" + el.id : ""}.${String(el.className).split(" ")[0]} →${Math.round(el.getBoundingClientRect().right)}`);
+            return [document.documentElement.scrollWidth, W, wide];
+          });
+          assert.ok(sw <= cw, `${device} ${path} at ${y * 100}%: page is ${sw}px wide on a ${cw}px screen; widest: ${wide.join(", ")}`);
         }
         await done(p);
       }
