@@ -144,12 +144,25 @@ describe("spotlight easter egg", () => {
     const [x1] = await lightAt(p); assert.ok(x1 > x0 + 10, `${x0} -> ${x1}`);
     await done(p);
   });
-  test("fits a phone screen and keeps its proportions", async () => {
-    const p = await open("phoneSmall"); const b = await toStage(p);
-    assert.ok(b.width <= 360 - 32 + 1, `stage ${b.width}px wide`);
-    assert.ok(b.height <= 740 * 0.7 + 2, `stage ${b.height}px tall`);
-    await done(p);
-  });
+  for (const device of ["phoneSmall", "tablet", "laptop"]) {
+    test(`every spotlight painting fits on ${device} (it picks one at random)`, async () => {
+      const p = await open(device); await toStage(p);
+      const n = await p.evaluate(() => SPOTLIGHT.filter((t) => ARTWORKS.some((a) => a.title === t)).length || 6);
+      for (let i = 0; i < n; i++) {
+        const r = await p.evaluate(() => {
+          const st = document.querySelector("#spot-stage"), sec = st.parentElement, cs = getComputedStyle(sec), b = st.getBoundingClientRect();
+          return { title: document.querySelector("#spot-title").textContent, right: b.right, left: b.left, h: b.height,
+            inner: sec.getBoundingClientRect().right - parseFloat(cs.paddingRight), W: document.documentElement.clientWidth,
+            sw: document.documentElement.scrollWidth, H: innerHeight };
+        });
+        assert.ok(r.right <= r.inner + 1 && r.left >= 0, `${device} "${r.title}": stage ${Math.round(r.left)}..${Math.round(r.right)}, margin at ${Math.round(r.inner)}`);
+        assert.ok(r.sw <= r.W, `${device} "${r.title}": page ${r.sw}px on ${r.W}px`);
+        assert.ok(r.h <= r.H * 0.7 + 2, `${device} "${r.title}": ${Math.round(r.h)}px tall on a ${r.H}px screen`);
+        await p.click("#spot-reveal"); await sleep(1300); await p.click("#spot-next"); await sleep(200);
+      }
+      await done(p);
+    });
+  }
   test("reveal shows the title; 'Try another painting' hides it again", async () => {
     const p = await open("laptop"); await toStage(p);
     const t0 = await p.$eval("#spot-title", (t) => t.textContent);
