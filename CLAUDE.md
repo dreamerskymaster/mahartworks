@@ -30,13 +30,24 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   via the shared concurrency group. Check `gh run list --workflow sync.yml` for branch runs if the site goes stale.
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
-- **Tests:** `python3 -m unittest discover -s tests -v` (22 cases); CI runs them before syncing — add a case for
-  any new naming rule.
+- **Tests:** `python3 -m unittest discover -s tests -v` (35) and `npm test --prefix tests/e2e` (30, real Chrome at
+  phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a case for any
+  new naming rule or UI behaviour.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync keeps them
   unless she renames the file with a different category word.
 - Every Drive rename is appended to `~/Documents/artwork-rename-backup/rename_log.tsv` (old, new) so it can be undone.
 - `build/cache/` is gitignored and slow to rebuild (Drive downloads on demand); in a worktree, symlink it
   to the main checkout's `build/cache`.
+
+## Site (redesigned 2026-10-12)
+- Phone-first, no framework. Breakpoints 860 (menu becomes a dropdown) / 640 (2-column grid, swipeable chips) / 480
+  (icon-only Display button). Never let anything widen the page: the e2e "no sideways scrolling" test catches it
+  (the absolutely-positioned stamp once did; `.about` clips it).
+- CSP in `site/_headers` forbids inline scripts — keep JS in files (JSON-LD is allowed). prefs.js fills `#year`.
+- Spotlight: mouse, touch (touchmove) and arrow keys; reduced motion makes the reveal instant but keeps it playable
+  (it used to auto-reveal, which looked "broken" on Macs with Reduce Motion on).
+- Deep links `#art/<id>`; ids are slugs of titles, so a rename changes the link.
+- `og.jpg` and `icons/` come from `build/make_assets.py`.
 
 ## Content rules
 - "Sketch" = pencil only; coloured pen/crayon = "Drawing". Rangoli/kolam/mandala are title-detected,
