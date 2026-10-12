@@ -96,7 +96,7 @@ window.ARTWORKS = [
 "h": 1146
 },
 {
-"id": "pongal-kolam",
+"id": "pongal-kolam-2",
 "title": "Pongal Kolam",
 "cat": "rangoli",
 "date": "2026-09-27",
@@ -1208,8 +1208,8 @@ window.ARTWORKS = [
 "h": 959
 },
 {
-"id": "colorful-petals-rangoli",
-"title": "Colorful Petals Rangoli",
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
 "cat": "rangoli",
 "date": "2024-01-15",
 "w": 540,
@@ -1784,8 +1784,8 @@ window.ARTWORKS = [
 "h": 398
 },
 {
-"id": "two-dancers-against-brick-wall",
-"title": "Two Dancers Against Brick Wall",
+"id": "african-women-dancer",
+"title": "African Women Dancer",
 "cat": "paintings",
 "date": "2023-01-19",
 "w": 685,
@@ -2568,8 +2568,8 @@ window.ARTWORKS = [
 "h": 1200
 },
 {
-"id": "girls-and-diya-sketch-page",
-"title": "Girls And Diya Sketch Page",
+"id": "femal-thinking",
+"title": "Femal Thinking",
 "cat": "drawings",
 "date": "2021-11-04",
 "w": 1200,
@@ -3512,6 +3512,14 @@ window.ARTWORKS = [
 "h": 782
 },
 {
+"id": "people-in-beach",
+"title": "People in Beach",
+"cat": "drawings",
+"date": "",
+"w": 824,
+"h": 1200
+},
+{
 "id": "peacock-zentangle-doodle",
 "title": "Peacock Zentangle Doodle",
 "cat": "drawings",
@@ -3984,14 +3992,6 @@ window.ARTWORKS = [
 "h": 1154
 },
 {
-"id": "family-gathering-line-drawing",
-"title": "Family Gathering Line Drawing",
-"cat": "drawings",
-"date": "",
-"w": 824,
-"h": 1200
-},
-{
 "id": "fairy-and-landscape-sketchbook-page",
 "title": "Fairy And Landscape Sketchbook Page",
 "cat": "drawings",
@@ -4229,6 +4229,14 @@ window.ARTWORKS = [
 "cat": "paintings",
 "date": "",
 "w": 996,
+"h": 1200
+},
+{
+"id": "all-deities-in-one",
+"title": "All Deities in One",
+"cat": "paintings",
+"date": "",
+"w": 1040,
 "h": 1200
 },
 {
