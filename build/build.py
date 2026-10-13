@@ -9,6 +9,7 @@ import argparse, csv, hashlib, json, os, re, subprocess, tempfile
 from PIL import Image, ImageOps
 
 import drive
+import seo
 import watermark
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -152,6 +153,7 @@ def main():
     from collections import Counter
     print(f"{len(cands)} candidates -> {len(items)} artworks ({made} images made)",
           dict(Counter(i["cat"] for i in items)))
+    seo.generate()   # artwork + category pages, sitemap, llms.txt from the new data.js (build/seo.py)
 
 
 if __name__ == "__main__":

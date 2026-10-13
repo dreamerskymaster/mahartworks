@@ -58,9 +58,10 @@ class PagesTest(unittest.TestCase):
             for ref in re.findall(r'(?:src|href)="([^"]+)"', html):
                 if re.match(r"(https?:|mailto:|#|tel:)", ref):
                     continue
-                path = ref.split("#")[0].split("?")[0]
-                if path:
-                    self.assertTrue(os.path.exists(os.path.join(SITE, path)), f"{page}: {ref}")
+                path = ref.split("#")[0].split("?")[0].lstrip("/") or "index.html"
+                if not os.path.splitext(path)[1]:        # pretty URL, as Cloudflare Pages serves it: /paintings
+                    path += ".html"
+                self.assertTrue(os.path.exists(os.path.join(SITE, path)), f"{page}: {ref}")
 
     def test_in_page_anchors_exist(self):
         idx = open(os.path.join(SITE, "index.html")).read()

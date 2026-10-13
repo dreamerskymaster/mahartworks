@@ -266,6 +266,71 @@ describe("artwork viewer", () => {
   });
 });
 
+/** Is anything wider than the screen, at a few scroll positions? Returns the first problem, or "". */
+async function sideways(p) {
+  for (const y of [0, 0.5, 1]) {
+    await p.evaluate((f) => window.scrollTo(0, document.body.scrollHeight * f), y); await sleep(150);
+    const [sw, cw] = await p.evaluate(() => [document.documentElement.scrollWidth, document.documentElement.clientWidth]);
+    if (sw > cw) return `page is ${sw}px wide on a ${cw}px screen at ${y * 100}%`;
+  }
+  return "";
+}
+
+describe("artwork and category pages (for search engines)", () => {
+  let art;
+  before(async () => {
+    const p = await open("laptop"); art = await p.evaluate(() => ARTWORKS.slice(0, 12)); await done(p);
+  });
+  for (const device of ["phone", "laptop"]) {
+    test(`artwork page on ${device}: loads cleanly, fits, enquiry names the ID, opens in the gallery`, async () => {
+      const a = art.find((x) => x.cat === "rangoli") || art[0];
+      const p = await open(device, { path: `/art/${a.id}` });
+      assert.equal(await p.$eval("h1", (h) => h.textContent), a.title);
+      assert.equal(await p.$eval(".art-figure img", (i) => i.complete && i.naturalWidth > 0), true, "artwork image loads");
+      assert.equal(await p.$eval('link[rel="canonical"]', (l) => l.href), `https://mah-artworks.pages.dev/art/${a.id}`);
+      const mail = decodeURIComponent(await p.$eval(".art-cta a[href^='mailto:']", (l) => l.href));
+      assert.ok(mail.includes(`(ID ${a.id})`) && mail.includes(a.title), mail);
+      assert.ok(await p.$$eval(".related .tiles a", (l) => l.length) > 0, "related artworks");
+      assert.equal(await p.$eval(".a11y-btn", (b) => !!b), true, "Display button, like every page");
+      assert.equal(await sideways(p), "", device);
+      await p.evaluate(() => window.scrollTo(0, 0)); await sleep(100);
+      assert.deepEqual(p.problems, [], `${device} /art/${a.id}`);
+      await p.$eval(`.art-cta a[href="/#art/${a.id}"]`, (l) => l.scrollIntoView({ block: "center" })); await sleep(100);
+      await Promise.all([p.waitForNavigation({ waitUntil: "networkidle0" }), p.click(`.art-cta a[href="/#art/${a.id}"]`)]);
+      await sleep(400);
+      assert.equal(await p.$eval("#lightbox", (l) => l.hidden), false, "gallery viewer opens");
+      assert.match(await p.$eval("#lb-cap", (c) => c.textContent), new RegExp(a.title.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")));
+      await done(p);
+    });
+    test(`category page on ${device}: loads cleanly, fits, lists every artwork as a link`, async () => {
+      const p = await open(device, { path: "/rangoli" });
+      const [links, total, h1] = await p.evaluate(() => [document.querySelectorAll(".tiles a[href^='/art/']").length,
+        +document.querySelector('.cat-nav a[aria-current="page"] small').textContent, document.querySelector("h1").textContent]);
+      assert.equal(h1, "Rangoli & Kolam");
+      assert.ok(links > 20 && links === total, `${links} links, ${total} in the chip`);
+      await p.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await sleep(500);
+      assert.equal(await sideways(p), "", device);
+      assert.deepEqual(p.problems, [], `${device} /rangoli`);
+      const first = await p.$eval(".tiles a", (l) => l.getAttribute("href"));
+      await p.$eval(".tiles a", (l) => l.scrollIntoView({ block: "center" })); await sleep(100);
+      await Promise.all([p.waitForNavigation({ waitUntil: "networkidle0" }), p.click(".tiles a")]);
+      assert.equal(new URL(p.url()).pathname, first);
+      assert.equal(await p.$eval("h1", (h) => h.textContent.length > 0), true);
+      await done(p);
+    });
+  }
+  test("home page links every category; a removed artwork's address is a 404", async () => {
+    const p = await open("phone");
+    const cats = await p.$$eval("footer .foot-cats a", (l) => l.map((a) => a.getAttribute("href")));
+    assert.deepEqual(cats, ["/paintings", "/drawings", "/mandalas", "/rangoli", "/crafts"].filter((c) => cats.includes(c)));
+    assert.ok(cats.length >= 4, cats.join(", "));
+    const r = await fetch(server.url + "/art/no-such-artwork");
+    assert.equal(r.status, 404);
+    assert.match(await r.text(), /noindex/);
+    await done(p);
+  });
+});
+
 describe("display settings and accessibility", () => {
   test("dark / light choice applies and is remembered", async () => {
     const p = await open("phone");

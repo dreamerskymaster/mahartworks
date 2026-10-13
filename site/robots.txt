@@ -1,4 +1,33 @@
+# Everyone may read the whole site: search engines and AI answer engines alike.
+# The AI crawlers are named only to make the choice explicit. See README "Search engines and AI".
 User-agent: *
+Allow: /
+
+# Search and answer engines (they cite and link to the page they read)
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Applebot
+User-agent: DuckDuckBot
+Allow: /
+
+# AI model training. Allowed for now. To opt out of training only, change "Allow: /" to
+# "Disallow: /" in this group; search and answers above are unaffected.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: meta-externalagent
+Allow: /
+
+# Gemini: Google-Extended covers Gemini training and Gemini's grounded answers, so blocking it
+# would also keep her work out of Gemini answers (Google Search itself is unaffected).
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://mah-artworks.pages.dev/sitemap.xml
