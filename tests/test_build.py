@@ -42,6 +42,9 @@ class CategoryTest(unittest.TestCase):
         self.assertEqual(c("craft", "Mirror Work Plate"), "crafts")
         self.assertEqual(c("painting", "Sea Stone Shell Painting"), "paintings")
         self.assertEqual(c("drawing", "Girl In Rain Drawing"), "drawings")
+        self.assertEqual(c("painting", "Kathakali Framed Oil Painting"), "oils")
+        self.assertEqual(c("oil", "Seven Running Horses"), "oils")
+        self.assertEqual(c("craft", "Foil Relief Flowers Art"), "crafts")      # "foil" is not oil
 
     def test_hidden_types_not_published(self):
         self.assertIn("other", build.SKIP_TYPES)

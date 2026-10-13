@@ -3,7 +3,7 @@ import json, os, re, unittest
 from PIL import Image
 
 SITE = os.path.join(os.path.dirname(__file__), "..", "site")
-CATS = {"paintings", "drawings", "mandalas", "rangoli", "crafts"}
+CATS = {"paintings", "oils", "drawings", "mandalas", "rangoli", "crafts"}
 
 
 def artworks():
