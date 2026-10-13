@@ -308,8 +308,5 @@ function contact() {
   if (!links.length) $("#contact").hidden = true;
 }
 
-// Discourage casual saving; the watermark is the real protection.
-document.addEventListener("contextmenu", (e) => { if (e.target.tagName === "IMG") e.preventDefault(); });
-
 document.querySelectorAll(".fade, .stamp").forEach((el) => io.observe(el));
 nav(); heroArt(); spotlight(); filters(); render(); gallery(); viewer(); contact(); openFromHash();
