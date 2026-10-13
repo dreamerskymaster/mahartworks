@@ -291,7 +291,6 @@
 /verify/MS-2024-0289 /art/couple-with-drum-folk-painting#certificate 301
 /verify/MS-2024-0290 /art/kartigai-rangoli#certificate 301
 /verify/MS-2024-0291 /art/star-kolam-with-swirls#certificate 301
-/verify/MS-2024-0292 /art/xmas-rangoli#certificate 301
 /verify/MS-2025-0293 /art/pongal-rangoli#certificate 301
 /verify/MS-2025-0294 /art/flamenco-dancer-stained-glass-style#certificate 301
 /verify/MS-2025-0295 /art/ganesha-kolam#certificate 301
@@ -312,7 +311,6 @@
 /verify/MS-2025-0310 /art/day-and-night-landscape-oval-canvas#certificate 301
 /verify/MS-2025-0311 /art/happy-mothers-day-rangoli#certificate 301
 /verify/MS-2025-0312 /art/foil-relief-flowers-art#certificate 301
-/verify/MS-2025-0313 /art/folk-dancer#certificate 301
 /verify/MS-2025-0314 /art/orange-flowers-textured-canvas#certificate 301
 /verify/MS-2025-0315 /art/pink-and-red-flower-rangoli#certificate 301
 /verify/MS-2025-0316 /art/sikku-kolam-knot-pattern#certificate 301
@@ -338,7 +336,6 @@
 /verify/MS-2025-0336 /art/ganesh-jayanti-rangoli#certificate 301
 /verify/MS-2025-0337 /art/ganesha-face-rangoli#certificate 301
 /verify/MS-2025-0338 /art/colorful-stars-rangoli#certificate 301
-/verify/MS-2025-0339 /art/star-of-david-rangoli#certificate 301
 /verify/MS-2025-0340 /art/tirupati-balaji-bead-embellished#certificate 301
 /verify/MS-2025-0341 /art/colorful-flower-rangoli#certificate 301
 /verify/MS-2025-0342 /art/white-kolam-with-purple-dots#certificate 301
@@ -355,13 +352,11 @@
 /verify/MS-2025-0353 /art/cube-pattern-flower-rangoli#certificate 301
 /verify/MS-2025-0354 /art/ganesha-lotus-rangoli-with-snowflakes#certificate 301
 /verify/MS-2025-0355 /art/shivling-ganesha-lotus-rangoli#certificate 301
-/verify/MS-2025-0356 /art/saraswati-diamond-painting-kit#certificate 301
 /verify/MS-2025-0357 /art/tirupati-balaji-with-hanging-diyas#certificate 301
 /verify/MS-2025-0358 /art/peacocks-ganpati-star-rangoli#certificate 301
 /verify/MS-2025-0359 /art/peacocks-star-rangoli#certificate 301
 /verify/MS-2025-0360 /art/all-in-one-dieties#certificate 301
 /verify/MS-2025-0361 /art/peacock-and-flowers-glass-painting#certificate 301
-/verify/MS-2026-0362 /art/murali-art#certificate 301
 /verify/MS-2026-0363 /art/golden-peacocks-embroidery#certificate 301
 /verify/MS-2026-0364 /art/happy-republic-day-girl-rangoli#certificate 301
 /verify/MS-2026-0365 /art/happy-womens-day-flower-rangoli#certificate 301
@@ -482,7 +477,6 @@
 /verify/MS-2026-0480 /art/mountain-lake-landscape-in-circle#certificate 301
 /verify/MS-2026-0481 /art/music-dance-glass-painting#certificate 301
 /verify/MS-2026-0482 /art/music-notes-doodle-sketchbook-page#certificate 301
-/verify/MS-2026-0483 /art/my-sons-merit-award#certificate 301
 /verify/MS-2026-0484 /art/nandi-and-shiva-trishul-canvases#certificate 301
 /verify/MS-2026-0485 /art/navratri-golu-celebration-2#certificate 301
 /verify/MS-2026-0486 /art/night-sky-with-hearts-abstract#certificate 301
@@ -539,5 +533,9 @@
 /verify/MS-2026-0537 /art/woman-dancing-with-lotus#certificate 301
 /verify/MS-2026-0538 /art/woman-on-tree-swing-with-parrot#certificate 301
 /verify/MS-2026-0539 /art/woman-with-diya-in-floral-arch#certificate 301
-/verify/MS-2026-0540 /art/framed-hanuman-and-kathakali-oil-painting#certificate 301
+/verify/MS-2026-0541 /art/folk-dancer#certificate 301
+/verify/MS-2026-0542 /art/kartigai-deepam-rangoli#certificate 301
+/verify/MS-2026-0543 /art/murali-art#certificate 301
+/verify/MS-2026-0544 /art/saraswati-diamond-painting#certificate 301
+/verify/MS-2026-0545 /art/xmas-rangoli#certificate 301
 /verify/* /verify?n=:splat 302

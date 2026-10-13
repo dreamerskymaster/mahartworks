@@ -1,5 +1,50 @@
 window.ARTWORKS = [
 {
+"id": "xmas-rangoli",
+"title": "Xmas Rangoli",
+"cat": "rangoli",
+"date": "2026-10-13",
+"w": 1200,
+"h": 1077,
+"cert": "MS-2026-0545"
+},
+{
+"id": "saraswati-diamond-painting",
+"title": "Saraswati Diamond Painting",
+"cat": "paintings",
+"date": "2026-10-13",
+"w": 1158,
+"h": 1200,
+"cert": "MS-2026-0544"
+},
+{
+"id": "murali-art",
+"title": "Murali Art",
+"cat": "paintings",
+"date": "2026-10-13",
+"w": 936,
+"h": 1200,
+"cert": "MS-2026-0543"
+},
+{
+"id": "kartigai-deepam-rangoli",
+"title": "Kartigai Deepam Rangoli",
+"cat": "rangoli",
+"date": "2026-10-13",
+"w": 1200,
+"h": 579,
+"cert": "MS-2026-0542"
+},
+{
+"id": "folk-dancer",
+"title": "Folk Dancer",
+"cat": "paintings",
+"date": "2026-10-13",
+"w": 1200,
+"h": 1169,
+"cert": "MS-2026-0541"
+},
+{
 "id": "saibaba-on-canvas",
 "title": "Saibaba on Canvas",
 "cat": "paintings",
@@ -7,6 +52,15 @@ window.ARTWORKS = [
 "w": 1042,
 "h": 1200,
 "cert": "MS-2026-0393"
+},
+{
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-10-12",
+"w": 1200,
+"h": 973,
+"cert": "MS-2026-0379"
 },
 {
 "id": "navratri-rangoli",
@@ -124,15 +178,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1146,
 "cert": "MS-2026-0380"
-},
-{
-"id": "pongal-kolam",
-"title": "Pongal Kolam",
-"cat": "rangoli",
-"date": "2026-09-27",
-"w": 1200,
-"h": 973,
-"cert": "MS-2026-0379"
 },
 {
 "id": "my-son-s-merit-list-award-function",
@@ -279,15 +324,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0363"
 },
 {
-"id": "murali-art",
-"title": "Murali Art",
-"cat": "paintings",
-"date": "2026-01-17",
-"w": 676,
-"h": 1200,
-"cert": "MS-2026-0362"
-},
-{
 "id": "peacock-and-flowers-glass-painting",
 "title": "Peacock And Flowers Glass Painting",
 "cat": "paintings",
@@ -331,15 +367,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 903,
 "cert": "MS-2025-0357"
-},
-{
-"id": "saraswati-diamond-painting-kit",
-"title": "Saraswati Diamond Painting Kit",
-"cat": "crafts",
-"date": "2025-11-24",
-"w": 676,
-"h": 1200,
-"cert": "MS-2025-0356"
 },
 {
 "id": "shivling-ganesha-lotus-rangoli",
@@ -484,15 +511,6 @@ window.ARTWORKS = [
 "w": 676,
 "h": 1200,
 "cert": "MS-2025-0340"
-},
-{
-"id": "star-of-david-rangoli",
-"title": "Star Of David Rangoli",
-"cat": "rangoli",
-"date": "2025-09-06",
-"w": 1200,
-"h": 677,
-"cert": "MS-2025-0339"
 },
 {
 "id": "colorful-stars-rangoli",
@@ -720,15 +738,6 @@ window.ARTWORKS = [
 "cert": "MS-2025-0314"
 },
 {
-"id": "folk-dancer",
-"title": "Folk Dancer",
-"cat": "paintings",
-"date": "2025-05-19",
-"w": 676,
-"h": 1200,
-"cert": "MS-2025-0313"
-},
-{
 "id": "foil-relief-flowers-art",
 "title": "Foil Relief Flowers Art",
 "cat": "crafts",
@@ -907,15 +916,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 973,
 "cert": "MS-2025-0293"
-},
-{
-"id": "xmas-rangoli",
-"title": "Xmas Rangoli",
-"cat": "rangoli",
-"date": "2024-12-20",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0292"
 },
 {
 "id": "star-kolam-with-swirls",
@@ -4041,15 +4041,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0484"
 },
 {
-"id": "my-sons-merit-award",
-"title": "My Sons Merit Award",
-"cat": "paintings",
-"date": "",
-"w": 900,
-"h": 1200,
-"cert": "MS-2026-0483"
-},
-{
 "id": "music-notes-doodle-sketchbook-page",
 "title": "Music Notes Doodle Sketchbook Page",
 "cat": "drawings",
@@ -4417,15 +4408,6 @@ window.ARTWORKS = [
 "w": 888,
 "h": 1180,
 "cert": "MS-2026-0442"
-},
-{
-"id": "framed-hanuman-and-kathakali-oil-painting",
-"title": "Framed Hanuman and Kathakali Oil Painting",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 675,
-"cert": "MS-2026-0540"
 },
 {
 "id": "forest-waterfall-diamond-arr",

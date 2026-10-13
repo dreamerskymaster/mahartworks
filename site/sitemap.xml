@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url><loc>https://mah-artworks.pages.dev/</loc><lastmod>2026-10-12</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/og.jpg</image:loc></image:image></url>
+  <url><loc>https://mah-artworks.pages.dev/</loc><lastmod>2026-10-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/og.jpg</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/policies</loc><lastmod>2026-09-27</lastmod></url>
   <url><loc>https://mah-artworks.pages.dev/verify</loc></url>
-  <url><loc>https://mah-artworks.pages.dev/paintings</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://mah-artworks.pages.dev/paintings</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://mah-artworks.pages.dev/drawings</loc><lastmod>2026-09-28</lastmod></url>
   <url><loc>https://mah-artworks.pages.dev/mandalas</loc><lastmod>2024-11-02</lastmod></url>
-  <url><loc>https://mah-artworks.pages.dev/rangoli</loc><lastmod>2026-10-12</lastmod></url>
+  <url><loc>https://mah-artworks.pages.dev/rangoli</loc><lastmod>2026-10-13</lastmod></url>
   <url><loc>https://mah-artworks.pages.dev/crafts</loc><lastmod>2026-01-24</lastmod></url>
+  <url><loc>https://mah-artworks.pages.dev/art/xmas-rangoli</loc><lastmod>2026-10-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/xmas-rangoli.webp</image:loc></image:image></url>
+  <url><loc>https://mah-artworks.pages.dev/art/saraswati-diamond-painting</loc><lastmod>2026-10-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/saraswati-diamond-painting.webp</image:loc></image:image></url>
+  <url><loc>https://mah-artworks.pages.dev/art/murali-art</loc><lastmod>2026-10-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/murali-art.webp</image:loc></image:image></url>
+  <url><loc>https://mah-artworks.pages.dev/art/kartigai-deepam-rangoli</loc><lastmod>2026-10-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/kartigai-deepam-rangoli.webp</image:loc></image:image></url>
+  <url><loc>https://mah-artworks.pages.dev/art/folk-dancer</loc><lastmod>2026-10-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/folk-dancer.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/saibaba-on-canvas</loc><lastmod>2026-10-12</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/saibaba-on-canvas.webp</image:loc></image:image></url>
+  <url><loc>https://mah-artworks.pages.dev/art/pongal-kolam</loc><lastmod>2026-10-12</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/pongal-kolam.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/navratri-rangoli</loc><lastmod>2026-10-12</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/navratri-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/sea-stone-shell-painting</loc><lastmod>2026-10-10</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/sea-stone-shell-painting.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/krishna-playing-flute-2</loc><lastmod>2026-10-10</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/krishna-playing-flute-2.webp</image:loc></image:image></url>
@@ -22,7 +28,6 @@
   <url><loc>https://mah-artworks.pages.dev/art/culture-of-india</loc><lastmod>2026-09-28</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/culture-of-india.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/woman-in-red-dress-with-handbag</loc><lastmod>2026-09-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/woman-in-red-dress-with-handbag.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/sitting-women-on-black-canvas</loc><lastmod>2026-09-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/sitting-women-on-black-canvas.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/pongal-kolam</loc><lastmod>2026-09-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/pongal-kolam.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/my-son-s-merit-list-award-function</loc><lastmod>2026-09-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/my-son-s-merit-list-award-function.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/musician-and-ram-sita-folk-art</loc><lastmod>2026-09-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/musician-and-ram-sita-folk-art.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/fish-relief-texture-art</loc><lastmod>2026-09-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/fish-relief-texture-art.webp</image:loc></image:image></url>
@@ -39,13 +44,11 @@
   <url><loc>https://mah-artworks.pages.dev/art/happy-womens-day-flower-rangoli</loc><lastmod>2026-03-08</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/happy-womens-day-flower-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/happy-republic-day-girl-rangoli</loc><lastmod>2026-01-25</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/happy-republic-day-girl-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/golden-peacocks-embroidery</loc><lastmod>2026-01-24</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/golden-peacocks-embroidery.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/murali-art</loc><lastmod>2026-01-17</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/murali-art.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/peacock-and-flowers-glass-painting</loc><lastmod>2025-12-21</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/peacock-and-flowers-glass-painting.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/all-in-one-dieties</loc><lastmod>2025-12-18</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/all-in-one-dieties.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/peacocks-star-rangoli</loc><lastmod>2025-11-28</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/peacocks-star-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/peacocks-ganpati-star-rangoli</loc><lastmod>2025-11-28</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/peacocks-ganpati-star-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/tirupati-balaji-with-hanging-diyas</loc><lastmod>2025-11-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/tirupati-balaji-with-hanging-diyas.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/saraswati-diamond-painting-kit</loc><lastmod>2025-11-24</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/saraswati-diamond-painting-kit.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/shivling-ganesha-lotus-rangoli</loc><lastmod>2025-11-07</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/shivling-ganesha-lotus-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/ganesha-lotus-rangoli-with-snowflakes</loc><lastmod>2025-11-07</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/ganesha-lotus-rangoli-with-snowflakes.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/cube-pattern-flower-rangoli</loc><lastmod>2025-10-25</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/cube-pattern-flower-rangoli.webp</image:loc></image:image></url>
@@ -62,7 +65,6 @@
   <url><loc>https://mah-artworks.pages.dev/art/white-kolam-with-purple-dots</loc><lastmod>2025-09-14</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/white-kolam-with-purple-dots.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/colorful-flower-rangoli</loc><lastmod>2025-09-14</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/colorful-flower-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/tirupati-balaji-bead-embellished</loc><lastmod>2025-09-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/tirupati-balaji-bead-embellished.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/star-of-david-rangoli</loc><lastmod>2025-09-06</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/star-of-david-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/colorful-stars-rangoli</loc><lastmod>2025-09-06</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/colorful-stars-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/ganesha-face-rangoli</loc><lastmod>2025-08-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/ganesha-face-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/ganesh-jayanti-rangoli</loc><lastmod>2025-08-27</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/ganesh-jayanti-rangoli.webp</image:loc></image:image></url>
@@ -88,7 +90,6 @@
   <url><loc>https://mah-artworks.pages.dev/art/sikku-kolam-knot-pattern</loc><lastmod>2025-05-31</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/sikku-kolam-knot-pattern.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/pink-and-red-flower-rangoli</loc><lastmod>2025-05-31</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/pink-and-red-flower-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/orange-flowers-textured-canvas</loc><lastmod>2025-05-29</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/orange-flowers-textured-canvas.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/folk-dancer</loc><lastmod>2025-05-19</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/folk-dancer.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/foil-relief-flowers-art</loc><lastmod>2025-05-19</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/foil-relief-flowers-art.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/happy-mothers-day-rangoli</loc><lastmod>2025-05-11</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/happy-mothers-day-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/day-and-night-landscape-oval-canvas</loc><lastmod>2025-05-10</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/day-and-night-landscape-oval-canvas.webp</image:loc></image:image></url>
@@ -109,7 +110,6 @@
   <url><loc>https://mah-artworks.pages.dev/art/ganesha-kolam</loc><lastmod>2025-02-16</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/ganesha-kolam.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/flamenco-dancer-stained-glass-style</loc><lastmod>2025-01-20</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/flamenco-dancer-stained-glass-style.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/pongal-rangoli</loc><lastmod>2025-01-14</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/pongal-rangoli.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/xmas-rangoli</loc><lastmod>2024-12-20</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/xmas-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/star-kolam-with-swirls</loc><lastmod>2024-12-20</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/star-kolam-with-swirls.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/kartigai-rangoli</loc><lastmod>2024-12-13</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/kartigai-rangoli.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/couple-with-drum-folk-painting</loc><lastmod>2024-11-28</lastmod><image:image><image:loc>https://mah-artworks.pages.dev/img/couple-with-drum-folk-painting.webp</image:loc></image:image></url>
@@ -457,7 +457,6 @@
   <url><loc>https://mah-artworks.pages.dev/art/night-sky-with-hearts-abstract</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/night-sky-with-hearts-abstract.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/navratri-golu-celebration-2</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/navratri-golu-celebration-2.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/nandi-and-shiva-trishul-canvases</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/nandi-and-shiva-trishul-canvases.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/my-sons-merit-award</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/my-sons-merit-award.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/music-notes-doodle-sketchbook-page</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/music-notes-doodle-sketchbook-page.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/music-dance-glass-painting</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/music-dance-glass-painting.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/mountain-lake-landscape-in-circle</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/mountain-lake-landscape-in-circle.webp</image:loc></image:image></url>
@@ -499,7 +498,6 @@
   <url><loc>https://mah-artworks.pages.dev/art/friendship-quote-faces-drawing</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/friendship-quote-faces-drawing.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/friends-therapy-quote-painting</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/friends-therapy-quote-painting.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/friends-forever-hug-in-flower</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/friends-forever-hug-in-flower.webp</image:loc></image:image></url>
-  <url><loc>https://mah-artworks.pages.dev/art/framed-hanuman-and-kathakali-oil-painting</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/framed-hanuman-and-kathakali-oil-painting.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/forest-waterfall-diamond-arr</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/forest-waterfall-diamond-arr.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/floral-tree-line-art</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/floral-tree-line-art.webp</image:loc></image:image></url>
   <url><loc>https://mah-artworks.pages.dev/art/floral-hummingbirds-painting-on-glass-door</loc><image:image><image:loc>https://mah-artworks.pages.dev/img/floral-hummingbirds-painting-on-glass-door.webp</image:loc></image:image></url>

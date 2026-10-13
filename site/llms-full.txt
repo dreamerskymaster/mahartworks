@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Art
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 540 artworks; artworks and commissions can be enquired about by email.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 538 artworks; artworks and commissions can be enquired about by email.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,11 +11,11 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 220 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 219 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 42 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 107 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
-- [Crafts](https://mah-artworks.pages.dev/crafts): 14 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
+- [Crafts](https://mah-artworks.pages.dev/crafts): 13 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
 Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with its title, category, date and an enquiry link.
 
@@ -47,8 +47,11 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (220)
+### Paintings (219)
 
+- [Saraswati Diamond Painting](https://mah-artworks.pages.dev/art/saraswati-diamond-painting): October 2026
+- [Murali Art](https://mah-artworks.pages.dev/art/murali-art): October 2026
+- [Folk Dancer](https://mah-artworks.pages.dev/art/folk-dancer): October 2026
 - [Saibaba on Canvas](https://mah-artworks.pages.dev/art/saibaba-on-canvas): October 2026
 - [Sea Stone Shell Painting](https://mah-artworks.pages.dev/art/sea-stone-shell-painting): October 2026
 - [Krishna Playing Flute](https://mah-artworks.pages.dev/art/krishna-playing-flute-2): October 2026
@@ -66,7 +69,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Abstract Ganesha with Faces](https://mah-artworks.pages.dev/art/abstract-ganesha-with-faces): September 2026
 - [Flower Glass Painting Tile](https://mah-artworks.pages.dev/art/flower-glass-painting-tile): August 2026
 - [Folk Art Mother And Child Pair](https://mah-artworks.pages.dev/art/folk-art-mother-and-child-pair): March 2026
-- [Murali Art](https://mah-artworks.pages.dev/art/murali-art): January 2026
 - [Peacock And Flowers Glass Painting](https://mah-artworks.pages.dev/art/peacock-and-flowers-glass-painting): December 2025
 - [All in One Dieties](https://mah-artworks.pages.dev/art/all-in-one-dieties): December 2025
 - [Tirupati Balaji With Hanging Diyas](https://mah-artworks.pages.dev/art/tirupati-balaji-with-hanging-diyas): November 2025
@@ -78,7 +80,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Kathakali Framed Oil Painting](https://mah-artworks.pages.dev/art/kathakali-face-framed): June 2025
 - [Roses Stained Glass Style](https://mah-artworks.pages.dev/art/roses-stained-glass-style): June 2025
 - [Orange Flowers Textured Canvas](https://mah-artworks.pages.dev/art/orange-flowers-textured-canvas): May 2025
-- [Folk Dancer](https://mah-artworks.pages.dev/art/folk-dancer): May 2025
 - [Day And Night Landscape Oval Canvas](https://mah-artworks.pages.dev/art/day-and-night-landscape-oval-canvas): May 2025
 - [Seven Running Horses Framed Oil Painting](https://mah-artworks.pages.dev/art/seven-running-horses-framed): May 2025
 - [Flamenco Dancer Stained Glass Style](https://mah-artworks.pages.dev/art/flamenco-dancer-stained-glass-style): January 2025
@@ -229,7 +230,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Night Sky With Hearts Abstract](https://mah-artworks.pages.dev/art/night-sky-with-hearts-abstract)
 - [Navratri Golu Celebration](https://mah-artworks.pages.dev/art/navratri-golu-celebration-2)
 - [Nandi And Shiva Trishul Canvases](https://mah-artworks.pages.dev/art/nandi-and-shiva-trishul-canvases)
-- [My Sons Merit Award](https://mah-artworks.pages.dev/art/my-sons-merit-award)
 - [Music & Dance Glass Painting](https://mah-artworks.pages.dev/art/music-dance-glass-painting)
 - [Mountain Lake Landscape In Circle](https://mah-artworks.pages.dev/art/mountain-lake-landscape-in-circle)
 - [Mother & Child](https://mah-artworks.pages.dev/art/mother-child)
@@ -247,7 +247,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Ganesha & Social Media](https://mah-artworks.pages.dev/art/ganesha-social-media)
 - [Ganesha & Balaji Painting](https://mah-artworks.pages.dev/art/ganesha-balaji-painting)
 - [Friends Therapy Quote Painting](https://mah-artworks.pages.dev/art/friends-therapy-quote-painting)
-- [Framed Hanuman and Kathakali Oil Painting](https://mah-artworks.pages.dev/art/framed-hanuman-and-kathakali-oil-painting)
 - [Forest & Waterfall Diamond Arr](https://mah-artworks.pages.dev/art/forest-waterfall-diamond-arr)
 - [Floral Hummingbirds Painting on Glass Door](https://mah-artworks.pages.dev/art/floral-hummingbirds-painting-on-glass-door)
 - [Farewell Memories Portrait Painting](https://mah-artworks.pages.dev/art/farewell-memories-portrait-painting)
@@ -477,10 +476,12 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ### Rangoli & Kolam (107)
 
+- [Xmas Rangoli](https://mah-artworks.pages.dev/art/xmas-rangoli): October 2026
+- [Kartigai Deepam Rangoli](https://mah-artworks.pages.dev/art/kartigai-deepam-rangoli): October 2026
+- [Pongal Kolam](https://mah-artworks.pages.dev/art/pongal-kolam): October 2026
 - [Navratri Rangoli](https://mah-artworks.pages.dev/art/navratri-rangoli): October 2026
 - [Kathakali with Flowers on Onam](https://mah-artworks.pages.dev/art/kathakali-with-flowers-on-onam): September 2026
 - [Kadva Chauth](https://mah-artworks.pages.dev/art/kadva-chauth): September 2026
-- [Pongal Kolam](https://mah-artworks.pages.dev/art/pongal-kolam): September 2026
 - [Lotus And Kolam Rangolis](https://mah-artworks.pages.dev/art/lotus-and-kolam-rangolis): September 2026
 - [Life Is Complicated Rangoli](https://mah-artworks.pages.dev/art/life-is-complicated-rangoli): September 2026
 - [Jai Shri Ram Hanuman Rangoli](https://mah-artworks.pages.dev/art/jai-shri-ram-hanuman-rangoli): April 2026
@@ -503,7 +504,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Dusshera Rangoli](https://mah-artworks.pages.dev/art/dusshera-rangoli): September 2025
 - [White Kolam With Purple Dots](https://mah-artworks.pages.dev/art/white-kolam-with-purple-dots): September 2025
 - [Colorful Flower Rangoli](https://mah-artworks.pages.dev/art/colorful-flower-rangoli): September 2025
-- [Star Of David Rangoli](https://mah-artworks.pages.dev/art/star-of-david-rangoli): September 2025
 - [Colorful Stars Rangoli](https://mah-artworks.pages.dev/art/colorful-stars-rangoli): September 2025
 - [Ganesha Face Rangoli](https://mah-artworks.pages.dev/art/ganesha-face-rangoli): August 2025
 - [Ganesh Jayanti Rangoli](https://mah-artworks.pages.dev/art/ganesh-jayanti-rangoli): August 2025
@@ -539,7 +539,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Ganesha Om Rangoli](https://mah-artworks.pages.dev/art/ganesha-om-rangoli): February 2025
 - [Ganesha Kolam](https://mah-artworks.pages.dev/art/ganesha-kolam): February 2025
 - [Pongal Rangoli](https://mah-artworks.pages.dev/art/pongal-rangoli): January 2025
-- [Xmas Rangoli](https://mah-artworks.pages.dev/art/xmas-rangoli): December 2024
 - [Star Kolam With Swirls](https://mah-artworks.pages.dev/art/star-kolam-with-swirls): December 2024
 - [Kartigai Rangoli](https://mah-artworks.pages.dev/art/kartigai-rangoli): December 2024
 - [Krishna Janmashtami Rangoli](https://mah-artworks.pages.dev/art/krishna-janmashtami-rangoli): November 2024
@@ -585,10 +584,9 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Durga Face Rangoli](https://mah-artworks.pages.dev/art/durga-face-rangoli)
 - [Diwali Diya Rangoli](https://mah-artworks.pages.dev/art/diwali-diya-rangoli)
 
-### Crafts (14)
+### Crafts (13)
 
 - [Golden Peacocks Embroidery](https://mah-artworks.pages.dev/art/golden-peacocks-embroidery): January 2026
-- [Saraswati Diamond Painting Kit](https://mah-artworks.pages.dev/art/saraswati-diamond-painting-kit): November 2025
 - [Shubh Labh Painted Diya Holders](https://mah-artworks.pages.dev/art/shubh-labh-painted-diya-holders): October 2025
 - [Foil Relief Flowers Art](https://mah-artworks.pages.dev/art/foil-relief-flowers-art): May 2025
 - [Best Out Waste Tissue Art](https://mah-artworks.pages.dev/art/best-out-waste-tissue-art): November 2024
