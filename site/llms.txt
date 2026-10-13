@@ -37,12 +37,12 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 - [Kartigai Deepam Rangoli](https://mah-artworks.pages.dev/art/kartigai-deepam-rangoli): Rangoli, October 2026
 - [Folk Dancer](https://mah-artworks.pages.dev/art/folk-dancer): Painting, October 2026
 - [Saibaba on Canvas](https://mah-artworks.pages.dev/art/saibaba-on-canvas): Painting, October 2026
-- [Pongal Kolam](https://mah-artworks.pages.dev/art/pongal-kolam): Rangoli, October 2026
 - [Navratri Rangoli](https://mah-artworks.pages.dev/art/navratri-rangoli): Rangoli, October 2026
 - [Sea Stone Shell Painting](https://mah-artworks.pages.dev/art/sea-stone-shell-painting): Painting, October 2026
 - [Krishna Playing Flute](https://mah-artworks.pages.dev/art/krishna-playing-flute-2): Painting, October 2026
 - [Stone Painting](https://mah-artworks.pages.dev/art/stone-painting): Painting, October 2026
 - [Raksha Bandhan](https://mah-artworks.pages.dev/art/raksha-bandhan): Painting, October 2026
+- [Tinted Glass Painting on Canvas](https://mah-artworks.pages.dev/art/tinted-glass-painting-on-canvas): Painting, September 2026
 
 ## Optional
 
