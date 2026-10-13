@@ -1525,10 +1525,10 @@
 "my-son-s-merit-list-award-function"
 ],
 "MS-2026-0379": [
-"1e3ad4062847f2e544df000403b0f41c",
+"92c980d87843f9abb1397c7714d6104f",
 "pongal-kolam",
 [
-"92c980d87843f9abb1397c7714d6104f"
+"1e3ad4062847f2e544df000403b0f41c"
 ]
 ],
 "MS-2026-0380": [
@@ -2173,6 +2173,10 @@
 "MS-2026-0539": [
 "586c77e188f55c86e20ab9a4ad62ee40",
 "woman-with-diya-in-floral-arch"
+],
+"MS-2026-0540": [
+"0c196394408a5ae55c95917b3e2ffaaa",
+"framed-hanuman-and-kathakali-oil-painting"
 ]
 },
 "facts": {
@@ -2295,6 +2299,12 @@
 "hgt": 1200,
 "px": 8191728,
 "w": 996
+},
+"0c196394408a5ae55c95917b3e2ffaaa": {
+"h": 8369415858932496536,
+"hgt": 675,
+"px": 8294400,
+"w": 1200
 },
 "0c58132ee870e5bdd56644ffec2950d5": {
 "h": 6833873371267490924,
@@ -2517,12 +2527,6 @@
 "hgt": 1200,
 "px": 3025308,
 "w": 1168
-},
-"1e3ad4062847f2e544df000403b0f41c": {
-"h": 7921509527137810101,
-"hgt": 973,
-"px": 6712041,
-"w": 1200
 },
 "1ec6f8ffdbf09d4c67ac16b85e654869": {
 "h": 2256141980210628608,
@@ -6054,6 +6058,10 @@
 "d544b7ab6493475961066720dc190035",
 1
 ],
+"framed-hanuman-and-kathakali-oil-painting": [
+"0c196394408a5ae55c95917b3e2ffaaa",
+1
+],
 "freedom-painting": [
 "cdf0c82f6ecc127cd4fa066f8347f70d",
 1
@@ -6983,7 +6991,7 @@
 1
 ],
 "pongal-kolam": [
-"1e3ad4062847f2e544df000403b0f41c",
+"92c980d87843f9abb1397c7714d6104f",
 1
 ],
 "pongal-rangoli": [
