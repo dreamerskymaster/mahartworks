@@ -60,16 +60,63 @@ Plain HTML/CSS/JS, no framework or build step; designed phone-first and checked 
   Regenerate both with `python3 build/make_assets.py`.
 - `site/_headers`: security headers (strict CSP: no inline scripts, nothing third-party) and caching.
 
+## Search engines and AI answer engines
+The gallery is drawn by JavaScript and opens artworks via `#art/<id>`, which crawlers barely see. So
+`build/seo.py` writes plain HTML from `site/data.js`. It runs at the end of `build/build.py`, so every upload
+gets its page automatically; run it alone with `python3 build/seo.py`. Never edit its output by hand
+(a test regenerates everything and fails if a committed file differs).
+- `site/art/<id>.html` → `/art/<id>`: one page per artwork: title, picture, category, date, "by Mahalakshmi
+  Srikanth", **Enquire about this artwork** (email with subject `Enquiry: <title> (ID <id>)`), **View in the
+  gallery** (`/#art/<id>`), six related works; unique `<title>`, description, canonical, og:/twitter image and
+  JSON-LD `VisualArtwork`. Pages of removed artworks are deleted.
+- `site/paintings.html`, `drawings`, `mandalas`, `rangoli`, `crafts` → `/paintings` etc.: every artwork in the
+  category as a plain link, with a short intro (`CATEGORIES` in `seo.py`) and JSON-LD `CollectionPage`/`ItemList`.
+  Linked from the footer of every page.
+- `site/index.html`: only between the `<!-- seo:latest -->` (the newest 24, in `<noscript>`) and
+  `<!-- seo:browse -->` (footer category links) markers. The home `<title>`, description and `Person`/`WebSite`
+  JSON-LD are hand-written in `index.html`.
+- `site/sitemap.xml` (every page, `<lastmod>` from the artwork dates, an image entry per artwork),
+  `site/llms.txt` and `site/llms-full.txt` (who she is, what she makes, how to buy or commission, every artwork,
+  her About text quoted verbatim) for AI assistants, and `site/404.html` (so a removed artwork's address is a
+  real "not found", not the home page).
+
+**AI crawlers (`site/robots.txt`).** Everything is allowed, and the bots are named so the choice is explicit:
+search/answer bots (OAI-SearchBot, ChatGPT-User, PerplexityBot, Claude-SearchBot, Claude-User, Googlebot,
+Bingbot, Applebot) and, for now, training bots too (GPTBot, ClaudeBot, CCBot, Applebot-Extended,
+meta-externalagent). To opt out of AI *training* only, change that group's `Allow: /` to `Disallow: /`; search
+and answers keep working. Keep `Google-Extended` allowed: blocking it also keeps her work out of Gemini's answers.
+
+**Submit the sitemap (one-time, needs Ajith).** Both are free; verification proves you own the site.
+1. *Google Search Console*: <https://search.google.com/search-console> → Add property → **URL prefix**
+   `https://mah-artworks.pages.dev/` (a Domain property needs DNS, which a `pages.dev` address doesn't give you).
+   Choose **HTML file**: download `googleXXXXXXXX.html`, put it in `site/` unchanged, push to `main`, wait for
+   the deploy (~1 min), check it opens at `https://mah-artworks.pages.dev/googleXXXXXXXX.html`, then press
+   Verify. (Or choose **HTML tag** and paste the `<meta name="google-site-verification" …>` line into the
+   `<head>` of `site/index.html`.) Keep the file/tag afterwards, or verification lapses.
+   Then **Sitemaps** → enter `sitemap.xml` → Submit. Optional: **URL inspection** → paste the home page and a
+   couple of `/art/…` pages → Request indexing.
+2. *Bing Webmaster Tools* (also feeds ChatGPT search, Copilot and DuckDuckGo):
+   <https://www.bing.com/webmasters> → sign in → **Import from Google Search Console** (easiest, once step 1 is
+   done), or Add site → `https://mah-artworks.pages.dev/` → **XML file** (`BingSiteAuth.xml` into `site/`, push,
+   Verify) or **Meta tag** (`<meta name="msvalidate.01" …>` into `index.html`). Then Sitemaps →
+   `https://mah-artworks.pages.dev/sitemap.xml` → Submit.
+Results take days to weeks. Perplexity, ChatGPT and Claude find the site through their own crawlers and through
+Bing/Google; there is nothing to submit to them.
+
 ## Tests
-    python3 -m unittest discover -s tests -v          # 35 cases
-    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 30 browser cases (needs Chrome)
+    python3 -m unittest discover -s tests -v          # 57 cases
+    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 37 browser cases (needs Chrome)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
 - `tests/test_build.py`: the seal is stamped bottom-right and see-through; gallery sections.
 - `tests/test_site.py`: every artwork has both images, no orphans, all links and anchors resolve, no inline
   scripts (CSP), meta/manifest/icons, her About text unchanged.
+- `tests/test_seo.py`: a page per artwork and no orphans, unique titles/descriptions, canonical, og:image that
+  exists, valid JSON-LD, enquiry subject with the ID, category pages link every artwork, sitemap and llms.txt
+  complete, robots.txt, and the committed output equals a fresh `seo.py` run.
 - `tests/e2e/`: real Chrome on two phones, a tablet and a laptop: no errors or broken files, no sideways scroll,
-  menu, spotlight (mouse, finger, keys, reduced motion), filters, search, viewer, shared links, share, settings.
-  `server.mjs` serves `site/` like Cloudflare Pages, including the `_headers` CSP.
+  menu, spotlight (mouse, finger, keys, reduced motion), filters, search, viewer, shared links, share, settings,
+  artwork and category pages on phone and laptop, 404 for removed artworks.
+  `server.mjs` serves `site/` like Cloudflare Pages (pretty URLs, `404.html`), including the `_headers` CSP.
 
 CI: `.github/workflows/test.yml` runs both suites on every push and pull request; `sync.yml` runs the
 Python suite before each Drive sync.

@@ -16,6 +16,8 @@
   function save() { try { localStorage.setItem(KEY, JSON.stringify(prefs)); } catch (e) { /* ignore */ } }
   apply();
   window.MS_PREFS = prefs;
+  // Discourage casual saving on every page; the watermark is the real protection.
+  document.addEventListener("contextmenu", (e) => { if (e.target.tagName === "IMG") e.preventDefault(); });
 
   const icon = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="4.5" r="2"/><path d="M4 8.5l8 1.5 8-1.5M12 10v5m0 0l-3.5 6.5M12 15l3.5 6.5"/></svg>';
   const seg = (name, legend, opts) => `<fieldset><legend>${legend}</legend><div class="seg">${opts.map(([v, l]) =>

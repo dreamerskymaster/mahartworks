@@ -1,0 +1,50 @@
+# Mahalakshmi Srikanth — Art
+
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 539 artworks; artworks and commissions can be enquired about by email.
+
+- Website: https://mah-artworks.pages.dev/
+- Based in: Mumbai, Maharashtra, India
+- Making art since 2020: it began as a hobby after COVID, with sketching and crayons, then sketch pens, then acrylics.
+- Signature: every picture on the site carries her MS seal watermark.
+- Email: mahasriphoto24@gmail.com (enquiries, purchases and commissions; she replies personally)
+- Instagram: @mah_artworks (https://instagram.com/mah_artworks)
+
+## The collection
+
+- [Paintings](https://mah-artworks.pages.dev/paintings): 219 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 42 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 107 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
+- [Crafts](https://mah-artworks.pages.dev/crafts): 14 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
+
+Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with its title, category, date and an enquiry link.
+
+## Buying an artwork or commissioning one
+
+- Write by email or Instagram with the artwork's name or ID (shown on each artwork page). Availability, size, medium and the total price in Indian Rupees are confirmed in writing before payment; payment is by UPI or bank transfer.
+- Commissions: share the idea, size and medium for a written quote and timeline; a 50% advance confirms the work.
+- Rangoli and kolam are temporary floor art, shown for display; similar designs can be made on request.
+- [Orders & commissions](https://mah-artworks.pages.dev/policies#orders)
+- [Shipping, returns & refunds](https://mah-artworks.pages.dev/policies#shipping)
+- [Terms of use & copyright](https://mah-artworks.pages.dev/policies#terms): the artworks and images are her copyright; please link to an artwork's page rather than copying the picture.
+- [Privacy policy](https://mah-artworks.pages.dev/policies#privacy)
+
+## Newest artworks
+
+- [Saibaba on Canvas](https://mah-artworks.pages.dev/art/saibaba-on-canvas): Painting, October 2026
+- [Navratri Rangoli](https://mah-artworks.pages.dev/art/navratri-rangoli): Rangoli, October 2026
+- [Sea Stone Shell Painting](https://mah-artworks.pages.dev/art/sea-stone-shell-painting): Painting, October 2026
+- [Krishna Playing Flute](https://mah-artworks.pages.dev/art/krishna-playing-flute-2): Painting, October 2026
+- [Stone Painting](https://mah-artworks.pages.dev/art/stone-painting): Painting, October 2026
+- [Raksha Bandhan](https://mah-artworks.pages.dev/art/raksha-bandhan): Painting, October 2026
+- [Tinted Glass Painting on Canvas](https://mah-artworks.pages.dev/art/tinted-glass-painting-on-canvas): Painting, September 2026
+- [Kathakali with Flowers on Onam](https://mah-artworks.pages.dev/art/kathakali-with-flowers-on-onam): Rangoli, September 2026
+- [Kadva Chauth](https://mah-artworks.pages.dev/art/kadva-chauth): Rangoli, September 2026
+- [Happy & Sad Face in One](https://mah-artworks.pages.dev/art/happy-sad-face-in-one): Drawing, September 2026
+- [Girl on Swing Under Moon](https://mah-artworks.pages.dev/art/girl-on-swing-under-moon): Painting, September 2026
+- [Culture of India](https://mah-artworks.pages.dev/art/culture-of-india): Painting, September 2026
+
+## Optional
+
+- [Every artwork, with her story in her own words](https://mah-artworks.pages.dev/llms-full.txt)
+- [Sitemap](https://mah-artworks.pages.dev/sitemap.xml)

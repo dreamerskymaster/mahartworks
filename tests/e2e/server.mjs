@@ -1,5 +1,6 @@
 // Serve site/ the way Cloudflare Pages does: headers from site/_headers (so the CSP is enforced
-// in tests), /policies -> policies.html, *.html -> pretty URL redirect, unknown paths -> index.html.
+// in tests), /policies -> policies.html, /art/<id> -> art/<id>.html, *.html -> pretty URL redirect,
+// unknown paths -> 404.html with status 404.
 import { createServer } from "node:http";
 import { readFile, stat } from "node:fs/promises";
 import { join, extname, normalize } from "node:path";
@@ -29,13 +30,17 @@ export async function start() {
     let file = path === "/" ? "index.html" : path.slice(1);
     if (!extname(file)) file += ".html";
     file = normalize(file).replace(/^(\.\.[/\\])+/, "");
-    let full = join(SITE, file);
-    try { if (!(await stat(full)).isFile()) throw 0; } catch { full = join(SITE, "index.html"); }
+    let full = join(SITE, file), status = 200;
+    const isFile = async (f) => { try { return (await stat(f)).isFile(); } catch { return false; } };
+    if (!(await isFile(full))) {   // like Pages: with a 404.html, unknown paths are 404s; without one, the app
+      status = (await isFile(join(SITE, "404.html"))) ? 404 : 200;
+      full = join(SITE, status === 404 ? "404.html" : "index.html");
+    }
     const headers = { "Content-Type": TYPES[extname(full)] || "application/octet-stream" };
     for (const r of rules) if (matches(r.pattern, path)) Object.assign(headers, r.headers);
     if (headers["Content-Security-Policy"])   // tests run on plain http
       headers["Content-Security-Policy"] = headers["Content-Security-Policy"].replace("; upgrade-insecure-requests", "");
-    res.writeHead(200, headers); res.end(await readFile(full));
+    res.writeHead(status, headers); res.end(await readFile(full));
   });
   await new Promise((r) => srv.listen(0, "127.0.0.1", r));
   return { url: `http://127.0.0.1:${srv.address().port}`, close: () => new Promise((r) => srv.close(r)) };
