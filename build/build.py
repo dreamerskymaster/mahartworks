@@ -109,12 +109,27 @@ def main():
     out = os.path.join(SITE, "img")
     os.makedirs(out, exist_ok=True)
     items, used, outputs, made = [], set(), {}, 0
+    # An artwork's id (its image filename and its #art/<id> link) never changes once published:
+    # it belongs to the picture (md5), not the title, so renaming a file keeps shared links working.
+    # Two titles can share one picture (the same photo uploaded twice): each keeps its own id.
+    ids_of = {}
+    for k, v in sorted(man["outputs"].items()):
+        ids_of.setdefault(v[0], []).append(k)
+    for c in sorted(kept, key=lambda c: slug(c["title"]) not in ids_of.get(c["key"], [])):
+        free = [i for i in ids_of.get(c["key"], []) if i not in used]
+        if free:
+            c["id"] = slug(c["title"]) if slug(c["title"]) in free else free[0]
+            used.add(c["id"])
     for c in kept:
-        s = slug(c["title"])
-        n = 2
+        if c.get("id"):
+            continue
+        s, n = slug(c["title"]) or "artwork", 2
         while s in used:
-            s, n = f"{slug(c['title'])}-{n}", n + 1
+            s, n = f"{slug(c['title']) or 'artwork'}-{n}", n + 1
+        c["id"] = s
         used.add(s)
+    for c in kept:
+        s = c["id"]
         stamp = [c["key"], wm_no]
         fp, tp = os.path.join(out, s + ".webp"), os.path.join(out, s + ".t.webp")
         if man["outputs"].get(s) != stamp or not (os.path.exists(fp) and os.path.exists(tp)):
