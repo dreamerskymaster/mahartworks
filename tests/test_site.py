@@ -24,6 +24,7 @@ class DataTest(unittest.TestCase):
             self.assertGreater(a["w"], 0); self.assertGreater(a["h"], 0)
             if a["date"]:
                 self.assertRegex(a["date"], r"^\d{4}-\d\d-\d\d$")
+            self.assertRegex(a["cert"], r"^MS-\d{4}-\d{4,}$")
 
     def test_ids_unique(self):
         ids = [a["id"] for a in self.art]

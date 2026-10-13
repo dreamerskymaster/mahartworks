@@ -29,7 +29,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   via the shared concurrency group. Check `gh run list --workflow sync.yml` for branch runs if the site goes stale.
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
-- **Tests:** `python3 -m unittest discover -s tests -v` (57) and `npm test --prefix tests/e2e` (37, real Chrome at
+- **Tests:** `python3 -m unittest discover -s tests -v` (80) and `npm test --prefix tests/e2e` (52, real Chrome at
   phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a case for any
   new naming rule or UI behaviour.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync keeps them
@@ -55,6 +55,20 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   - robots.txt allows every crawler, AI training included (opt-out documented in README); keep Google-Extended.
   - 404.html turns off Pages' SPA fallback, so removed/renamed artworks give a real 404.
   - Search Console / Bing verification needs Ajith (README has the steps).
+
+## Certificates of Authenticity (PR "certificates", 2026-10-12; README has the details)
+- Number `MS-<YYYY>-<NNNN>` per artwork (`build/certs.py`, called by build.py): YYYY = year of its date, else year first
+  published; NNNN = running number, never reused. Register = `certs` in manifest.json (`number -> [md5, id, other md5s of the same artwork]`), entries
+  never deleted; follows the picture (md5), so renames keep it. First run: MS-2021-0001 … MS-2026-0539 (by date, then id;
+  146 undated ones last as 2026). Exposed as `cert` in data.js. Never hand-edit the register.
+- seo.py adds the `#certificate` section to every artwork page, generates `site/verify.html` and `site/_redirects`
+  (`/verify/<cert> /art/<id>#certificate 301` + catch-all `/verify/* /verify?n=:splat 302`; Pages max 2,000 static rules,
+  so above 1,900 only the catch-all is written). `site/js/verify.js` does the lookup from data.js.
+- `site/js/certificate.js` `renderCertificate(container, {...})` is the printable A4 landscape certificate the shop
+  (`shop/`, built separately) calls; QR via vendored `site/js/qrcodegen.js` (Nayuki, MIT). Print = exactly one page (e2e checks the PDF).
+- **Her signature never goes in the repo or on the site**: `signatureUrl` is passed at runtime from private storage;
+  without it a blank line is printed for a wet signature. Fixtures use a fake test squiggle.
+- The bot's sync commits touch manifest.json/data.js; if this conflicts, keep main's register entries and re-run build.
 
 ## Privacy (audited 2026-10-12)
 - This repo is public. Never commit personal emails, account ids, local paths with usernames, keys or `.wrangler/`.

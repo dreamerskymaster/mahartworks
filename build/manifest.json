@@ -1,4 +1,2177 @@
 {
+"certs": {
+"MS-2021-0001": [
+"a6559da81058b5f442aecd977c0b95c7",
+"womens-day-face-rangoli"
+],
+"MS-2021-0002": [
+"18d05ed9f0843317ab50ae93a1bfa56b",
+"womens-day-heart-rangoli"
+],
+"MS-2021-0003": [
+"c29bf940526e74db526a16365afaf008",
+"womens-day-rangoli"
+],
+"MS-2021-0004": [
+"58618c9cb3fb2d807a225a54ee3d752a",
+"shivratri-kolam"
+],
+"MS-2021-0005": [
+"6a7a04937fb2a65e02e9c28a787d3e4d",
+"geometric-swirl-rangoli"
+],
+"MS-2021-0006": [
+"0d9ebd63ebf0fdf179fbaac0bddc7702",
+"peacock-feather-rangoli"
+],
+"MS-2021-0007": [
+"62dcc237c18ec6768a0fe84b1d41af5f",
+"ganesha-and-swan-mandala-sketches"
+],
+"MS-2021-0008": [
+"d172663a958d9feee9ee4442428d906e",
+"mother-child-mandala-sketch-page",
+[
+"32fedb3181e3d66ca918e4ce45a55631"
+]
+],
+"MS-2021-0009": [
+"ca1fc4070718cfb54b4917ca5c395efa",
+"assorted-figure-sketches-page"
+],
+"MS-2021-0010": [
+"3686c23b4b52d5a8109048662523d2cd",
+"couples-and-vishnu-sketch-page"
+],
+"MS-2021-0011": [
+"a8be3c25be50d04e031af462fc3c2b74",
+"woman-in-saree-sketch-page"
+],
+"MS-2021-0012": [
+"16fd75aeb5d665ddb472a8c3aa49b991",
+"dove-and-peacock-sketch-page"
+],
+"MS-2021-0013": [
+"5c537915ffd52a286a492d4782f018bf",
+"girl-and-swan-sketch-page"
+],
+"MS-2021-0014": [
+"9b8111145103db9b7ac00b741f65acfe",
+"hearts-and-faces-sketch-page"
+],
+"MS-2021-0015": [
+"b7d458d77d63cc6899e8d4d07530591c",
+"love-heart-doodle-page"
+],
+"MS-2021-0016": [
+"a1b1730face0d8843f5e8ccadde9a3b6",
+"minimal-figure-sketch-page"
+],
+"MS-2021-0017": [
+"a9a92ea4471656dc4fab7c474a9f3fd0",
+"swan-and-peacock-sketch-page"
+],
+"MS-2021-0018": [
+"c7cd3f74cc00b2a588a47398fde62d83",
+"wedding-couple-sketch-page"
+],
+"MS-2021-0019": [
+"d307a8400b7cfee21243f75da08a0c6d",
+"girls-painting-and-photography-drawing"
+],
+"MS-2021-0020": [
+"a565c1380c6ed967e77489d99ea2994e",
+"krishna-playing-flute"
+],
+"MS-2021-0021": [
+"a2356f5933609aba09567194be2a6d8d",
+"woman-in-gown-drawing"
+],
+"MS-2021-0022": [
+"2caea96ffe05da0b90b88d94db6e01bd",
+"goddess-face-drawing"
+],
+"MS-2021-0023": [
+"d8c01c26cbc818c327084b1889294cb6",
+"butterflies-and-henna-hands-drawing"
+],
+"MS-2021-0024": [
+"fcb6cf27251e7c6884194d37305d2822",
+"butterfly-mandala-flower"
+],
+"MS-2021-0025": [
+"66b5341434a0d3e1e171182a47abf054",
+"dancer-and-moon-couple-drawing"
+],
+"MS-2021-0026": [
+"26185c0cf47f56b62ba9e0ef7a79c3d6",
+"guitar-with-music-notes"
+],
+"MS-2021-0027": [
+"9d5e9556a48631d3ed60e1f949cbb19b",
+"love-doodles-drawing-page"
+],
+"MS-2021-0028": [
+"31da21ac7a62b0e26510ade091d956dc",
+"panda-bear-drawings"
+],
+"MS-2021-0029": [
+"76f897b1f7435f7c48a6da24f22c007b",
+"woman-and-child-drawing"
+],
+"MS-2021-0030": [
+"7a428871ea3f0fb29b28b981dc74fce3",
+"woman-in-hat-drawing"
+],
+"MS-2021-0031": [
+"1ec6f8ffdbf09d4c67ac16b85e654869",
+"ganesha-symbols-drawing-page"
+],
+"MS-2021-0032": [
+"ec3c10e0c8e4df9aa968a17becdffd67",
+"broken-heart-doodles-page"
+],
+"MS-2021-0033": [
+"87eaf1f593a74892eb02390bf861398d",
+"man-in-robe-pencil-sketch"
+],
+"MS-2021-0034": [
+"8b02cd336e0da958eb2b676bb5291c07",
+"colorful-fish-and-birds-mandala"
+],
+"MS-2021-0035": [
+"e0f4bd2f568d3cf018d73d33d235ebb3",
+"woman-on-garden-swing-drawing"
+],
+"MS-2021-0036": [
+"cfcfd6d3d433f797bd32efee22768a04",
+"happy-onam-mahabali"
+],
+"MS-2021-0037": [
+"bfbcfbe9e1a8fd2c5f2b7507da14c171",
+"ganesha-spiral-zentangle"
+],
+"MS-2021-0038": [
+"49501f16b873758eca28aaee96fe32ad",
+"sad-broken-heart-doodle"
+],
+"MS-2021-0039": [
+"95d8811725cc25be115de1357780d893",
+"madhubani"
+],
+"MS-2021-0040": [
+"f30cafa04a3ace705bf737b2be8efa54",
+"wedding-couple-under-mandap"
+],
+"MS-2021-0041": [
+"8c6298f7f2ed6ec63f40cd721ace92fa",
+"ganesha-mandala"
+],
+"MS-2021-0042": [
+"a3d5192e8e7ce67f5cfe9e98fd443cfc",
+"ganesha-in-kalas"
+],
+"MS-2021-0043": [
+"7d5df897a74ad9eb1d6768365bdeb70c",
+"shubh-labh-om-toranapainting"
+],
+"MS-2021-0044": [
+"2ff98e78fa66841407b7d9ea80a3befe",
+"cubist-faces-crayon-drawing"
+],
+"MS-2021-0045": [
+"815cd0b7ea703443d702b4d18c05fae4",
+"birds-in-night"
+],
+"MS-2021-0046": [
+"2ecb4b35ab9d775619dfd67ef25472c4",
+"ganesha-with-cow-by-river"
+],
+"MS-2021-0047": [
+"ad97ef5a0dd90bdc5436c12aae5e158c",
+"butterfly-on-flower-vine"
+],
+"MS-2021-0048": [
+"47c73de4c117bad2b887953ccba6b1c6",
+"toucan-with-flowers",
+[
+"3b2920a91134261303c5a31dddf33200"
+]
+],
+"MS-2021-0049": [
+"6e6d8124dde15e8dc8beb055a6e7cee4",
+"ganesha-silhouette-triptych"
+],
+"MS-2021-0050": [
+"aa6b15c93b907611de9bcfb30e54ef4c",
+"astavinayak"
+],
+"MS-2021-0051": [
+"cfaafc6150b9f449a02d626f2c66ca0b",
+"faces-and-hearts-doodle-page"
+],
+"MS-2021-0052": [
+"d49e06df1a63ee1c086e67d856ab7a27",
+"butterfly-and-red-flowers"
+],
+"MS-2021-0053": [
+"e67fbf5dae6993e459e59c3339501948",
+"tree-branches-triptych"
+],
+"MS-2021-0054": [
+"b4dc0b4d90cfa4cc8762ca101fef4dcc",
+"woman-in-confetti-dress"
+],
+"MS-2021-0055": [
+"acc0100e0362a7f60b2626161ccbbfaa",
+"dancer-in-blue-dress-painting"
+],
+"MS-2021-0056": [
+"33a414105461469712f846bb1856b372",
+"ballerinas-on-brick-wall"
+],
+"MS-2021-0057": [
+"af1df980864313aa432f5b55c58f75d8",
+"friendship-heart-drawing"
+],
+"MS-2021-0058": [
+"0b1fc760ca7ae8134bcd7fa7c6c3cfc9",
+"peacock-feather-rangoli-plate"
+],
+"MS-2021-0059": [
+"417d0a9f3d9ef84a7b279cddd3e24075",
+"dushera-rangoli"
+],
+"MS-2021-0060": [
+"d25f539a81912bb6a694b1c5d663ea9a",
+"girl-in-sun-hat-painting"
+],
+"MS-2021-0061": [
+"e16a2d514fb26a4c977245a32feb4b1b",
+"rainbow-star-mandala"
+],
+"MS-2021-0062": [
+"3bb9c0b0334cc92b5e97c78721c62590",
+"woman-dancing-at-sunset"
+],
+"MS-2021-0063": [
+"dfb221c74e47f95fd937540a8902291e",
+"never-ever-let-me-go-couple"
+],
+"MS-2021-0064": [
+"e91032a3ec48080375fe3bb4c5dcd589",
+"shri-ganesha-painting"
+],
+"MS-2021-0065": [
+"962f4ba96c37fa75cc03c5400237b192",
+"lovebirds-on-branch"
+],
+"MS-2021-0066": [
+"a2b8ef93ef5014db9af281e04e5dbdb4",
+"woman-in-green-outfit-drawing"
+],
+"MS-2021-0067": [
+"ec56f48469b462356be294cb978a4f63",
+"peacock-with-diya-mandala"
+],
+"MS-2021-0068": [
+"579077483fa06bdb85e759de8a948549",
+"diwali-peacocks-and-ganesha"
+],
+"MS-2021-0069": [
+"af41e5c111335bb972d8c95380c4ad82",
+"girl-and-beach-silhouette-sketch"
+],
+"MS-2021-0070": [
+"558bcc0902df6a33c8220830ce0911cd",
+"happy-diwali-swan-rangoli"
+],
+"MS-2021-0071": [
+"cf5db7cdf8eec1a55d5799c108729dc1",
+"blue-face-with-flowers-glow-art"
+],
+"MS-2021-0072": [
+"31572946be7ec313f6818a3697145477",
+"femal-thinking"
+],
+"MS-2021-0073": [
+"33fd9c42a4a734122c9933cbffd433cb",
+"woman-in-lehenga-with-butterflies"
+],
+"MS-2021-0074": [
+"cb95fab31d4e7b63fb2c3a76d47af708",
+"woman-in-saree-under-tree"
+],
+"MS-2021-0075": [
+"72e529dc2f94e5a3ac4eb7be680cf376",
+"stylish-woman-with-handbag"
+],
+"MS-2021-0076": [
+"146522d0c19a2affe5f5f50cba0b87fc",
+"starry-beach-drawing"
+],
+"MS-2021-0077": [
+"2af1b16d33322be4cb7ade4a4d3368bf",
+"couple-and-teddy-on-bench"
+],
+"MS-2021-0078": [
+"f4d313c0474c19338b61a3ca7166da84",
+"radha-krishna-silhouette-painting"
+],
+"MS-2021-0079": [
+"577953f125084b646c844d48a43cd400",
+"ganesha-face-with-trishul"
+],
+"MS-2021-0080": [
+"e622bb3b3327c90938f4a21c4f8ff2b4",
+"family-watching-sunset-painting"
+],
+"MS-2021-0081": [
+"40100392727775e6e970af17cdf1fe25",
+"golden-ganesha-painting"
+],
+"MS-2021-0082": [
+"cdf0c82f6ecc127cd4fa066f8347f70d",
+"freedom-painting"
+],
+"MS-2021-0083": [
+"27afe8af202ecbe4b7143d01a75c262d",
+"ganesha-triptych-painting"
+],
+"MS-2021-0084": [
+"ed1fdb79ecdbf945cba1d8498b4df69f",
+"cockatiels-on-branch-painting"
+],
+"MS-2021-0085": [
+"99ea4d0679fe7a1581bbead172d14ec8",
+"macaw-parrot-painting"
+],
+"MS-2022-0086": [
+"49564ce368ea101687923eb06c1e653d",
+"ganesha-logo-painting"
+],
+"MS-2022-0087": [
+"cd4869d9a2f4d9c0d425cc97d5b849a3",
+"family-tree-wall-mural"
+],
+"MS-2022-0088": [
+"d5126912dbf96687f045f46632717274",
+"ganesha-glass-door-painting"
+],
+"MS-2022-0089": [
+"4c6edbdaa34b15ea8bb88a66ffd3033e",
+"bird-stencil-painting"
+],
+"MS-2022-0090": [
+"c149dcbb97510e54766d4dc6f0367aaf",
+"girl-in-rain-drawing"
+],
+"MS-2022-0091": [
+"baf3910ef0fc81c416951d3b76887501",
+"butterflies-and-flower-vine"
+],
+"MS-2022-0092": [
+"a68c46a7563c1a8642da7092c8283308",
+"colorful-flower-mandala"
+],
+"MS-2022-0093": [
+"194252fe843cc8425065145a0822f393",
+"dancer-in-purple-gown"
+],
+"MS-2022-0094": [
+"e0500a4f3cb0db3af672aa4a9cf7a614",
+"swans-on-pond-painting"
+],
+"MS-2022-0095": [
+"c1d531eef06fb54d8f632cceb43c10d8",
+"zentangle-dancer-with-fan"
+],
+"MS-2022-0096": [
+"1231cd4ef43d8659141590098cbf9a21",
+"butterfly-mandala-with-cats"
+],
+"MS-2022-0097": [
+"ed1df9043791e823c144828e190e92e5",
+"stag-with-rainbow-antlers"
+],
+"MS-2022-0098": [
+"db0c993f61ea80d29319afb80f38fbcf",
+"switchboard-birds-and-branches"
+],
+"MS-2022-0099": [
+"ffe108905e47199efcaf00372d07b1b4",
+"man-portrait-pencil-sketch"
+],
+"MS-2022-0100": [
+"5440bd239c96040ddb265a1e731fb973",
+"girl-with-flower-basket"
+],
+"MS-2022-0101": [
+"9478a58fd414096586b73c754eba664a",
+"couple-on-pier-at-sunset"
+],
+"MS-2022-0102": [
+"46309976c968bdb4b9f3424125d830ee",
+"true-love-and-broken-heart"
+],
+"MS-2022-0103": [
+"5089b74c8d5b260232111ecdc5df8d09",
+"lovebirds-heart-rangoli"
+],
+"MS-2022-0104": [
+"9ed14565e287ae0d62fbce980f6e5fe4",
+"mickey-minnie-valentines-day"
+],
+"MS-2022-0105": [
+"466c29ed714295e2b76e523d7da0130e",
+"tribal-dancers-three-panels"
+],
+"MS-2022-0106": [
+"9839ce54fa3b0c91aff712e962cb1fa2",
+"blue-bird-on-flowering-branch"
+],
+"MS-2022-0107": [
+"780300b5779217b9b71e9a0bd935de24",
+"girl-in-ball-gown-under-arch"
+],
+"MS-2022-0108": [
+"f4cc2fc15e301c8d011d745112a064e0",
+"paisley-peacock-in-circle"
+],
+"MS-2022-0109": [
+"b010ac8e3dc79e87555abaf2fb789657",
+"lake-village-pencil-sketch-in-circle"
+],
+"MS-2022-0110": [
+"38377c1c12f8080ed2c852c02f34513d",
+"lovebirds-and-cage-at-sunset"
+],
+"MS-2022-0111": [
+"8c39d2c9b162aca4802c405ca1cc3d8a",
+"shiva-and-parvati-half-faces"
+],
+"MS-2022-0112": [
+"a6eb8a17999d57b9a80aa14bab062b47",
+"optical-illusion-face-sketch"
+],
+"MS-2022-0113": [
+"223f49ec64e565134d8ce96e4db2bbb1",
+"cartoon-mouse-and-doodles"
+],
+"MS-2022-0114": [
+"897f109f77b9f485615e6b77679e3008",
+"plastic-smile-faces-painting"
+],
+"MS-2022-0115": [
+"3aba793fec7e2e9cb623878e4bf468d1",
+"white-deer-under-moonlit-tree"
+],
+"MS-2022-0116": [
+"2d545467c1f2c0379540e8bd7f84c3e7",
+"enjoy-the-day-girl-painting"
+],
+"MS-2022-0117": [
+"d67b4071aa7b052de97bc1aa65097c38",
+"african-dancers"
+],
+"MS-2022-0118": [
+"9b7b47c9d1f6dc0d0100aa194df8666e",
+"two-peacocks-in-leaves"
+],
+"MS-2022-0119": [
+"652221769bfd5d88d5631742afd938a6",
+"african-woman-carrying-pot"
+],
+"MS-2022-0120": [
+"4617c50fda44407a334c61c946c488f8",
+"red-flowering-bush-on-green"
+],
+"MS-2022-0121": [
+"081638412625e816d46c3ccea52dc6aa",
+"crescent-moon-abstract-in-progress"
+],
+"MS-2022-0122": [
+"730fb723cf3e340a16959651d9fc3b46",
+"branches-and-bird-on-rainbow-wash"
+],
+"MS-2022-0123": [
+"c17c8f83d5cec4db5413951a4631fed1",
+"monkeys-on-flowering-tree"
+],
+"MS-2022-0124": [
+"1151236fd98ff6c191da2a3e3947b6bb",
+"gajanan-ganesha-calligraphy"
+],
+"MS-2022-0125": [
+"98b49c2d9e783d91a8c12680e7aa98ec",
+"red-poppies-watercolor"
+],
+"MS-2022-0126": [
+"d7f8943a2bad8cefc079bac825e875cd",
+"blue-butterflies-and-grass"
+],
+"MS-2022-0127": [
+"4f869da23adfed0e6f1dfadb19a4a0ba",
+"swirling-steam-teacup"
+],
+"MS-2022-0128": [
+"99cd8afa111a191efd116b053133bcca",
+"teddy-on-moon-i-miss-you"
+],
+"MS-2022-0129": [
+"a2dbbf4240b47743d14fb23aee1f5ff1",
+"woman-lying-with-butterflies"
+],
+"MS-2022-0130": [
+"84c36b5994fa27c6d99874ae1764fca4",
+"abstract-woman-face-on-brown"
+],
+"MS-2022-0131": [
+"16fe221f2e2ba9779be674247cd460a4",
+"stained-glass-arch-window"
+],
+"MS-2022-0132": [
+"d479fb65a23418ea0e126d0cfc59523e",
+"krishna-and-meera-under-tree"
+],
+"MS-2022-0133": [
+"73096c05633f539d84a82fb6a78e2a63",
+"deer-in-forest-watercolor"
+],
+"MS-2022-0134": [
+"5646bad38f1f1001557157b49ff70d1a",
+"beauty-beast"
+],
+"MS-2022-0135": [
+"1ffc91d6e4469f188fe8846db07f386e",
+"hiden-in-face"
+],
+"MS-2022-0136": [
+"cbaaf7639cc4995e22c2caf5b910828d",
+"queen-before-and-after-sketch"
+],
+"MS-2022-0137": [
+"12d4ee8b2ed00b6916dc0cfa6dfc3225",
+"woman-with-swirl-hair-zentangle"
+],
+"MS-2022-0138": [
+"87a3dcc607071f587bc5c47b35da7740",
+"bride-and-groom-under-floral-arch"
+],
+"MS-2022-0139": [
+"65bd521dd17d8f0ec6b11fbe28f7a46f",
+"all-seeing-eye-painted-metal-box"
+],
+"MS-2022-0140": [
+"b7a738a0d01dc3606ea121e7f7bd3810",
+"red-moon-over-blue-sea"
+],
+"MS-2022-0141": [
+"d703fd334d5c836be47e9b9b072ba581",
+"birds-on-tree-on-canvas"
+],
+"MS-2022-0142": [
+"5bf84d9367d0c27f03f827925e87dd06",
+"tom-and-jerry-mouse-drawing"
+],
+"MS-2022-0143": [
+"d2645fe3dbe8679faaee59750424303c",
+"old-couple-on-bench-in-rain"
+],
+"MS-2022-0144": [
+"11417dda2661eaf24e8624e7240d1da3",
+"om-with-lotus-and-bells"
+],
+"MS-2022-0145": [
+"c21ee10ed9f0fc29834b74250bfc40be",
+"lotus-buds-on-abstract-stripes"
+],
+"MS-2022-0146": [
+"34e8cd2331702ec5b8235540c48babec",
+"colorful-flower-mandala-2"
+],
+"MS-2022-0147": [
+"13955a6fbab170aa83170d1a7ab71b7e",
+"mountains-and-fields-landscape"
+],
+"MS-2022-0148": [
+"fbcfa2d67d691d31b744147d5ec98559",
+"green-and-orange-mandala"
+],
+"MS-2022-0149": [
+"af4ec6d3e99fd8e7b67bf017eb913ddc",
+"shiva-and-radha-krishna-line-art"
+],
+"MS-2022-0150": [
+"328fed45fcee4254cd68a8fc9430ca93",
+"geometric-shapes-line-art"
+],
+"MS-2022-0151": [
+"4d9087b835bb615063b3f705d916d3d5",
+"peacock-line-art"
+],
+"MS-2022-0152": [
+"0b4c335f13bb1753d73a53b0c397bf8a",
+"rainbow-mandala"
+],
+"MS-2022-0153": [
+"d9ce7262e1f5cf416cf482c2f2c706cc",
+"blue-and-orange-mandala-2"
+],
+"MS-2022-0154": [
+"7283e1630615ac859512daf9830d6a3d",
+"elderly-couple-sitting-line-drawing"
+],
+"MS-2022-0155": [
+"5997bdd0c054c9dfa3a1cf784c3e7bb3",
+"glowing-yellow-mandala"
+],
+"MS-2022-0156": [
+"ce1c1def7f426f82ac11203f86e98ccd",
+"tree-of-life-with-deer-pichwai"
+],
+"MS-2022-0157": [
+"03070885b4d95abb7ec60593fbaf2d7a",
+"brown-bird-with-red-flowers"
+],
+"MS-2022-0158": [
+"f225d38fa125795b8b88379714cc54d6",
+"ganesha-names-diamond-painting"
+],
+"MS-2022-0159": [
+"f51b92b419555aa3cebf60250ae0336f",
+"ganesha-cows"
+],
+"MS-2022-0160": [
+"2560afcfc111dd0f972beafe94812803",
+"woman-in-blue-lehenga"
+],
+"MS-2022-0161": [
+"dca150b4a6312744417f8cbf0322a288",
+"nature-face-with-bird"
+],
+"MS-2022-0162": [
+"90583f7cd1026fc86097f2c78f718eb7",
+"panda-switchboard-wall-art"
+],
+"MS-2022-0163": [
+"6e960bfb8c89f303810ae20f927aa1ac",
+"ganesha-and-durga-glitter-art"
+],
+"MS-2022-0164": [
+"38a904f40365ed378947b1f980d0f6de",
+"happy-dussehra-golu-doodle"
+],
+"MS-2022-0165": [
+"ebadb82e21b4f02577313a712a54e8c8",
+"pink-and-blue-mandala"
+],
+"MS-2022-0166": [
+"c7a83b12d76e3850362e7834ab32757a",
+"warli-dancers-on-sunset-wash"
+],
+"MS-2022-0167": [
+"866ab20b69302534cf7d8bde32560638",
+"floral-vine-wall-glass-painting-art"
+],
+"MS-2022-0168": [
+"09dab88058e72f8c47a4f3884a4c2d60",
+"hummingbird-stained-glass-style"
+],
+"MS-2023-0169": [
+"c400b6a33afd1321f9df140468d8bfa6",
+"girl-in-red-dress-brushstrokes"
+],
+"MS-2023-0170": [
+"1a087f48626c70bb930afa5d4d95e46c",
+"african-women-dancer"
+],
+"MS-2023-0171": [
+"a2dc1609223bd6364ee7915693af9016",
+"ganesha-flower-rangoli"
+],
+"MS-2023-0172": [
+"7dd87145211d222f833d625f91ad3669",
+"happy-republic-day-dove-rangoli"
+],
+"MS-2023-0173": [
+"7363e2937f1143143906a840571de8d0",
+"happy-republic-day-dove-rangoli-2"
+],
+"MS-2023-0174": [
+"44185c8434eaa8c112c55201bdcacb31",
+"tricolor-flower-rangoli"
+],
+"MS-2023-0175": [
+"072a263842f2c2ea95594e38563a5afb",
+"star-center-mandala"
+],
+"MS-2023-0176": [
+"7a77ff4c8a6b3b6a9466ad1492824622",
+"red-and-blue-mandala"
+],
+"MS-2023-0177": [
+"ec57ab3e48fff30b631e39a6aefd32e3",
+"swing-under-moonlit-tree"
+],
+"MS-2023-0178": [
+"72377fbd6fc42ad0dee242f5288e06d7",
+"lovebirds-in-heart-tree"
+],
+"MS-2023-0179": [
+"ec636d7a18777a5ccd5e8595eb8f501d",
+"blue-and-orange-mandala"
+],
+"MS-2023-0180": [
+"7dcad6f7875d03210227dd2ce35093f8",
+"colorful-mandala-on-desk"
+],
+"MS-2023-0181": [
+"d4e1e86ae324a5ee8e9275141197a8a2",
+"buddha-silhouette-at-sunset"
+],
+"MS-2023-0182": [
+"7dbe71b2892c567c10f58535eee27a00",
+"pink-star-mandala"
+],
+"MS-2023-0183": [
+"2b8cbca3a18635ca5b6dbd96dea5ddf5",
+"black-and-white-mandala-3"
+],
+"MS-2023-0184": [
+"3d2dc86d72997b0495b8e95024c75dba",
+"girl-in-blue-dress-brushstrokes"
+],
+"MS-2023-0185": [
+"afd61ba24818a6f16717aeb1dff78f6b",
+"peacock-on-tree-silhouette"
+],
+"MS-2023-0186": [
+"ad5bbeaad2226e239dc20bf888fc62f6",
+"red-and-green-mandala"
+],
+"MS-2023-0187": [
+"43af2439194290de484b635faae90fad",
+"rainbow-segments-mandala"
+],
+"MS-2023-0188": [
+"575022bc9acf5cc34f7f860f690f9e99",
+"red-mandala"
+],
+"MS-2023-0189": [
+"ed99b275ad2d9a473c4b13102d3636f3",
+"four-color-mandala"
+],
+"MS-2023-0190": [
+"5a7a4da90d98b739d1ad85cddf1a797d",
+"orange-and-green-mandala"
+],
+"MS-2023-0191": [
+"abf88de73a98357acc0f9a2e94e0b796",
+"black-and-white-mandala-2"
+],
+"MS-2023-0192": [
+"3b08aa1ad0b1a05c3d6deadafad5728d",
+"orange-and-olive-mandala"
+],
+"MS-2023-0193": [
+"d5960cc1355d58bcb2d0a6e43f73f8e9",
+"yellow-and-red-mandala"
+],
+"MS-2023-0194": [
+"720167fa9cdb4a6f6734f6aa7d0a1e10",
+"green-and-maroon-mandala"
+],
+"MS-2023-0195": [
+"700995d14456e7de5a4f42be6ddc6d99",
+"bird-and-branches-on-hexagon-tile",
+[
+"234caccf5bf21e1584d42bb002f6a18f"
+]
+],
+"MS-2023-0196": [
+"6a318776edb25cb10a8c1a4e1d511b0b",
+"black-and-white-mandala"
+],
+"MS-2023-0197": [
+"8a2234ace49dba1823664cedaff80cf8",
+"red-and-blue-square-mandala"
+],
+"MS-2023-0198": [
+"91b28d0e4debd45e271dba37cd355ee9",
+"pink-and-yellow-mandala"
+],
+"MS-2023-0199": [
+"ae0e7fbbc27124051d3e376a73f81a01",
+"black-and-white-mandala-4"
+],
+"MS-2023-0200": [
+"cc17112f2127721ad385f3102b56fa33",
+"purple-floral-mandala"
+],
+"MS-2023-0201": [
+"073ae971470acff2293c8b3589a263c2",
+"orange-and-purple-mandala"
+],
+"MS-2023-0202": [
+"5699f3367eedac9a0a97df5014752b42",
+"red-rose-floral-mandala"
+],
+"MS-2023-0203": [
+"e8fe27cdf2945370373be19050fad940",
+"mirror-work-orange-round-plate"
+],
+"MS-2023-0204": [
+"2fc87ba7dcaeb83bd2386bec333f8c1e",
+"mirror-work-yellow-square-board"
+],
+"MS-2023-0205": [
+"222c38a139545927ded04cead4b58ca1",
+"ganesha-triptych"
+],
+"MS-2023-0206": [
+"a8ca7b0c2eab032a38202dfad2a8dd05",
+"dancer-legs-with-sunset"
+],
+"MS-2023-0207": [
+"d25483ddc0fb7c81b38b7273b5032aba",
+"oranges-on-branch-watercolor"
+],
+"MS-2023-0208": [
+"ab71c42d851e8be274b5a544fdd04e40",
+"girl-in-pink-hat-on-stars"
+],
+"MS-2023-0209": [
+"d2232ba9897f6a4c545017167ac0a1f0",
+"beach-with-sailboat-and-starfish"
+],
+"MS-2023-0210": [
+"dd8ba8a42889e2d56da6a1d28e32609e",
+"ganesha-trishul-and-om-drawing"
+],
+"MS-2023-0211": [
+"16bdd61afd7036ceba7d111195eef087",
+"lips-hearts-and-faces-sketchbook-page"
+],
+"MS-2023-0212": [
+"c6838c130279b540fc599ac389e6a74d",
+"love-couples-drawing-page"
+],
+"MS-2023-0213": [
+"249e36a366bf5f07445f6d211d9f62b6",
+"shadow-art"
+],
+"MS-2023-0214": [
+"a88cb5ce6fd4195aee117a070d17a392",
+"women-painting-and-photographing-drawing"
+],
+"MS-2023-0215": [
+"19e01e4f4fa3b6e33d852407ba01ed41",
+"happy-dhanteras-kalash-rangoli-2"
+],
+"MS-2023-0216": [
+"6f4408774afff7b950173cb77bd743e8",
+"two-dancers-against-yellow-brick-wall"
+],
+"MS-2023-0217": [
+"4be16cae0ad8812cc02c9e0170a3142c",
+"blue-krishna-face-with-flute"
+],
+"MS-2023-0218": [
+"0e947093e6f034cb3434f8e676e0a86c",
+"dandiya-dancers-with-durga-eyes"
+],
+"MS-2023-0219": [
+"6c3595f1a0ecda734829614518f5e4cf",
+"lovebirds-and-cage-at-sunset-canvas"
+],
+"MS-2023-0220": [
+"99364fa2c075026fe8d0ec8f7fa9ab72",
+"white-flowers-on-black-canvas"
+],
+"MS-2023-0221": [
+"35d24615a2b386cbb4ec4c0c93d32208",
+"buddha-the-mind-is-everything"
+],
+"MS-2023-0222": [
+"f1d7e9ef9ab47da2db25b4ffe441b59a",
+"folk-art-mother-and-child"
+],
+"MS-2023-0223": [
+"d17b5b70d7dedadd1ef6355ca79dc966",
+"abstract-swirls-and-shapes"
+],
+"MS-2023-0224": [
+"b72c548b1f2efe70b58cf07a81838060",
+"blue-and-purple-rangoli-with-diyas"
+],
+"MS-2023-0225": [
+"83a569683b07bf86faafb28969f53aee",
+"woman-profile-with-jhumka"
+],
+"MS-2023-0226": [
+"817bf822241c1fa1b10d6a7b0bdceb36",
+"black-and-white-star-geometric"
+],
+"MS-2023-0227": [
+"ea15c675422b07131f4b4f834212443e",
+"girl-with-umbrella-in-rain"
+],
+"MS-2023-0228": [
+"8d729b18c0dedb3cdee30ce711768aa5",
+"three-masks-abstract-faces"
+],
+"MS-2023-0229": [
+"4f3d4b225462c9538d1ae43017181f69",
+"madhubani-fish-in-circle"
+],
+"MS-2023-0230": [
+"a639f65ee7cf3bf496a5ff3e4071c38c",
+"fan-leaves-line-pattern"
+],
+"MS-2023-0231": [
+"b603c1c87c4f7ff5060d9e0b79f469e9",
+"ganesha-names-spiral-calligraphy"
+],
+"MS-2023-0232": [
+"a4c27d952d69a0267365a6d6eb4c7cd3",
+"pink-and-green-doodle-mandala"
+],
+"MS-2023-0233": [
+"7ad1ed90f9aeecaa69615f90f5b76f86",
+"friendship-faces-pencil-sketch"
+],
+"MS-2023-0234": [
+"ae0695418b38de00fe0065e08265addb",
+"madhubani-peacock"
+],
+"MS-2023-0235": [
+"8cbb75bdf6dd758483d75c14dc850add",
+"red-interlocking-pattern"
+],
+"MS-2023-0236": [
+"9c7c2c2a3e4114da356ec1a27e24a5fa",
+"orange-and-blue-round-mandala"
+],
+"MS-2023-0237": [
+"248f9b3067cc67a67769a86465b64c54",
+"square-spiral-line-illusion"
+],
+"MS-2023-0238": [
+"8580522b1a41bdd593ae681a160ab20d",
+"couple-embracing-pencil-sketch"
+],
+"MS-2023-0239": [
+"9ef8ecc7b4f3e281f5dbe60b75e1a1a4",
+"lotus-zentangle-pen-art"
+],
+"MS-2023-0240": [
+"717307a0cae1702f390eb8c23d2f048c",
+"zentangle-dots-and-waves"
+],
+"MS-2024-0241": [
+"1d3b05d01faffecc621d9fa6255e77dd",
+"cinderella-in-garden"
+],
+"MS-2024-0242": [
+"80b5549057d7b42df394181c4f856722",
+"republic-day-girl-with-flag-rangoli"
+],
+"MS-2024-0243": [
+"d325c9d36999707cf42f4938f478d8d9",
+"shiva-pencil-sketch"
+],
+"MS-2024-0244": [
+"4956ae2bd643623b264e0c09bfed5142",
+"hanuman-jayanti-rangoli-2"
+],
+"MS-2024-0245": [
+"4a2fe6dc29131b404cf56fea06389e41",
+"jagannath-puppets-folk-art"
+],
+"MS-2024-0246": [
+"74a67fd5005f6487b8a102ae34f23565",
+"shiva-parvati-and-hanuman-drawing"
+],
+"MS-2024-0247": [
+"ebaf98e44559639027d70aba062cd520",
+"village-women-carrying-pots-drawing"
+],
+"MS-2024-0248": [
+"abeb0b29a59f4c58553d5f8ef8dec975",
+"baby-ganesha-with-parvati-drawing"
+],
+"MS-2024-0249": [
+"e363072aed339d978d5f9864bf86bd5c",
+"lets-grow-old-together-couple"
+],
+"MS-2024-0250": [
+"118842d966c68a6b699b52c8b39345e2",
+"hibiscus-on-colorful-tiles"
+],
+"MS-2024-0251": [
+"925bd10dcecf6e3a4a9f97e65bafdd96",
+"lotus-pattern-drawing"
+],
+"MS-2024-0252": [
+"4c4e4c509f10ef2da43eaf4a5bd72515",
+"birds-over-sunset-mini-canvas"
+],
+"MS-2024-0253": [
+"0a8a717480a99a5153dc7be7b23d5bf1",
+"ganesha-mini-canvas-on-easel"
+],
+"MS-2024-0254": [
+"b6be4f6fc031c909708fd9f398e7ddeb",
+"ganesha-outline-on-canvas"
+],
+"MS-2024-0255": [
+"cb020263a2e35d3d5abffc2c062825dc",
+"pinwheel-design-mini-canvas"
+],
+"MS-2024-0256": [
+"ca55006715ff797a68622c9015615d00",
+"warli-village-scene-framed"
+],
+"MS-2024-0257": [
+"f9ed0ef6b833c5fe066980fee967e311",
+"girl-on-swing-oval-canvas-in-progress"
+],
+"MS-2024-0258": [
+"1c9167e330f6dda31a1474862d2e455c",
+"mini-radha-krishna-canvas-on-easel"
+],
+"MS-2024-0259": [
+"cdf62ea451e498dc032f9233a48cd14a",
+"shree-rangoli-with-flowers",
+[
+"8093a334a546c50c4602d7d986a2b4a0"
+]
+],
+"MS-2024-0260": [
+"6f5730553e3c6646c4ef0cb9b5a12bd1",
+"krishna-sudhama"
+],
+"MS-2024-0261": [
+"fe9c55d8975b85440cd5f910da142739",
+"white-lotus-kolam"
+],
+"MS-2024-0262": [
+"4f0673a9ec677121e9f519f4f3d322d3",
+"navratri-golu-celebration"
+],
+"MS-2024-0263": [
+"6caa07d1687656237288b1dd805676d3",
+"om-rangoli-with-roses"
+],
+"MS-2024-0264": [
+"d116a1c7920babe41ebecf5581e7fc73",
+"circles-and-diagonal-stripes-pattern"
+],
+"MS-2024-0265": [
+"e8ab478f363c1ecf808ba5f2f0b9efbe",
+"har-har-mahadev-shiva-hand"
+],
+"MS-2024-0266": [
+"80ba729bc5c5991aa21342309a9bc2cf",
+"shiva-grief-quote-painting"
+],
+"MS-2024-0267": [
+"15a1aedbe1c615817e0c6d216f85a620",
+"lakshmi-on-lotus"
+],
+"MS-2024-0268": [
+"d3d858e27df9efb2de7204ff9388e5be",
+"circle-lattice-gold-pattern"
+],
+"MS-2024-0269": [
+"b7c7b675325df0b2008f9e7e5a580dc1",
+"golden-buddha-under-tree"
+],
+"MS-2024-0270": [
+"8f61053c9241c30ef68d1162966eb77f",
+"zentangle-woman-with-patterns"
+],
+"MS-2024-0271": [
+"ee907b9770892c999e8c9fb2c5753a5a",
+"birds-on-branches-nine-panels"
+],
+"MS-2024-0272": [
+"d24cea61748a57f35a2b560f1368ccef",
+"happy-dhanteras-kalash-rangoli"
+],
+"MS-2024-0273": [
+"0517c6cccfa072303614c822ddc2d7ca",
+"happy-dhanteras-swastik-rangoli"
+],
+"MS-2024-0274": [
+"e2f3e6651abcafd8cac30e1cf08bd2e8",
+"krishna-jayanti-rangoli"
+],
+"MS-2024-0275": [
+"e07fb40710f23e5f304da1c671e88964",
+"white-geometric-kolam"
+],
+"MS-2024-0276": [
+"fde5b97fb7abea9ef2161551cd6afd96",
+"happy-diwali-peacock-rangoli"
+],
+"MS-2024-0277": [
+"65b8dbb7145c8518c1c70c0a1d4302ff",
+"krishna-janmashtami-rangoli"
+],
+"MS-2024-0278": [
+"c082e38cabc39122cfaf62b84c6befd4",
+"krishna-shank"
+],
+"MS-2024-0279": [
+"ecbeb5cfd912ba0d7543c7f478d938ad",
+"best-out-waste-tissue-art"
+],
+"MS-2024-0280": [
+"1299fd7c4da26b7b2c738ea333f65f81",
+"dot-mandala-orange-and-blue"
+],
+"MS-2024-0281": [
+"6e03cc776b817315337a7a85e6a3ed08",
+"women-gathering-folk-painting"
+],
+"MS-2024-0282": [
+"9d4c48cf9a3e074c08e827ccb70ee218",
+"wild-flowers-painting"
+],
+"MS-2024-0283": [
+"e2c4acbdfe93d23e0854075720752c33",
+"radha-krishna-with-deer"
+],
+"MS-2024-0284": [
+"6ca6b8c99b9496010237601d88fa927a",
+"mother-and-child-folk-painting"
+],
+"MS-2024-0285": [
+"a056f8fe0d53339f03fef7d5296d8056",
+"family-kitchen-scene"
+],
+"MS-2024-0286": [
+"035b7ad9482b81ee950638afe36cd811",
+"rajasthani-women-with-pots"
+],
+"MS-2024-0287": [
+"ffdd5b146a7e2bc6eb04803c728738f7",
+"peacock-in-circle-painting"
+],
+"MS-2024-0288": [
+"fa9f252820ce9f55294ccb97e2541c80",
+"goddess-with-diya-painting"
+],
+"MS-2024-0289": [
+"1b10e6cc37c7f5ef5c6482a9298142cb",
+"couple-with-drum-folk-painting"
+],
+"MS-2024-0290": [
+"35c4c12afab9e5e80f473166bea044b3",
+"kartigai-rangoli"
+],
+"MS-2024-0291": [
+"40c23e668e798af517ee32a54ea3094d",
+"star-kolam-with-swirls"
+],
+"MS-2024-0292": [
+"8ca1a6671a7c75ce02820109c8ab0b58",
+"xmas-rangoli"
+],
+"MS-2025-0293": [
+"54f7d5cf76a7a6c21d807b4855d7bb20",
+"pongal-rangoli"
+],
+"MS-2025-0294": [
+"8990a7483f542f9d6bc79d79578a803e",
+"flamenco-dancer-stained-glass-style"
+],
+"MS-2025-0295": [
+"e2dc43aebe0a6c6b2e2c4a47508b3e54",
+"ganesha-kolam"
+],
+"MS-2025-0296": [
+"403eb303f1225a691157751e6febde32",
+"ganesha-om-rangoli"
+],
+"MS-2025-0297": [
+"8de8e0aeb422045d99f9014c6a5d05b7",
+"happy-womens-day-rangoli"
+],
+"MS-2025-0298": [
+"febe06a993a15a79f42ba236f1bb1742",
+"ganesha-flower-kolam"
+],
+"MS-2025-0299": [
+"d390073e278e1976c2cf2c2e823b6fe8",
+"om-kolam-with-swirls"
+],
+"MS-2025-0300": [
+"0dbf54d324022ccc2b856cb5a1a9dc70",
+"peacock-and-ganesha-flower-rangoli"
+],
+"MS-2025-0301": [
+"1a01c12182d652b3eff418b8c4fe4495",
+"jai-shri-ram-rangoli"
+],
+"MS-2025-0302": [
+"c070590d58419c7230d4e2f9b772ce69",
+"colorful-knot-rangoli"
+],
+"MS-2025-0303": [
+"d1f3f3db2b8763d4257ae16baf340bbd",
+"lotus-and-shankh-rangoli"
+],
+"MS-2025-0304": [
+"ec0358da3e1c32e5b6274c592e5a7dc7",
+"white-knot-kolam"
+],
+"MS-2025-0305": [
+"69138490f57787b035a03a8f033de4ce",
+"hanuman-jai-shri-ram-kolam"
+],
+"MS-2025-0306": [
+"0c58132ee870e5bdd56644ffec2950d5",
+"jai-shri-hanuman-rangoli"
+],
+"MS-2025-0307": [
+"2cb6ec5866797e00582f14cb4d72a0f7",
+"colorful-star-flower-rangoli"
+],
+"MS-2025-0308": [
+"39c1373f79e1a199f32bfb75e4e29aaa",
+"seven-running-horses-framed"
+],
+"MS-2025-0309": [
+"566bdb1571aedb72296557ff82ab9848",
+"diya-and-namam-rangoli"
+],
+"MS-2025-0310": [
+"62e8d936cca7f01c735e275500ae57d7",
+"day-and-night-landscape-oval-canvas"
+],
+"MS-2025-0311": [
+"246404e79e45caf3623179270c19705c",
+"happy-mothers-day-rangoli"
+],
+"MS-2025-0312": [
+"3c382c0f937a1fb827f89f99c2b1f5af",
+"foil-relief-flowers-art"
+],
+"MS-2025-0313": [
+"b329fffe9b863c0a070412a8ecc0d12a",
+"folk-dancer"
+],
+"MS-2025-0314": [
+"8ab709fc1dd36c71421d90dc1dfafc3f",
+"orange-flowers-textured-canvas"
+],
+"MS-2025-0315": [
+"8a16403f42d12a7cfd59849468c68f8b",
+"pink-and-red-flower-rangoli"
+],
+"MS-2025-0316": [
+"8510faf30ef2390a71e3a19a68770c49",
+"sikku-kolam-knot-pattern"
+],
+"MS-2025-0317": [
+"4f381e6044847b571e54127c8d186c55",
+"roses-stained-glass-style"
+],
+"MS-2025-0318": [
+"cd0d4755939fce8b0d9c5934fc96cc07",
+"ganesha-flower-border-rangoli"
+],
+"MS-2025-0319": [
+"29e22e35921a2480179f4fc25e64057e",
+"shree-ganesha-diya-rangoli"
+],
+"MS-2025-0320": [
+"4a8c339cc32708407ac406310abad416",
+"red-knot-rangoli"
+],
+"MS-2025-0321": [
+"c0610690a4e027f082a0575de2054942",
+"vat-purnima-rangoli"
+],
+"MS-2025-0322": [
+"bfdcf9df5dd3784d8cccf4deef495c98",
+"ganesha-colorful-lotus-rangoli"
+],
+"MS-2025-0323": [
+"e892500204fb88afb95f74507aaf5692",
+"ganesha-lotus-rangoli"
+],
+"MS-2025-0324": [
+"70a03c926d27a7d5c4c6cb134c6d4f41",
+"ganesha-star-rangoli"
+],
+"MS-2025-0325": [
+"70dd32a756f985594ee05688260aff54",
+"kathakali-face-framed"
+],
+"MS-2025-0326": [
+"d544b7ab6493475961066720dc190035",
+"four-petals-swirl-rangoli"
+],
+"MS-2025-0327": [
+"354b2b0c137ccddf1c8c09f2c0172afa",
+"ganesha-butterfly-rangoli"
+],
+"MS-2025-0328": [
+"1697b6239a5f13cae309023007449ba5",
+"hibiscus-and-jasmine-rangoli"
+],
+"MS-2025-0329": [
+"e9e6cc2f481a1a5837b17bab5315143c",
+"blue-circle-rangoli-with-flowers"
+],
+"MS-2025-0330": [
+"9d4fbc54d01f83a790a56a992446e00f",
+"shivling-om-hibiscus-rangoli"
+],
+"MS-2025-0331": [
+"dce09688fd640ed270e38141fcccd166",
+"blue-and-pink-swirl-rangoli"
+],
+"MS-2025-0332": [
+"fdbf5a60ce74fff1c3f44595ae931795",
+"red-rose-stained-glass-square"
+],
+"MS-2025-0333": [
+"b9e7acd1400e50dd959f222a6633ac69",
+"star-and-lotus-rangoli"
+],
+"MS-2025-0334": [
+"28424caf7cea84960c45b0d2f1a8e5e4",
+"abstract-radha-krishna-on-canvas"
+],
+"MS-2025-0335": [
+"621b600ef0455ad2378502dcfd0809bd",
+"radha-krishna-with-flute"
+],
+"MS-2025-0336": [
+"a62f9d56b94fb987479c2b1a0b4c9901",
+"ganesh-jayanti-rangoli"
+],
+"MS-2025-0337": [
+"8a57ac0cb1b396e1a95658318813f439",
+"ganesha-face-rangoli"
+],
+"MS-2025-0338": [
+"45ed03fd046fd1636c8525b57028b727",
+"colorful-stars-rangoli"
+],
+"MS-2025-0339": [
+"4669884eb08c80401bfc395c990e10d4",
+"star-of-david-rangoli"
+],
+"MS-2025-0340": [
+"7f49e775ab3e55b53ec11a7fab7b48c1",
+"tirupati-balaji-bead-embellished"
+],
+"MS-2025-0341": [
+"f5dae8ae2e78189318f806db1c32294e",
+"colorful-flower-rangoli"
+],
+"MS-2025-0342": [
+"4e3d8c74d265d5a89f4a0bbd5bc1650b",
+"white-kolam-with-purple-dots"
+],
+"MS-2025-0343": [
+"61836783af9bb465bff964d76fd13f7b",
+"dusshera-rangoli"
+],
+"MS-2025-0344": [
+"112f5c918e3dde8f7c20c0b27d0f459a",
+"lakshmi-footprints-rangoli"
+],
+"MS-2025-0345": [
+"ca268c54ce1fef42a2b96118340c8529",
+"interlocked-star-rangoli"
+],
+"MS-2025-0346": [
+"fd160da0badfc5d6609707e16c58aaca",
+"blue-and-purple-star-rangoli"
+],
+"MS-2025-0347": [
+"98171e9dfe3b30086940a226421c9ddd",
+"orange-hexagon-rangoli"
+],
+"MS-2025-0348": [
+"260e3bd1d56741156e7b7c67b5337169",
+"lord-venkateswara-painting"
+],
+"MS-2025-0349": [
+"0bef983b20bfee15a1b60d3b755a5f03",
+"interlocked-squares-rangoli"
+],
+"MS-2025-0350": [
+"c9e48512bdd91d4cdebfab66ebcf7ec3",
+"shubh-labh-painted-diya-holders"
+],
+"MS-2025-0351": [
+"12b308f48077490fb8b8751738de2c94",
+"six-point-star-rangoli"
+],
+"MS-2025-0352": [
+"ac7a2c04196e67389fa5a2cb9f45ab5f",
+"butterfly-rangoli"
+],
+"MS-2025-0353": [
+"498e6079399fe41fb627e79b57597699",
+"cube-pattern-flower-rangoli"
+],
+"MS-2025-0354": [
+"a9c274a7e178c9979fc0a88513f61bbb",
+"ganesha-lotus-rangoli-with-snowflakes"
+],
+"MS-2025-0355": [
+"3728049807da967d94618a66014837db",
+"shivling-ganesha-lotus-rangoli"
+],
+"MS-2025-0356": [
+"d5e436e3c5b759e1dc77f4b51b45a567",
+"saraswati-diamond-painting-kit"
+],
+"MS-2025-0357": [
+"f050ced6c64055c97e3ec8222424b0ef",
+"tirupati-balaji-with-hanging-diyas"
+],
+"MS-2025-0358": [
+"fb74eabf4b04df349ea1c08c6d9c2114",
+"peacocks-ganpati-star-rangoli"
+],
+"MS-2025-0359": [
+"571ded6e7b57f4aeeab0f3801fd78ab5",
+"peacocks-star-rangoli"
+],
+"MS-2025-0360": [
+"70ddaf08fde45c0cc746fe7929a1d9cc",
+"all-in-one-dieties"
+],
+"MS-2025-0361": [
+"e4fe08749d5677a27150ede39240e209",
+"peacock-and-flowers-glass-painting"
+],
+"MS-2026-0362": [
+"1cf8569182c0084289968fb91299fc35",
+"murali-art"
+],
+"MS-2026-0363": [
+"5cff842190449c4703ef759af171a68f",
+"golden-peacocks-embroidery"
+],
+"MS-2026-0364": [
+"b24fddcca736d33ac40c25dbc7a43553",
+"happy-republic-day-girl-rangoli"
+],
+"MS-2026-0365": [
+"2a2453f14275e6fe71d9b82028793912",
+"happy-womens-day-flower-rangoli"
+],
+"MS-2026-0366": [
+"6ce60c2df891e5aee7e4682b9dfbee80",
+"swastik-geometric-rangoli"
+],
+"MS-2026-0367": [
+"9acc2fa949b551235ff61c7778f637ce",
+"folk-art-mother-and-child-pair"
+],
+"MS-2026-0368": [
+"b82b8f316d8125bbe68a23f08fccebc0",
+"hanuman-jayanti-rangoli"
+],
+"MS-2026-0369": [
+"948e4fc746424e32c1fae4c14a4a4d92",
+"jai-shri-ram-hanuman-rangoli"
+],
+"MS-2026-0370": [
+"6cb3cc0390cb92eb348367cdc8d16856",
+"breathe-believe-bloom-wreath"
+],
+"MS-2026-0371": [
+"6f28ded31462501b5be00104c4c1b6a4",
+"flower-glass-painting-tile"
+],
+"MS-2026-0372": [
+"d132f7b401aee77eac79762cd6f45ecd",
+"life-is-complicated-rangoli"
+],
+"MS-2026-0373": [
+"4974ad29d43916428dadf5ce8375b9ec",
+"lotus-and-kolam-rangolis"
+],
+"MS-2026-0374": [
+"9f3e91f2590417fae3a10b5807b78f08",
+"abstract-ganesha-with-faces"
+],
+"MS-2026-0375": [
+"0ca45f8d061a40cc879927929517fc3e",
+"boy-hanging-on-perimal-feet"
+],
+"MS-2026-0376": [
+"8354206809e8e2245a85f8c52a2382ad",
+"fish-relief-texture-art"
+],
+"MS-2026-0377": [
+"658c35d6e6f37cd6caaaf0658a801d93",
+"musician-and-ram-sita-folk-art"
+],
+"MS-2026-0378": [
+"940513066cfbc8e94ae4ba26a7c07ee8",
+"my-son-s-merit-list-award-function"
+],
+"MS-2026-0379": [
+"92c980d87843f9abb1397c7714d6104f",
+"pongal-kolam"
+],
+"MS-2026-0380": [
+"f312335dec41736abe50d3cefd929e17",
+"sitting-women-on-black-canvas"
+],
+"MS-2026-0381": [
+"5ab934f881078eab6364d0b669e2b214",
+"woman-in-red-dress-with-handbag"
+],
+"MS-2026-0382": [
+"b38656d0e8f8c0a92741c75c998c3382",
+"culture-of-india"
+],
+"MS-2026-0383": [
+"6e8af31e162a8fba1139b4a9e2135049",
+"girl-on-swing-under-moon"
+],
+"MS-2026-0384": [
+"538c4e52e945118770cd4eeac72f50c1",
+"happy-sad-face-in-one"
+],
+"MS-2026-0385": [
+"09c5e43bfbb3e6deb46030a99a30e341",
+"kadva-chauth"
+],
+"MS-2026-0386": [
+"c824cd3085d1cf67aaf1262c75a804ae",
+"kathakali-with-flowers-on-onam"
+],
+"MS-2026-0387": [
+"2e00d3a55bd6a09641b32193ee10268a",
+"tinted-glass-painting-on-canvas"
+],
+"MS-2026-0388": [
+"d5d280aff2d512a66bb8f50c3960858d",
+"raksha-bandhan"
+],
+"MS-2026-0389": [
+"a8e28a970b556a080629e1d4fe0fef69",
+"stone-painting"
+],
+"MS-2026-0390": [
+"3d3a123046312142bcf1ed1ad74bb0ce",
+"krishna-playing-flute-2"
+],
+"MS-2026-0391": [
+"a1594a3781f90573360941847d8c9c9b",
+"sea-stone-shell-painting"
+],
+"MS-2026-0392": [
+"bf4d40bebdf7c82fbca96519ef29516f",
+"navratri-rangoli"
+],
+"MS-2026-0393": [
+"18c5d52f2755e2f35fb47bdb8ee9c304",
+"saibaba-on-canvas"
+],
+"MS-2026-0394": [
+"419c4643e5876f26bf3e08c171ae8dd7",
+"abstract-circles-red-and-blue"
+],
+"MS-2026-0395": [
+"f2e4df822027f5a2cdea1035e33db018",
+"abstract-colorful-brushstrokes"
+],
+"MS-2026-0396": [
+"33a6ce3d78da2910824d28e8640b07f7",
+"abstract-cubist-faces"
+],
+"MS-2026-0397": [
+"6ea02dd69c1806c252592b730e26f610",
+"abstract-faces-in-frames"
+],
+"MS-2026-0398": [
+"616a5068c9c0b88d2461674cd45108db",
+"abstract-leaves-and-suns-four-panels"
+],
+"MS-2026-0399": [
+"67c0fe6ee1049c1b24b7580c46e363bb",
+"abstract-palette-knife-colors"
+],
+"MS-2026-0400": [
+"22e10e2d9430a2e11978d8e2495a851b",
+"abstract-radha-krishna"
+],
+"MS-2026-0401": [
+"8f939943b7ff8221d0e11f5a74ecbd64",
+"abstract-radha-krishna-with-vines"
+],
+"MS-2026-0402": [
+"cbe5a65aed6bec5d0d43e296a3ac8097",
+"all-deities-in-one"
+],
+"MS-2026-0403": [
+"0c05d945e29779106348d08b33d68b95",
+"ardhanarishvara-painting"
+],
+"MS-2026-0404": [
+"c4b9e1cf73d481c80a1fefb340a18901",
+"art-lies-even-in-simple-lines"
+],
+"MS-2026-0405": [
+"aab9e940b68ce0594673c17430350fac",
+"avengers-superheroes-painting"
+],
+"MS-2026-0406": [
+"f39da22e584c002afec8723770c778f1",
+"ballet-dancer-silhouette"
+],
+"MS-2026-0407": [
+"73fd3372595ea93e03d4dd6a8875b0a2",
+"bamboo-and-flowers-in-circle"
+],
+"MS-2026-0408": [
+"83464371ec92ceba0995d40a86f27da5",
+"bird-and-flowers-silhouette"
+],
+"MS-2026-0409": [
+"1940b1277b1f48f88e9364e12ba8ca49",
+"birds-and-blossoms-heart-canvas"
+],
+"MS-2026-0410": [
+"04f26a751dec7cc969cc9506415b43e2",
+"birds-on-branch-watercolor"
+],
+"MS-2026-0411": [
+"be9890a139397c8377394cc595b2d501",
+"boat-and-mountains-landscape"
+],
+"MS-2026-0412": [
+"9ee09b3e45f55e3a4e465c288de1fbb9",
+"boat-birds-and-dolphins-landscape"
+],
+"MS-2026-0413": [
+"05c9fdd486e23df742734406e0c211d1",
+"bride-and-butterfly-sketchbook-page"
+],
+"MS-2026-0414": [
+"537d7411fc37771df106ef4b2f22b113",
+"bull-elephant-optical-illusion"
+],
+"MS-2026-0415": [
+"737275915cbde2c80657e9524acdf961",
+"butterflies-and-flowers-collage"
+],
+"MS-2026-0416": [
+"993b0d37c5609c97190491224469f502",
+"butterfly-and-vines-in-circle"
+],
+"MS-2026-0417": [
+"213681a9fed36e78da6cfd1517b016bd",
+"children-playing-in-rain"
+],
+"MS-2026-0418": [
+"9dfb4d0c5b8f207059f6c0fed0c1241f",
+"christmas-night-santa-sleigh"
+],
+"MS-2026-0419": [
+"7f7642922f03b9d234fe92571cac4e6d",
+"continuous-line-faces-sketchbook-page"
+],
+"MS-2026-0420": [
+"cf63b73ad7e4ba7cf5249d85fdb17f5c",
+"couple-and-light-bulb-sketchbook-page"
+],
+"MS-2026-0421": [
+"0396356bd7d70707e860d5fbabffbef0",
+"couple-heartbreak-drawing"
+],
+"MS-2026-0422": [
+"25101614ea7e8e1dc5dff95bceaf7348",
+"couple-hugging-sketch"
+],
+"MS-2026-0423": [
+"4eca844110971ef8786ecb214556c524",
+"couple-kissing-under-umbrella"
+],
+"MS-2026-0424": [
+"4d8a2ecb63a4f353892b097ded5dfc67",
+"dancing-ganesha"
+],
+"MS-2026-0425": [
+"9b78c90dd8b0dab041bed244bab021e5",
+"dancing-woman-against-brick-wall"
+],
+"MS-2026-0426": [
+"8d721e0151759d6b19cea18f721cb13a",
+"diwali-diya-rangoli"
+],
+"MS-2026-0427": [
+"cde4315eef6b23d1ccbb1092a21de3c1",
+"dolphins-leaping-at-sunset"
+],
+"MS-2026-0428": [
+"9bbe8155f261af33ffe289d65d7141bb",
+"dove-with-flowers"
+],
+"MS-2026-0429": [
+"1f83cc82298383eae90f315f73e14c20",
+"durga-face-rangoli"
+],
+"MS-2026-0430": [
+"325ab472bab36e66e8652973778b390e",
+"faces-lips-and-eyes-sketchbook-page"
+],
+"MS-2026-0431": [
+"5978149d7f3320f34bff241260aa75c3",
+"faces-lips-and-hearts-doodle-page"
+],
+"MS-2026-0432": [
+"d867cd7291dde29d8168fd9b60cfaa1d",
+"fairy-and-landscape-sketchbook-page"
+],
+"MS-2026-0433": [
+"29bfa3dee5ed0851d666dff033e321af",
+"family-portrait-three-faces"
+],
+"MS-2026-0434": [
+"d8a5deb8aee9ff2cd4383e2baafbfeaf",
+"farewell-memories-portrait-painting"
+],
+"MS-2026-0435": [
+"8ca154d4d1c7a77a83c6fe5d2b437867",
+"figure-on-cliff-rainbow-crayon"
+],
+"MS-2026-0436": [
+"7bc305f084823a6264a2889f695ff193",
+"fish-border-mandala"
+],
+"MS-2026-0437": [
+"038758080c48c34d517b3b24260a0611",
+"fleur-de-lis-pattern"
+],
+"MS-2026-0438": [
+"ac864037d1126c7f25eeda001b2272db",
+"floral-and-geometric-rangoli"
+],
+"MS-2026-0439": [
+"125688320caa2d112a3c523e4b33b4ec",
+"floral-hummingbirds-painting-on-glass-door"
+],
+"MS-2026-0440": [
+"8a6f38f69a6e30cf94ad01d3b0eae13b",
+"floral-tree-line-art"
+],
+"MS-2026-0441": [
+"f40ea471da75636d9fe34e4b6d10cbb9",
+"forest-waterfall-diamond-arr"
+],
+"MS-2026-0442": [
+"89c9efdab0c0f60c5b651465b3bda23f",
+"friends-forever-hug-in-flower"
+],
+"MS-2026-0443": [
+"386a08fd86d81821adfcd1b7d245f311",
+"friends-therapy-quote-painting"
+],
+"MS-2026-0444": [
+"18fc77cf804e0e11b45370c2cc57b9e8",
+"friendship-quote-faces-drawing"
+],
+"MS-2026-0445": [
+"28fd1d3cd57332fab45d3eeceadc3719",
+"ganesha-balaji-painting"
+],
+"MS-2026-0446": [
+"d9f56b35d37d0fab520a9d8f67857597",
+"ganesha-rangoli-on-black"
+],
+"MS-2026-0447": [
+"e7c7b1d755ba6b42aa72b115a14bbf16",
+"ganesha-social-media"
+],
+"MS-2026-0448": [
+"8f8dc9f2d368b238d98b8f511c09e1e1",
+"ganpati-bappa-line-art"
+],
+"MS-2026-0449": [
+"75ac1aeadfca27529dd15c4e88b9ab29",
+"geometric-spiral-line-art"
+],
+"MS-2026-0450": [
+"4e7318532f28530d4698eaa6f9afb8b2",
+"geometric-triangles-pattern"
+],
+"MS-2026-0451": [
+"08d1bf93aea6fdd4aebb10b1296199c1",
+"girl-and-lovebirds-sketchbook-page"
+],
+"MS-2026-0452": [
+"c3aa976f2b4e8277c79028bb96c3fcae",
+"girls-and-flowers-doodle-page"
+],
+"MS-2026-0453": [
+"9391155d6d4f0d7047575830bbd80c3c",
+"govinda-tirupati-balaji-symbols"
+],
+"MS-2026-0454": [
+"794e90c89f3fbc7df5eaa302cd8fdcb7",
+"graduation-family-portrait"
+],
+"MS-2026-0455": [
+"6069b80024aa5137d363ba9b405a745f",
+"green-hills-landscape"
+],
+"MS-2026-0456": [
+"cbf4a595ffe70b9415cc1244b26d2dfa",
+"half-face-lotus-rangoli"
+],
+"MS-2026-0457": [
+"9a35eaa7632b6191c8c8d1f5ca63b9ed",
+"happy-diwali-peacock-and-lanterns"
+],
+"MS-2026-0458": [
+"a3489b4e68465c8a4f357bb4c94c2110",
+"happy-dussehra-rangoli"
+],
+"MS-2026-0459": [
+"5c1a210e1f94dce0fc532812dd93dad3",
+"happy-onam-flower-rangoli"
+],
+"MS-2026-0460": [
+"93e4606371e8d2652f87ad3e43a3563f",
+"heartbreak-doodles-sketchbook-page"
+],
+"MS-2026-0461": [
+"f7cccb0cd16e832a7e3028798f20d8b5",
+"independence-day-india-rangoli"
+],
+"MS-2026-0462": [
+"4b5799479a576ddcc7d86d66d1a33a48",
+"indian-independence-tribute"
+],
+"MS-2026-0463": [
+"6970af6a02816ac4bb825a6e961f87aa",
+"jai-shri-ram-hanuman-silhouette"
+],
+"MS-2026-0464": [
+"5fa0dbc38a5521c65471c13c96e20623",
+"kali-face-drawing"
+],
+"MS-2026-0465": [
+"838f10c897a485d64d84162270fb83a6",
+"karva-chauth-rangoli"
+],
+"MS-2026-0466": [
+"ed76c502d7e37830980d2c4856654855",
+"kathakali-face-painting"
+],
+"MS-2026-0467": [
+"a0c1d57ab804b56bf54d547c66d5ea9e",
+"keep-calm-and-choose-peace"
+],
+"MS-2026-0468": [
+"45ae50f45ae1339d50a9c1fa5afc0611",
+"knot-pattern-rangoli"
+],
+"MS-2026-0469": [
+"f1be47cd23e1e58317a9ca04e53b0ee4",
+"krishna-and-sudama-friendship-quote"
+],
+"MS-2026-0470": [
+"fb7c006cd51c0ddf35eb3af9fd383781",
+"line-art-couples-sketchbook-page"
+],
+"MS-2026-0471": [
+"dcc35f3ee98f9b262252dec43ffb7112",
+"line-art-figures-sketchbook-page"
+],
+"MS-2026-0472": [
+"e2b746d7c5d3dac57f9fc50d4bb2f9e9",
+"lips-hearts-and-swans-sketchbook-page"
+],
+"MS-2026-0473": [
+"c4fa873235953ef296ecbc427976c1be",
+"lovebirds-on-branch-triptych"
+],
+"MS-2026-0474": [
+"f7520eabda7fd2a127ae69c816b57dc4",
+"madhubani-fish-and-lotus"
+],
+"MS-2026-0475": [
+"72bee4936fae331886cd9f907b10e2b0",
+"man-in-blazer-portrait"
+],
+"MS-2026-0476": [
+"41ba7253c90fc77f70b38e014fa8b067",
+"mandala-around-blue-eye"
+],
+"MS-2026-0477": [
+"33049fbcafe8eeef7af00451b75ace4d",
+"moon-girl-and-ballerina-sketchbook-page"
+],
+"MS-2026-0478": [
+"83387741fd61412f175aac8e83052a8d",
+"mother-and-daughter-tree-dance"
+],
+"MS-2026-0479": [
+"4d5ccb7899ce616a4065c48f1f478511",
+"mother-child"
+],
+"MS-2026-0480": [
+"cdc830bde01652f09084c5303b1dc68a",
+"mountain-lake-landscape-in-circle"
+],
+"MS-2026-0481": [
+"658c35d6e6f37cd6caaaf0658a801d93",
+"music-dance-glass-painting"
+],
+"MS-2026-0482": [
+"e022530da0543458060e184fa64e777e",
+"music-notes-doodle-sketchbook-page"
+],
+"MS-2026-0483": [
+"d26b6d28057848efb7efffaf1b1035de",
+"my-sons-merit-award"
+],
+"MS-2026-0484": [
+"ca12387f6f84cc2da614641dc286541b",
+"nandi-and-shiva-trishul-canvases"
+],
+"MS-2026-0485": [
+"a8ea32952d51453b65ab76dc7188b775",
+"navratri-golu-celebration-2"
+],
+"MS-2026-0486": [
+"bb333c22c065d81832f6a4961cfa9381",
+"night-sky-with-hearts-abstract"
+],
+"MS-2026-0487": [
+"35f1df68fb73c81d193f13182faa0aa3",
+"ocean-waves-in-three-circles"
+],
+"MS-2026-0488": [
+"96f0c8ab6eab5b1086b3037f06bcab33",
+"om-ganesha-on-blue-textured-canvas"
+],
+"MS-2026-0489": [
+"669e492a8be6ff6105bdde7e111a5b69",
+"paisley-peacock-folk-design"
+],
+"MS-2026-0490": [
+"1a61ffa097fd3fa19351dab15d0dc2b7",
+"panchamukhi-hanuman-framed"
+],
+"MS-2026-0491": [
+"202aa2cf8957444c133317ba9e3f10d0",
+"panchamukhi-hanuman-painting"
+],
+"MS-2026-0492": [
+"d4d8f5b74ecf41b3dcdbbfa65630ce95",
+"panchamukhi-hanuman-painting-2"
+],
+"MS-2026-0493": [
+"965d3116aff203a357f5befb6d515cd6",
+"patterned-sphere-pen-art"
+],
+"MS-2026-0494": [
+"31055d1b2cd57faf0fb601d683db68ee",
+"peacock-zentangle-doodle"
+],
+"MS-2026-0495": [
+"f0434f7675852fbc2fe16acb04b0fa6e",
+"people-in-beach"
+],
+"MS-2026-0496": [
+"46b14c11003b8448f7f38793f5b3ce8d",
+"pink-fan-flowers-pattern"
+],
+"MS-2026-0497": [
+"cedaa23d6b9e02b4bf1de88401e7b8e3",
+"pink-flower-rangoli"
+],
+"MS-2026-0498": [
+"8ed5eff2685d8db76c6b47cf8d6c9afd",
+"pink-flowers-and-blue-butterflies"
+],
+"MS-2026-0499": [
+"2793630c0b76924933c7ffe2023b1e64",
+"pink-hibiscus-rangoli"
+],
+"MS-2026-0500": [
+"663216e0ea811b51ad7cb1946878ac05",
+"pink-star-rangoli"
+],
+"MS-2026-0501": [
+"715a0bc7312fbf98301e6613116454ba",
+"proposal-at-sunset"
+],
+"MS-2026-0502": [
+"c6d3c9895bbcd103c852d8d80ed947f8",
+"purple-lotus-vines-on-green"
+],
+"MS-2026-0503": [
+"ccc5479235f0af13201b15358a5f2a8c",
+"radha-krishna-under-tree-night"
+],
+"MS-2026-0504": [
+"b1970ec873e9290c94ef1f7fb21f9c74",
+"radha-seeing-krishna-reflection"
+],
+"MS-2026-0505": [
+"8ccc736ae3abbb3158b07cbe7db2e330",
+"rajasthani-woman-with-veena"
+],
+"MS-2026-0506": [
+"32dff222dbf6973029c5b20a9c444718",
+"red-and-yellow-flowers"
+],
+"MS-2026-0507": [
+"d60a96fb06cb08e436d585c0f4921472",
+"red-flowers-in-vase"
+],
+"MS-2026-0508": [
+"b9c304b165447d85eb30f0d5cbe65d8d",
+"red-lotus-vines-on-yellow"
+],
+"MS-2026-0509": [
+"22a23de78267447f89c4211b7d7c7308",
+"red-tulips-bush"
+],
+"MS-2026-0510": [
+"00785535c9523ee462adc3bf202fae38",
+"river-village-landscape"
+],
+"MS-2026-0511": [
+"a4867d8e61662d7011f27e1942a08e43",
+"sai-baba-painting"
+],
+"MS-2026-0512": [
+"795738a9931f5dba81445e0f4d4fa353",
+"saraswati-with-veena-and-swan"
+],
+"MS-2026-0513": [
+"8b0adf7a192ff7ce295220b1b9827bbf",
+"shankh-and-lotus-rangoli"
+],
+"MS-2026-0514": [
+"dbd1c4a32602369633cc79a5d1c81406",
+"shiva-om-and-love-sketchbook-page"
+],
+"MS-2026-0515": [
+"026eca17a27f77a50955591037f6bf27",
+"shree-ganesha-puja-family"
+],
+"MS-2026-0516": [
+"b8ed7087b2f95761adc317a3de1d8f3a",
+"soldier-tribute-indian-flag"
+],
+"MS-2026-0517": [
+"ab61c4701c5c595a8269343ec8f05fe3",
+"stylish-girl-in-room"
+],
+"MS-2026-0518": [
+"ea2dd30184509b0489d9744ef93c69f4",
+"swans-and-mountains-at-sunset"
+],
+"MS-2026-0519": [
+"a514316363ef75d8e1d1f6c51278bb58",
+"swastik-and-shubh-labh-rangoli"
+],
+"MS-2026-0520": [
+"8ce2ae75317ad680e042780543b19367",
+"teddy-with-gifts-under-stars"
+],
+"MS-2026-0521": [
+"35adf7b19381d4ec78ae88d4f7a276a4",
+"three-childhoods-family-painting"
+],
+"MS-2026-0522": [
+"d62afc9a2546590ad61b5a0fc395c2bb",
+"three-elephants-round-canvas-painting"
+],
+"MS-2026-0523": [
+"0e1ead52e71500650192fb44b32dae1b",
+"tree-of-life-lotus-oval-canvas"
+],
+"MS-2026-0524": [
+"a3d89ad3026dda83c9c082a8dd2486ed",
+"tree-silhouette-rainbow-rays"
+],
+"MS-2026-0525": [
+"9ae4adcef7cc2655bfec4dea1b24721c",
+"two-girls-on-flower-swings",
+[
+"471edd0c839f92749bb68ddc05772754"
+]
+],
+"MS-2026-0526": [
+"873159ab453a67246cf148279e3513d3",
+"unicorn-silhouette-against-moon"
+],
+"MS-2026-0527": [
+"e3f84162610f0f16522affb11cc4bd22",
+"village-couple-by-the-river"
+],
+"MS-2026-0528": [
+"ae63b2ebd9b1a01abc5ff4f873506249",
+"village-home-doorway-line-drawing"
+],
+"MS-2026-0529": [
+"53d0078e308de24293b2fdc9e2e5e37c",
+"village-life-sunset-scene"
+],
+"MS-2026-0530": [
+"c52e751f5e07edc4f20497203424a51d",
+"vithal-rakumai-sketch"
+],
+"MS-2026-0531": [
+"c5584c12b113cbcec888a93e54791d42",
+"warli-art-panels"
+],
+"MS-2026-0532": [
+"3ea9000d17f7355e144516190a62f5f8",
+"waterfall-and-cherry-blossoms"
+],
+"MS-2026-0533": [
+"8dc77fbe55cef37fed4528da4522fe32",
+"waterfall-textured-painting"
+],
+"MS-2026-0534": [
+"4a93a92b27a3db84d2e7a8d27f210c19",
+"wedding-garland-ceremony-painting"
+],
+"MS-2026-0535": [
+"e14f1c67241196cb31aee80f0c23db1f",
+"welcome-couple-door-plaque"
+],
+"MS-2026-0536": [
+"13904ed068ed773e8435f42d1ba6dc79",
+"woman-artist-at-easel"
+],
+"MS-2026-0537": [
+"0cc2fc0d6b6a9189a224bdaf677bf3fe",
+"woman-dancing-with-lotus"
+],
+"MS-2026-0538": [
+"8016faccaf556143f205ed5523a4ebfc",
+"woman-on-tree-swing-with-parrot"
+],
+"MS-2026-0539": [
+"586c77e188f55c86e20ab9a4ad62ee40",
+"woman-with-diya-in-floral-arch"
+]
+},
 "facts": {
 "00785535c9523ee462adc3bf202fae38": {
 "h": 14526147834903213108,

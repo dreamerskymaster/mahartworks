@@ -114,7 +114,7 @@ class GeneratedPagesTest(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.files = glob.glob(os.path.join(SITE, "art", "*.html")) + \
-            [os.path.join(SITE, k + ".html") for k in seo.CAT] + [os.path.join(SITE, "404.html")]
+            [os.path.join(SITE, k + ".html") for k in seo.CAT] + [os.path.join(SITE, f) for f in ("404.html", "verify.html")]
 
     def test_no_inline_scripts_so_csp_holds(self):
         for f in self.files:
@@ -205,7 +205,7 @@ class CrawlerFilesTest(unittest.TestCase):
     def test_sitemap_lists_every_page_with_images(self):
         root = ET.parse(os.path.join(SITE, "sitemap.xml")).getroot()
         urls = {u.find("s:loc", SM).text: u for u in root.findall("s:url", SM)}
-        want = [BASE + "/", BASE + "/policies"] + [f"{BASE}/{k}" for k in seo.CAT if any(a["cat"] == k for a in self.art)] \
+        want = [BASE + "/", BASE + "/policies", BASE + "/verify"] + [f"{BASE}/{k}" for k in seo.CAT if any(a["cat"] == k for a in self.art)] \
             + [f"{BASE}/art/{a['id']}" for a in self.art]
         self.assertEqual(sorted(urls), sorted(want))
         for loc, u in urls.items():
@@ -244,6 +244,66 @@ class CrawlerFilesTest(unittest.TestCase):
         self.assertRegex(h, r"(?m)^/\*\n(?:  .*\n)*  Content-Security-Policy:")
 
 
+class CertificateTest(unittest.TestCase):
+    """Every artwork page shows its Certificate of Authenticity number; /verify/<number> leads to it."""
+    def setUp(self):
+        self.art = seo.artworks(SITE)
+
+    def test_every_artwork_has_a_unique_certificate_number(self):
+        nums = [a.get("cert") for a in self.art]
+        for n in nums:
+            self.assertRegex(n or "", r"^MS-\d{4}-\d{4,}$")
+        self.assertEqual(len(set(nums)), len(nums))
+        for a in self.art:
+            if a["date"]:
+                self.assertEqual(a["cert"][3:7], a["date"][:4], f"{a['id']}: certificate year is the artwork's year")
+
+    def test_artwork_page_shows_the_certificate(self):
+        for a in self.art:
+            doc = read("art", a["id"] + ".html")
+            sec = re.search(r'<section class="coa" id="certificate".*?</section>', doc, re.S)
+            self.assertTrue(sec, a["id"])
+            self.assertIn(f"<strong>{a['cert']}</strong>", sec[0])
+            self.assertIn("Each original is accompanied by a Certificate of Authenticity signed by the artist", sec[0])
+            self.assertIn('href="/verify"', sec[0])
+            work = next(n for n in nodes(doc) if n["@type"] == "VisualArtwork")
+            ids = [i for i in work["identifier"] if isinstance(i, dict)]
+            self.assertEqual([(i["value"], i["url"]) for i in ids], [(a["cert"], f"{BASE}/verify/{a['cert']}")])
+
+    def test_redirects_send_every_certificate_to_its_artwork(self):
+        lines = [l.split() for l in read("_redirects").splitlines() if l.strip() and not l.startswith("#")]
+        static = {l[0]: (l[1], l[2]) for l in lines if "*" not in l[0]}
+        self.assertEqual(static, {f"/verify/{a['cert']}": (f"/art/{a['id']}#certificate", "301") for a in self.art})
+        self.assertEqual(lines[-1], ["/verify/*", "/verify?n=:splat", "302"], "unknown numbers go to the lookup page, last")
+        self.assertLess(len(static), 2000, "Cloudflare Pages allows 2,000 static redirects")
+        for l in lines:
+            self.assertIn(len(l), (2, 3), l)
+
+    def test_too_many_certificates_fall_back_to_the_lookup_page(self):
+        many = [{"id": f"a{i}", "cert": f"MS-2026-{i + 1:04d}"} for i in range(seo.MAX_REDIRECTS + 1)]
+        lines = [l for l in seo.redirects(many).splitlines() if l and not l.startswith("#")]
+        self.assertEqual(lines, ["/verify/* /verify?n=:splat 302"])
+
+    def test_verify_page(self):
+        doc = read("verify.html")
+        self.assertIn('id="cert-input"', doc)
+        self.assertIn('<script src="/data.js" defer></script>', doc)
+        self.assertIn('<script src="/js/verify.js" defer></script>', doc)
+        self.assertIn('data-email="mahasriphoto24@gmail.com"', doc)
+        self.assertNotIn("<form", doc, "the CSP forbids form submissions (form-action 'none')")
+        self.assertEqual(re.findall(r'<link rel="canonical" href="([^"]+)"', doc), [f"{BASE}/verify"])
+
+    def test_no_signature_image_is_published(self):
+        """Her real signature is supplied at runtime from private storage only, never committed."""
+        root = os.path.join(SITE, "..")
+        for d in ("site", "build"):
+            for dirpath, _, files in os.walk(os.path.join(root, d)):
+                if {"cache", "img", "art"} & set(dirpath.split(os.sep)):    # artworks (titles are hers to choose)
+                    continue
+                for f in files:
+                    self.assertNotIn("signature", f.lower(), os.path.join(dirpath, f))
+
+
 class GeneratorTest(unittest.TestCase):
     def test_build_runs_it(self):
         import build
@@ -261,7 +321,7 @@ class GeneratorTest(unittest.TestCase):
             r = seo.generate(tmp)
             self.assertEqual(r["removed"], ["gone-artwork.html"])
             outs = [os.path.join("art", f) for f in os.listdir(os.path.join(tmp, "art"))] + \
-                ["index.html", "404.html", "sitemap.xml", "llms.txt", "llms-full.txt"] + \
+                ["index.html", "404.html", "verify.html", "_redirects", "sitemap.xml", "llms.txt", "llms-full.txt"] + \
                 [k + ".html" for k in seo.CAT if os.path.exists(os.path.join(tmp, k + ".html"))]
             for f in outs:
                 self.assertEqual(open(os.path.join(tmp, f), encoding="utf-8").read(), read(f),
