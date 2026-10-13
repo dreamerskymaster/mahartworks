@@ -45,7 +45,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - CSP in `site/_headers` forbids inline scripts — keep JS in files (JSON-LD is allowed). prefs.js fills `#year`.
 - Spotlight: mouse, touch (touchmove) and arrow keys; reduced motion makes the reveal instant but keeps it playable
   (it used to auto-reveal, which looked "broken" on Macs with Reduce Motion on).
-- Deep links `#art/<id>`; ids are slugs of titles, so a rename changes the link.
+- Deep links `#art/<id>`; an id is fixed to the picture (md5) once published, so renames never break links (PR #4).
 - `og.jpg` and `icons/` come from `build/make_assets.py`.
 
 ## Privacy (audited 2026-10-12)
