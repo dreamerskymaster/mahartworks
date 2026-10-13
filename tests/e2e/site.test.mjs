@@ -323,7 +323,7 @@ describe("artwork and category pages (for search engines)", () => {
   test("home page links every category; a removed artwork's address is a 404", async () => {
     const p = await open("phone");
     const cats = await p.$$eval("footer .foot-cats a", (l) => l.map((a) => a.getAttribute("href")));
-    assert.deepEqual(cats, ["/paintings", "/drawings", "/mandalas", "/rangoli", "/crafts"].filter((c) => cats.includes(c)));
+    assert.deepEqual(cats, ["/paintings", "/oils", "/drawings", "/mandalas", "/rangoli", "/crafts"].filter((c) => cats.includes(c)));
     assert.ok(cats.length >= 4, cats.join(", "));
     const r = await fetch(server.url + "/art/no-such-artwork");
     assert.equal(r.status, 404);

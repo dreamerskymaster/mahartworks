@@ -48,6 +48,8 @@ def type_named(title):
     """The category her filename asks for, or None if it names none."""
     if re.search(r"rangoli|kolam|pookalam", title, re.I):
         return "rangoli"
+    if re.search(r"\boil\b", title, re.I):
+        return "oil"
     if CRAFT.search(title):
         return "craft"
     if DRAWING.search(title):

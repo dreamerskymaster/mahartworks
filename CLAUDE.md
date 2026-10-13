@@ -76,10 +76,10 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - Visitors: no cookies, no third-party requests; only `ms-prefs` in localStorage when Display settings change.
 
 ## Content rules
-- "Sketch" = pencil only; coloured pen/crayon = "Drawing". Rangoli/kolam/mandala are title-detected,
+- "Sketch" = pencil only; coloured pen/crayon = "Drawing". Rangoli/kolam/mandala/oil are title-detected (`\boil\b`, so "Foil" doesn't count; Oil Paintings = `oils`),
   so avoid those words in titles of paintings (a "Kolam Border" canvas once landed in Rangoli).
 - Watermark: colour MS seal (style 1), confirmed by Ajith 2026-10-12. Originals are never stamped.
-- Her story in About is her own words — quote verbatim, don't edit.
+- Her story in About is her own words — quote verbatim, don't edit. Only change it when she asks (2026-10-13: she added "and oil painting").
 - Footer line "Made by Ajith, for his only loving Mom" stays.
 - `site/policies.html` is written for an Indian sole proprietor (DPDP Act 2023, Consumer Protection
   E-Commerce Rules 2020, Copyright Act 1957, RPwD Act 2016). Mumbai city, returns and commission

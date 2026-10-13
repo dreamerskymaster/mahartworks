@@ -17,7 +17,7 @@ export const PLACE = "Mumbai, India";
 export const VERIFY_BASE = "https://mah-artworks.pages.dev/verify/";
 export const CERT_PATTERN = /^MS-\d{4}-\d{4,}$/;
 const SEAL = new URL("../seal.png", import.meta.url).href;
-const CATEGORY = { paintings: "Painting", drawings: "Drawing", mandalas: "Mandala", rangoli: "Rangoli", crafts: "Craft" };
+const CATEGORY = { paintings: "Painting", oils: "Oil painting", drawings: "Drawing", mandalas: "Mandala", rangoli: "Rangoli", crafts: "Craft" };
 const SVG = "http://www.w3.org/2000/svg";
 
 export const certificateStyles = `

@@ -11,7 +11,8 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 219 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 214 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 42 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 107 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
@@ -35,7 +36,7 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 
 Life has taken me through many different roles—from being a working woman to embracing life as a homemaker. Somewhere along the way, I found something that brought me back to myself: art. What began as a simple hobby after COVID gradually became a journey of creativity, learning, and self-discovery.
 
-I started with sketching and crayons, then explored sketch pens, and eventually discovered acrylics. With every new medium, I learned something different, experimented with new techniques, and slowly found my own way of expressing myself through art.
+I started with sketching and crayons, then explored sketch pens, and eventually discovered acrylics and oil painting. With every new medium, I learned something different, experimented with new techniques, and slowly found my own way of expressing myself through art.
 
 What began as a hobby soon became much more than that. Art became my stress buster, my escape, and my little space of peace. Every painting has been a new learning experience—sometimes through practice, sometimes through experimentation, and often through simply trying something new.
 
@@ -47,7 +48,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (219)
+### Paintings (214)
 
 - [Saraswati Diamond Painting](https://mah-artworks.pages.dev/art/saraswati-diamond-painting): October 2026
 - [Murali Art](https://mah-artworks.pages.dev/art/murali-art): October 2026
@@ -77,11 +78,9 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Radha Krishna With Flute](https://mah-artworks.pages.dev/art/radha-krishna-with-flute): August 2025
 - [Abstract Radha Krishna On Canvas](https://mah-artworks.pages.dev/art/abstract-radha-krishna-on-canvas): August 2025
 - [Red Rose Stained Glass Square](https://mah-artworks.pages.dev/art/red-rose-stained-glass-square): August 2025
-- [Kathakali Framed Oil Painting](https://mah-artworks.pages.dev/art/kathakali-face-framed): June 2025
 - [Roses Stained Glass Style](https://mah-artworks.pages.dev/art/roses-stained-glass-style): June 2025
 - [Orange Flowers Textured Canvas](https://mah-artworks.pages.dev/art/orange-flowers-textured-canvas): May 2025
 - [Day And Night Landscape Oval Canvas](https://mah-artworks.pages.dev/art/day-and-night-landscape-oval-canvas): May 2025
-- [Seven Running Horses Framed Oil Painting](https://mah-artworks.pages.dev/art/seven-running-horses-framed): May 2025
 - [Flamenco Dancer Stained Glass Style](https://mah-artworks.pages.dev/art/flamenco-dancer-stained-glass-style): January 2025
 - [Couple With Drum Folk Painting](https://mah-artworks.pages.dev/art/couple-with-drum-folk-painting): November 2024
 - [Goddess With Diya Painting](https://mah-artworks.pages.dev/art/goddess-with-diya-painting): November 2024
@@ -201,7 +200,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Woman Artist At Easel](https://mah-artworks.pages.dev/art/woman-artist-at-easel)
 - [Wedding Garland Ceremony Painting](https://mah-artworks.pages.dev/art/wedding-garland-ceremony-painting)
 - [Waterfall Textured Painting](https://mah-artworks.pages.dev/art/waterfall-textured-painting)
-- [Waterfall and Cherry Blossoms Oil Painting](https://mah-artworks.pages.dev/art/waterfall-and-cherry-blossoms)
 - [Warli Art Panels](https://mah-artworks.pages.dev/art/warli-art-panels)
 - [Village Couple By The River](https://mah-artworks.pages.dev/art/village-couple-by-the-river)
 - [Unicorn Silhouette Against Moon](https://mah-artworks.pages.dev/art/unicorn-silhouette-against-moon)
@@ -222,9 +220,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Radha Seeing Krishna Reflection](https://mah-artworks.pages.dev/art/radha-seeing-krishna-reflection)
 - [Radha Krishna Under Tree Night](https://mah-artworks.pages.dev/art/radha-krishna-under-tree-night)
 - [Purple Lotus Vines On Green](https://mah-artworks.pages.dev/art/purple-lotus-vines-on-green)
-- [Panchamukhi Hanuman Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting-2)
 - [Panchamukhi Hanuman Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting)
-- [Panchamukhi Hanuman Framed Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-framed)
 - [Paisley Peacock Folk Design](https://mah-artworks.pages.dev/art/paisley-peacock-folk-design)
 - [Om Ganesha On Blue Textured Canvas](https://mah-artworks.pages.dev/art/om-ganesha-on-blue-textured-canvas)
 - [Night Sky With Hearts Abstract](https://mah-artworks.pages.dev/art/night-sky-with-hearts-abstract)
@@ -268,6 +264,14 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Abstract Cubist Faces](https://mah-artworks.pages.dev/art/abstract-cubist-faces)
 - [Abstract Colorful Brushstrokes](https://mah-artworks.pages.dev/art/abstract-colorful-brushstrokes)
 - [Abstract Circles Red And Blue](https://mah-artworks.pages.dev/art/abstract-circles-red-and-blue)
+
+### Oil Paintings (5)
+
+- [Kathakali Framed Oil Painting](https://mah-artworks.pages.dev/art/kathakali-face-framed): June 2025
+- [Seven Running Horses Framed Oil Painting](https://mah-artworks.pages.dev/art/seven-running-horses-framed): May 2025
+- [Waterfall and Cherry Blossoms Oil Painting](https://mah-artworks.pages.dev/art/waterfall-and-cherry-blossoms)
+- [Panchamukhi Hanuman Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting-2)
+- [Panchamukhi Hanuman Framed Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-framed)
 
 ### Drawings & Sketches (157)
 
