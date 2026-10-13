@@ -3,11 +3,13 @@
 CI sets GOOGLE_SERVICE_ACCOUNT_JSON (the key) and DRIVE_FOLDER_ID; the service account needs
 Viewer access to the "my artworks" folder. Nothing here ever writes to Drive.
 """
-import hashlib, io, json, os
+import glob, hashlib, io, json, os
 
 FOLDER_ID = os.environ.get("DRIVE_FOLDER_ID", "1WPuT5LQUEvd2W90qsTFSUPs--Z4GB3rE")
-LOCAL = ("/Users/skymaster/Library/CloudStorage/GoogleDrive-ajithsri2000@gmail.com/"
-         ".shortcut-targets-by-id/1WPuT5LQUEvd2W90qsTFSUPs--Z4GB3rE/my artworks")
+# The Mac's synced copy of the folder. Found by folder id, so no account email is written here;
+# set ARTWORKS_DIR to override.
+LOCAL = os.environ.get("ARTWORKS_DIR") or next(iter(glob.glob(os.path.expanduser(
+    f"~/Library/CloudStorage/GoogleDrive-*/.shortcut-targets-by-id/{FOLDER_ID}/my artworks"))), "")
 HERE = os.path.dirname(os.path.abspath(__file__))
 DOWNLOADS = os.path.join(HERE, "originals")      # CI download dir (gitignored)
 
@@ -72,12 +74,42 @@ def ext(name):
         return e
     if USE_API and not _mimes:
         listing()
-    return MIME_EXT.get(_mimes.get(name), e)
+    if USE_API:
+        return MIME_EXT.get(_mimes.get(name), e)
+    return _sniff(local(name)) or e   # on the Mac there is no MIME type: read the file's first bytes
+
+
+def local(name):
+    """Path in the Mac's Drive folder. Drive lists some files without an extension that the Mac
+    Drive app then adds ("culture of india " -> "culture of india .heic"), so fall back to that."""
+    p = os.path.join(LOCAL, name)
+    if os.path.exists(p) or USE_API or not os.path.isdir(LOCAL):
+        return p
+    for f in os.listdir(LOCAL):
+        if os.path.splitext(f)[0] == name or os.path.splitext(f)[0].strip() == name.strip():
+            return os.path.join(LOCAL, f)
+    return p
+
+
+def _sniff(p):
+    """'.jpg' / '.png' / … from a local file's magic bytes, '' if unknown or unreadable."""
+    try:
+        with open(p, "rb") as f:
+            head = f.read(16)
+    except OSError:
+        return ""
+    if head[:3] == b"\xff\xd8\xff": return ".jpg"
+    if head[:8] == b"\x89PNG\r\n\x1a\n": return ".png"
+    if head[:4] == b"RIFF" and head[8:12] == b"WEBP": return ".webp"
+    if head[:4] in (b"GIF8",): return ".gif"
+    if head[:4] == b"%PDF": return ".pdf"
+    if head[4:8] == b"ftyp" and head[8:12] in (b"heic", b"heix", b"mif1", b"msf1", b"hevc"): return ".heic"
+    return ""
 
 
 def path(name):
     """Local path to an original, downloading it first in CI (with an extension the loader knows)."""
-    p = os.path.join(SRC, name)
+    p = os.path.join(SRC, name) if USE_API else local(name)
     if USE_API:
         e = ext(name)
         p = os.path.join(SRC, name.strip() + ("" if name.strip().lower().endswith(e) else e))
