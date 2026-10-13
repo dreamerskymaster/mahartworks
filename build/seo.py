@@ -34,6 +34,9 @@ CATEGORIES = [
      "Paintings by Mahalakshmi Srikanth, Mumbai Artist",
      "Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, "
      "landscapes, sunsets and abstracts."),
+    ("oils", "Oil Paintings", "Oil painting", "Oil painting",
+     "Oil Paintings by Mahalakshmi Srikanth, Mumbai Artist",
+     "Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes."),
     ("drawings", "Drawings & Sketches", "Drawing", "Drawing",
      "Drawings & Sketches by Mahalakshmi Srikanth, Mumbai",
      "Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook."),

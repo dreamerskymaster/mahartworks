@@ -7,6 +7,7 @@ const CONTACT = {
 const CATS = [
   ["all", "All"],
   ["paintings", "Paintings"],
+  ["oils", "Oil Paintings"],
   ["drawings", "Drawings & Sketches"],
   ["mandalas", "Mandalas"],
   ["rangoli", "Rangoli & Kolam"],

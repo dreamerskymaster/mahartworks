@@ -632,7 +632,7 @@ window.ARTWORKS = [
 {
 "id": "kathakali-face-framed",
 "title": "Kathakali Framed Oil Painting",
-"cat": "paintings",
+"cat": "oils",
 "date": "2025-06-23",
 "w": 980,
 "h": 1200,
@@ -776,7 +776,7 @@ window.ARTWORKS = [
 {
 "id": "seven-running-horses-framed",
 "title": "Seven Running Horses Framed Oil Painting",
-"cat": "paintings",
+"cat": "oils",
 "date": "2025-05-06",
 "w": 1200,
 "h": 998,
@@ -3602,7 +3602,7 @@ window.ARTWORKS = [
 {
 "id": "waterfall-and-cherry-blossoms",
 "title": "Waterfall and Cherry Blossoms Oil Painting",
-"cat": "paintings",
+"cat": "oils",
 "date": "",
 "w": 930,
 "h": 1200,
@@ -3962,7 +3962,7 @@ window.ARTWORKS = [
 {
 "id": "panchamukhi-hanuman-painting-2",
 "title": "Panchamukhi Hanuman Oil Painting",
-"cat": "paintings",
+"cat": "oils",
 "date": "",
 "w": 956,
 "h": 1200,
@@ -3980,7 +3980,7 @@ window.ARTWORKS = [
 {
 "id": "panchamukhi-hanuman-framed",
 "title": "Panchamukhi Hanuman Framed Oil Painting",
-"cat": "paintings",
+"cat": "oils",
 "date": "",
 "w": 1021,
 "h": 1200,

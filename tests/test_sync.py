@@ -61,6 +61,11 @@ class SyncTest(unittest.TestCase):
         self.assertEqual(rows["Mirror work plate.jpg"]["type"], "craft")
         self.assertEqual(rows["Sea stone shell.jpg"]["type"], "painting")   # no category word: painting
 
+    def test_oil_painting_named_upload(self):
+        rows, _ = self.run_sync(LISTING + [("Hanuman oil painting.jpg", "e5", "x"), ("Foil flowers.jpg", "e6", "x")])
+        self.assertEqual(rows["Hanuman oil painting.jpg"]["type"], "oil")
+        self.assertEqual(rows["Foil flowers.jpg"]["type"], "painting")
+
     def test_camera_named_upload_waits_until_renamed(self):
         for n in ("IMG_20261011_101010.jpg", "Screenshot_2026-10-11.png", "PXL_20261011.jpg",
                   "3A26F782-313F-4024-8DBE-E3CACDD5156F.JPG"):
