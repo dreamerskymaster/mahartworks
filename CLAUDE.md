@@ -4,15 +4,14 @@ Ajith's site for his mom's art business in India. Live: https://mah-artworks.pag
 Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how-to.
 
 ## Deploy
-- Cloudflare Pages project `mah-artworks` (account 3f4bfd018e345900174ed8cefdadd8af, login
-  <cloudflare-account>) is **Git-connected**: push to `main` = publish. Output dir `site`, no build command.
+- Cloudflare Pages project `mah-artworks` (Ajith's Cloudflare account) is **Git-connected**: push to `main` = publish. Output dir `site`, no build command.
 - Don't also run `wrangler pages deploy` for normal changes. If you ever must, run it from the
   repo root on `site` — running wrangler *inside* `site/` writes `.wrangler/` there and it gets published.
 - Wrangler 4.x `pages project create` silently makes a Workers project unless `--force`.
 
 ## Source of truth
 - Originals: Google Drive "my artworks" folder
-  (`~/Library/CloudStorage/GoogleDrive-<google-account>/.shortcut-targets-by-id/1WPuT5LQUEvd2W90qsTFSUPs--Z4GB3rE/my artworks`).
+  (on the Mac: `~/Library/CloudStorage/GoogleDrive-*/.shortcut-targets-by-id/<folder id>/my artworks`, found by `build/drive.py`).
   Flat folder, no subfolders. **His mom edits it herself** (deletes, renames, adds) — always diff the
   folder against `build/catalog.tsv` before rebuilding; never assume the catalog is current.
 - Pipeline: `build/sync.py` (Drive → `catalog.tsv`, matched by md5; jpg/png/webp/heic/gif/pdf, every skipped file is logged) → `build/build.py` (incremental via
@@ -46,7 +45,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - CSP in `site/_headers` forbids inline scripts — keep JS in files (JSON-LD is allowed). prefs.js fills `#year`.
 - Spotlight: mouse, touch (touchmove) and arrow keys; reduced motion makes the reveal instant but keeps it playable
   (it used to auto-reveal, which looked "broken" on Macs with Reduce Motion on).
-- Deep links `#art/<id>`; ids are slugs of titles, so a rename changes the link.
+- Deep links `#art/<id>`; an id is fixed to the picture (md5) once published, so renames never break links (PR #4).
 - `og.jpg` and `icons/` come from `build/make_assets.py`.
 - **SEO / AI search** (`build/seo.py`, run at the end of build.py; standalone `python3 build/seo.py`):
   - Generates `site/art/<id>.html` (→ `/art/<id>`), the 5 category pages (`/paintings` …), `404.html`,
@@ -56,6 +55,11 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   - robots.txt allows every crawler, AI training included (opt-out documented in README); keep Google-Extended.
   - 404.html turns off Pages' SPA fallback, so removed/renamed artworks give a real 404.
   - Search Console / Bing verification needs Ajith (README has the steps).
+
+## Privacy (audited 2026-10-12)
+- This repo is public. Never commit personal emails, account ids, local paths with usernames, keys or `.wrangler/`.
+  Keep account notes in Claude memory, not here. Published images carry no EXIF/GPS (Pillow re-encode) — keep it so.
+- Visitors: no cookies, no third-party requests; only `ms-prefs` in localStorage when Display settings change.
 
 ## Content rules
 - "Sketch" = pencil only; coloured pen/crayon = "Drawing". Rangoli/kolam/mandala are title-detected,
