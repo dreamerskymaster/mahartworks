@@ -7,6 +7,8 @@ This writes plain HTML they can read, all from data.js (never edit the outputs b
   site/art/<id>.html          one page per artwork (served at /art/<id>); pages of removed artworks are deleted
   site/<category>.html        paintings, drawings, mandalas, rangoli, crafts (served at /paintings etc.)
   site/404.html               so a removed artwork's address answers "not found" instead of the home page
+  site/verify.html            /verify: look up a Certificate of Authenticity number (js/verify.js reads data.js)
+  site/_redirects             /verify/<number> -> /art/<id>#certificate for every certificate (Cloudflare Pages)
   site/sitemap.xml            every page, with <lastmod> and image entries
   site/llms.txt, llms-full.txt  a plain-text summary for AI assistants (llmstxt.org)
   site/index.html             only between the <!-- seo:… --> markers: newest artworks and category links
@@ -21,6 +23,8 @@ BASE = "https://mah-artworks.pages.dev"
 ARTIST = "Mahalakshmi Srikanth"
 SITE_NAME = "Mahalakshmi Srikanth Art"
 PLACE = "Mumbai, India"
+VERIFY = BASE + "/verify/"      # + certificate number: what the QR code on a printed certificate opens
+MAX_REDIRECTS = 1900            # Cloudflare Pages allows 2,000 static rules; past that /verify/* -> the lookup page
 LATEST = 24          # newest artworks listed on the home page for crawlers
 RELATED = 6
 
@@ -203,7 +207,9 @@ def art_page(a, art, label, by_cat, email, year):
             "image": {"@type": "ImageObject", "contentUrl": img, "width": a["w"], "height": a["h"],
                       "thumbnailUrl": f"{BASE}/img/{a['id']}.t.webp", "creditText": ARTIST,
                       "copyrightNotice": f"© {ARTIST}", "creator": ME},
-            "artform": c["artform"], "creator": ME, "copyrightHolder": ME, "identifier": a["id"],
+            "artform": c["artform"], "creator": ME, "copyrightHolder": ME,
+            "identifier": [a["id"]] + ([{"@type": "PropertyValue", "propertyID": "Certificate of Authenticity",
+                                         "value": a["cert"], "url": VERIFY + a["cert"]}] if a.get("cert") else []),
             "isPartOf": {"@type": "CollectionPage", "@id": f"{BASE}/{c['key']}", "name": c["label"]},
             "locationCreated": {"@type": "Place", "name": PLACE}}
     if a["date"]:
@@ -218,6 +224,8 @@ def art_page(a, art, label, by_cat, email, year):
     if a["date"]:
         facts.append(("Date", f'<time datetime="{a["date"]}">{when}</time>'))
     facts.append(("Artwork ID", e(a["id"])))
+    if a.get("cert"):
+        facts.append(("Certificate", f'<a href="#certificate">{e(a["cert"])}</a>'))
     mail = enquiry(email, a)
     cta = (f'<a class="btn btn-solid" href="{e(mail)}">Enquire about this artwork</a>' if mail else "") + \
           f'<a class="btn" href="/#art/{a["id"]}">View in the gallery</a>'
@@ -242,11 +250,81 @@ def art_page(a, art, label, by_cat, email, year):
       {note}
     </div>
   </article>
+  {certificate(a, email)}
   {more}
 </main>
 """
     return head(title=f"{label} — {c['one']} by {ARTIST}", description=desc, path=path, image=img, image_alt=alt,
                 w=a["w"], h=a["h"], og_type="article", data=data) + body + foot(art, year)
+
+
+def certificate(a, email):
+    """The Certificate of Authenticity section of an artwork page (/verify/<number> lands here)."""
+    if not a.get("cert"):
+        return ""
+    ask = (f' If anything about a certificate looks wrong, write to <a href="{e("mailto:" + email + "?subject=" + quote("Certificate check: " + a["cert"]))}">'
+           f'{e(email)}</a>.') if email else ""
+    return f"""<section class="coa" id="certificate" aria-labelledby="coa-h">
+    <img class="coa-seal" src="/seal.png" alt="" width="72" height="68" loading="lazy" decoding="async">
+    <div class="coa-text">
+      <h2 id="coa-h">Certificate of Authenticity</h2>
+      <p class="coa-no">Certificate number <strong>{e(a["cert"])}</strong></p>
+      <p>Each original is accompanied by a Certificate of Authenticity signed by the artist. It carries this number,
+        her MS seal and a QR code that opens this page.</p>
+      <p class="coa-how">To verify a certificate, scan its QR code or enter its number at
+        <a href="/verify">mah-artworks.pages.dev/verify</a>: a genuine certificate for this artwork brings you back here.{ask}</p>
+    </div>
+  </section>"""
+
+
+def verify_page(art, email, year):
+    trail = [("Home", "/"), ("Verify a certificate", None)]
+    desc = (f"Check a Certificate of Authenticity issued by {ARTIST}: enter its number (like MS-2024-0007) "
+            "to see the original artwork it belongs to.")
+    data = {"@context": "https://schema.org", "@graph": [PERSON,
+        {"@type": "WebPage", "@id": BASE + "/verify", "url": BASE + "/verify", "name": "Verify a Certificate of Authenticity",
+         "description": desc, "author": ME, "isPartOf": {"@type": "WebSite", "@id": BASE + "/#website"}}, crumbs_ld(trail)]}
+    write_to = (f' or write to <a href="{e("mailto:" + email + "?subject=" + quote("Certificate check"))}">{e(email)}</a>'
+                if email else "")
+    body = f"""
+<main id="main" class="page cat-page verify-page">
+  {crumbs(trail)}
+  <header class="cat-head">
+    <p class="eyebrow">Certificate of Authenticity</p>
+    <h1>Verify a certificate</h1>
+    <p class="lede">Every original by {ARTIST} comes with a Certificate of Authenticity signed by her. Its number,
+      in the form <strong>MS-YYYY-NNNN</strong>, is printed beside the QR code. Enter it to see the artwork it was issued for.</p>
+  </header>
+  <div class="verify-box" id="verify" data-email="{e(email)}">
+    <label for="cert-input">Certificate number</label>
+    <div class="verify-row">
+      <input id="cert-input" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false"
+        placeholder="MS-2024-0007" aria-describedby="cert-result">
+      <button class="btn btn-solid" id="cert-check" type="button">Check</button>
+    </div>
+    <div class="verify-result" id="cert-result" role="status" aria-live="polite"></div>
+  </div>
+  <noscript><p class="verify-help">This check needs JavaScript. You can also open
+    <strong>mah-artworks.pages.dev/verify/</strong> followed by the number.</p></noscript>
+  <p class="verify-help">A certificate is genuine only if its number opens the same artwork that it describes. For any doubt,
+    ask through <a href="/#contact">her contact details</a>{write_to}.</p>
+</main>
+<script src="/data.js" defer></script>
+<script src="/js/verify.js" defer></script>
+"""
+    return head(title=f"Verify a Certificate of Authenticity — {ARTIST}", description=desc, path="/verify",
+                data=data) + body + foot(art, year)
+
+
+def redirects(art):
+    """Cloudflare Pages _redirects: each certificate's QR address opens its artwork page."""
+    out = ["# Generated by build/seo.py from site/data.js; do not edit.",
+           "# /verify/<certificate number> -> the artwork it was issued for. Unknown numbers go to the lookup page."]
+    certs = sorted((a["cert"], a["id"]) for a in art if a.get("cert"))
+    if len(certs) <= MAX_REDIRECTS:
+        out += [f"/verify/{c} /art/{i}#certificate 301" for c, i in certs]
+    out += ["/verify/* /verify?n=:splat 302", ""]
+    return "\n".join(out)
 
 
 def category_page(key, art, by_cat, email, year):
@@ -305,7 +383,7 @@ def sitemap(art, by_cat, site):
     pol = open(os.path.join(site, "policies.html"), encoding="utf-8").read()
     m = re.search(r"Last updated:\s*(\d{1,2}) (\w+) (\d{4})", pol)
     pol_date = f"{m[3]}-{MONTHS.index(m[2]) + 1:02d}-{int(m[1]):02d}" if m and m[2] in MONTHS else ""
-    rows = [("/", newest, [BASE + "/og.jpg"]), ("/policies", pol_date, [])]
+    rows = [("/", newest, [BASE + "/og.jpg"]), ("/policies", pol_date, []), ("/verify", "", [])]
     for k in CAT:
         if by_cat.get(k):
             rows.append((f"/{k}", max((a["date"] for a in by_cat[k] if a["date"]), default=""), []))
@@ -438,6 +516,8 @@ def generate(site=SITE):
         elif os.path.exists(p):
             os.remove(p)
     changed += write(os.path.join(site, "404.html"), not_found_page(art, year))
+    changed += write(os.path.join(site, "verify.html"), verify_page(art, ct["email"], year))
+    changed += write(os.path.join(site, "_redirects"), redirects(art))
     changed += write(os.path.join(site, "sitemap.xml"), sitemap(art, by_cat, site))
     changed += write(os.path.join(site, "llms.txt"), llms(art, by_cat, ct, site))
     changed += write(os.path.join(site, "llms-full.txt"), llms(art, by_cat, ct, site, full=True))

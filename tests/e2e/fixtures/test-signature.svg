@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80"><!-- TEST ONLY: a made-up squiggle, not a real signature -->
+<path d="M10 60 C30 10 50 10 55 50 S80 70 95 30 S130 20 140 55 S175 60 190 35 S220 30 232 44" fill="none" stroke="#1f2440" stroke-width="3" stroke-linecap="round"/>
+<text x="120" y="76" font-family="sans-serif" font-size="10" fill="#999" text-anchor="middle">TEST SIGNATURE</text>
+</svg>

@@ -231,7 +231,8 @@ function openLb(i) {
   img.onload = () => img.classList.remove("loading");
   img.src = `img/${a.id}.webp`;
   img.alt = a.title;
-  $("#lb-cap").innerHTML = `${esc(a.title)}<small>${[CAT_LABEL[a.cat], fmtDate(a.date)].filter(Boolean).join(" · ")}</small>`;
+  $("#lb-cap").innerHTML = `${esc(a.title)}<small>${[CAT_LABEL[a.cat], fmtDate(a.date)].filter(Boolean).join(" · ")}</small>` +
+    (a.cert ? `<small class="lb-cert">Certificate ${esc(a.cert)}</small>` : "");
   $("#lb-count").textContent = `${lbIndex + 1} / ${shown.length}`;
   [lbIndex - 1, lbIndex + 1].forEach((j) => { const n = shown[(j + shown.length) % shown.length]; new Image().src = `img/${n.id}.webp`; });
   history.replaceState(null, "", `#art/${a.id}`);

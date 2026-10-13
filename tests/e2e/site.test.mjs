@@ -4,6 +4,7 @@ import { test, before, after, describe } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync } from "node:fs";
 import puppeteer from "puppeteer-core";
+import jsQR from "jsqr";
 import { start } from "./server.mjs";
 
 const CHROME = process.env.CHROME || ["/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
@@ -363,6 +364,205 @@ describe("display settings and accessibility", () => {
     assert.ok(r.links.includes("https://instagram.com/mah_artworks"));
     assert.match(r.foot, /Made by Ajith, for his only loving Mom/);
     assert.match(r.foot, new RegExp(`© ${new Date().getFullYear()} Mahalakshmi Srikanth`));
+    await done(p);
+  });
+});
+
+/** PDF pages and page size, from the uncompressed page dictionaries Chrome writes. */
+function pdfPages(buf) {
+  const s = Buffer.from(buf).toString("latin1");
+  const boxes = [...s.matchAll(/\/MediaBox\s*\[\s*0 0 ([\d.]+) ([\d.]+)\s*\]/g)].map((m) => [+m[1], +m[2]]);
+  return { pages: (s.match(/\/Type\s*\/Page(?![s\w])/g) || []).length, count: +(s.match(/\/Type\s*\/Pages[^>]*?\/Count\s+(\d+)/s) || s.match(/\/Count\s+(\d+)/) || [])[1], boxes };
+}
+const fixture = (variant) => `/__fixtures__/certificate?variant=${variant}`;
+async function openCert(device, variant) {
+  const p = await open(device, { path: fixture(variant) });
+  await p.waitForFunction(() => window.certReady === true, { timeout: 10000 });
+  return p;
+}
+
+describe("certificates of authenticity", () => {
+  let real;
+  before(async () => {
+    const p = await open("laptop"); real = await p.evaluate(() => ARTWORKS.filter((a) => a.date).slice(0, 3)); await done(p);
+  });
+
+  test("renderer: draws a full certificate without errors", async () => {
+    const p = await openCert("laptop", "full");
+    const o = await p.evaluate(() => window.certOptions);
+    const r = await p.evaluate(() => {
+      const s = document.querySelector(".ms-coa-sheet");
+      return { h1: s.querySelector("h1").textContent, title: s.querySelector(".ms-coa-title").textContent,
+        facts: [...s.querySelectorAll(".ms-coa-facts dt")].map((d) => d.textContent),
+        issued: s.querySelector(".ms-coa-issued")?.textContent, statement: s.querySelector(".ms-coa-statement").textContent,
+        imgs: [...s.querySelectorAll("img")].map((i) => [i.getAttribute("src"), i.complete && i.naturalWidth > 0]),
+        qr: !!s.querySelector(".ms-coa-qr svg path"), cert: s.dataset.cert, text: s.textContent };
+    });
+    assert.equal(r.h1, "Certificate of Authenticity");
+    assert.equal(r.title, o.title); assert.equal(r.cert, o.cert);
+    assert.deepEqual(r.facts, ["Category", "Medium", "Size", "Year", "Artwork ID", "Certificate No."]);
+    assert.equal(r.issued, "Issued to Test Buyer on 12 October 2026");
+    assert.match(r.statement, /original work.*Mahalakshmi Srikanth.*copyright.*Copyright Act, 1957/s);
+    assert.ok(r.imgs.every(([, ok]) => ok), JSON.stringify(r.imgs));
+    for (const want of [o.imageUrl, "/__fixtures__/test-signature.svg"]) assert.ok(r.imgs.some(([src]) => src === want), want);
+    assert.ok(r.imgs.some(([src]) => /\/seal\.png$/.test(src)), "MS seal");
+    assert.ok(r.qr, "QR code");
+    assert.match(r.text, new RegExp(o.cert));
+    assert.deepEqual(p.problems, []);
+    await done(p);
+  });
+
+  for (const variant of ["full", "minimal", "long"]) {
+    test(`renderer: "${variant}" prints as exactly one A4 landscape page`, async () => {
+      const p = await openCert("laptop", variant);
+      const pdf = pdfPages(await p.pdf({ format: "A4", landscape: true, printBackground: true }));
+      assert.equal(pdf.pages, 1, `${variant}: ${pdf.pages} pages`);
+      assert.ok(pdf.boxes.length >= 1);
+      for (const [w, h] of pdf.boxes) assert.ok(Math.abs(w - 841.89) < 2 && Math.abs(h - 595.28) < 2, `page ${w}×${h} pt is not A4 landscape`);
+      // nothing spills out of the sheet when printed
+      await p.emulateMediaType("print");
+      const spill = await p.evaluate(() => {
+        const s = document.querySelector(".ms-coa-sheet").getBoundingClientRect();
+        return [...document.querySelectorAll(".ms-coa *")].filter((el) => { const b = el.getBoundingClientRect();
+          return b.width && (b.right > s.right + 1 || b.bottom > s.bottom + 1 || b.left < s.left - 1); }).map((el) => el.className.baseVal ?? el.className);
+      });
+      assert.deepEqual(spill, [], `${variant}: content outside the page`);
+      const hidden = await p.evaluate(() => getComputedStyle(document.querySelector(".toolbar")).display);
+      assert.equal(hidden, "none", "the rest of the page is not printed");
+      await done(p);
+    });
+  }
+
+  test("renderer: the QR code scans to the verify address", async () => {
+    const p = await openCert("laptop", "full");
+    const cert = await p.evaluate(() => window.certOptions.cert);
+    const px = await p.evaluate(async () => {
+      const svg = document.querySelector(".ms-coa-qr svg").cloneNode(true);
+      svg.setAttribute("width", "400"); svg.setAttribute("height", "400");
+      const img = new Image();
+      img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(new XMLSerializer().serializeToString(svg));
+      await img.decode();
+      const c = document.createElement("canvas"); c.width = c.height = 400;
+      const g = c.getContext("2d"); g.fillStyle = "#fff"; g.fillRect(0, 0, 400, 400); g.drawImage(img, 0, 0, 400, 400);
+      return Array.from(g.getImageData(0, 0, 400, 400).data);
+    });
+    const code = jsQR(Uint8ClampedArray.from(px), 400, 400);
+    assert.ok(code, "QR code could not be read");
+    assert.equal(code.data, `https://mah-artworks.pages.dev/verify/${cert}`);
+    // the encoder itself, on a known vector: "HELLO WORLD" at medium error correction is a version-1 (21×21) symbol
+    const m = await p.evaluate(async () => (await import("/js/certificate.js")).qrMatrix("HELLO WORLD"));
+    assert.equal(m.length, 21);
+    assert.deepEqual(m[0].slice(0, 7), [true, true, true, true, true, true, true], "finder pattern");
+    await done(p);
+  });
+
+  test("renderer: empty optional fields are left out; bad input is refused; text is not HTML", async () => {
+    const p = await openCert("laptop", "minimal");
+    const r = await p.evaluate(() => {
+      const s = document.querySelector(".ms-coa-sheet");
+      return { facts: [...s.querySelectorAll(".ms-coa-facts dt")].map((d) => d.textContent), issued: !!s.querySelector(".ms-coa-issued"),
+        art: !!s.querySelector(".ms-coa-art"), sig: !!s.querySelector(".ms-coa-signature"), line: !!s.querySelector(".ms-coa-sign-line"),
+        text: s.textContent };
+    });
+    assert.deepEqual(r.facts, ["Certificate No."]);
+    assert.equal(r.issued, false); assert.equal(r.art, false); assert.equal(r.sig, false);
+    assert.equal(r.line, true, "a blank line for a wet signature");
+    assert.doesNotMatch(r.text, /undefined|null|Issued/);
+    const errs = await p.evaluate(async () => {
+      const { renderCertificate } = await import("/js/certificate.js");
+      const box = document.createElement("div"); document.body.append(box);
+      const out = [];
+      for (const o of [{ cert: "MS-24-1", title: "x" }, { cert: "MS-2024-0001", title: " " }])
+        try { renderCertificate(box, o); out.push("rendered"); } catch (e) { out.push(e.message); }
+      renderCertificate(box, { cert: "MS-2024-0001", title: "<img src=x onerror=alert(1)>", buyerName: "<b>Bold</b>", medium: "", size: null, issuedOn: "2026-01-05" });
+      out.push(box.querySelector(".ms-coa-title").textContent, box.querySelectorAll(".ms-coa img").length, box.querySelector(".ms-coa-issued").textContent,
+        [...box.querySelectorAll("dt")].map((d) => d.textContent).join("|"));
+      return out;
+    });
+    assert.match(errs[0], /not a certificate number/); assert.match(errs[1], /title is required/);
+    assert.equal(errs[2], "<img src=x onerror=alert(1)>");
+    assert.equal(errs[4], "Issued to <b>Bold</b> on 5 January 2026");
+    assert.equal(errs[5], "Certificate No.");
+    await done(p);
+  });
+
+  for (const device of ["phone", "laptop"]) {
+    test(`renderer fits the screen on ${device}`, async () => {
+      const p = await openCert(device, "long");
+      assert.equal(await sideways(p), "", device);
+      await done(p);
+    });
+  }
+
+  test("artwork page shows its certificate number", async () => {
+    const a = real[0];
+    const p = await open("phone", { path: `/art/${a.id}` });
+    const r = await p.evaluate(() => ({ no: document.querySelector("#certificate .coa-no strong")?.textContent,
+      text: document.querySelector("#certificate")?.textContent, fact: document.querySelector('.art-facts a[href="#certificate"]')?.textContent }));
+    assert.equal(r.no, a.cert); assert.equal(r.fact, a.cert);
+    assert.match(r.text, /Each original is accompanied by a Certificate of Authenticity signed by the artist/);
+    assert.deepEqual(p.problems, []);
+    await done(p);
+  });
+
+  test("/verify finds a real number (typed loosely) and links to the artwork", async () => {
+    const a = real[1];
+    const p = await open("phone", { path: "/verify" });
+    await p.type("#cert-input", a.cert.toLowerCase().replaceAll("-", " ")); await p.tap("#cert-check"); await sleep(150);
+    const r = await p.evaluate(() => ({ ok: document.querySelector("#cert-result .ok")?.textContent, t: document.querySelector("#cert-result .t")?.textContent,
+      link: document.querySelector("#cert-result .verify-link")?.getAttribute("href"), q: location.search }));
+    assert.equal(r.ok, "Genuine certificate"); assert.equal(r.t, a.title);
+    assert.equal(r.link, `/art/${a.id}#certificate`);
+    assert.equal(r.q, `?n=${a.cert}`);
+    await Promise.all([p.waitForNavigation({ waitUntil: "networkidle0" }), p.tap("#cert-result .verify-link")]);
+    assert.equal(new URL(p.url()).pathname, `/art/${a.id}`);
+    assert.deepEqual(p.problems, []);
+    await done(p);
+  });
+
+  test("/verify rejects a number that was never issued", async () => {
+    const p = await open("laptop", { path: "/verify?n=MS-1999-9999" });
+    const r = await p.evaluate(() => ({ input: document.querySelector("#cert-input").value, text: document.querySelector("#cert-result").textContent,
+      mail: document.querySelector("#cert-result a[href^='mailto:']")?.getAttribute("href") }));
+    assert.equal(r.input, "MS-1999-9999");
+    assert.match(r.text, /MS-1999-9999 is not a certificate issued by Mahalakshmi Srikanth/);
+    assert.match(r.mail || "", /^mailto:mahasriphoto24@gmail\.com\?subject=Certificate%20check/);
+    assert.doesNotMatch(r.text, /Genuine/);
+    await done(p);
+  });
+
+  test("/verify/<number> redirects to the artwork's certificate; an unknown number to the lookup page", async () => {
+    const a = real[2];
+    let r = await fetch(`${server.url}/verify/${a.cert}`, { redirect: "manual" });
+    assert.equal(r.status, 301); assert.equal(r.headers.get("location"), `/art/${a.id}#certificate`);
+    r = await fetch(`${server.url}/verify/MS-1999-9999`, { redirect: "manual" });
+    assert.equal(r.status, 302); assert.equal(r.headers.get("location"), "/verify?n=MS-1999-9999");
+    const p = await open("phone", { path: `/verify/${a.cert}` });
+    assert.equal(new URL(p.url()).pathname, `/art/${a.id}`);
+    assert.equal(new URL(p.url()).hash, "#certificate");
+    assert.equal(await p.$eval("#certificate .coa-no strong", (s) => s.textContent), a.cert);
+    await done(p);
+    const q = await open("phone", { path: "/verify/MS-1999-9999" });
+    assert.match(await q.$eval("#cert-result", (s) => s.textContent), /not a certificate issued/);
+    await done(q);
+    assert.equal((await fetch(`${server.url}/no/such/page`)).status, 404, "unknown paths are still 404s");
+  });
+
+  for (const device of ["phone", "laptop"]) {
+    test(`verify page on ${device}: loads cleanly, fits, Display button`, async () => {
+      const p = await open(device, { path: `/verify?n=${real[0].cert}` });
+      assert.equal(await p.$eval("h1", (h) => h.textContent), "Verify a certificate");
+      assert.equal(await p.$eval(".a11y-btn", (b) => !!b), true);
+      assert.equal(await sideways(p), "", device);
+      assert.deepEqual(p.problems, [], device);
+      await done(p);
+    });
+  }
+
+  test("the gallery viewer shows the certificate number", async () => {
+    const a = real[0];
+    const p = await open("laptop", { path: `/#art/${a.id}` }); await sleep(400);
+    assert.equal(await p.$eval("#lb-cap .lb-cert", (c) => c.textContent), `Certificate ${a.cert}`);
     await done(p);
   });
 });
