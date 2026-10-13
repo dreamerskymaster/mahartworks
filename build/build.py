@@ -8,6 +8,7 @@ Run build/sync.py first to bring catalog.tsv in line with Drive. Originals are o
 import argparse, csv, hashlib, json, os, re, subprocess, tempfile
 from PIL import Image, ImageOps
 
+import certs
 import drive
 import seo
 import watermark
@@ -104,7 +105,10 @@ def main():
     # Same title + near-identical picture = one artwork; keep the biggest original.
     kept = []
     for c in sorted(cands, key=lambda c: (-c["px"], c["file"])):
-        if not any(k["title"] == c["title"] and bin(k["h"] ^ c["h"]).count("1") <= 12 for k in kept):
+        twin = next((k for k in kept if k["title"] == c["title"] and bin(k["h"] ^ c["h"]).count("1") <= 12), None)
+        if twin:
+            twin.setdefault("also", []).append(c["key"])     # a smaller copy: it keeps any certificate number
+        else:
             kept.append(c)
 
     out = os.path.join(SITE, "img")
@@ -129,6 +133,9 @@ def main():
             s, n = f"{slug(c['title']) or 'artwork'}-{n}", n + 1
         c["id"] = s
         used.add(s)
+    # Certificate of Authenticity numbers (build/certs.py): issued once, kept for ever in the manifest.
+    register = man.get("certs", {})
+    cert_of = certs.assign(kept, register)
     for c in kept:
         s = c["id"]
         stamp = [c["key"], wm_no]
@@ -141,7 +148,7 @@ def main():
             made += 1
         outputs[s] = stamp
         items.append({"id": s, "title": c["title"], "cat": category(c["type"], c["title"]),
-                      "date": c["date"], "w": c["w"], "h": c["hgt"]})
+                      "date": c["date"], "w": c["w"], "h": c["hgt"], "cert": cert_of[s]})
     for f in os.listdir(out):                        # drop images of removed artworks
         if f.split(".")[0] not in outputs:
             os.remove(os.path.join(out, f))
@@ -149,7 +156,7 @@ def main():
     items.sort(key=lambda i: (i["date"] or "0000", i["id"]), reverse=True)
     with open(os.path.join(SITE, "data.js"), "w") as f:
         f.write("window.ARTWORKS = " + json.dumps(items, indent=0) + ";\n")
-    json.dump({"wm": wm_no, "facts": facts, "outputs": outputs}, open(MANIFEST, "w"), indent=0, sort_keys=True)
+    json.dump({"wm": wm_no, "facts": facts, "outputs": outputs, "certs": register}, open(MANIFEST, "w"), indent=0, sort_keys=True)
     from collections import Counter
     print(f"{len(cands)} candidates -> {len(items)} artworks ({made} images made)",
           dict(Counter(i["cat"] for i in items)))
