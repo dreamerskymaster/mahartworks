@@ -72,12 +72,42 @@ def ext(name):
         return e
     if USE_API and not _mimes:
         listing()
-    return MIME_EXT.get(_mimes.get(name), e)
+    if USE_API:
+        return MIME_EXT.get(_mimes.get(name), e)
+    return _sniff(local(name)) or e   # on the Mac there is no MIME type: read the file's first bytes
+
+
+def local(name):
+    """Path in the Mac's Drive folder. Drive lists some files without an extension that the Mac
+    Drive app then adds ("culture of india " -> "culture of india .heic"), so fall back to that."""
+    p = os.path.join(LOCAL, name)
+    if os.path.exists(p) or USE_API:
+        return p
+    for f in os.listdir(LOCAL):
+        if os.path.splitext(f)[0] == name or os.path.splitext(f)[0].strip() == name.strip():
+            return os.path.join(LOCAL, f)
+    return p
+
+
+def _sniff(p):
+    """'.jpg' / '.png' / … from a local file's magic bytes, '' if unknown or unreadable."""
+    try:
+        with open(p, "rb") as f:
+            head = f.read(16)
+    except OSError:
+        return ""
+    if head[:3] == b"\xff\xd8\xff": return ".jpg"
+    if head[:8] == b"\x89PNG\r\n\x1a\n": return ".png"
+    if head[:4] == b"RIFF" and head[8:12] == b"WEBP": return ".webp"
+    if head[:4] in (b"GIF8",): return ".gif"
+    if head[:4] == b"%PDF": return ".pdf"
+    if head[4:8] == b"ftyp" and head[8:12] in (b"heic", b"heix", b"mif1", b"msf1", b"hevc"): return ".heic"
+    return ""
 
 
 def path(name):
     """Local path to an original, downloading it first in CI (with an extension the loader knows)."""
-    p = os.path.join(SRC, name)
+    p = os.path.join(SRC, name) if USE_API else local(name)
     if USE_API:
         e = ext(name)
         p = os.path.join(SRC, name.strip() + ("" if name.strip().lower().endswith(e) else e))
