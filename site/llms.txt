@@ -32,6 +32,7 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 ## Newest artworks
 
 - [Saibaba on Canvas](https://mah-artworks.pages.dev/art/saibaba-on-canvas): Painting, October 2026
+- [Pongal Kolam](https://mah-artworks.pages.dev/art/pongal-kolam): Rangoli, October 2026
 - [Navratri Rangoli](https://mah-artworks.pages.dev/art/navratri-rangoli): Rangoli, October 2026
 - [Sea Stone Shell Painting](https://mah-artworks.pages.dev/art/sea-stone-shell-painting): Painting, October 2026
 - [Krishna Playing Flute](https://mah-artworks.pages.dev/art/krishna-playing-flute-2): Painting, October 2026
@@ -42,7 +43,6 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 - [Kadva Chauth](https://mah-artworks.pages.dev/art/kadva-chauth): Rangoli, September 2026
 - [Happy & Sad Face in One](https://mah-artworks.pages.dev/art/happy-sad-face-in-one): Drawing, September 2026
 - [Girl on Swing Under Moon](https://mah-artworks.pages.dev/art/girl-on-swing-under-moon): Painting, September 2026
-- [Culture of India](https://mah-artworks.pages.dev/art/culture-of-india): Painting, September 2026
 
 ## Optional
 
