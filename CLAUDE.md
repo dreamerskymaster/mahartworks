@@ -29,7 +29,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   via the shared concurrency group. Check `gh run list --workflow sync.yml` for branch runs if the site goes stale.
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
-- **Tests:** `python3 -m unittest discover -s tests -v` (35) and `npm test --prefix tests/e2e` (30, real Chrome at
+- **Tests:** `python3 -m unittest discover -s tests -v` (57) and `npm test --prefix tests/e2e` (37, real Chrome at
   phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a case for any
   new naming rule or UI behaviour.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync keeps them
@@ -47,6 +47,14 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   (it used to auto-reveal, which looked "broken" on Macs with Reduce Motion on).
 - Deep links `#art/<id>`; an id is fixed to the picture (md5) once published, so renames never break links (PR #4).
 - `og.jpg` and `icons/` come from `build/make_assets.py`.
+- **SEO / AI search** (`build/seo.py`, run at the end of build.py; standalone `python3 build/seo.py`):
+  - Generates `site/art/<id>.html` (→ `/art/<id>`), the 5 category pages (`/paintings` …), `404.html`,
+    `sitemap.xml` (+ images), `llms.txt`, `llms-full.txt`, and the `<!-- seo:… -->` blocks in index.html.
+    Never hand-edit them; `test_seo.py` regenerates and fails on any difference. Output is deterministic (no clock).
+  - Generated pages use root-absolute paths (`/style.css`, `/img/…`) and the same header/footer; prefs.js only.
+  - robots.txt allows every crawler, AI training included (opt-out documented in README); keep Google-Extended.
+  - 404.html turns off Pages' SPA fallback, so removed/renamed artworks give a real 404.
+  - Search Console / Bing verification needs Ajith (README has the steps).
 
 ## Privacy (audited 2026-10-12)
 - This repo is public. Never commit personal emails, account ids, local paths with usernames, keys or `.wrangler/`.
