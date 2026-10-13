@@ -1,0 +1,24 @@
+<!doctype html>
+<!-- Test-only page (served by tests/e2e/server.mjs at /__fixtures__/certificate, never published):
+     renders a sample Certificate of Authenticity with site/js/certificate.js.
+     ?variant=full (default) | minimal (only the required fields) | long (very long title and buyer name) -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certificate fixture (test only)</title>
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<style>
+  body { margin: 0; padding: 24px; background: #e9e4d8; font-family: system-ui, sans-serif; }
+  .toolbar { margin: 0 0 16px; }
+  #cert { max-width: 1123px; margin: 0 auto; }
+</style>
+<script src="/data.js" defer></script>
+<script type="module" src="/__fixtures__/certificate-fixture.js"></script>
+</head>
+<body>
+  <p class="toolbar">Test fixture: this page and the signature on it are not part of the site.</p>
+  <div id="cert"></div>
+</body>
+</html>
