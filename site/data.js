@@ -9,15 +9,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0393"
 },
 {
-"id": "pongal-kolam",
-"title": "Pongal Kolam",
-"cat": "rangoli",
-"date": "2026-10-12",
-"w": 1200,
-"h": 973,
-"cert": "MS-2026-0379"
-},
-{
 "id": "navratri-rangoli",
 "title": "Navratri Rangoli",
 "cat": "rangoli",
@@ -133,6 +124,15 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1146,
 "cert": "MS-2026-0380"
+},
+{
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-09-27",
+"w": 1200,
+"h": 973,
+"cert": "MS-2026-0379"
 },
 {
 "id": "my-son-s-merit-list-award-function",
@@ -613,7 +613,7 @@ window.ARTWORKS = [
 },
 {
 "id": "kathakali-face-framed",
-"title": "Kathakali Face Framed",
+"title": "Kathakali Framed Oil Painting",
 "cat": "paintings",
 "date": "2025-06-23",
 "w": 980,
@@ -766,7 +766,7 @@ window.ARTWORKS = [
 },
 {
 "id": "seven-running-horses-framed",
-"title": "Seven Running Horses Framed",
+"title": "Seven Running Horses Framed Oil Painting",
 "cat": "paintings",
 "date": "2025-05-06",
 "w": 1200,
@@ -3601,7 +3601,7 @@ window.ARTWORKS = [
 },
 {
 "id": "waterfall-and-cherry-blossoms",
-"title": "Waterfall And Cherry Blossoms",
+"title": "Waterfall and Cherry Blossoms Oil Painting",
 "cat": "paintings",
 "date": "",
 "w": 930,
@@ -3961,7 +3961,7 @@ window.ARTWORKS = [
 },
 {
 "id": "panchamukhi-hanuman-painting-2",
-"title": "Panchamukhi Hanuman Painting",
+"title": "Panchamukhi Hanuman Oil Painting",
 "cat": "paintings",
 "date": "",
 "w": 956,
@@ -3979,7 +3979,7 @@ window.ARTWORKS = [
 },
 {
 "id": "panchamukhi-hanuman-framed",
-"title": "Panchamukhi Hanuman Framed",
+"title": "Panchamukhi Hanuman Framed Oil Painting",
 "cat": "paintings",
 "date": "",
 "w": 1021,
@@ -4417,6 +4417,15 @@ window.ARTWORKS = [
 "w": 888,
 "h": 1180,
 "cert": "MS-2026-0442"
+},
+{
+"id": "framed-hanuman-and-kathakali-oil-painting",
+"title": "Framed Hanuman and Kathakali Oil Painting",
+"cat": "paintings",
+"date": "",
+"w": 1200,
+"h": 675,
+"cert": "MS-2026-0540"
 },
 {
 "id": "forest-waterfall-diamond-arr",
