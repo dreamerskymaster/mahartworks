@@ -140,8 +140,9 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   signature, which is the default for originals she signs by hand. `tests/e2e/fixtures/` uses a made-up test squiggle.
 
 ## Tests
-    python3 -m unittest discover -s tests -v          # 80 cases
-    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 52 browser cases (needs Chrome)
+    python3 -m unittest discover -s tests -v          # 81 cases
+    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 54 browser cases (needs Chrome)
+    npm ci --prefix tests/shop && npm test --prefix tests/shop # 47 shop cases: 27 unit + 20 browser (see shop/README.md)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
 - `tests/test_build.py`: the seal is stamped bottom-right and see-through; gallery sections.
 - `tests/test_site.py`: every artwork has both images, no orphans, all links and anchors resolve, no inline
@@ -164,6 +165,21 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
 
 CI: `.github/workflows/test.yml` runs both suites on every push and pull request; `sync.yml` runs the
 Python suite before each Drive sync.
+
+## The shop (`shop/`, a separate site)
+The shop is **https://mah-artworks-shop.pages.dev**, the Cloudflare Pages project `mah-artworks-shop`. It is
+**preview only** until the go-live checklist in `shop/README.md` is done.
+
+It sells her originals:
+- She sets prices and stock herself in `/admin`.
+- Buyers sign in with an email code and pay the exact total by UPI: a button or QR code, then they enter the UTR.
+  She confirms each payment by hand.
+- Shipping is quoted per PIN code: Shiprocket couriers, or a clearly labelled estimate. Pickup is free in Mumbai.
+- Buyers abroad enquire by email.
+- Its data is in the `shop` schema of the Supabase project (`supabase/migrations/`).
+- The gallery links to it in a new tab: the menu, the footer, and "Buy / check availability" in the viewer.
+
+Everything else is in `shop/README.md`.
 
 ## Watermark
     python3 build/build.py --wm 1   # colour seal, see-through, bottom-right (current)
