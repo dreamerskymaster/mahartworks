@@ -266,6 +266,9 @@ footer .small { font-size: .78rem; opacity: .8; max-width: 70ch; margin: .6rem a
   -webkit-touch-callout: none; transition: opacity .25s; }
 .lightbox img.loading { opacity: .25; }
 .lightbox figcaption { font: italic 500 1.5rem/1.25 var(--serif); margin-top: 1rem; text-align: center; }
+.lightbox .lb-buy { display: inline-block; margin-top: .7rem; font: 600 .72rem var(--sans); letter-spacing: .16em; text-transform: uppercase;
+  font-style: normal; color: var(--gold); text-decoration: none; border: 1px solid var(--gold-dim); border-radius: 999px; padding: .45rem 1rem; }
+.lightbox .lb-buy:hover { border-color: var(--gold); }
 .lightbox figcaption small { display: block; font: 400 .72rem var(--sans); color: #a9a6ba; letter-spacing: .16em; text-transform: uppercase; font-style: normal; margin-top: .35rem; }
 .lightbox button { background: none; border: 0; color: #ece6d8; cursor: pointer; }
 .lb-close { font-size: 2.2rem; line-height: 1; width: 48px; height: 48px; border-radius: 50%; }

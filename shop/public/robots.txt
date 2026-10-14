@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /account
+Disallow: /checkout
+Disallow: /cart
+Disallow: /signin
+Disallow: /order/
+Disallow: /api/

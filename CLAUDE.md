@@ -29,7 +29,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   via the shared concurrency group. Check `gh run list --workflow sync.yml` for branch runs if the site goes stale.
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
-- **Tests:** `python3 -m unittest discover -s tests -v` (80) and `npm test --prefix tests/e2e` (52, real Chrome at
+- **Tests:** `python3 -m unittest discover -s tests -v` (81) and `npm test --prefix tests/e2e` (54, real Chrome at
   phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a case for any
   new naming rule or UI behaviour.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/other); sync keeps them
@@ -69,6 +69,28 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Her signature never goes in the repo or on the site**: `signatureUrl` is passed at runtime from private storage;
   without it a blank line is printed for a wet signature. Fixtures use a fake test squiggle.
 - The bot's sync commits touch manifest.json/data.js; if this conflicts, keep main's register entries and re-run build.
+
+## Shop (PR "shop", 2026-10-13; `shop/README.md` has everything)
+- **Where it lives:** a separate Pages project, `mah-artworks-shop`. Source is `shop/`, output `shop/public`,
+  functions `shop/functions`.
+- **Deploy:** not Git-connected and not in production yet; only `preview.mah-artworks-shop.pages.dev` exists.
+  - Deploy previews with `npx wrangler pages deploy public --cwd shop --project-name mah-artworks-shop --branch preview`.
+    It writes `shop/.wrangler/`, which is outside the published folder.
+  - Production waits for the go-live checklist in shop/README.md.
+- **Database:** the `shop` schema in the Supabase project, not exposed to the Data API.
+  - The browser calls `public.shop_*` (SECURITY INVOKER), which calls `shop.api_*` (SECURITY DEFINER, with its own auth
+    checks and an empty search_path). Never put a definer function in `public`.
+  - Migrations in `supabase/migrations/` are named by the version Supabase recorded (`list_migrations`).
+- **Ajith's private tables:** the same project holds `personal.email_cleanup_log` and `public.job_outreach`.
+  - Never read or alter them. They keep RLS with no policies.
+  - After any DB change, run the advisors and `supabase/tests/shop_security.sql` (it rolls itself back).
+- **Money:** nothing is for sale until she prices it, and payments stay closed until `upi_vpa` is set in admin.
+  Never mark an order paid automatically.
+- **Secrets:** Shiprocket, `SHOP_QUOTE_KEY`, her UPI ID and the pickup PIN never go in the repo.
+- **Categories:** the shop's labels are in `shop/public/js/ui.js` `CATEGORY` (including `oils`). Add new gallery
+  categories there.
+- **Tests:** `npm test --prefix tests/shop` (27 unit + 20 browser, with a mock Supabase in `tests/shop/server.mjs`).
+  CI job `shop`.
 
 ## Privacy (audited 2026-10-12)
 - This repo is public. Never commit personal emails, account ids, local paths with usernames, keys or `.wrangler/`.

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sign in — Mahalakshmi Srikanth Shop</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/css/shop.css">
+<script type="module" src="/js/pages/signin.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"></header>
+<main id="main">
+  <div style="max-width:440px;margin:0 auto">
+    <div class="page-head center">
+      <p class="eyebrow">No password needed</p>
+      <h1>Sign in</h1>
+      <p>We'll email you a 6-digit code. New here? The same step creates your account.</p>
+    </div>
+    <form class="panel" id="email-form" novalidate>
+      <label class="field"><span>Email address</span>
+        <input type="email" id="email" name="email" autocomplete="email" inputmode="email" required></label>
+      <button class="btn btn-solid btn-block" id="send" type="submit">Email me a code</button>
+      <p class="err" id="email-err" role="alert" hidden></p>
+    </form>
+    <form class="panel" id="code-form" novalidate hidden>
+      <p>We sent a code to <b id="sent-to"></b>. It may take a minute; check spam too. You can also just tap the link in that email.</p>
+      <label class="field"><span>6-digit code</span>
+        <input type="text" id="code" name="code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" maxlength="6" required></label>
+      <button class="btn btn-solid btn-block" id="verify" type="submit">Sign in</button>
+      <p class="err" id="code-err" role="alert" hidden></p>
+      <p class="small center" style="margin-top:.8rem"><button class="link" type="button" id="restart">Use a different email</button></p>
+    </form>
+    <p class="small muted center">By signing in you agree to the <a href="https://mah-artworks.pages.dev/policies#privacy">privacy policy</a>:
+      your email, name, phone and addresses are stored securely to process your orders and are shared only with the courier delivering them.</p>
+  </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>
