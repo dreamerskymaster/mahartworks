@@ -39,3 +39,25 @@ jobs:
         run: npm test --prefix tests/e2e
         env:
           CHROME: /usr/bin/google-chrome
+
+  # The shop (shop/, deployed separately as mah-artworks-shop): unit tests (shipping table, PINs, UPI links,
+  # order numbers, cart, the /api/shipping-quote function) and browser tests against a local mock of Supabase.
+  # The database security tests (supabase/tests/shop_security.sql) run against the real project by hand.
+  shop:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: tests/shop/package-lock.json
+      - run: npm ci --prefix tests/shop
+      - name: Shop unit tests
+        run: npm run test:unit --prefix tests/shop
+      - name: Shop browser tests (phone, laptop)
+        run: npm run test:e2e --prefix tests/shop
+        env:
+          CHROME: /usr/bin/google-chrome
