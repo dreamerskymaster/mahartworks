@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shop admin — Mahalakshmi Srikanth</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/css/shop.css">
+<script type="module" src="/js/pages/admin.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"></header>
+<main id="main">
+  <div id="admin">
+    <div class="page-head no-print"><p class="eyebrow">For the artist</p><h1>Shop admin</h1></div>
+    <div id="gate" aria-live="polite"><p class="muted"><span class="spinner" aria-hidden="true"></span> Checking your account…</p></div>
+    <div id="panels" hidden>
+      <div class="tabs no-print" role="tablist" aria-label="Admin sections">
+        <button role="tab" id="tab-orders" aria-controls="orders" aria-selected="true">Orders</button>
+        <button role="tab" id="tab-products" aria-controls="products" aria-selected="false">Artworks &amp; prices</button>
+        <button role="tab" id="tab-settings" aria-controls="settings" aria-selected="false">Settings</button>
+      </div>
+
+      <section id="orders" role="tabpanel" aria-labelledby="tab-orders" class="no-print">
+        <div class="toolbar">
+          <label class="sr-only" for="order-filter">Show orders</label>
+          <select id="order-filter" style="max-width:280px">
+            <option value="">All orders</option>
+            <option value="payment_submitted" selected>Payment to check</option>
+            <option value="awaiting_payment">Awaiting payment</option>
+            <option value="paid">Paid: to pack &amp; ship</option>
+            <option value="shipped">Shipped</option>
+            <option value="delivered">Delivered</option>
+            <option value="cancelled">Cancelled</option>
+          </select>
+          <button class="btn btn-small" type="button" id="refresh-orders">Refresh</button>
+        </div>
+        <div class="admin-orders" id="order-list"></div>
+        <div id="order-detail"></div>
+      </section>
+
+      <section id="products" role="tabpanel" aria-labelledby="tab-products" hidden>
+        <div class="notice small"><p>Nothing is for sale until you give it a price and tick <b>For sale</b>. Sizes are in cm and the
+          weight in kg (without packing): they are used to work out shipping. <b>Import artworks</b> copies new titles and
+          certificate numbers from the gallery; it never changes prices.</p></div>
+        <div class="toolbar">
+          <input type="search" id="prod-search" placeholder="Search titles or certificate numbers" style="max-width:320px" aria-label="Search artworks">
+          <select id="prod-filter" style="max-width:220px" aria-label="Which artworks">
+            <option value="all">All artworks</option><option value="sale">For sale</option><option value="sold">Sold</option><option value="unpriced">Not for sale</option>
+          </select>
+          <button class="btn btn-small" type="button" id="import">Import artworks from the gallery</button>
+        </div>
+        <p class="small muted" id="prod-count"></p>
+        <div id="prod-list"></div>
+        <button class="btn" type="button" id="prod-more" hidden>Show more</button>
+      </section>
+
+      <section id="settings" role="tabpanel" aria-labelledby="tab-settings" hidden>
+        <form class="panel" id="settings-form" novalidate>
+          <h2>Payments &amp; pickup</h2>
+          <label class="field"><span>Your UPI ID (VPA) — payments stay closed until this is set</span>
+            <input name="upi_vpa" autocomplete="off" placeholder="yourname@okaxis"></label>
+          <label class="field"><span>Name shown to buyers in their UPI app</span><input name="upi_payee_name"></label>
+          <div class="grid2">
+            <label class="field"><span>Free pickup for PINs starting with (comma separated)</span><input name="pickup_prefixes" placeholder="400, 401, 421"></label>
+            <label class="field"><span>Hours a buyer has to pay before the artwork is released</span><input name="payment_window_hours" inputmode="numeric"></label>
+          </div>
+          <label class="field"><span>Pickup note shown at checkout (don't put your full address here)</span><textarea name="pickup_note"></textarea></label>
+          <p class="small muted" id="signing-state"></p>
+          <p class="err" role="alert" hidden></p>
+          <button class="btn btn-solid" type="submit">Save settings</button>
+        </form>
+        <section class="panel">
+          <h2>Your signature (for certificates)</h2>
+          <p class="small">A PNG or JPEG of your signature, ideally on a white or transparent background, under 1 MB. It is stored
+            privately: only you can see it, and only on certificates you issue here.</p>
+          <div id="sig-preview"></div>
+          <label class="field"><span>Choose an image</span><input type="file" id="sig-file" accept="image/png,image/jpeg,image/webp"></label>
+          <p class="err" id="sig-err" role="alert" hidden></p>
+        </section>
+      </section>
+    </div>
+    <div id="cert-print"></div>
+  </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>

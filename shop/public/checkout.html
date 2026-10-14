@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Checkout — Mahalakshmi Srikanth Shop</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/css/shop.css">
+<script type="module" src="/js/pages/checkout.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"></header>
+<main id="main">
+  <div class="page-head"><h1>Checkout</h1></div>
+  <ol class="steps" id="steps" aria-label="Checkout steps">
+    <li data-step="address">1 · Address</li><li data-step="delivery">2 · Delivery</li><li data-step="review">3 · Review</li><li data-step="pay">4 · Pay</li>
+  </ol>
+  <div id="notices"></div>
+  <div class="two-col" id="checkout" hidden>
+    <div>
+      <section class="panel" id="where">
+        <h2>Where should it go?</h2>
+        <div class="seg" role="radiogroup" aria-label="Delivery country">
+          <label><input type="radio" name="country" value="IN" checked><span>India</span></label>
+          <label><input type="radio" name="country" value="abroad"><span>Another country</span></label>
+        </div>
+      </section>
+      <section class="panel" id="abroad" hidden aria-live="polite">
+        <h2>Buying from outside India</h2>
+        <p>Online checkout is for delivery within India. For any other country, please email the artist: she will reply with
+          the shipping cost to your country and how to pay. Customs duties and import taxes are paid by the buyer.</p>
+        <div id="abroad-links"></div>
+      </section>
+      <section class="panel" id="address-step">
+        <h2>Delivery address</h2>
+        <div id="addresses"></div>
+        <div id="address-form"></div>
+        <button class="btn" type="button" id="add-address">+ Add a new address</button>
+      </section>
+      <section class="panel" id="delivery-step" hidden>
+        <h2>Delivery</h2>
+        <div id="options" aria-live="polite"></div>
+      </section>
+      <section class="panel" id="review-step" hidden>
+        <h2>Review</h2>
+        <label class="field"><span>Note for the artist (optional)</span><textarea id="note" maxlength="1000" placeholder="E.g. a dedication for the certificate, or the best time to call"></textarea></label>
+        <label class="check field"><input type="checkbox" id="agree"> I have read the <a href="https://mah-artworks.pages.dev/policies#shipping" target="_blank" rel="noopener">shipping &amp; returns</a> and <a href="https://mah-artworks.pages.dev/policies#privacy" target="_blank" rel="noopener">privacy</a> policies.</label>
+        <button class="btn btn-solid btn-block" type="button" id="place">Place order &amp; pay by UPI</button>
+        <p class="err" id="place-err" role="alert" hidden></p>
+        <p class="small muted" style="margin-top:.7rem">The artwork is held for you while you pay. You'll see a UPI button and QR code for the exact amount next.</p>
+      </section>
+    </div>
+    <aside class="panel" id="summary">
+      <h2>Your order</h2>
+      <div id="lines"></div>
+      <div class="totals">
+        <div><span>Artworks</span><b id="t-sub"></b></div>
+        <div><span>Shipping</span><b id="t-ship">—</b></div>
+        <div class="grand"><span>Total</span><b id="t-total">—</b></div>
+      </div>
+      <p class="small muted">All prices in ₹, inclusive of taxes.</p>
+    </aside>
+  </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>
