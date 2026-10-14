@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Art
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 538 artworks; artworks and commissions can be enquired about by email.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 539 artworks; artworks and commissions can be enquired about by email.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,12 +11,12 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 214 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 215 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 42 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
-- [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 107 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
-- [Crafts](https://mah-artworks.pages.dev/crafts): 13 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
+- [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 109 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
+- [Crafts](https://mah-artworks.pages.dev/crafts): 11 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
 Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with its title, category, date and an enquiry link.
 
@@ -32,18 +32,18 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 
 ## Newest artworks
 
-- [Xmas Rangoli](https://mah-artworks.pages.dev/art/xmas-rangoli): Rangoli, October 2026
-- [Saraswati Diamond Painting](https://mah-artworks.pages.dev/art/saraswati-diamond-painting): Painting, October 2026
-- [Murali Art](https://mah-artworks.pages.dev/art/murali-art): Painting, October 2026
-- [Kartigai Deepam Rangoli](https://mah-artworks.pages.dev/art/kartigai-deepam-rangoli): Rangoli, October 2026
-- [Folk Dancer](https://mah-artworks.pages.dev/art/folk-dancer): Painting, October 2026
-- [Saibaba on Canvas](https://mah-artworks.pages.dev/art/saibaba-on-canvas): Painting, October 2026
-- [Navratri Rangoli](https://mah-artworks.pages.dev/art/navratri-rangoli): Rangoli, October 2026
-- [Sea Stone Shell Painting](https://mah-artworks.pages.dev/art/sea-stone-shell-painting): Painting, October 2026
-- [Krishna Playing Flute](https://mah-artworks.pages.dev/art/krishna-playing-flute-2): Painting, October 2026
-- [Stone Painting](https://mah-artworks.pages.dev/art/stone-painting): Painting, October 2026
-- [Raksha Bandhan](https://mah-artworks.pages.dev/art/raksha-bandhan): Painting, October 2026
-- [Tinted Glass Painting on Canvas](https://mah-artworks.pages.dev/art/tinted-glass-painting-on-canvas): Painting, September 2026
+- [Lotus Pattern Drawing](https://mah-artworks.pages.dev/art/lotus-pattern-drawing): Drawing, October 2026
+- [Kartigai Deepam Kolam Post](https://mah-artworks.pages.dev/art/kartigai-deepam-kolam-post): Rangoli, October 2026
+- [Jai Shri Ram Hanuman Rangoli](https://mah-artworks.pages.dev/art/jai-shri-ram-hanuman-rangoli): Rangoli, October 2026
+- [Happy Womens Day Rangoli Memory](https://mah-artworks.pages.dev/art/happy-womens-day-rangoli-memory): Rangoli, October 2026
+- [Happy Dussehra Rangoli](https://mah-artworks.pages.dev/art/happy-dussehra-rangoli): Rangoli, October 2026
+- [Hanuman Jayanti Rangoli](https://mah-artworks.pages.dev/art/hanuman-jayanti-rangoli): Rangoli, October 2026
+- [Hanuman Jai Shri Ram Kolam](https://mah-artworks.pages.dev/art/hanuman-jai-shri-ram-kolam): Rangoli, October 2026
+- [Girl on Swing Oval Canvas in Progress](https://mah-artworks.pages.dev/art/girl-on-swing-oval-canvas-in-progress): Painting, October 2026
+- [Girl in Red Dress Brushstrokes](https://mah-artworks.pages.dev/art/girl-in-red-dress-brushstrokes): Painting, October 2026
+- [Geometric Swirl Rangoli](https://mah-artworks.pages.dev/art/geometric-swirl-rangoli): Rangoli, October 2026
+- [Four Petals Swirl Rangoli](https://mah-artworks.pages.dev/art/four-petals-swirl-rangoli): Rangoli, October 2026
+- [Foil Relief Flowers Art](https://mah-artworks.pages.dev/art/foil-relief-flowers-art): Painting, October 2026
 
 ## Optional
 
