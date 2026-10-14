@@ -11,11 +11,11 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 213 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 212 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 42 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
-- [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 110 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
+- [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 111 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 11 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
 Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with its title, category, date and an enquiry link.
@@ -32,6 +32,10 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 
 ## Newest artworks
 
+- [Welcome Couple Door Plaque](https://mah-artworks.pages.dev/art/welcome-couple-door-plaque): Craft, October 2026
+- [Village Home Doorway Line Drawing](https://mah-artworks.pages.dev/art/village-home-doorway-line-drawing): Drawing, October 2026
+- [Vat Purnima Rangoli](https://mah-artworks.pages.dev/art/vat-purnima-rangoli): Rangoli, October 2026
+- [Two Rangolis at Doorstep](https://mah-artworks.pages.dev/art/two-rangolis-at-doorstep): Rangoli, October 2026
 - [Star Kolam with Swirls](https://mah-artworks.pages.dev/art/star-kolam-with-swirls): Rangoli, October 2026
 - [Red Moon Over Blue Sea](https://mah-artworks.pages.dev/art/red-moon-over-blue-sea): Painting, October 2026
 - [Pongal Kolam](https://mah-artworks.pages.dev/art/pongal-kolam-2): Rangoli, October 2026
@@ -40,10 +44,6 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 - [Peacock Zentangle Doodle](https://mah-artworks.pages.dev/art/peacock-zentangle-doodle): Drawing, October 2026
 - [Peacock Feather Rangoli](https://mah-artworks.pages.dev/art/peacock-feather-rangoli): Rangoli, October 2026
 - [Murali Art](https://mah-artworks.pages.dev/art/murali-art): Painting, October 2026
-- [Mini Radha Krishna Canvas on Easel](https://mah-artworks.pages.dev/art/mini-radha-krishna-canvas-on-easel): Painting, October 2026
-- [Man Portrait Pencil Sketch](https://mah-artworks.pages.dev/art/man-portrait-pencil-sketch): Drawing, October 2026
-- [Lotus Pattern Drawing](https://mah-artworks.pages.dev/art/lotus-pattern-drawing): Drawing, October 2026
-- [Kartigai Deepam Kolam Post](https://mah-artworks.pages.dev/art/kartigai-deepam-kolam-post): Rangoli, October 2026
 
 ## Optional
 

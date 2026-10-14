@@ -1,5 +1,41 @@
 window.ARTWORKS = [
 {
+"id": "welcome-couple-door-plaque",
+"title": "Welcome Couple Door Plaque",
+"cat": "crafts",
+"date": "2026-10-14",
+"w": 1200,
+"h": 1140,
+"cert": "MS-2026-0576"
+},
+{
+"id": "village-home-doorway-line-drawing",
+"title": "Village Home Doorway Line Drawing",
+"cat": "drawings",
+"date": "2026-10-14",
+"w": 994,
+"h": 1200,
+"cert": "MS-2026-0575"
+},
+{
+"id": "vat-purnima-rangoli",
+"title": "Vat Purnima Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 937,
+"cert": "MS-2026-0574"
+},
+{
+"id": "two-rangolis-at-doorstep",
+"title": "Two Rangolis at Doorstep",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 589,
+"cert": "MS-2026-0573"
+},
+{
 "id": "star-kolam-with-swirls",
 "title": "Star Kolam with Swirls",
 "cat": "rangoli",
@@ -459,15 +495,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0375"
 },
 {
-"id": "abstract-ganesha-with-faces",
-"title": "Abstract Ganesha with Faces",
-"cat": "paintings",
-"date": "2026-09-27",
-"w": 848,
-"h": 1200,
-"cert": "MS-2026-0374"
-},
-{
 "id": "lotus-and-kolam-rangolis",
 "title": "Lotus And Kolam Rangolis",
 "cat": "rangoli",
@@ -853,15 +880,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 851,
 "cert": "MS-2025-0322"
-},
-{
-"id": "vat-purnima-rangoli",
-"title": "Vat Purnima Rangoli",
-"cat": "rangoli",
-"date": "2025-06-10",
-"w": 1200,
-"h": 677,
-"cert": "MS-2025-0321"
 },
 {
 "id": "red-knot-rangoli",
@@ -3636,15 +3654,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0536"
 },
 {
-"id": "welcome-couple-door-plaque",
-"title": "Welcome Couple Door Plaque",
-"cat": "crafts",
-"date": "",
-"w": 1200,
-"h": 677,
-"cert": "MS-2026-0535"
-},
-{
 "id": "wedding-garland-ceremony-painting",
 "title": "Wedding Garland Ceremony Painting",
 "cat": "paintings",
@@ -3697,15 +3706,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 887,
 "cert": "MS-2026-0529"
-},
-{
-"id": "village-home-doorway-line-drawing",
-"title": "Village Home Doorway Line Drawing",
-"cat": "drawings",
-"date": "",
-"w": 676,
-"h": 1200,
-"cert": "MS-2026-0528"
 },
 {
 "id": "village-couple-by-the-river",

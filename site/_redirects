@@ -304,7 +304,6 @@
 /verify/MS-2025-0318 /art/ganesha-flower-border-rangoli#certificate 301
 /verify/MS-2025-0319 /art/shree-ganesha-diya-rangoli#certificate 301
 /verify/MS-2025-0320 /art/red-knot-rangoli#certificate 301
-/verify/MS-2025-0321 /art/vat-purnima-rangoli#certificate 301
 /verify/MS-2025-0322 /art/ganesha-colorful-lotus-rangoli#certificate 301
 /verify/MS-2025-0323 /art/ganesha-lotus-rangoli#certificate 301
 /verify/MS-2025-0324 /art/ganesha-star-rangoli#certificate 301
@@ -348,7 +347,6 @@
 /verify/MS-2026-0370 /art/breathe-believe-bloom-wreath#certificate 301
 /verify/MS-2026-0372 /art/life-is-complicated-rangoli#certificate 301
 /verify/MS-2026-0373 /art/lotus-and-kolam-rangolis#certificate 301
-/verify/MS-2026-0374 /art/abstract-ganesha-with-faces#certificate 301
 /verify/MS-2026-0375 /art/boy-hanging-on-perimal-feet#certificate 301
 /verify/MS-2026-0376 /art/fish-relief-texture-art#certificate 301
 /verify/MS-2026-0377 /art/musician-and-ram-sita-folk-art#certificate 301
@@ -494,14 +492,12 @@
 /verify/MS-2026-0525 /art/two-girls-on-flower-swings#certificate 301
 /verify/MS-2026-0526 /art/unicorn-silhouette-against-moon#certificate 301
 /verify/MS-2026-0527 /art/village-couple-by-the-river#certificate 301
-/verify/MS-2026-0528 /art/village-home-doorway-line-drawing#certificate 301
 /verify/MS-2026-0529 /art/village-life-sunset-scene#certificate 301
 /verify/MS-2026-0530 /art/vithal-rakumai-sketch#certificate 301
 /verify/MS-2026-0531 /art/warli-art-panels#certificate 301
 /verify/MS-2026-0532 /art/waterfall-and-cherry-blossoms#certificate 301
 /verify/MS-2026-0533 /art/waterfall-textured-painting#certificate 301
 /verify/MS-2026-0534 /art/wedding-garland-ceremony-painting#certificate 301
-/verify/MS-2026-0535 /art/welcome-couple-door-plaque#certificate 301
 /verify/MS-2026-0536 /art/woman-artist-at-easel#certificate 301
 /verify/MS-2026-0537 /art/woman-dancing-with-lotus#certificate 301
 /verify/MS-2026-0538 /art/woman-on-tree-swing-with-parrot#certificate 301
@@ -538,4 +534,8 @@
 /verify/MS-2026-0570 /art/pongal-kolam-2#certificate 301
 /verify/MS-2026-0571 /art/red-moon-over-blue-sea#certificate 301
 /verify/MS-2026-0572 /art/star-kolam-with-swirls#certificate 301
+/verify/MS-2026-0573 /art/two-rangolis-at-doorstep#certificate 301
+/verify/MS-2026-0574 /art/vat-purnima-rangoli#certificate 301
+/verify/MS-2026-0575 /art/village-home-doorway-line-drawing#certificate 301
+/verify/MS-2026-0576 /art/welcome-couple-door-plaque#certificate 301
 /verify/* /verify?n=:splat 302
