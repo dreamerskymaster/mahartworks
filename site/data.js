@@ -1,5 +1,95 @@
 window.ARTWORKS = [
 {
+"id": "star-kolam-with-swirls",
+"title": "Star Kolam with Swirls",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 936,
+"cert": "MS-2026-0572"
+},
+{
+"id": "red-moon-over-blue-sea",
+"title": "Red Moon Over Blue Sea",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 963,
+"h": 1200,
+"cert": "MS-2026-0571"
+},
+{
+"id": "pongal-kolam-2",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 904,
+"h": 1200,
+"cert": "MS-2026-0570"
+},
+{
+"id": "pinwheel-design-mini-canvas",
+"title": "Pinwheel Design Mini Canvas",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 971,
+"h": 1200,
+"cert": "MS-2026-0569"
+},
+{
+"id": "pink-star-rangoli",
+"title": "Pink Star Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1059,
+"h": 1200,
+"cert": "MS-2026-0568"
+},
+{
+"id": "peacock-zentangle-doodle",
+"title": "Peacock Zentangle Doodle",
+"cat": "drawings",
+"date": "2026-10-14",
+"w": 885,
+"h": 1200,
+"cert": "MS-2026-0567"
+},
+{
+"id": "peacock-feather-rangoli",
+"title": "Peacock Feather Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 842,
+"h": 561,
+"cert": "MS-2026-0566"
+},
+{
+"id": "murali-art",
+"title": "Murali Art",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 936,
+"h": 1200,
+"cert": "MS-2026-0543"
+},
+{
+"id": "mini-radha-krishna-canvas-on-easel",
+"title": "Mini Radha Krishna Canvas on Easel",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 844,
+"h": 1200,
+"cert": "MS-2026-0565"
+},
+{
+"id": "man-portrait-pencil-sketch",
+"title": "Man Portrait Pencil Sketch",
+"cat": "drawings",
+"date": "2026-10-14",
+"w": 1200,
+"h": 1076,
+"cert": "MS-2026-0564"
+},
+{
 "id": "lotus-pattern-drawing",
 "title": "Lotus Pattern Drawing",
 "cat": "drawings",
@@ -180,15 +270,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0544"
 },
 {
-"id": "murali-art",
-"title": "Murali Art",
-"cat": "paintings",
-"date": "2026-10-13",
-"w": 936,
-"h": 1200,
-"cert": "MS-2026-0543"
-},
-{
 "id": "kartigai-deepam-rangoli",
 "title": "Kartigai Deepam Rangoli",
 "cat": "rangoli",
@@ -214,15 +295,6 @@ window.ARTWORKS = [
 "w": 1042,
 "h": 1200,
 "cert": "MS-2026-0393"
-},
-{
-"id": "pongal-kolam",
-"title": "Pongal Kolam",
-"cat": "rangoli",
-"date": "2026-10-12",
-"w": 1200,
-"h": 973,
-"cert": "MS-2026-0379"
 },
 {
 "id": "navratri-rangoli",
@@ -340,6 +412,15 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1146,
 "cert": "MS-2026-0380"
+},
+{
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-09-27",
+"w": 1200,
+"h": 973,
+"cert": "MS-2026-0379"
 },
 {
 "id": "my-son-s-merit-list-award-function",
@@ -1008,15 +1089,6 @@ window.ARTWORKS = [
 "cert": "MS-2025-0293"
 },
 {
-"id": "star-kolam-with-swirls",
-"title": "Star Kolam With Swirls",
-"cat": "rangoli",
-"date": "2024-12-20",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0291"
-},
-{
 "id": "kartigai-rangoli",
 "title": "Kartigai Rangoli",
 "cat": "rangoli",
@@ -1305,15 +1377,6 @@ window.ARTWORKS = [
 "cert": "MS-2024-0259"
 },
 {
-"id": "mini-radha-krishna-canvas-on-easel",
-"title": "Mini Radha Krishna Canvas On Easel",
-"cat": "paintings",
-"date": "2024-08-21",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0258"
-},
-{
 "id": "warli-village-scene-framed",
 "title": "Warli Village Scene Framed",
 "cat": "paintings",
@@ -1321,15 +1384,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 865,
 "cert": "MS-2024-0256"
-},
-{
-"id": "pinwheel-design-mini-canvas",
-"title": "Pinwheel Design Mini Canvas",
-"cat": "paintings",
-"date": "2024-08-17",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0255"
 },
 {
 "id": "ganesha-outline-on-canvas",
@@ -2331,15 +2385,6 @@ window.ARTWORKS = [
 "cert": "MS-2022-0141"
 },
 {
-"id": "red-moon-over-blue-sea",
-"title": "Red Moon Over Blue Sea",
-"cat": "paintings",
-"date": "2022-08-03",
-"w": 682,
-"h": 1200,
-"cert": "MS-2022-0140"
-},
-{
 "id": "all-seeing-eye-painted-metal-box",
 "title": "All Seeing Eye Painted Metal Box",
 "cat": "crafts",
@@ -2698,15 +2743,6 @@ window.ARTWORKS = [
 "w": 854,
 "h": 1200,
 "cert": "MS-2022-0100"
-},
-{
-"id": "man-portrait-pencil-sketch",
-"title": "Man Portrait Pencil Sketch",
-"cat": "drawings",
-"date": "2022-01-30",
-"w": 540,
-"h": 1200,
-"cert": "MS-2022-0099"
 },
 {
 "id": "switchboard-birds-and-branches",
@@ -3528,15 +3564,6 @@ window.ARTWORKS = [
 "cert": "MS-2021-0007"
 },
 {
-"id": "peacock-feather-rangoli",
-"title": "Peacock Feather Rangoli",
-"cat": "rangoli",
-"date": "2021-04-13",
-"w": 1200,
-"h": 540,
-"cert": "MS-2021-0006"
-},
-{
 "id": "shivratri-kolam",
 "title": "Shivratri Kolam",
 "cat": "rangoli",
@@ -3924,15 +3951,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0501"
 },
 {
-"id": "pink-star-rangoli",
-"title": "Pink Star Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 676,
-"h": 1200,
-"cert": "MS-2026-0500"
-},
-{
 "id": "pink-hibiscus-rangoli",
 "title": "Pink Hibiscus Rangoli",
 "cat": "rangoli",
@@ -3976,15 +3994,6 @@ window.ARTWORKS = [
 "w": 824,
 "h": 1200,
 "cert": "MS-2026-0495"
-},
-{
-"id": "peacock-zentangle-doodle",
-"title": "Peacock Zentangle Doodle",
-"cat": "drawings",
-"date": "",
-"w": 676,
-"h": 1200,
-"cert": "MS-2026-0494"
 },
 {
 "id": "patterned-sphere-pen-art",
@@ -4059,15 +4068,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0486"
 },
 {
-"id": "navratri-golu-celebration-2",
-"title": "Navratri Golu Celebration",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 1168,
-"cert": "MS-2026-0485"
-},
-{
 "id": "nandi-and-shiva-trishul-canvases",
 "title": "Nandi And Shiva Trishul Canvases",
 "cat": "paintings",
@@ -4084,15 +4084,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 873,
 "cert": "MS-2026-0482"
-},
-{
-"id": "music-dance-glass-painting",
-"title": "Music & Dance Glass Painting",
-"cat": "paintings",
-"date": "",
-"w": 559,
-"h": 1200,
-"cert": "MS-2026-0481"
 },
 {
 "id": "mountain-lake-landscape-in-circle",
