@@ -41,7 +41,7 @@ How the sync names things (`build/sync.py`):
 - Photos still named by the camera (`IMG_…`, `Screenshot_…`, `PXL_…`, UUIDs) are **held back** until she renames them.
 - Videos (`.mp4`) are skipped by design — the site shows pictures only.
 - Hidden items (`other`: collages, phone photos) stay hidden even if renamed. To fix a category by hand,
-  edit the `type` column in `build/catalog.tsv` (painting, drawing, craft, rangoli, other) and push.
+  edit the `type` column in `build/catalog.tsv` (painting, oil, drawing, craft, rangoli, other) and push.
 - Safety stop: a run that would remove more than a third of the artworks publishes nothing.
 
 ## The site (`site/`)
@@ -69,7 +69,7 @@ gets its page automatically; run it alone with `python3 build/seo.py`. Never edi
   Srikanth", **Enquire about this artwork** (email with subject `Enquiry: <title> (ID <id>)`), **View in the
   gallery** (`/#art/<id>`), six related works; unique `<title>`, description, canonical, og:/twitter image and
   JSON-LD `VisualArtwork`. Pages of removed artworks are deleted.
-- `site/paintings.html`, `drawings`, `mandalas`, `rangoli`, `crafts` → `/paintings` etc.: every artwork in the
+- `site/paintings.html`, `oils`, `drawings`, `mandalas`, `rangoli`, `crafts` → `/paintings`, `/oils` etc.: every artwork in the
   category as a plain link, with a short intro (`CATEGORIES` in `seo.py`) and JSON-LD `CollectionPage`/`ItemList`.
   Linked from the footer of every page.
 - `site/index.html`: only between the `<!-- seo:latest -->` (the newest 24, in `<noscript>`) and
@@ -140,7 +140,7 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   signature, which is the default for originals she signs by hand. `tests/e2e/fixtures/` uses a made-up test squiggle.
 
 ## Tests
-    python3 -m unittest discover -s tests -v          # 80 cases
+    python3 -m unittest discover -s tests -v          # 81 cases
     npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 52 browser cases (needs Chrome)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
 - `tests/test_build.py`: the seal is stamped bottom-right and see-through; gallery sections.
@@ -171,6 +171,12 @@ Python suite before each Drive sync.
     python3 build/build.py --wm 3   # big faint stamp across the middle + small colour seal
 The choice is remembered in `build/manifest.json`. Or switch from GitHub: Actions → Run workflow → watermark 1/2/3
 (re-stamping needs every original, so that run downloads the whole folder, ~15 min).
+
+## Shop (not live yet)
+An online shop (UPI payments, Shiprocket shipping, her own admin page for prices and orders, printed certificates)
+is built on the `shop` branch, pull request #8, in `shop/` with its own `shop/README.md` (setup, database, tests and the
+go-live checklist). It is a separate Cloudflare Pages project, `mah-artworks-shop`, backed by a free Supabase project.
+Merge #8 only after the shop's production deploy is up: merging adds "Shop" links to this gallery.
 
 ## Contact details
 `CONTACT` at the top of `site/app.js` (email / Instagram). Empty = section hidden.
