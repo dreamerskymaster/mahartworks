@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Art
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 538 artworks; artworks and commissions can be enquired about by email.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 539 artworks; artworks and commissions can be enquired about by email.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -14,7 +14,7 @@
 - [Paintings](https://mah-artworks.pages.dev/paintings): 212 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 42 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 43 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 111 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 11 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
@@ -431,8 +431,9 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Art Lies Even in Simple Lines](https://mah-artworks.pages.dev/art/art-lies-even-in-simple-lines)
 - [Abstract Faces In Frames](https://mah-artworks.pages.dev/art/abstract-faces-in-frames)
 
-### Mandalas (42)
+### Mandalas (43)
 
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
 - [Colorful Mandala on Desk](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
 - [Dot Mandala Orange And Blue](https://mah-artworks.pages.dev/art/dot-mandala-orange-and-blue): November 2024
 - [Orange And Blue Round Mandala](https://mah-artworks.pages.dev/art/orange-and-blue-round-mandala): December 2023

@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "mandala-art",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-19",
+"w": 856,
+"h": 1200,
+"cert": "MS-2026-0577"
+},
+{
 "id": "welcome-couple-door-plaque",
 "title": "Welcome Couple Door Plaque",
 "cat": "crafts",
