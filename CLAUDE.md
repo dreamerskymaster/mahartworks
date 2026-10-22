@@ -3,10 +3,14 @@
 Ajith's site for his mom's art business in India. Live: https://mah-artworks.pages.dev.
 Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how-to; this file is the rules and status.
 
-## Status (2026-10-14)
-- **Live and automatic:** gallery, artwork/category pages, certificates and /verify, policies. Her Drive edits go
-  live within ~20 min. Nothing to do day to day.
-- **Shop: built, not live.** PR #8 (branch `shop`) is green and mergeable but must wait (see Shop below).
+## Status (2026-10-22)
+- **Live and automatic:** the Vanna Reverie gallery, artwork/category pages, certificates and /verify, policies.
+  Her Drive edits go live within ~20 min. Nothing to do day to day.
+- **2026-10-22:** her duplicate camera-named copies moved to the Drive subfolder "Duplicates - not on website",
+  4 new photos named, names starting with a digit fixed (PR #11). Her plain-language guide was emailed to her.
+  Open question to her: "Lippan art" is the same file as "Pink And Green Doodle Mandala 2" (sync skips the copy).
+- **Shop: built, not live.** PR #8 (branch `shop`) is rebranded to Vanna Reverie and up to date with `main`
+  (2026-10-22). It must wait (see Shop below). It is the only branch besides `main`.
 - **Pending, needs Ajith or his mom** (in order):
   1. Shop admin: she signs in once on the shop preview; then add her to `shop.admins` (SQL in `shop/README.md`).
   2. She enters her UPI ID in /admin → Settings.
@@ -14,9 +18,17 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
      `{{ .Token }}` to the Magic link template; add the shop's redirect URLs (exact steps in `shop/README.md`).
   4. Prices: /admin → Artworks → Import from the gallery, then price/size/weight/For sale per piece.
   5. Shiprocket: free account + KYC + pickup address, then the three Cloudflare secrets on the shop project.
-  6. "Go live": deploy the shop to production, then merge PR #8. (Quote signing, checklist step 6, is already done.)
+  6. "Go live": redeploy the shop preview (it still shows the old name), deploy it to production, then merge PR #8.
+     (Quote signing, checklist step 6, is already done.)
   7. Google Search Console + Bing Webmaster Tools, submit `sitemap.xml` (README → Search engines).
   8. Optional: ask GitHub Support to purge old `refs/pull/*` snapshots (see History); add GSTIN to policies if she registers.
+
+## Where things live (one of each)
+- **Code:** this repo, branch `main` (plus `shop` until go-live). Local checkout: `~/Projects/vanna-reverie/mahartworks`.
+  No other local copies: the OneDrive copy and old scratch clones were pre-rewrite and are retired.
+- **Private, not in git:** `~/Projects/vanna-reverie/private/` — `rename_log.tsv` (every Drive rename/move done for
+  her, old → new, for undo), `SOP-for-Amma.md` (her guide, the source of the email), `watermark-options/`.
+- **Her originals:** the Google Drive "my artworks" folder (below). Account details: Claude memory only.
 
 ## Deploy
 - Cloudflare Pages project `mah-artworks` (Ajith's Cloudflare account) is **Git-connected**: push to `main` = publish. Output dir `site`, no build command.
@@ -47,15 +59,14 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
   Safety stop: a run that would remove more than a third of the artworks publishes nothing.
 - **Tests:** `python3 -m unittest discover -s tests -v` (91) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
-  (60, real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
+  (60 on `main`, 62 with the shop branch; real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
   case for any new naming rule or UI behaviour. Linux CI Chrome lays out slightly differently from a Mac — trust CI.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/oil/other); sync keeps them
   unless she renames the file with a different category word.
 - **Duplicates:** copies of published artworks go into the Drive subfolder "Duplicates - not on website" (2026-10-22:
   62 camera-named copies moved there; sync never reads subfolders). Find copies by perceptual hash against
-  `site/img/*.t.webp`, then check by eye. Her how-to guide (plain text) was emailed to her 2026-10-22; a copy is in
-  Ajith's `~/Documents/artwork-rename-backup/SOP-for-Amma.txt`.
-- Every Drive rename done for her is appended to `~/Documents/artwork-rename-backup/rename_log.tsv` (old, new) so it can be undone.
+  `site/img/*.t.webp`, then check by eye. Her how-to guide was emailed to her 2026-10-22; source in `../private/SOP-for-Amma.md`.
+- Every Drive rename done for her is appended to `../private/rename_log.tsv` (old, new) so it can be undone.
 - `build/cache/` is gitignored and slow to rebuild (Drive downloads on demand); in a worktree, symlink it
   to the main checkout's `build/cache`.
 
@@ -97,17 +108,29 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   without it a blank line is printed for a wet signature. Fixtures use a fake test squiggle.
 - The bot's sync commits touch manifest.json/data.js; if this conflicts, keep main's register entries and re-run build.
 
-## Shop (PR #8, branch `shop` — NOT merged)
-- Lives in `shop/` on that branch, with its own `shop/README.md`. Separate Cloudflare Pages project `mah-artworks-shop`
-  (not Git-connected; deploy with `npx wrangler pages deploy public --cwd shop --project-name mah-artworks-shop --branch preview`,
-  `--branch main` for production). Preview is up and says "Payments are not open yet"; production is not deployed.
-- Backend: Supabase `shop` schema (RLS on every table; `public.shop_*` invoker wrappers call `shop.api_*` definer functions;
-  `place_order` re-prices on the server; one live order per artwork; unpaid orders expire after 48 h; private bucket
-  `shop-private` for her signature). Payments: UPI link/QR, buyer submits the UTR, she marks it paid. Shipping: Shiprocket
-  live rates; Mumbai PIN = free pickup; international = email enquiry. Prices are set in her own /admin page.
+## Shop (PR #8, branch `shop` — NOT merged; `shop/README.md` has everything)
+- **Where it lives:** `shop/` on that branch. Separate Cloudflare Pages project `mah-artworks-shop`, output `shop/public`,
+  functions `shop/functions`. Not Git-connected. Deploy with
+  `npx wrangler pages deploy public --cwd shop --project-name mah-artworks-shop --branch preview` (`--branch main` for
+  production; it writes `shop/.wrangler/`, outside the published folder). Preview says "Payments are not open yet";
+  production is not deployed.
+- **Brand:** same Vanna Reverie wordmark/logo as the gallery (`shop/public/brand/` is a copy of `site/brand/`; re-copy
+  if the logo changes). UPI payee and copyright stay her legal name, "Mahalakshmi Srikanth".
 - **Don't merge #8 until the shop's production deploy exists** — merging adds "Shop" links to the gallery.
-- The Supabase project also holds Ajith's private tables: never read, change or add policies to anything outside `shop`.
-- The quote-signing key is a Cloudflare secret + Supabase Vault entry; never print, log or commit it.
+- **Database:** Supabase `shop` schema, not exposed to the Data API; RLS on every table. The browser calls
+  `public.shop_*` (SECURITY INVOKER), which calls `shop.api_*` (SECURITY DEFINER, own auth checks, empty search_path).
+  Never put a definer function in `public`. Migrations in `supabase/migrations/` are named by the version Supabase
+  recorded. `place_order` re-prices on the server; one live order per artwork; unpaid orders expire after 48 h;
+  private bucket `shop-private` for her signature.
+- **Ajith's private tables** live in the same project: never read, change or add policies to anything outside `shop`.
+  After any DB change, run the advisors and `supabase/tests/shop_security.sql` (it rolls itself back).
+- **Money:** payments by UPI link/QR, buyer submits the UTR, she marks it paid; never mark an order paid automatically.
+  Nothing is for sale until she prices it, and payments stay closed until `upi_vpa` is set. Shipping: Shiprocket live
+  rates; Mumbai PIN = free pickup; international = email enquiry.
+- **Secrets:** Shiprocket, `SHOP_QUOTE_KEY` (Cloudflare secret + Supabase Vault), her UPI ID and the pickup PIN never go
+  in the repo, logs or output.
+- **Categories:** shop labels are in `shop/public/js/ui.js` `CATEGORY` (including `oils`); add new gallery categories there.
+- **Tests:** `npm test --prefix tests/shop` (49: unit + browser, with a mock Supabase in `tests/shop/server.mjs`). CI job `shop`.
 
 ## Privacy (audited 2026-10-12)
 - This repo is public. Never commit personal emails, account ids, local paths with usernames, keys or `.wrangler/`.
