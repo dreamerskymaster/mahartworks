@@ -1,4 +1,4 @@
-# Mahalakshmi Srikanth — Art portfolio
+# Vanna Reverie — Art portfolio of Mahalakshmi Srikanth
 
 Live at **https://mah-artworks.pages.dev** · repo `dreamerskymaster/mahartworks`
 
@@ -56,8 +56,10 @@ Plain HTML/CSS/JS, no framework or build step; designed phone-first and checked 
 - **Viewer:** arrows / swipe, counter, Share (phone share sheet, else copies the link). Each artwork has a link,
   `https://mah-artworks.pages.dev/#art/<id>`, that opens it directly.
 - **Display panel:** theme, text size, reduce motion, contrast, readable font, underline links.
-- Installable as a phone app (`manifest.webmanifest`, `icons/`); link previews use `og.jpg`.
-  Regenerate both with `python3 build/make_assets.py`.
+- **Brand:** Vanna Reverie, "Every Stroke Tells a Story". The logo (`build/assets/vanna-reverie-logo.png`) is in the
+  header of every page (wordmark, with "by Mahalakshmi Srikanth" beside it on wide screens) and the footer (full logo).
+  Installable as a phone app (`manifest.webmanifest`, butterfly `icons/`); link previews use `og.jpg`.
+  Regenerate the logo files, icons and preview with `python3 build/make_assets.py` (needs Pillow and numpy).
 - `site/_headers`: security headers (strict CSP: no inline scripts, nothing third-party) and caching.
 
 ## Search engines and AI answer engines
@@ -140,9 +142,11 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   signature, which is the default for originals she signs by hand. `tests/e2e/fixtures/` uses a made-up test squiggle.
 
 ## Tests
-    python3 -m unittest discover -s tests -v          # 81 cases
-    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 52 browser cases (needs Chrome)
+    python3 -m unittest discover -s tests -v          # 90 cases
+    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 60 browser cases (needs Chrome)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
+- `tests/test_brand.py`: logo in every header and footer, transparent logo files, butterfly icons, brand name in
+  titles, previews, app and JSON-LD; she stays the named seller.
 - `tests/test_build.py`: the seal is stamped bottom-right and see-through; gallery sections.
 - `tests/test_site.py`: every artwork has both images, no orphans, all links and anchors resolve, no inline
   scripts (CSP), meta/manifest/icons, her About text unchanged.
