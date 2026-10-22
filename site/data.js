@@ -1,5 +1,23 @@
 window.ARTWORKS = [
 {
+"id": "mandala-art-2",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0579"
+},
+{
+"id": "lippan-mirror-art",
+"title": "Lippan Mirror Art",
+"cat": "crafts",
+"date": "2026-10-22",
+"w": 1153,
+"h": 1200,
+"cert": "MS-2026-0578"
+},
+{
 "id": "mandala-art",
 "title": "Mandala Art",
 "cat": "mandalas",

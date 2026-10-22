@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Art
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 539 artworks; artworks and commissions can be enquired about by email.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 541 artworks; artworks and commissions can be enquired about by email.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -14,9 +14,9 @@
 - [Paintings](https://mah-artworks.pages.dev/paintings): 212 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 43 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 44 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 111 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
-- [Crafts](https://mah-artworks.pages.dev/crafts): 11 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
+- [Crafts](https://mah-artworks.pages.dev/crafts): 12 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
 Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with its title, category, date and an enquiry link.
 
@@ -431,8 +431,9 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Art Lies Even in Simple Lines](https://mah-artworks.pages.dev/art/art-lies-even-in-simple-lines)
 - [Abstract Faces In Frames](https://mah-artworks.pages.dev/art/abstract-faces-in-frames)
 
-### Mandalas (43)
+### Mandalas (44)
 
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-2): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
 - [Colorful Mandala on Desk](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
 - [Dot Mandala Orange And Blue](https://mah-artworks.pages.dev/art/dot-mandala-orange-and-blue): November 2024
@@ -591,8 +592,9 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Floral And Geometric Rangoli](https://mah-artworks.pages.dev/art/floral-and-geometric-rangoli)
 - [Diwali Diya Rangoli](https://mah-artworks.pages.dev/art/diwali-diya-rangoli)
 
-### Crafts (11)
+### Crafts (12)
 
+- [Lippan Mirror Art](https://mah-artworks.pages.dev/art/lippan-mirror-art): October 2026
 - [Welcome Couple Door Plaque](https://mah-artworks.pages.dev/art/welcome-couple-door-plaque): October 2026
 - [Golden Peacocks Embroidery](https://mah-artworks.pages.dev/art/golden-peacocks-embroidery): January 2026
 - [Shubh Labh Painted Diya Holders](https://mah-artworks.pages.dev/art/shubh-labh-painted-diya-holders): October 2025

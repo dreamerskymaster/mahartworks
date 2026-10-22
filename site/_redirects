@@ -539,4 +539,6 @@
 /verify/MS-2026-0575 /art/village-home-doorway-line-drawing#certificate 301
 /verify/MS-2026-0576 /art/welcome-couple-door-plaque#certificate 301
 /verify/MS-2026-0577 /art/mandala-art#certificate 301
+/verify/MS-2026-0578 /art/lippan-mirror-art#certificate 301
+/verify/MS-2026-0579 /art/mandala-art-2#certificate 301
 /verify/* /verify?n=:splat 302
