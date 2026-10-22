@@ -8,7 +8,7 @@ const id = decodeURIComponent(location.pathname.replace(/^\/p\//, "").replace(/\
 const box = $("#product");
 
 function view(p) {
-  document.title = `${p.title} — Mahalakshmi Srikanth Shop`;
+  document.title = `${p.title} — Vanna Reverie Shop`;
   document.querySelector('meta[name="description"]').content =
     `${p.title}: an original ${(CATEGORY[p.category] || "artwork").toLowerCase()} by Mahalakshmi Srikanth, Mumbai${p.price_inr ? `, ${formatINR(p.price_inr)}` : ""}.`;
   const facts = [["Type", CATEGORY[p.category]], ["Medium", p.medium], ["Size", sizeText(p)], ["Certificate", p.cert], ["Artwork ID", p.id]]

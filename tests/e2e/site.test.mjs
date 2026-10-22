@@ -368,6 +368,57 @@ describe("display settings and accessibility", () => {
   });
 });
 
+describe("brand (Vanna Reverie)", () => {
+  // 900 and 1024 sit between the dropdown menu (<= 860) and the wide laptop, where the header is tightest.
+  const sizes = { ...DEVICES, narrowLaptop: { width: 900, height: 700, deviceScaleFactor: 1 },
+    smallLaptop: { width: 1024, height: 700, deviceScaleFactor: 1 } };
+  for (const [name, vp] of Object.entries(sizes)) {
+    test(`header logo loads and fits on ${name}`, async () => {
+      DEVICES[name] ||= vp;
+      for (const path of ["/", "/policies", "/paintings", "/verify"]) {
+        const p = await open(name, { path });
+        const r = await p.evaluate(() => {
+          const logo = document.querySelector(".nav .brand-logo"), nav = document.querySelector(".nav");
+          const W = document.documentElement.clientWidth, box = logo.getBoundingClientRect();
+          const overlap = [...nav.querySelectorAll(".menu a, .menu-btn, .a11y-btn")].filter((el) => {
+            const b = el.getBoundingClientRect(); return b.width && b.left < box.right && b.right > box.left && b.top < box.bottom && b.bottom > box.top; });
+          return { loaded: logo.complete && logo.naturalWidth > 0, alt: logo.alt, h: box.height, right: box.right, W,
+            navWide: [...nav.querySelectorAll("*")].some((el) => el.getBoundingClientRect().right > W + 1),
+            name: document.querySelector(".nav .brand").textContent.replace(/\s+/g, " ").trim(), overlap: overlap.length };
+        });
+        assert.ok(r.loaded, `${name} ${path}: wordmark did not load`);
+        assert.equal(r.alt, "Vanna Reverie");
+        assert.match(r.name, /Mahalakshmi Srikanth.*home/, "the link names her and says it goes home");
+        assert.ok(r.h >= 36 && r.h <= 48, `${name} ${path}: logo is ${r.h}px tall`);
+        assert.ok(!r.navWide && r.right <= r.W, `${name} ${path}: header wider than the screen`);
+        assert.equal(r.overlap, 0, `${name} ${path}: logo overlaps the menu`);
+        assert.deepEqual(p.problems, [], `${name} ${path}`);
+        await done(p);
+      }
+    });
+  }
+  test("footer shows the full logo with the tagline; the seal still signs the About letter", async () => {
+    const p = await open("phone");
+    await p.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await sleep(300);
+    const r = await p.evaluate(() => {
+      const f = document.querySelector("footer .foot-logo");
+      return { ok: f.complete && f.naturalWidth > 0, alt: f.alt, w: f.getBoundingClientRect().width,
+        stamp: !!document.querySelector("#about img.stamp"), title: document.title };
+    });
+    assert.ok(r.ok, "footer logo did not load"); assert.equal(r.alt, "Vanna Reverie — Every Stroke Tells a Story");
+    assert.ok(r.w > 150 && r.w <= 280, `footer logo ${r.w}px wide`);
+    assert.ok(r.stamp, "her MS stamp on the About letter"); assert.match(r.title, /^Vanna Reverie .*Mahalakshmi Srikanth/);
+    await done(p);
+  });
+  test("dark theme: the logo sits on its cream paper", async () => {
+    const p = await open("laptop", { before: (pg) => pg.evaluateOnNewDocument(() => localStorage.setItem("ms-prefs", JSON.stringify({ theme: "dark" }))) });
+    const [logoBg, navBg] = await p.evaluate(() => [getComputedStyle(document.querySelector(".brand-logo")).backgroundColor,
+      getComputedStyle(document.body).backgroundColor]);
+    assert.equal(logoBg, "rgb(246, 240, 226)"); assert.notEqual(logoBg, navBg);
+    await done(p);
+  });
+});
+
 /** PDF pages and page size, from the uncompressed page dictionaries Chrome writes. */
 function pdfPages(buf) {
   const s = Buffer.from(buf).toString("latin1");

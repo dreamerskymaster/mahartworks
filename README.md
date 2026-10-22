@@ -1,4 +1,4 @@
-# Mahalakshmi Srikanth — Art portfolio
+# Vanna Reverie — Art portfolio of Mahalakshmi Srikanth
 
 Live at **https://mah-artworks.pages.dev** · repo `dreamerskymaster/mahartworks`
 
@@ -41,7 +41,7 @@ How the sync names things (`build/sync.py`):
 - Photos still named by the camera (`IMG_…`, `Screenshot_…`, `PXL_…`, UUIDs) are **held back** until she renames them.
 - Videos (`.mp4`) are skipped by design — the site shows pictures only.
 - Hidden items (`other`: collages, phone photos) stay hidden even if renamed. To fix a category by hand,
-  edit the `type` column in `build/catalog.tsv` (painting, drawing, craft, rangoli, other) and push.
+  edit the `type` column in `build/catalog.tsv` (painting, oil, drawing, craft, rangoli, other) and push.
 - Safety stop: a run that would remove more than a third of the artworks publishes nothing.
 
 ## The site (`site/`)
@@ -56,8 +56,10 @@ Plain HTML/CSS/JS, no framework or build step; designed phone-first and checked 
 - **Viewer:** arrows / swipe, counter, Share (phone share sheet, else copies the link). Each artwork has a link,
   `https://mah-artworks.pages.dev/#art/<id>`, that opens it directly.
 - **Display panel:** theme, text size, reduce motion, contrast, readable font, underline links.
-- Installable as a phone app (`manifest.webmanifest`, `icons/`); link previews use `og.jpg`.
-  Regenerate both with `python3 build/make_assets.py`.
+- **Brand:** Vanna Reverie, "Every Stroke Tells a Story". The logo (`build/assets/vanna-reverie-logo.png`) is in the
+  header of every page (wordmark, with "by Mahalakshmi Srikanth" beside it on wide screens) and the footer (full logo).
+  Installable as a phone app (`manifest.webmanifest`, butterfly `icons/`); link previews use `og.jpg`.
+  Regenerate the logo files, icons and preview with `python3 build/make_assets.py` (needs Pillow and numpy).
 - `site/_headers`: security headers (strict CSP: no inline scripts, nothing third-party) and caching.
 
 ## Search engines and AI answer engines
@@ -69,7 +71,7 @@ gets its page automatically; run it alone with `python3 build/seo.py`. Never edi
   Srikanth", **Enquire about this artwork** (email with subject `Enquiry: <title> (ID <id>)`), **View in the
   gallery** (`/#art/<id>`), six related works; unique `<title>`, description, canonical, og:/twitter image and
   JSON-LD `VisualArtwork`. Pages of removed artworks are deleted.
-- `site/paintings.html`, `drawings`, `mandalas`, `rangoli`, `crafts` → `/paintings` etc.: every artwork in the
+- `site/paintings.html`, `oils`, `drawings`, `mandalas`, `rangoli`, `crafts` → `/paintings`, `/oils` etc.: every artwork in the
   category as a plain link, with a short intro (`CATEGORIES` in `seo.py`) and JSON-LD `CollectionPage`/`ItemList`.
   Linked from the footer of every page.
 - `site/index.html`: only between the `<!-- seo:latest -->` (the newest 24, in `<noscript>`) and
@@ -140,10 +142,12 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   signature, which is the default for originals she signs by hand. `tests/e2e/fixtures/` uses a made-up test squiggle.
 
 ## Tests
-    python3 -m unittest discover -s tests -v          # 81 cases
-    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 54 browser cases (needs Chrome)
-    npm ci --prefix tests/shop && npm test --prefix tests/shop # 47 shop cases: 27 unit + 20 browser (see shop/README.md)
+    python3 -m unittest discover -s tests -v          # 91 cases
+    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 62 browser cases (needs Chrome)
+    npm ci --prefix tests/shop && npm test --prefix tests/shop # 49 shop cases: 27 unit + 22 browser (see shop/README.md)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
+- `tests/test_brand.py`: logo in every header and footer, transparent logo files, butterfly icons, brand name in
+  titles, previews, app and JSON-LD; she stays the named seller.
 - `tests/test_build.py`: the seal is stamped bottom-right and see-through; gallery sections.
 - `tests/test_site.py`: every artwork has both images, no orphans, all links and anchors resolve, no inline
   scripts (CSP), meta/manifest/icons, her About text unchanged.

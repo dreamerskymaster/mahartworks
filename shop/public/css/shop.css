@@ -1,10 +1,11 @@
-/* Mahalakshmi Srikanth — Shop. Same palette and type as the gallery (site/style.css), phone-first. */
+/* Vanna Reverie — Shop. Same palette and type as the gallery (site/style.css), phone-first. */
 :root {
   --bg: #0d0f1c; --bg-2: #141731; --bg-3: #1b1f3d; --text: #ece6d8; --muted: #a9a6ba; --gold: #d4ae5c;
   --gold-dim: rgba(212, 174, 92, .35); --line: rgba(236, 230, 216, .15); --nav-bg: rgba(13, 15, 28, .9);
   --on-gold: #0d0f1c; --ok: #7fc8a0; --warn: #e8b86a; --bad: #f08a80; --shadow: rgba(0, 0, 0, .45);
   --serif: "Cormorant Garamond", Georgia, serif; --sans: "Manrope", system-ui, sans-serif;
   --ease: cubic-bezier(.2, .7, .1, 1); --gutter: clamp(16px, 4.5vw, 64px); --nav-h: 64px; --radius: 10px;
+  --paper: #f6f0e2;
   color-scheme: dark;
 }
 @media (prefers-color-scheme: light) {
@@ -44,7 +45,9 @@ p { margin: 0 0 .9rem; text-wrap: pretty; }
   padding: env(safe-area-inset-top) var(--gutter) 0; background: var(--nav-bg); backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--line); }
 .brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; margin-right: auto; min-width: 0; }
-.brand img { width: 34px; height: auto; flex: none; }
+.brand img { width: auto; height: 40px; flex: none; }
+.brand-logo, .foot-logo { background: var(--paper); border-radius: 10px; }
+.brand-logo { padding: 3px 7px; }
 .brand span { font: 500 1.15rem var(--serif); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .brand b { font: 600 .66rem var(--sans); letter-spacing: .26em; text-transform: uppercase; color: var(--gold); margin-left: .35rem; }
 .nav-links { display: flex; align-items: center; gap: .35rem; }
@@ -237,6 +240,7 @@ input:focus, select:focus, textarea:focus { border-color: var(--gold); outline: 
 footer { border-top: 1px solid var(--line); padding: 2rem var(--gutter) calc(2rem + env(safe-area-inset-bottom)); text-align: center;
   font-size: .85rem; color: var(--muted); }
 footer img { width: 48px; margin: 0 auto .8rem; }
+footer .foot-logo { display: block; width: min(240px, 70vw); height: auto; padding: 8px 12px; }
 footer ul { list-style: none; padding: 0; margin: .6rem 0; display: flex; flex-wrap: wrap; justify-content: center; gap: .3rem 1.1rem; }
 footer a { color: var(--muted); }
 footer a:hover { color: var(--gold); }

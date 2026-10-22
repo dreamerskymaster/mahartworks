@@ -37,7 +37,7 @@ function payPanel(o) {
 }
 
 function view(o) {
-  document.title = `Order ${o.order_no} — Mahalakshmi Srikanth Shop`;
+  document.title = `Order ${o.order_no} — Vanna Reverie Shop`;
   const tracking = o.tracking_no ? `<p><b>${esc(o.courier || "Courier")}</b> · tracking <code>${esc(o.tracking_no)}</code>
     ${o.tracking_url ? ` · <a href="${esc(o.tracking_url)}" target="_blank" rel="noopener">Track parcel</a>` : ""}</p>` : "";
   box.innerHTML = `<div class="page-head"><p class="eyebrow">Order</p><h1 id="order-no">${esc(o.order_no)}</h1>

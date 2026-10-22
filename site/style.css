@@ -79,7 +79,9 @@ section { padding: clamp(3.5rem, 9vw, 7.5rem) var(--gutter); }
   box-shadow: 0 1px 0 var(--line); }
 .brand { display: flex; gap: .65rem; align-items: center; text-decoration: none; font: 500 1.2rem var(--serif); letter-spacing: .02em;
   white-space: nowrap; min-width: 0; margin-right: auto; }
-.brand img { width: 36px; height: auto; flex: none; }
+.brand-logo { height: 44px; width: auto; flex: none; }
+.brand-by { font: italic 400 1.05rem var(--serif); color: var(--muted); letter-spacing: .01em; }
+@media (min-width: 861px) and (max-width: 1099px) { .brand-by { display: none; } }
 .menu { display: flex; gap: clamp(.9rem, 2.2vw, 2rem); }
 .menu a { text-decoration: none; font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; color: var(--muted);
   transition: color .2s; padding: .5rem 0; }
@@ -241,7 +243,7 @@ blockquote { margin: 2rem 0; padding-left: 1.3rem; border-left: 2px solid #b8923
 /* ---------- footer ---------- */
 footer { text-align: center; padding: 3.5rem var(--gutter) calc(2.5rem + env(safe-area-inset-bottom)); background: var(--bg-deep); color: var(--muted);
   border-top: 1px solid var(--line); }
-footer img { margin: 0 auto 1.2rem; }
+footer .foot-logo { display: block; width: 280px; max-width: 100%; height: auto; margin: 0 auto 1.4rem; box-sizing: border-box; padding: 10px 14px; }
 footer p { margin: .4rem 0; }
 footer .small { font-size: .78rem; opacity: .8; max-width: 70ch; margin: .6rem auto 0; }
 .love { margin-top: 2rem !important; font: italic 1.3rem var(--serif); color: var(--text); }
@@ -304,8 +306,8 @@ footer .small { font-size: .78rem; opacity: .8; max-width: 70ch; margin: .6rem a
   .when { grid-row: auto; text-align: left; padding: 0; }
 }
 @media (max-width: 640px) {
-  .brand { font-size: 1.05rem; }
-  .brand img { width: 32px; }
+  .brand-logo { height: 40px; }
+  .brand-by { display: none; }
   .grid { columns: 2; column-gap: 10px; }
   .card { margin-bottom: 14px; }
   .toolbar { gap: .7rem; padding-block: .7rem; }
@@ -329,8 +331,9 @@ footer .small { font-size: .78rem; opacity: .8; max-width: 70ch; margin: .6rem a
   .hero-text > .eyebrow { letter-spacing: .2em; font-size: .66rem; }
 }
 
-/* the navy seal needs a light disc to read on dark */
-.brand img, footer img { background: var(--paper); border-radius: 50%; padding: 3px; }
+/* the logo is drawn on cream paper: give it that paper so it reads on the dark theme too */
+.brand-logo, .foot-logo { background: var(--paper); border-radius: 10px; }
+.brand-logo { padding: 3px 7px; }
 
 /* ---------- accessibility ---------- */
 .skip { position: absolute; left: 1rem; top: -4rem; z-index: 200; padding: .7rem 1.2rem; background: var(--gold); color: var(--on-gold);

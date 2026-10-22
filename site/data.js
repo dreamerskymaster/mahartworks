@@ -1,5 +1,428 @@
 window.ARTWORKS = [
 {
+"id": "purple-border-petal-mandala",
+"title": "Purple Border Petal Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 540,
+"h": 1200,
+"cert": "MS-2026-0592"
+},
+{
+"id": "pink-petal-rainbow-mandala",
+"title": "Pink Petal Rainbow Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0591"
+},
+{
+"id": "orange-sunburst-mandala",
+"title": "Orange Sunburst Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0590"
+},
+{
+"id": "nature",
+"title": "Nature",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1023,
+"h": 1200,
+"cert": "MS-2026-0587"
+},
+{
+"id": "mandala-art-3",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0579"
+},
+{
+"id": "mandala-art-2",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1179,
+"h": 1200,
+"cert": "MS-2026-0586"
+},
+{
+"id": "lippan-mirror-art",
+"title": "Lippan Mirror Art",
+"cat": "crafts",
+"date": "2026-10-22",
+"w": 1153,
+"h": 1200,
+"cert": "MS-2026-0578"
+},
+{
+"id": "happy-sad-face",
+"title": "Happy Sad Face",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0585"
+},
+{
+"id": "glass-painting-on-canvas",
+"title": "Glass Painting on Canvas",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 863,
+"h": 863,
+"cert": "MS-2026-0584"
+},
+{
+"id": "garden",
+"title": "Garden",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0583"
+},
+{
+"id": "ganesha-pattachitra-style-painting",
+"title": "Ganesha Pattachitra Style Painting",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 900,
+"h": 1200,
+"cert": "MS-2026-0589"
+},
+{
+"id": "ganesha-mandala-2",
+"title": "Ganesha Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 810,
+"h": 810,
+"cert": "MS-2026-0582"
+},
+{
+"id": "flower-kolam",
+"title": "Flower Kolam",
+"cat": "rangoli",
+"date": "2026-10-22",
+"w": 960,
+"h": 1200,
+"cert": "MS-2026-0581"
+},
+{
+"id": "african-dance",
+"title": "African Dance",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0580"
+},
+{
+"id": "mandala-art",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-19",
+"w": 856,
+"h": 1200,
+"cert": "MS-2026-0577"
+},
+{
+"id": "welcome-couple-door-plaque",
+"title": "Welcome Couple Door Plaque",
+"cat": "crafts",
+"date": "2026-10-14",
+"w": 1200,
+"h": 1140,
+"cert": "MS-2026-0576"
+},
+{
+"id": "village-home-doorway-line-drawing",
+"title": "Village Home Doorway Line Drawing",
+"cat": "drawings",
+"date": "2026-10-14",
+"w": 994,
+"h": 1200,
+"cert": "MS-2026-0575"
+},
+{
+"id": "vat-purnima-rangoli",
+"title": "Vat Purnima Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 937,
+"cert": "MS-2026-0574"
+},
+{
+"id": "two-rangolis-at-doorstep",
+"title": "Two Rangolis at Doorstep",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 589,
+"cert": "MS-2026-0573"
+},
+{
+"id": "star-kolam-with-swirls",
+"title": "Star Kolam with Swirls",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 936,
+"cert": "MS-2026-0572"
+},
+{
+"id": "red-moon-over-blue-sea",
+"title": "Red Moon Over Blue Sea",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 963,
+"h": 1200,
+"cert": "MS-2026-0571"
+},
+{
+"id": "pongal-kolam-2",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 904,
+"h": 1200,
+"cert": "MS-2026-0570"
+},
+{
+"id": "pinwheel-design-mini-canvas",
+"title": "Pinwheel Design Mini Canvas",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 971,
+"h": 1200,
+"cert": "MS-2026-0569"
+},
+{
+"id": "pink-star-rangoli",
+"title": "Pink Star Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1059,
+"h": 1200,
+"cert": "MS-2026-0568"
+},
+{
+"id": "peacock-zentangle-doodle",
+"title": "Peacock Zentangle Doodle",
+"cat": "drawings",
+"date": "2026-10-14",
+"w": 885,
+"h": 1200,
+"cert": "MS-2026-0567"
+},
+{
+"id": "peacock-feather-rangoli",
+"title": "Peacock Feather Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 842,
+"h": 561,
+"cert": "MS-2026-0566"
+},
+{
+"id": "murali-art",
+"title": "Murali Art",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 936,
+"h": 1200,
+"cert": "MS-2026-0543"
+},
+{
+"id": "mini-radha-krishna-canvas-on-easel",
+"title": "Mini Radha Krishna Canvas on Easel",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 844,
+"h": 1200,
+"cert": "MS-2026-0565"
+},
+{
+"id": "man-portrait-pencil-sketch",
+"title": "Man Portrait Pencil Sketch",
+"cat": "drawings",
+"date": "2026-10-14",
+"w": 1200,
+"h": 1076,
+"cert": "MS-2026-0564"
+},
+{
+"id": "lotus-pattern-drawing",
+"title": "Lotus Pattern Drawing",
+"cat": "drawings",
+"date": "2026-10-14",
+"w": 932,
+"h": 1200,
+"cert": "MS-2026-0563"
+},
+{
+"id": "kartigai-deepam-kolam-post",
+"title": "Kartigai Deepam Kolam Post",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1080,
+"h": 1157,
+"cert": "MS-2026-0562"
+},
+{
+"id": "jai-shri-ram-hanuman-rangoli",
+"title": "Jai Shri Ram Hanuman Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 897,
+"cert": "MS-2026-0561"
+},
+{
+"id": "happy-womens-day-rangoli-memory",
+"title": "Happy Womens Day Rangoli Memory",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1080,
+"h": 656,
+"cert": "MS-2026-0560"
+},
+{
+"id": "happy-dussehra-rangoli",
+"title": "Happy Dussehra Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 675,
+"cert": "MS-2026-0559"
+},
+{
+"id": "hanuman-jayanti-rangoli",
+"title": "Hanuman Jayanti Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 972,
+"cert": "MS-2026-0558"
+},
+{
+"id": "hanuman-jai-shri-ram-kolam",
+"title": "Hanuman Jai Shri Ram Kolam",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 726,
+"cert": "MS-2026-0557"
+},
+{
+"id": "girl-on-swing-oval-canvas-in-progress",
+"title": "Girl on Swing Oval Canvas in Progress",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 872,
+"h": 1200,
+"cert": "MS-2026-0556"
+},
+{
+"id": "girl-in-red-dress-brushstrokes",
+"title": "Girl in Red Dress Brushstrokes",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 863,
+"h": 1200,
+"cert": "MS-2026-0555"
+},
+{
+"id": "geometric-swirl-rangoli",
+"title": "Geometric Swirl Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 604,
+"h": 504,
+"cert": "MS-2026-0554"
+},
+{
+"id": "four-petals-swirl-rangoli",
+"title": "Four Petals Swirl Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1097,
+"h": 1200,
+"cert": "MS-2026-0553"
+},
+{
+"id": "foil-relief-flowers-art",
+"title": "Foil Relief Flowers Art",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 1200,
+"h": 566,
+"cert": "MS-2026-0552"
+},
+{
+"id": "flower-glass-painting-tile",
+"title": "Flower Glass Painting Tile",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 1147,
+"h": 1200,
+"cert": "MS-2026-0551"
+},
+{
+"id": "farewell-memories-portrait-painting",
+"title": "Farewell Memories Portrait Painting",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 1200,
+"h": 900,
+"cert": "MS-2026-0550"
+},
+{
+"id": "durga-face-rangoli",
+"title": "Durga Face Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1200,
+"h": 711,
+"cert": "MS-2026-0549"
+},
+{
+"id": "colorful-mandala-on-desk",
+"title": "Colorful Mandala on Desk",
+"cat": "mandalas",
+"date": "2026-10-14",
+"w": 1200,
+"h": 1149,
+"cert": "MS-2026-0548"
+},
+{
+"id": "colorful-flower-rangoli",
+"title": "Colorful Flower Rangoli",
+"cat": "rangoli",
+"date": "2026-10-14",
+"w": 1061,
+"h": 1200,
+"cert": "MS-2026-0547"
+},
+{
+"id": "blue-krishna-face-with-flute-2",
+"title": "Blue Krishna Face with Flute",
+"cat": "paintings",
+"date": "2026-10-14",
+"w": 886,
+"h": 1200,
+"cert": "MS-2026-0546"
+},
+{
 "id": "xmas-rangoli",
 "title": "Xmas Rangoli",
 "cat": "rangoli",
@@ -16,15 +439,6 @@ window.ARTWORKS = [
 "w": 1158,
 "h": 1200,
 "cert": "MS-2026-0544"
-},
-{
-"id": "murali-art",
-"title": "Murali Art",
-"cat": "paintings",
-"date": "2026-10-13",
-"w": 936,
-"h": 1200,
-"cert": "MS-2026-0543"
 },
 {
 "id": "kartigai-deepam-rangoli",
@@ -45,6 +459,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0541"
 },
 {
+"id": "3d-star-rangoli",
+"title": "3D Star Rangoli",
+"cat": "rangoli",
+"date": "2026-10-13",
+"w": 1200,
+"h": 1021,
+"cert": "MS-2026-0588"
+},
+{
 "id": "saibaba-on-canvas",
 "title": "Saibaba on Canvas",
 "cat": "paintings",
@@ -52,15 +475,6 @@ window.ARTWORKS = [
 "w": 1042,
 "h": 1200,
 "cert": "MS-2026-0393"
-},
-{
-"id": "pongal-kolam",
-"title": "Pongal Kolam",
-"cat": "rangoli",
-"date": "2026-10-12",
-"w": 1200,
-"h": 973,
-"cert": "MS-2026-0379"
 },
 {
 "id": "navratri-rangoli",
@@ -180,6 +594,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0380"
 },
 {
+"id": "pongal-kolam",
+"title": "Pongal Kolam",
+"cat": "rangoli",
+"date": "2026-09-27",
+"w": 1200,
+"h": 973,
+"cert": "MS-2026-0379"
+},
+{
 "id": "my-son-s-merit-list-award-function",
 "title": "My Son\u2019s Merit List Award Function",
 "cat": "paintings",
@@ -216,15 +639,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0375"
 },
 {
-"id": "abstract-ganesha-with-faces",
-"title": "Abstract Ganesha with Faces",
-"cat": "paintings",
-"date": "2026-09-27",
-"w": 848,
-"h": 1200,
-"cert": "MS-2026-0374"
-},
-{
 "id": "lotus-and-kolam-rangolis",
 "title": "Lotus And Kolam Rangolis",
 "cat": "rangoli",
@@ -243,15 +657,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0372"
 },
 {
-"id": "flower-glass-painting-tile",
-"title": "Flower Glass Painting Tile",
-"cat": "paintings",
-"date": "2026-08-21",
-"w": 900,
-"h": 1200,
-"cert": "MS-2026-0371"
-},
-{
 "id": "breathe-believe-bloom-wreath",
 "title": "Breathe Believe Bloom Wreath",
 "cat": "drawings",
@@ -259,24 +664,6 @@ window.ARTWORKS = [
 "w": 900,
 "h": 1200,
 "cert": "MS-2026-0370"
-},
-{
-"id": "jai-shri-ram-hanuman-rangoli",
-"title": "Jai Shri Ram Hanuman Rangoli",
-"cat": "rangoli",
-"date": "2026-04-02",
-"w": 1200,
-"h": 900,
-"cert": "MS-2026-0369"
-},
-{
-"id": "hanuman-jayanti-rangoli",
-"title": "Hanuman Jayanti Rangoli",
-"cat": "rangoli",
-"date": "2026-04-02",
-"w": 900,
-"h": 1200,
-"cert": "MS-2026-0368"
 },
 {
 "id": "folk-art-mother-and-child-pair",
@@ -331,15 +718,6 @@ window.ARTWORKS = [
 "w": 906,
 "h": 1200,
 "cert": "MS-2025-0361"
-},
-{
-"id": "all-in-one-dieties",
-"title": "All in One Dieties",
-"cat": "paintings",
-"date": "2025-12-18",
-"w": 1040,
-"h": 1200,
-"cert": "MS-2025-0360"
 },
 {
 "id": "peacocks-star-rangoli",
@@ -495,15 +873,6 @@ window.ARTWORKS = [
 "cert": "MS-2025-0342"
 },
 {
-"id": "colorful-flower-rangoli",
-"title": "Colorful Flower Rangoli",
-"cat": "rangoli",
-"date": "2025-09-14",
-"w": 676,
-"h": 1200,
-"cert": "MS-2025-0341"
-},
-{
 "id": "tirupati-balaji-bead-embellished",
 "title": "Tirupati Balaji Bead Embellished",
 "cat": "paintings",
@@ -621,15 +990,6 @@ window.ARTWORKS = [
 "cert": "MS-2025-0327"
 },
 {
-"id": "four-petals-swirl-rangoli",
-"title": "Four Petals Swirl Rangoli",
-"cat": "rangoli",
-"date": "2025-06-28",
-"w": 676,
-"h": 1200,
-"cert": "MS-2025-0326"
-},
-{
 "id": "kathakali-face-framed",
 "title": "Kathakali Framed Oil Painting",
 "cat": "oils",
@@ -664,15 +1024,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 851,
 "cert": "MS-2025-0322"
-},
-{
-"id": "vat-purnima-rangoli",
-"title": "Vat Purnima Rangoli",
-"cat": "rangoli",
-"date": "2025-06-10",
-"w": 1200,
-"h": 677,
-"cert": "MS-2025-0321"
 },
 {
 "id": "red-knot-rangoli",
@@ -738,15 +1089,6 @@ window.ARTWORKS = [
 "cert": "MS-2025-0314"
 },
 {
-"id": "foil-relief-flowers-art",
-"title": "Foil Relief Flowers Art",
-"cat": "crafts",
-"date": "2025-05-19",
-"w": 1200,
-"h": 677,
-"cert": "MS-2025-0312"
-},
-{
 "id": "happy-mothers-day-rangoli",
 "title": "Happy Mothers Day Rangoli",
 "cat": "rangoli",
@@ -799,15 +1141,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 979,
 "cert": "MS-2025-0306"
-},
-{
-"id": "hanuman-jai-shri-ram-kolam",
-"title": "Hanuman Jai Shri Ram Kolam",
-"cat": "rangoli",
-"date": "2025-04-11",
-"w": 1200,
-"h": 677,
-"cert": "MS-2025-0305"
 },
 {
 "id": "white-knot-kolam",
@@ -916,15 +1249,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 973,
 "cert": "MS-2025-0293"
-},
-{
-"id": "star-kolam-with-swirls",
-"title": "Star Kolam With Swirls",
-"cat": "rangoli",
-"date": "2024-12-20",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0291"
 },
 {
 "id": "kartigai-rangoli",
@@ -1215,24 +1539,6 @@ window.ARTWORKS = [
 "cert": "MS-2024-0259"
 },
 {
-"id": "mini-radha-krishna-canvas-on-easel",
-"title": "Mini Radha Krishna Canvas On Easel",
-"cat": "paintings",
-"date": "2024-08-21",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0258"
-},
-{
-"id": "girl-on-swing-oval-canvas-in-progress",
-"title": "Girl On Swing Oval Canvas In Progress",
-"cat": "paintings",
-"date": "2024-08-19",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0257"
-},
-{
 "id": "warli-village-scene-framed",
 "title": "Warli Village Scene Framed",
 "cat": "paintings",
@@ -1240,15 +1546,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 865,
 "cert": "MS-2024-0256"
-},
-{
-"id": "pinwheel-design-mini-canvas",
-"title": "Pinwheel Design Mini Canvas",
-"cat": "paintings",
-"date": "2024-08-17",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0255"
 },
 {
 "id": "ganesha-outline-on-canvas",
@@ -1276,15 +1573,6 @@ window.ARTWORKS = [
 "w": 916,
 "h": 1200,
 "cert": "MS-2024-0252"
-},
-{
-"id": "lotus-pattern-drawing",
-"title": "Lotus Pattern Drawing",
-"cat": "drawings",
-"date": "2024-07-29",
-"w": 676,
-"h": 1200,
-"cert": "MS-2024-0251"
 },
 {
 "id": "hibiscus-on-colorful-tiles",
@@ -1917,15 +2205,6 @@ window.ARTWORKS = [
 "cert": "MS-2023-0181"
 },
 {
-"id": "colorful-mandala-on-desk",
-"title": "Colorful Mandala On Desk",
-"cat": "mandalas",
-"date": "2023-04-25",
-"w": 540,
-"h": 1200,
-"cert": "MS-2023-0180"
-},
-{
 "id": "blue-and-orange-mandala",
 "title": "Blue And Orange Mandala",
 "cat": "mandalas",
@@ -2014,15 +2293,6 @@ window.ARTWORKS = [
 "w": 685,
 "h": 857,
 "cert": "MS-2023-0170"
-},
-{
-"id": "girl-in-red-dress-brushstrokes",
-"title": "Girl In Red Dress Brushstrokes",
-"cat": "paintings",
-"date": "2023-01-08",
-"w": 675,
-"h": 1200,
-"cert": "MS-2023-0169"
 },
 {
 "id": "hummingbird-stained-glass-style",
@@ -2275,15 +2545,6 @@ window.ARTWORKS = [
 "w": 900,
 "h": 1200,
 "cert": "MS-2022-0141"
-},
-{
-"id": "red-moon-over-blue-sea",
-"title": "Red Moon Over Blue Sea",
-"cat": "paintings",
-"date": "2022-08-03",
-"w": 682,
-"h": 1200,
-"cert": "MS-2022-0140"
 },
 {
 "id": "all-seeing-eye-painted-metal-box",
@@ -2646,15 +2907,6 @@ window.ARTWORKS = [
 "cert": "MS-2022-0100"
 },
 {
-"id": "man-portrait-pencil-sketch",
-"title": "Man Portrait Pencil Sketch",
-"cat": "drawings",
-"date": "2022-01-30",
-"w": 540,
-"h": 1200,
-"cert": "MS-2022-0099"
-},
-{
 "id": "switchboard-birds-and-branches",
 "title": "Switchboard Birds And Branches",
 "cat": "paintings",
@@ -2734,15 +2986,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 833,
 "cert": "MS-2022-0090"
-},
-{
-"id": "bird-stencil-painting",
-"title": "Bird Stencil Painting",
-"cat": "crafts",
-"date": "2022-01-10",
-"w": 1131,
-"h": 1200,
-"cert": "MS-2022-0089"
 },
 {
 "id": "ganesha-glass-door-painting",
@@ -3483,24 +3726,6 @@ window.ARTWORKS = [
 "cert": "MS-2021-0007"
 },
 {
-"id": "peacock-feather-rangoli",
-"title": "Peacock Feather Rangoli",
-"cat": "rangoli",
-"date": "2021-04-13",
-"w": 1200,
-"h": 540,
-"cert": "MS-2021-0006"
-},
-{
-"id": "geometric-swirl-rangoli",
-"title": "Geometric Swirl Rangoli",
-"cat": "rangoli",
-"date": "2021-04-13",
-"w": 1200,
-"h": 540,
-"cert": "MS-2021-0005"
-},
-{
 "id": "shivratri-kolam",
 "title": "Shivratri Kolam",
 "cat": "rangoli",
@@ -3573,15 +3798,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0536"
 },
 {
-"id": "welcome-couple-door-plaque",
-"title": "Welcome Couple Door Plaque",
-"cat": "crafts",
-"date": "",
-"w": 1200,
-"h": 677,
-"cert": "MS-2026-0535"
-},
-{
 "id": "wedding-garland-ceremony-painting",
 "title": "Wedding Garland Ceremony Painting",
 "cat": "paintings",
@@ -3634,15 +3850,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 887,
 "cert": "MS-2026-0529"
-},
-{
-"id": "village-home-doorway-line-drawing",
-"title": "Village Home Doorway Line Drawing",
-"cat": "drawings",
-"date": "",
-"w": 676,
-"h": 1200,
-"cert": "MS-2026-0528"
 },
 {
 "id": "village-couple-by-the-river",
@@ -3888,15 +4095,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0501"
 },
 {
-"id": "pink-star-rangoli",
-"title": "Pink Star Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 676,
-"h": 1200,
-"cert": "MS-2026-0500"
-},
-{
 "id": "pink-hibiscus-rangoli",
 "title": "Pink Hibiscus Rangoli",
 "cat": "rangoli",
@@ -3940,15 +4138,6 @@ window.ARTWORKS = [
 "w": 824,
 "h": 1200,
 "cert": "MS-2026-0495"
-},
-{
-"id": "peacock-zentangle-doodle",
-"title": "Peacock Zentangle Doodle",
-"cat": "drawings",
-"date": "",
-"w": 676,
-"h": 1200,
-"cert": "MS-2026-0494"
 },
 {
 "id": "patterned-sphere-pen-art",
@@ -4023,15 +4212,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0486"
 },
 {
-"id": "navratri-golu-celebration-2",
-"title": "Navratri Golu Celebration",
-"cat": "paintings",
-"date": "",
-"w": 1200,
-"h": 1168,
-"cert": "MS-2026-0485"
-},
-{
 "id": "nandi-and-shiva-trishul-canvases",
 "title": "Nandi And Shiva Trishul Canvases",
 "cat": "paintings",
@@ -4048,15 +4228,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 873,
 "cert": "MS-2026-0482"
-},
-{
-"id": "music-dance-glass-painting",
-"title": "Music & Dance Glass Painting",
-"cat": "paintings",
-"date": "",
-"w": 559,
-"h": 1200,
-"cert": "MS-2026-0481"
 },
 {
 "id": "mountain-lake-landscape-in-circle",
@@ -4255,15 +4426,6 @@ window.ARTWORKS = [
 "w": 817,
 "h": 1200,
 "cert": "MS-2026-0459"
-},
-{
-"id": "happy-dussehra-rangoli",
-"title": "Happy Dussehra Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 675,
-"h": 1200,
-"cert": "MS-2026-0458"
 },
 {
 "id": "happy-diwali-peacock-and-lanterns",
@@ -4473,15 +4635,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0435"
 },
 {
-"id": "farewell-memories-portrait-painting",
-"title": "Farewell Memories Portrait Painting",
-"cat": "paintings",
-"date": "",
-"w": 900,
-"h": 1200,
-"cert": "MS-2026-0434"
-},
-{
 "id": "family-portrait-three-faces",
 "title": "Family Portrait Three Faces",
 "cat": "paintings",
@@ -4516,15 +4669,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 885,
 "cert": "MS-2026-0430"
-},
-{
-"id": "durga-face-rangoli",
-"title": "Durga Face Rangoli",
-"cat": "rangoli",
-"date": "",
-"w": 675,
-"h": 1200,
-"cert": "MS-2026-0429"
 },
 {
 "id": "dove-with-flowers",

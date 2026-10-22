@@ -33,7 +33,7 @@ export function renderChrome(active = "") {
   const cur = (k) => (k === active ? ' aria-current="page"' : "");
   const nav = $("#nav");
   if (nav) nav.innerHTML = `
-    <a class="brand" href="/"><img src="/seal.png" alt="" width="34" height="32"><span>Mahalakshmi Srikanth</span><b>Shop</b><span class="sr-only"> — shop home</span></a>
+    <a class="brand" href="/"><img class="brand-logo" src="/brand/wordmark.webp" alt="Vanna Reverie" width="101" height="40"><b>Shop</b><span class="sr-only"> — shop home</span></a>
     <nav class="nav-links" aria-label="Shop">
       <a href="/"${cur("shop")}>${ICON.shop}<span class="label">Shop</span></a>
       <a href="/cart"${cur("cart")} aria-label="Cart">${ICON.cart}<span class="label">Cart</span><span class="badge" id="cart-count"></span></a>
@@ -42,8 +42,8 @@ export function renderChrome(active = "") {
     </nav>`;
   const foot = $("#foot");
   if (foot) foot.innerHTML = `
-    <img src="/seal.png" alt="" width="48" height="45">
-    <p>Original artworks by Mahalakshmi Srikanth, Mumbai · each one of a kind, with a certificate of authenticity.</p>
+    <img class="foot-logo" src="/brand/logo.webp" alt="Vanna Reverie — Every Stroke Tells a Story" width="280" height="134" loading="lazy" decoding="async">
+    <p>Vanna Reverie · original artworks by Mahalakshmi Srikanth, Mumbai · each one of a kind, with a certificate of authenticity.</p>
     <ul>
       <li><a href="${MAIN_SITE}/policies#orders">Orders</a></li>
       <li><a href="${MAIN_SITE}/policies#shipping">Shipping &amp; returns</a></li>
@@ -52,7 +52,7 @@ export function renderChrome(active = "") {
       <li><a href="${MAIN_SITE}/policies#grievance">Grievance officer</a></li>
       <li><a href="mailto:mahasriphoto24@gmail.com">mahasriphoto24@gmail.com</a></li>
     </ul>
-    <p class="small">© ${new Date().getFullYear()} Mahalakshmi Srikanth. Prices in Indian rupees, inclusive of all taxes; shipping shown before you pay.</p>
+    <p class="small">© ${new Date().getFullYear()} Mahalakshmi Srikanth (trading as Vanna Reverie). Prices in Indian rupees, inclusive of all taxes; shipping shown before you pay.</p>
     <p class="love">Made by Ajith, for his only loving Mom <span aria-hidden="true">♥</span></p>`;
   updateBadge();
   addEventListener("storage", updateBadge);

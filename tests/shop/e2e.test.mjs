@@ -78,6 +78,24 @@ describe("every page loads cleanly and fits the screen", () => {
   }
 });
 
+describe("brand", () => {
+  for (const device of Object.keys(DEVICES)) {
+    test(`${device}: Vanna Reverie logo in the header and footer, name in every title`, async () => {
+      for (const path of ["/", `/p/${A.id}`, "/cart", "/signin", "/nope"]) {
+        const p = await open(device, path, { expect404: path === "/nope" });
+        const [alt, loaded, foot, title] = await p.evaluate(() => {
+          const img = document.querySelector("#nav .brand-logo");
+          return [img?.alt, img?.naturalWidth > 0, document.querySelector("#foot .foot-logo")?.naturalWidth > 0, document.title];
+        });
+        assert.equal(alt, "Vanna Reverie", `${device} ${path}`);
+        assert.ok(loaded && foot, `${device} ${path}: logo images load`);
+        assert.match(title, /Vanna Reverie/, `${device} ${path}`);
+        await done(p);
+      }
+    });
+  }
+});
+
 describe("listing and product page", () => {
   test("lists priced and sold works only, with prices and a Sold badge", async () => {
     const p = await open("laptop");

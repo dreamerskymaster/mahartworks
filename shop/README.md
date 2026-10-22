@@ -5,6 +5,9 @@ it in a new tab: the menu and footer have a **Shop** link, and the artwork viewe
 
 **Status:** preview only (`https://preview.mah-artworks-shop.pages.dev`). Production isn't deployed, and payments
 stay closed until her UPI ID is saved in admin. See the [go-live checklist](#go-live-checklist).
+Branded **Vanna Reverie** like the gallery (2026-10-22): the header and footer use the same wordmark and logo
+(`public/brand/`, copied from `site/brand/`). UPI payee and copyright stay her legal name.
+The preview deploy predates the rebrand: redeploy it before showing it to anyone.
 
 ## What a buyer does
 1. **Browse** `/`: only artworks she has priced (or marked sold) appear. Each shows its price, size and a **Sold** /
@@ -187,7 +190,7 @@ tests/shop/            unit + browser tests with a mock Supabase (server.mjs); `
     cd tests/shop && npm ci
     npm run test:unit    # 27: shipping table & parcel, PIN/Mumbai rules, UPI link & amounts, UTR, order numbers,
                          #     cart validation, quote signing (matches Postgres), enquiry mailto, /api/shipping-quote
-    npm run test:e2e     # 20: real Chrome at 390 px and 1440 px against server.mjs (mock Supabase, no network)
+    npm run test:e2e     # 22: real Chrome at 390 px and 1440 px against server.mjs (mock Supabase, no network)
     npm run serve        # try it locally with mock data (sign in with any email and code 123456)
 - The SQL tests (`supabase/tests/shop_security.sql`, 8 groups, about 60 checks) cover:
   - buyer isolation (orders, addresses, profiles);
