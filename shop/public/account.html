@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your account — Vanna Reverie Shop</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/css/shop.css">
+<script type="module" src="/js/pages/account.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"></header>
+<main id="main">
+  <div class="page-head"><p class="eyebrow" id="who"></p><h1>Your account</h1></div>
+  <div id="notices"></div>
+  <div class="two-col" id="account" hidden>
+    <section class="panel"><h2>Orders</h2><div id="orders"></div></section>
+    <div>
+      <section class="panel">
+        <h2>Your details</h2>
+        <form id="profile" novalidate>
+          <label class="field"><span>Name</span><input name="name" autocomplete="name"></label>
+          <label class="field"><span>Phone</span><input name="phone" type="tel" autocomplete="tel" inputmode="tel"></label>
+          <p class="err" role="alert" hidden></p>
+          <button class="btn" type="submit">Save</button>
+        </form>
+      </section>
+      <section class="panel">
+        <h2>Addresses</h2>
+        <div id="addresses"></div>
+        <div id="address-form"></div>
+        <button class="btn" type="button" id="add-address">+ Add an address</button>
+      </section>
+      <section class="panel">
+        <h2>Your data</h2>
+        <p class="small">Your email, name, phone and addresses are kept to process your orders and are shared only with the courier.
+          To see, correct or delete your data, or withdraw consent, write to the
+          <a href="https://mah-artworks.pages.dev/policies#grievance">grievance officer</a>. Order records are kept as tax law requires.</p>
+        <p id="admin-link" hidden><a class="btn btn-small" href="/admin">Shop admin</a></p>
+        <button class="btn btn-small" type="button" id="signout">Sign out</button>
+      </section>
+    </div>
+  </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>

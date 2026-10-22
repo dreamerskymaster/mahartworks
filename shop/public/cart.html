@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your cart — Vanna Reverie Shop</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#faf6ee" media="(prefers-color-scheme: light)">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="stylesheet" href="/fonts/fonts.css">
+<link rel="stylesheet" href="/css/shop.css">
+<script type="module" src="/js/pages/cart.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav"></header>
+<main id="main">
+  <div class="page-head"><h1>Your cart</h1></div>
+  <div id="notices"></div>
+  <div class="two-col">
+    <section class="panel" aria-labelledby="items-h"><h2 id="items-h" class="sr-only">Artworks</h2><div id="items"><span class="spinner" aria-hidden="true"></span></div></section>
+    <aside class="panel" id="summary" hidden>
+      <h2>Summary</h2>
+      <div class="totals"><div><span>Artworks</span><b id="subtotal"></b></div><div class="muted"><span>Shipping</span><span>at checkout</span></div></div>
+      <a class="btn btn-solid btn-block" id="to-checkout" href="/checkout">Checkout</a>
+      <p class="small muted" style="margin-top:.8rem">Pay by UPI (GPay, PhonePe, Paytm…). Free pickup in Mumbai. Outside India? Use “Enquire by email” on the artwork's page.</p>
+    </aside>
+  </div>
+</main>
+<footer id="foot"></footer>
+</body>
+</html>

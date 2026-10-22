@@ -142,8 +142,9 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   signature, which is the default for originals she signs by hand. `tests/e2e/fixtures/` uses a made-up test squiggle.
 
 ## Tests
-    python3 -m unittest discover -s tests -v          # 90 cases
-    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 60 browser cases (needs Chrome)
+    python3 -m unittest discover -s tests -v          # 91 cases
+    npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 62 browser cases (needs Chrome)
+    npm ci --prefix tests/shop && npm test --prefix tests/shop # 49 shop cases: 27 unit + 22 browser (see shop/README.md)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
 - `tests/test_brand.py`: logo in every header and footer, transparent logo files, butterfly icons, brand name in
   titles, previews, app and JSON-LD; she stays the named seller.
@@ -169,18 +170,27 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
 CI: `.github/workflows/test.yml` runs both suites on every push and pull request; `sync.yml` runs the
 Python suite before each Drive sync.
 
+## The shop (`shop/`, a separate site)
+The shop is **https://mah-artworks-shop.pages.dev**, the Cloudflare Pages project `mah-artworks-shop`. It is
+**preview only** until the go-live checklist in `shop/README.md` is done.
+
+It sells her originals:
+- She sets prices and stock herself in `/admin`.
+- Buyers sign in with an email code and pay the exact total by UPI: a button or QR code, then they enter the UTR.
+  She confirms each payment by hand.
+- Shipping is quoted per PIN code: Shiprocket couriers, or a clearly labelled estimate. Pickup is free in Mumbai.
+- Buyers abroad enquire by email.
+- Its data is in the `shop` schema of the Supabase project (`supabase/migrations/`).
+- The gallery links to it in a new tab: the menu, the footer, and "Buy / check availability" in the viewer.
+
+Everything else is in `shop/README.md`.
+
 ## Watermark
     python3 build/build.py --wm 1   # colour seal, see-through, bottom-right (current)
     python3 build/build.py --wm 2   # white stamp, see-through, bottom-right
     python3 build/build.py --wm 3   # big faint stamp across the middle + small colour seal
 The choice is remembered in `build/manifest.json`. Or switch from GitHub: Actions → Run workflow → watermark 1/2/3
 (re-stamping needs every original, so that run downloads the whole folder, ~15 min).
-
-## Shop (not live yet)
-An online shop (UPI payments, Shiprocket shipping, her own admin page for prices and orders, printed certificates)
-is built on the `shop` branch, pull request #8, in `shop/` with its own `shop/README.md` (setup, database, tests and the
-go-live checklist). It is a separate Cloudflare Pages project, `mah-artworks-shop`, backed by a free Supabase project.
-Merge #8 only after the shop's production deploy is up: merging adds "Shop" links to this gallery.
 
 ## Contact details
 `CONTACT` at the top of `site/app.js` (email / Instagram). Empty = section hidden.
