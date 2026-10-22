@@ -549,4 +549,9 @@
 /verify/MS-2026-0585 /art/happy-sad-face#certificate 301
 /verify/MS-2026-0586 /art/mandala-art-2#certificate 301
 /verify/MS-2026-0587 /art/nature#certificate 301
+/verify/MS-2026-0588 /art/3d-star-rangoli#certificate 301
+/verify/MS-2026-0589 /art/ganesha-pattachitra-style-painting#certificate 301
+/verify/MS-2026-0590 /art/orange-sunburst-mandala#certificate 301
+/verify/MS-2026-0591 /art/pink-petal-rainbow-mandala#certificate 301
+/verify/MS-2026-0592 /art/purple-border-petal-mandala#certificate 301
 /verify/* /verify?n=:splat 302

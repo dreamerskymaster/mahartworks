@@ -1,5 +1,32 @@
 window.ARTWORKS = [
 {
+"id": "purple-border-petal-mandala",
+"title": "Purple Border Petal Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 540,
+"h": 1200,
+"cert": "MS-2026-0592"
+},
+{
+"id": "pink-petal-rainbow-mandala",
+"title": "Pink Petal Rainbow Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0591"
+},
+{
+"id": "orange-sunburst-mandala",
+"title": "Orange Sunburst Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0590"
+},
+{
 "id": "nature",
 "title": "Nature",
 "cat": "paintings",
@@ -61,6 +88,15 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1200,
 "cert": "MS-2026-0583"
+},
+{
+"id": "ganesha-pattachitra-style-painting",
+"title": "Ganesha Pattachitra Style Painting",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 900,
+"h": 1200,
+"cert": "MS-2026-0589"
 },
 {
 "id": "ganesha-mandala-2",
@@ -421,6 +457,15 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1169,
 "cert": "MS-2026-0541"
+},
+{
+"id": "3d-star-rangoli",
+"title": "3D Star Rangoli",
+"cat": "rangoli",
+"date": "2026-10-13",
+"w": 1200,
+"h": 1021,
+"cert": "MS-2026-0588"
 },
 {
 "id": "saibaba-on-canvas",
