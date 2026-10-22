@@ -73,6 +73,15 @@ class SyncTest(unittest.TestCase):
             self.assertNotIn(n, rows, n)
             self.assertIn("waiting for a real name: 1", out)
 
+    def test_name_starting_with_a_number_is_a_real_name(self):
+        for n, t in (("3d star rangoli.JPG", "3D Star Rangoli"), ("2 Peacocks.jpg", "2 Peacocks")):
+            rows, _ = self.run_sync(LISTING + [(n, "e5", "x")])
+            self.assertEqual(rows[n]["title"], t)
+        for n in ("1234.jpg", "-1_orig (10).jpeg", "20230101_120000.jpg"):
+            rows, out = self.run_sync(LISTING + [(n, "e5", "x")])
+            self.assertNotIn(n, rows, n)
+            self.assertIn("waiting for a real name: 1", out)
+
     def test_trailing_copy_numbers_dropped_from_title(self):
         rows, _ = self.run_sync(LISTING + [("Stone painting (1).JPG", "e5", "x")])
         self.assertEqual(rows["Stone painting (1).JPG"]["title"], "Stone Painting")
