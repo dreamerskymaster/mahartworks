@@ -21,8 +21,10 @@ CATALOG = os.path.join(HERE, "catalog.tsv")
 FIELDS = ["file", "type", "title", "date", "md5"]
 EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic", ".heif", ".gif", ".pdf"}
 
+# Camera / app names wait for a real name. A name that only *starts* with a number ("3D Star Rangoli",
+# "2 Peacocks") is a real name; only all-number names ("1234", "-1_orig (10)", "20230101_120000") wait.
 CAMERA = re.compile(r"^(img|image|dsc|pxl|photo|preview|screenshot|fb_img|inshot|picsart|snapchat|whatsapp|"
-                    r"vid|adobe scan|-?\d|[0-9a-f]{8}-)", re.I)
+                    r"vid|adobe scan|[0-9a-f]{8}-|-?\d[\d\W_]*((orig|copy|edited)[\d\W_]*)*(\.\w+)?$)", re.I)
 SMALL = {"a", "an", "and", "at", "by", "for", "in", "of", "on", "or", "the", "to", "with"}
 DRAWING = re.compile(r"sketch|drawing|doodle|pencil|crayon|pen art|zentangle|line art|mandala", re.I)
 CRAFT = re.compile(r"craft|mirror|embroider|lippan|plate|diya holder|door plaque|clay|mehndi|quilling", re.I)
@@ -37,7 +39,7 @@ def title_of(name):
     out = []
     for i, w in enumerate(words):
         lw = w.lower()
-        out.append(lw if i and lw in SMALL else lw[:1].upper() + lw[1:])
+        out.append(lw if i and lw in SMALL else lw.upper() if re.fullmatch(r"\d+d", lw) else lw[:1].upper() + lw[1:])
     return " ".join(out)
 
 
