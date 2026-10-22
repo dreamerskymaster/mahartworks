@@ -27,7 +27,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Code:** this repo, branch `main` (plus `shop` until go-live). Local checkout: `~/Projects/vanna-reverie/mahartworks`.
   No other local copies: the OneDrive copy and old scratch clones were pre-rewrite and are retired.
 - **Private, not in git:** `~/Projects/vanna-reverie/private/` — `rename_log.tsv` (every Drive rename/move done for
-  her, old → new, for undo), `SOP-for-Amma.md` (her guide, the source of the email), `watermark-options/`.
+  her, old → new, for undo), `SOP-for-Amma-emailed-2026-10-21.txt` (the guide she was sent), `SOP-for-Amma-fuller-not-sent.md` (a simpler, fuller draft), `watermark-options/`.
 - **Her originals:** the Google Drive "my artworks" folder (below). Account details: Claude memory only.
 
 ## Deploy
@@ -65,7 +65,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   unless she renames the file with a different category word.
 - **Duplicates:** copies of published artworks go into the Drive subfolder "Duplicates - not on website" (2026-10-22:
   62 camera-named copies moved there; sync never reads subfolders). Find copies by perceptual hash against
-  `site/img/*.t.webp`, then check by eye. Her how-to guide was emailed to her 2026-10-22; source in `../private/SOP-for-Amma.md`.
+  `site/img/*.t.webp`, then check by eye. Her how-to guide was emailed to her 2026-10-22; text in `../private/SOP-for-Amma-emailed-2026-10-21.txt`.
 - Every Drive rename done for her is appended to `../private/rename_log.tsv` (old, new) so it can be undone.
 - `build/cache/` is gitignored and slow to rebuild (Drive downloads on demand); in a worktree, symlink it
   to the main checkout's `build/cache`.
