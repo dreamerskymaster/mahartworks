@@ -540,5 +540,13 @@
 /verify/MS-2026-0576 /art/welcome-couple-door-plaque#certificate 301
 /verify/MS-2026-0577 /art/mandala-art#certificate 301
 /verify/MS-2026-0578 /art/lippan-mirror-art#certificate 301
-/verify/MS-2026-0579 /art/mandala-art-2#certificate 301
+/verify/MS-2026-0579 /art/mandala-art-3#certificate 301
+/verify/MS-2026-0580 /art/african-dance#certificate 301
+/verify/MS-2026-0581 /art/flower-kolam#certificate 301
+/verify/MS-2026-0582 /art/ganesha-mandala-2#certificate 301
+/verify/MS-2026-0583 /art/garden#certificate 301
+/verify/MS-2026-0584 /art/glass-painting-on-canvas#certificate 301
+/verify/MS-2026-0585 /art/happy-sad-face#certificate 301
+/verify/MS-2026-0586 /art/mandala-art-2#certificate 301
+/verify/MS-2026-0587 /art/nature#certificate 301
 /verify/* /verify?n=:splat 302

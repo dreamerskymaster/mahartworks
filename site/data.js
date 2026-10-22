@@ -1,12 +1,30 @@
 window.ARTWORKS = [
 {
-"id": "mandala-art-2",
+"id": "nature",
+"title": "Nature",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1023,
+"h": 1200,
+"cert": "MS-2026-0587"
+},
+{
+"id": "mandala-art-3",
 "title": "Mandala Art",
 "cat": "mandalas",
 "date": "2026-10-22",
 "w": 1200,
 "h": 1200,
 "cert": "MS-2026-0579"
+},
+{
+"id": "mandala-art-2",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1179,
+"h": 1200,
+"cert": "MS-2026-0586"
 },
 {
 "id": "lippan-mirror-art",
@@ -16,6 +34,60 @@ window.ARTWORKS = [
 "w": 1153,
 "h": 1200,
 "cert": "MS-2026-0578"
+},
+{
+"id": "happy-sad-face",
+"title": "Happy Sad Face",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0585"
+},
+{
+"id": "glass-painting-on-canvas",
+"title": "Glass Painting on Canvas",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 863,
+"h": 863,
+"cert": "MS-2026-0584"
+},
+{
+"id": "garden",
+"title": "Garden",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0583"
+},
+{
+"id": "ganesha-mandala-2",
+"title": "Ganesha Mandala",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 810,
+"h": 810,
+"cert": "MS-2026-0582"
+},
+{
+"id": "flower-kolam",
+"title": "Flower Kolam",
+"cat": "rangoli",
+"date": "2026-10-22",
+"w": 960,
+"h": 1200,
+"cert": "MS-2026-0581"
+},
+{
+"id": "african-dance",
+"title": "African Dance",
+"cat": "paintings",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0580"
 },
 {
 "id": "mandala-art",
