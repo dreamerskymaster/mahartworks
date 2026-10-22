@@ -18,7 +18,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
      `{{ .Token }}` to the Magic link template; add the shop's redirect URLs (exact steps in `shop/README.md`).
   4. Prices: /admin → Artworks → Import from the gallery, then price/size/weight/For sale per piece.
   5. Shiprocket: free account + KYC + pickup address, then the three Cloudflare secrets on the shop project.
-  6. "Go live": redeploy the shop preview (it still shows the old name), deploy it to production, then merge PR #8.
+  6. "Go live": deploy the shop to production, then merge PR #8. (Preview redeployed with the new brand 2026-10-22.)
      (Quote signing, checklist step 6, is already done.)
   7. Google Search Console + Bing Webmaster Tools, submit `sitemap.xml` (README → Search engines).
   8. Optional: ask GitHub Support to purge old `refs/pull/*` snapshots (see History); add GSTIN to policies if she registers.

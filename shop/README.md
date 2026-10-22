@@ -7,7 +7,7 @@ it in a new tab: the menu and footer have a **Shop** link, and the artwork viewe
 stay closed until her UPI ID is saved in admin. See the [go-live checklist](#go-live-checklist).
 Branded **Vanna Reverie** like the gallery (2026-10-22): the header and footer use the same wordmark and logo
 (`public/brand/`, copied from `site/brand/`). UPI payee and copyright stay her legal name.
-The preview deploy predates the rebrand: redeploy it before showing it to anyone.
+The preview was redeployed with the new brand on 2026-10-22.
 
 ## What a buyer does
 1. **Browse** `/`: only artworks she has priced (or marked sold) appear. Each shows its price, size and a **Sold** /
