@@ -21,7 +21,9 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.join(HERE, "..", "site")
 BASE = "https://mah-artworks.pages.dev"
 ARTIST = "Mahalakshmi Srikanth"
-SITE_NAME = "Mahalakshmi Srikanth Art"
+BRAND = "Vanna Reverie"         # her art brand; she is the artist and the seller
+TAGLINE = "Every Stroke Tells a Story"
+SITE_NAME = BRAND
 PLACE = "Mumbai, India"
 VERIFY = BASE + "/verify/"      # + certificate number: what the QR code on a printed certificate opens
 MAX_REDIRECTS = 1900            # Cloudflare Pages allows 2,000 static rules; past that /verify/* -> the lookup page
@@ -103,6 +105,12 @@ def enquiry(email, a):
 
 # ---------- shared page frame ----------
 
+# the header brand (the logo's wordmark, her name beside it on wider screens) and the footer logo
+BRAND_LINK = ('<a class="brand" href="{home}"><img class="brand-logo" src="/brand/wordmark.webp" alt="' + BRAND + '" '
+              'width="101" height="40"><span class="brand-by">by ' + ARTIST + '</span><span class="sr-only"> — home</span></a>')
+FOOT_LOGO = ('<img class="foot-logo" src="/brand/logo.webp" alt="' + BRAND + ' — ' + TAGLINE + '" width="280" height="134" '
+             'loading="lazy" decoding="async">')
+
 def head(*, title, description, path, image=None, image_alt="", w=1200, h=630, og_type="website", data=None, noindex=False):
     url = BASE + path if path else None
     image = image or BASE + "/og.jpg"
@@ -135,8 +143,7 @@ def head(*, title, description, path, image=None, image_alt="", w=1200, h=630, o
             '<link rel="stylesheet" href="/style.css">', "</head>", "<body>",
             '<a class="skip" href="#main">Skip to content</a>',
             '<header class="nav solid">',
-            f'  <a class="brand" href="/"><img src="/seal.png" alt="" width="36" height="34"><span>{ARTIST}</span>'
-            '<span class="sr-only"> — home</span></a>',
+            f'  {BRAND_LINK.format(home="/")}',
             '  <nav class="menu menu-inline" aria-label="Main"><a href="/#gallery">Gallery</a><a href="/#about">About</a>'
             '<a href="/#contact">Contact</a></nav>',
             '  <div class="nav-tools"></div>', "</header>"]
@@ -153,7 +160,7 @@ def browse_links(art, current=None):
 def foot(art, year, current=None):
     pol = "\n".join(f'    <li><a href="/policies#{k}">{v}</a></li>' for k, v in POLICY_LINKS)
     return f"""<footer>
-  <img src="/seal.png" alt="" width="64" height="60">
+  {FOOT_LOGO}
   {browse_links(art, current)}
   <p>© <span id="year">{year}</span> {ARTIST}. All rights reserved.</p>
   <p class="small">All artworks and images on this site are the original work of {ARTIST} and are protected by copyright. They may not be copied, downloaded, reproduced or used in any form without written permission.</p>
@@ -192,7 +199,8 @@ def count(art):
     return n
 
 
-PERSON = {"@type": "Person", "@id": BASE + "/#person", "name": ARTIST, "url": BASE + "/", "jobTitle": "Artist"}
+PERSON = {"@type": "Person", "@id": BASE + "/#person", "name": ARTIST, "url": BASE + "/", "jobTitle": "Artist",
+          "brand": {"@type": "Brand", "name": BRAND, "slogan": TAGLINE, "logo": BASE + "/brand/logo.webp"}}
 ME = {"@id": PERSON["@id"]}            # the Person node is in each page's @graph once; everything else refers to it
 
 
@@ -412,10 +420,11 @@ def her_words(site):
 
 def llms(art, by_cat, ct, site, full=False):
     n = len(art)
-    lines = [f"# {ARTIST} — Art", "",
+    lines = [f"# {ARTIST} — {BRAND}", "",
              f"> {ARTIST} is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, "
              f"rangoli and kolam, and handmade crafts. This website is her portfolio of {n} artworks; "
-             "artworks and commissions can be enquired about by email.", "",
+             f"artworks and commissions can be enquired about by email. {BRAND} (\"{TAGLINE}\") is the name "
+             "she sells her art under.", "",
              f"- Website: {BASE}/",
              "- Based in: Mumbai, Maharashtra, India",
              "- Making art since 2020: it began as a hobby after COVID, with sketching and crayons, then sketch pens, then acrylics.",

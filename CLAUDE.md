@@ -46,8 +46,8 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
   Safety stop: a run that would remove more than a third of the artworks publishes nothing.
-- **Tests:** `python3 -m unittest discover -s tests -v` (81) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
-  (52, real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
+- **Tests:** `python3 -m unittest discover -s tests -v` (90) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
+  (60, real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
   case for any new naming rule or UI behaviour. Linux CI Chrome lays out slightly differently from a Mac — trust CI.
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/oil/other); sync keeps them
   unless she renames the file with a different category word.
@@ -64,7 +64,13 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - Spotlight: mouse, touch (touchmove) and arrow keys; reduced motion makes the reveal instant but keeps it playable
   (it used to auto-reveal, which looked "broken" on Macs with Reduce Motion on).
 - Deep links `#art/<id>`; an id is fixed to the picture (md5) once published, so renames never break links (PR #4).
-- `og.jpg` and `icons/` come from `build/make_assets.py`.
+- **Brand: Vanna Reverie — "Every Stroke Tells a Story"** (her logo, 2026-10-21). Source `build/assets/vanna-reverie-logo.png`;
+  `build/make_assets.py` cuts it out of its cream paper and writes `site/brand/wordmark.webp` (header, no tagline),
+  `site/brand/logo.webp` (footer), `icons/` (the butterfly from the logo) and `og.jpg`. Re-run it if the logo changes.
+  The header/footer markup is `BRAND_LINK` / `FOOT_LOGO` in seo.py; index.html and policies.html copy it (test_brand checks).
+  The logo always sits on cream (`--paper`) so it reads in dark mode. She stays the named artist, copyright holder
+  and seller ("Vanna Reverie, the trading name of Mahalakshmi Srikanth"); titles read "… by Mahalakshmi Srikanth".
+  The MS seal is unchanged: watermark on every picture, About-letter stamp, certificates.
 - **SEO / AI search** (`build/seo.py`, run at the end of build.py; standalone `python3 build/seo.py`):
   - Generates `site/art/<id>.html` (→ `/art/<id>`), the 6 category pages (`/paintings`, `/oils` …), `404.html`,
     `sitemap.xml` (+ images), `llms.txt`, `llms-full.txt`, and the `<!-- seo:… -->` blocks in index.html.
