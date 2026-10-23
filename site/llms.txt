@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 554 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 553 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,7 +11,7 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 218 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 217 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 49 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
@@ -32,6 +32,7 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 
 ## Newest artworks
 
+- [Ganpati Rangoli](https://mah-artworks.pages.dev/art/ganpati-rangoli): Rangoli, October 2026
 - [Purple Border Petal Mandala](https://mah-artworks.pages.dev/art/purple-border-petal-mandala): Mandala, October 2026
 - [Pink Petal Rainbow Mandala](https://mah-artworks.pages.dev/art/pink-petal-rainbow-mandala): Mandala, October 2026
 - [Orange Sunburst Mandala](https://mah-artworks.pages.dev/art/orange-sunburst-mandala): Mandala, October 2026
@@ -43,7 +44,6 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 - [Glass Painting on Canvas](https://mah-artworks.pages.dev/art/glass-painting-on-canvas): Painting, October 2026
 - [Garden](https://mah-artworks.pages.dev/art/garden): Painting, October 2026
 - [Ganesha Pattachitra Style Painting](https://mah-artworks.pages.dev/art/ganesha-pattachitra-style-painting): Painting, October 2026
-- [Ganesha Mandala](https://mah-artworks.pages.dev/art/ganesha-mandala-2): Mandala, October 2026
 
 ## Optional
 

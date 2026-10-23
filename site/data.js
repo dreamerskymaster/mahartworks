@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "ganpati-rangoli",
+"title": "Ganpati Rangoli",
+"cat": "rangoli",
+"date": "2026-10-23",
+"w": 1200,
+"h": 893,
+"cert": "MS-2026-0593"
+},
+{
 "id": "purple-border-petal-mandala",
 "title": "Purple Border Petal Mandala",
 "cat": "mandalas",
@@ -963,15 +972,6 @@ window.ARTWORKS = [
 "cert": "MS-2025-0330"
 },
 {
-"id": "blue-circle-rangoli-with-flowers",
-"title": "Blue Circle Rangoli With Flowers",
-"cat": "rangoli",
-"date": "2025-07-27",
-"w": 1200,
-"h": 677,
-"cert": "MS-2025-0329"
-},
-{
 "id": "hibiscus-and-jasmine-rangoli",
 "title": "Hibiscus And Jasmine Rangoli",
 "cat": "rangoli",
@@ -1519,15 +1519,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1151,
 "cert": "MS-2024-0261"
-},
-{
-"id": "krishna-sudhama",
-"title": "Krishna Sudhama",
-"cat": "paintings",
-"date": "2024-09-23",
-"w": 757,
-"h": 1200,
-"cert": "MS-2024-0260"
 },
 {
 "id": "shree-rangoli-with-flowers",

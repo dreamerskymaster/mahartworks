@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 554 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 553 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,7 +11,7 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 218 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 217 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 49 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
@@ -48,7 +48,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (218)
+### Paintings (217)
 
 - [Nature](https://mah-artworks.pages.dev/art/nature): October 2026
 - [Happy Sad Face](https://mah-artworks.pages.dev/art/happy-sad-face): October 2026
@@ -109,7 +109,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Har Har Mahadev Shiva Hand](https://mah-artworks.pages.dev/art/har-har-mahadev-shiva-hand): October 2024
 - [Circles And Diagonal Stripes Pattern](https://mah-artworks.pages.dev/art/circles-and-diagonal-stripes-pattern): October 2024
 - [Navratri Golu Celebration](https://mah-artworks.pages.dev/art/navratri-golu-celebration): October 2024
-- [Krishna Sudhama](https://mah-artworks.pages.dev/art/krishna-sudhama): September 2024
 - [Warli Village Scene Framed](https://mah-artworks.pages.dev/art/warli-village-scene-framed): August 2024
 - [Ganesha Mini Canvas On Easel](https://mah-artworks.pages.dev/art/ganesha-mini-canvas-on-easel): August 2024
 - [Birds Over Sunset Mini Canvas](https://mah-artworks.pages.dev/art/birds-over-sunset-mini-canvas): August 2024
@@ -491,6 +490,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ### Rangoli & Kolam (113)
 
+- [Ganpati Rangoli](https://mah-artworks.pages.dev/art/ganpati-rangoli): October 2026
 - [Flower Kolam](https://mah-artworks.pages.dev/art/flower-kolam): October 2026
 - [Vat Purnima Rangoli](https://mah-artworks.pages.dev/art/vat-purnima-rangoli): October 2026
 - [Two Rangolis at Doorstep](https://mah-artworks.pages.dev/art/two-rangolis-at-doorstep): October 2026
@@ -540,7 +540,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Star And Lotus Rangoli](https://mah-artworks.pages.dev/art/star-and-lotus-rangoli): August 2025
 - [Blue And Pink Swirl Rangoli](https://mah-artworks.pages.dev/art/blue-and-pink-swirl-rangoli): August 2025
 - [Shivling Om Hibiscus Rangoli](https://mah-artworks.pages.dev/art/shivling-om-hibiscus-rangoli): July 2025
-- [Blue Circle Rangoli With Flowers](https://mah-artworks.pages.dev/art/blue-circle-rangoli-with-flowers): July 2025
 - [Hibiscus And Jasmine Rangoli](https://mah-artworks.pages.dev/art/hibiscus-and-jasmine-rangoli): July 2025
 - [Ganesha Butterfly Rangoli](https://mah-artworks.pages.dev/art/ganesha-butterfly-rangoli): July 2025
 - [Ganesha Star Rangoli](https://mah-artworks.pages.dev/art/ganesha-star-rangoli): June 2025
