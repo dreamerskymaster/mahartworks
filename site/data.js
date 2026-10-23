@@ -1,5 +1,50 @@
 window.ARTWORKS = [
 {
+"id": "pretty-woman",
+"title": "Pretty Woman",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 900,
+"h": 1200,
+"cert": "MS-2026-0610"
+},
+{
+"id": "mandala-art-9",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0609"
+},
+{
+"id": "mandala-art-7",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0608"
+},
+{
+"id": "mandala-art-6",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0607"
+},
+{
+"id": "mandala-art-5",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0606"
+},
+{
 "id": "mandala-art-3",
 "title": "Mandala Art",
 "cat": "mandalas",
@@ -7,6 +52,51 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 893,
 "cert": "MS-2026-0596"
+},
+{
+"id": "mandala-art-2",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0605"
+},
+{
+"id": "mandala-art-12",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 976,
+"h": 976,
+"cert": "MS-2026-0604"
+},
+{
+"id": "mandala-art-11",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0603"
+},
+{
+"id": "mandala-art-10",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0602"
+},
+{
+"id": "mandala-art",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0601"
 },
 {
 "id": "ganpati-rangoli",
@@ -36,6 +126,33 @@ window.ARTWORKS = [
 "cert": "MS-2026-0595"
 },
 {
+"id": "astavinayak",
+"title": "Astavinayak",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1200,
+"h": 911,
+"cert": "MS-2026-0600"
+},
+{
+"id": "assorted-art",
+"title": "Assorted Art",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1170,
+"h": 1170,
+"cert": "MS-2026-0599"
+},
+{
+"id": "3-image",
+"title": "3 Image",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1024,
+"h": 767,
+"cert": "MS-2026-0598"
+},
+{
 "id": "pink-petal-rainbow-mandala",
 "title": "Pink Petal Rainbow Mandala",
 "cat": "mandalas",
@@ -63,6 +180,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0587"
 },
 {
+"id": "mandala-art-8",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0597"
+},
+{
 "id": "mandala-art-4",
 "title": "Mandala Art",
 "cat": "mandalas",
@@ -70,15 +196,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1200,
 "cert": "MS-2026-0579"
-},
-{
-"id": "mandala-art-2",
-"title": "Mandala Art",
-"cat": "mandalas",
-"date": "2026-10-22",
-"w": 1179,
-"h": 1200,
-"cert": "MS-2026-0586"
 },
 {
 "id": "lippan-mirror-art",
@@ -151,15 +268,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1200,
 "cert": "MS-2026-0580"
-},
-{
-"id": "mandala-art",
-"title": "Mandala Art",
-"cat": "mandalas",
-"date": "2026-10-19",
-"w": 856,
-"h": 1200,
-"cert": "MS-2026-0577"
 },
 {
 "id": "welcome-couple-door-plaque",
@@ -3312,15 +3420,6 @@ window.ARTWORKS = [
 "cert": "MS-2021-0051"
 },
 {
-"id": "astavinayak",
-"title": "Astavinayak",
-"cat": "drawings",
-"date": "2021-09-23",
-"w": 1200,
-"h": 911,
-"cert": "MS-2021-0050"
-},
-{
 "id": "ganesha-silhouette-triptych",
 "title": "Ganesha Silhouette Triptych",
 "cat": "drawings",
@@ -4231,7 +4330,7 @@ window.ARTWORKS = [
 },
 {
 "id": "man-in-blazer-portrait",
-"title": "Man In Blazer Portrait",
+"title": "My Hubby Potrait",
 "cat": "paintings",
 "date": "",
 "w": 1026,

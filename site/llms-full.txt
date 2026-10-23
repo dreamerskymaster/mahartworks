@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 549 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 560 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,10 +11,10 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 215 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 219 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
-- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 155 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 49 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 154 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 57 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 113 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 12 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
@@ -48,9 +48,13 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (215)
+### Paintings (219)
 
+- [Pretty Woman](https://mah-artworks.pages.dev/art/pretty-woman): October 2026
 - [Boy & Dog Gazing Sky](https://mah-artworks.pages.dev/art/boy-dog-gazing-sky): October 2026
+- [Astavinayak](https://mah-artworks.pages.dev/art/astavinayak): October 2026
+- [Assorted Art](https://mah-artworks.pages.dev/art/assorted-art): October 2026
+- [3 Image](https://mah-artworks.pages.dev/art/3-image): October 2026
 - [Nature](https://mah-artworks.pages.dev/art/nature): October 2026
 - [Happy Sad Face](https://mah-artworks.pages.dev/art/happy-sad-face): October 2026
 - [Glass Painting on Canvas](https://mah-artworks.pages.dev/art/glass-painting-on-canvas): October 2026
@@ -232,7 +236,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Mountain Lake Landscape In Circle](https://mah-artworks.pages.dev/art/mountain-lake-landscape-in-circle)
 - [Mother & Child](https://mah-artworks.pages.dev/art/mother-child)
 - [Mother And Daughter Tree Dance](https://mah-artworks.pages.dev/art/mother-and-daughter-tree-dance)
-- [Man In Blazer Portrait](https://mah-artworks.pages.dev/art/man-in-blazer-portrait)
+- [My Hubby Potrait](https://mah-artworks.pages.dev/art/man-in-blazer-portrait)
 - [Madhubani Fish And Lotus](https://mah-artworks.pages.dev/art/madhubani-fish-and-lotus)
 - [Lovebirds On Branch Triptych](https://mah-artworks.pages.dev/art/lovebirds-on-branch-triptych)
 - [Krishna And Sudama Friendship Quote](https://mah-artworks.pages.dev/art/krishna-and-sudama-friendship-quote)
@@ -274,7 +278,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Panchamukhi Hanuman Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting-2)
 - [Panchamukhi Hanuman Framed Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-framed)
 
-### Drawings & Sketches (155)
+### Drawings & Sketches (154)
 
 - [Village Home Doorway Line Drawing](https://mah-artworks.pages.dev/art/village-home-doorway-line-drawing): October 2026
 - [Peacock Zentangle Doodle](https://mah-artworks.pages.dev/art/peacock-zentangle-doodle): October 2026
@@ -344,7 +348,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Toucan with Flowers](https://mah-artworks.pages.dev/art/toucan-with-flowers): September 2021
 - [Butterfly And Red Flowers](https://mah-artworks.pages.dev/art/butterfly-and-red-flowers): September 2021
 - [Faces And Hearts Doodle Page](https://mah-artworks.pages.dev/art/faces-and-hearts-doodle-page): September 2021
-- [Astavinayak](https://mah-artworks.pages.dev/art/astavinayak): September 2021
 - [Ganesha Silhouette Triptych](https://mah-artworks.pages.dev/art/ganesha-silhouette-triptych): September 2021
 - [Butterfly On Flower Vine](https://mah-artworks.pages.dev/art/butterfly-on-flower-vine): September 2021
 - [Birds in Night](https://mah-artworks.pages.dev/art/birds-in-night): September 2021
@@ -432,15 +435,23 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Art Lies Even in Simple Lines](https://mah-artworks.pages.dev/art/art-lies-even-in-simple-lines)
 - [Abstract Faces In Frames](https://mah-artworks.pages.dev/art/abstract-faces-in-frames)
 
-### Mandalas (49)
+### Mandalas (57)
 
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-9): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-7): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-6): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-5): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-3): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-2): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-12): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-11): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-10): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
 - [Pink Petal Rainbow Mandala](https://mah-artworks.pages.dev/art/pink-petal-rainbow-mandala): October 2026
 - [Orange Sunburst Mandala](https://mah-artworks.pages.dev/art/orange-sunburst-mandala): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-8): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-4): October 2026
-- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-2): October 2026
 - [Ganesha Mandala](https://mah-artworks.pages.dev/art/ganesha-mandala-2): October 2026
-- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
 - [Colourful Mandala](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
 - [Dot Mandala Orange And Blue](https://mah-artworks.pages.dev/art/dot-mandala-orange-and-blue): November 2024
 - [Orange And Blue Round Mandala](https://mah-artworks.pages.dev/art/orange-and-blue-round-mandala): December 2023

@@ -45,7 +45,6 @@
 /verify/MS-2021-0047 /art/butterfly-on-flower-vine#certificate 301
 /verify/MS-2021-0048 /art/toucan-with-flowers#certificate 301
 /verify/MS-2021-0049 /art/ganesha-silhouette-triptych#certificate 301
-/verify/MS-2021-0050 /art/astavinayak#certificate 301
 /verify/MS-2021-0051 /art/faces-and-hearts-doodle-page#certificate 301
 /verify/MS-2021-0052 /art/butterfly-and-red-flowers#certificate 301
 /verify/MS-2021-0053 /art/tree-branches-triptych#certificate 301
@@ -530,7 +529,6 @@
 /verify/MS-2026-0574 /art/vat-purnima-rangoli#certificate 301
 /verify/MS-2026-0575 /art/village-home-doorway-line-drawing#certificate 301
 /verify/MS-2026-0576 /art/welcome-couple-door-plaque#certificate 301
-/verify/MS-2026-0577 /art/mandala-art#certificate 301
 /verify/MS-2026-0578 /art/lippan-mirror-art#certificate 301
 /verify/MS-2026-0579 /art/mandala-art-4#certificate 301
 /verify/MS-2026-0580 /art/african-dance#certificate 301
@@ -539,7 +537,6 @@
 /verify/MS-2026-0583 /art/garden#certificate 301
 /verify/MS-2026-0584 /art/glass-painting-on-canvas#certificate 301
 /verify/MS-2026-0585 /art/happy-sad-face#certificate 301
-/verify/MS-2026-0586 /art/mandala-art-2#certificate 301
 /verify/MS-2026-0587 /art/nature#certificate 301
 /verify/MS-2026-0588 /art/3d-star-rangoli#certificate 301
 /verify/MS-2026-0589 /art/ganesha-pattachitra-style-painting#certificate 301
@@ -549,4 +546,18 @@
 /verify/MS-2026-0594 /art/ganesha-flower-border-rangoli#certificate 301
 /verify/MS-2026-0595 /art/boy-dog-gazing-sky#certificate 301
 /verify/MS-2026-0596 /art/mandala-art-3#certificate 301
+/verify/MS-2026-0597 /art/mandala-art-8#certificate 301
+/verify/MS-2026-0598 /art/3-image#certificate 301
+/verify/MS-2026-0599 /art/assorted-art#certificate 301
+/verify/MS-2026-0600 /art/astavinayak#certificate 301
+/verify/MS-2026-0601 /art/mandala-art#certificate 301
+/verify/MS-2026-0602 /art/mandala-art-10#certificate 301
+/verify/MS-2026-0603 /art/mandala-art-11#certificate 301
+/verify/MS-2026-0604 /art/mandala-art-12#certificate 301
+/verify/MS-2026-0605 /art/mandala-art-2#certificate 301
+/verify/MS-2026-0606 /art/mandala-art-5#certificate 301
+/verify/MS-2026-0607 /art/mandala-art-6#certificate 301
+/verify/MS-2026-0608 /art/mandala-art-7#certificate 301
+/verify/MS-2026-0609 /art/mandala-art-9#certificate 301
+/verify/MS-2026-0610 /art/pretty-woman#certificate 301
 /verify/* /verify?n=:splat 302
