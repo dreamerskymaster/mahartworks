@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 560 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 559 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -14,7 +14,7 @@
 - [Paintings](https://mah-artworks.pages.dev/paintings): 219 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 154 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 57 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 56 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 113 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 12 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
@@ -435,7 +435,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Art Lies Even in Simple Lines](https://mah-artworks.pages.dev/art/art-lies-even-in-simple-lines)
 - [Abstract Faces In Frames](https://mah-artworks.pages.dev/art/abstract-faces-in-frames)
 
-### Mandalas (57)
+### Mandalas (56)
 
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-9): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-7): October 2026
@@ -449,7 +449,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
 - [Pink Petal Rainbow Mandala](https://mah-artworks.pages.dev/art/pink-petal-rainbow-mandala): October 2026
 - [Orange Sunburst Mandala](https://mah-artworks.pages.dev/art/orange-sunburst-mandala): October 2026
-- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-8): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-4): October 2026
 - [Ganesha Mandala](https://mah-artworks.pages.dev/art/ganesha-mandala-2): October 2026
 - [Colourful Mandala](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
