@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 552 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 549 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,9 +11,9 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 217 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 215 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
-- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 156 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
+- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 155 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 49 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 113 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 12 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
@@ -32,18 +32,18 @@ Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with 
 
 ## Newest artworks
 
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-3): Mandala, October 2026
 - [Ganpati Rangoli](https://mah-artworks.pages.dev/art/ganpati-rangoli): Rangoli, October 2026
 - [Ganesha Flower Border Rangoli](https://mah-artworks.pages.dev/art/ganesha-flower-border-rangoli): Rangoli, October 2026
-- [Purple Border Petal Mandala](https://mah-artworks.pages.dev/art/purple-border-petal-mandala): Mandala, October 2026
+- [Boy & Dog Gazing Sky](https://mah-artworks.pages.dev/art/boy-dog-gazing-sky): Painting, October 2026
 - [Pink Petal Rainbow Mandala](https://mah-artworks.pages.dev/art/pink-petal-rainbow-mandala): Mandala, October 2026
 - [Orange Sunburst Mandala](https://mah-artworks.pages.dev/art/orange-sunburst-mandala): Mandala, October 2026
 - [Nature](https://mah-artworks.pages.dev/art/nature): Painting, October 2026
-- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-3): Mandala, October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-4): Mandala, October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-2): Mandala, October 2026
 - [Lippan Mirror Art](https://mah-artworks.pages.dev/art/lippan-mirror-art): Craft, October 2026
 - [Happy Sad Face](https://mah-artworks.pages.dev/art/happy-sad-face): Painting, October 2026
 - [Glass Painting on Canvas](https://mah-artworks.pages.dev/art/glass-painting-on-canvas): Painting, October 2026
-- [Garden](https://mah-artworks.pages.dev/art/garden): Painting, October 2026
 
 ## Optional
 

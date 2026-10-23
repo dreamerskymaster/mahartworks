@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "mandala-art-3",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 893,
+"cert": "MS-2026-0596"
+},
+{
 "id": "ganpati-rangoli",
 "title": "Ganpati Rangoli",
 "cat": "rangoli",
@@ -18,13 +27,13 @@ window.ARTWORKS = [
 "cert": "MS-2026-0594"
 },
 {
-"id": "purple-border-petal-mandala",
-"title": "Purple Border Petal Mandala",
-"cat": "mandalas",
-"date": "2026-10-22",
-"w": 540,
-"h": 1200,
-"cert": "MS-2026-0592"
+"id": "boy-dog-gazing-sky",
+"title": "Boy & Dog Gazing Sky",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1200,
+"h": 882,
+"cert": "MS-2026-0595"
 },
 {
 "id": "pink-petal-rainbow-mandala",
@@ -54,7 +63,7 @@ window.ARTWORKS = [
 "cert": "MS-2026-0587"
 },
 {
-"id": "mandala-art-3",
+"id": "mandala-art-4",
 "title": "Mandala Art",
 "cat": "mandalas",
 "date": "2026-10-22",
@@ -343,7 +352,7 @@ window.ARTWORKS = [
 },
 {
 "id": "girl-on-swing-oval-canvas-in-progress",
-"title": "Girl on Swing Oval Canvas in Progress",
+"title": "Girl on Swing Oval Canvas",
 "cat": "paintings",
 "date": "2026-10-14",
 "w": 872,
@@ -1036,7 +1045,7 @@ window.ARTWORKS = [
 },
 {
 "id": "red-knot-rangoli",
-"title": "Red Knot Rangoli",
+"title": "3D Rangoli",
 "cat": "rangoli",
 "date": "2025-06-10",
 "w": 1200,
@@ -1521,15 +1530,6 @@ window.ARTWORKS = [
 "cert": "MS-2024-0261"
 },
 {
-"id": "shree-rangoli-with-flowers",
-"title": "Shree Rangoli With Flowers",
-"cat": "rangoli",
-"date": "2024-09-06",
-"w": 1200,
-"h": 947,
-"cert": "MS-2024-0259"
-},
-{
 "id": "warli-village-scene-framed",
 "title": "Warli Village Scene Framed",
 "cat": "paintings",
@@ -1792,7 +1792,7 @@ window.ARTWORKS = [
 },
 {
 "id": "woman-profile-with-jhumka",
-"title": "Woman Profile With Jhumka",
+"title": "Women Applying Tilak",
 "cat": "paintings",
 "date": "2023-11-27",
 "w": 1200,
@@ -1969,15 +1969,6 @@ window.ARTWORKS = [
 "w": 1080,
 "h": 1080,
 "cert": "MS-2023-0206"
-},
-{
-"id": "ganesha-triptych",
-"title": "Ganesha Triptych",
-"cat": "paintings",
-"date": "2023-09-19",
-"w": 1080,
-"h": 779,
-"cert": "MS-2023-0205"
 },
 {
 "id": "mirror-work-yellow-square-board",
@@ -2284,15 +2275,6 @@ window.ARTWORKS = [
 "w": 685,
 "h": 857,
 "cert": "MS-2023-0170"
-},
-{
-"id": "hummingbird-stained-glass-style",
-"title": "Hummingbird Stained Glass Style",
-"cat": "paintings",
-"date": "2022-12-30",
-"w": 1080,
-"h": 787,
-"cert": "MS-2022-0168"
 },
 {
 "id": "floral-vine-wall-glass-painting-art",
@@ -3303,6 +3285,15 @@ window.ARTWORKS = [
 "cert": "MS-2021-0053"
 },
 {
+"id": "toucan-with-flowers",
+"title": "Toucan with Flowers",
+"cat": "drawings",
+"date": "2021-09-26",
+"w": 1080,
+"h": 757,
+"cert": "MS-2021-0048"
+},
+{
 "id": "butterfly-and-red-flowers",
 "title": "Butterfly And Red Flowers",
 "cat": "drawings",
@@ -3337,15 +3328,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 863,
 "cert": "MS-2021-0049"
-},
-{
-"id": "toucan-with-flowers",
-"title": "Toucan With Flowers",
-"cat": "drawings",
-"date": "2021-09-18",
-"w": 1200,
-"h": 900,
-"cert": "MS-2021-0048"
 },
 {
 "id": "butterfly-on-flower-vine",
@@ -3466,7 +3448,7 @@ window.ARTWORKS = [
 },
 {
 "id": "man-in-robe-pencil-sketch",
-"title": "Man In Robe Pencil Sketch",
+"title": "Sai Baba Sketch",
 "cat": "drawings",
 "date": "2021-07-29",
 "w": 900,
@@ -3517,15 +3499,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 900,
 "cert": "MS-2021-0028"
-},
-{
-"id": "love-doodles-drawing-page",
-"title": "Love Doodles Drawing Page",
-"cat": "drawings",
-"date": "2021-07-25",
-"w": 1200,
-"h": 900,
-"cert": "MS-2021-0027"
 },
 {
 "id": "guitar-with-music-notes",
@@ -3942,6 +3915,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0516"
 },
 {
+"id": "shree-rangoli-with-flowers",
+"title": "Shree Rangoli With Flowers",
+"cat": "rangoli",
+"date": "",
+"w": 1200,
+"h": 947,
+"cert": "MS-2024-0259"
+},
+{
 "id": "shree-ganesha-puja-family",
 "title": "Shree Ganesha Puja Family",
 "cat": "drawings",
@@ -4185,15 +4167,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0487"
 },
 {
-"id": "night-sky-with-hearts-abstract",
-"title": "Night Sky With Hearts Abstract",
-"cat": "paintings",
-"date": "",
-"w": 882,
-"h": 1200,
-"cert": "MS-2026-0486"
-},
-{
 "id": "nandi-and-shiva-trishul-canvases",
 "title": "Nandi And Shiva Trishul Canvases",
 "cat": "paintings",
@@ -4420,7 +4393,7 @@ window.ARTWORKS = [
 },
 {
 "id": "half-face-lotus-rangoli",
-"title": "Half Face Lotus Rangoli",
+"title": "Dusshera Rangoli",
 "cat": "rangoli",
 "date": "",
 "w": 1200,
