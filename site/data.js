@@ -9,6 +9,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0593"
 },
 {
+"id": "ganesha-flower-border-rangoli",
+"title": "Ganesha Flower Border Rangoli",
+"cat": "rangoli",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1010,
+"cert": "MS-2026-0594"
+},
+{
 "id": "purple-border-petal-mandala",
 "title": "Purple Border Petal Mandala",
 "cat": "mandalas",
@@ -361,7 +370,7 @@ window.ARTWORKS = [
 },
 {
 "id": "four-petals-swirl-rangoli",
-"title": "Four Petals Swirl Rangoli",
+"title": "Shank Rangoli",
 "cat": "rangoli",
 "date": "2026-10-14",
 "w": 1097,
@@ -370,7 +379,7 @@ window.ARTWORKS = [
 },
 {
 "id": "foil-relief-flowers-art",
-"title": "Foil Relief Flowers Art",
+"title": "Alumium Foil Relief Flowers Art",
 "cat": "paintings",
 "date": "2026-10-14",
 "w": 1200,
@@ -379,7 +388,7 @@ window.ARTWORKS = [
 },
 {
 "id": "flower-glass-painting-tile",
-"title": "Flower Glass Painting Tile",
+"title": "Flower Acrylic Sheet Painting",
 "cat": "paintings",
 "date": "2026-10-14",
 "w": 1147,
@@ -406,7 +415,7 @@ window.ARTWORKS = [
 },
 {
 "id": "colorful-mandala-on-desk",
-"title": "Colorful Mandala on Desk",
+"title": "Colourful Mandala",
 "cat": "mandalas",
 "date": "2026-10-14",
 "w": 1200,
@@ -775,7 +784,7 @@ window.ARTWORKS = [
 },
 {
 "id": "cube-pattern-flower-rangoli",
-"title": "Cube Pattern Flower Rangoli",
+"title": "3D Rangoli",
 "cat": "rangoli",
 "date": "2025-10-25",
 "w": 1200,
@@ -865,7 +874,7 @@ window.ARTWORKS = [
 },
 {
 "id": "dusshera-rangoli",
-"title": "Dusshera Rangoli",
+"title": "Kolhapur Mahalakshmi Rangoli",
 "cat": "rangoli",
 "date": "2025-09-24",
 "w": 1200,
@@ -1044,15 +1053,6 @@ window.ARTWORKS = [
 "cert": "MS-2025-0319"
 },
 {
-"id": "ganesha-flower-border-rangoli",
-"title": "Ganesha Flower Border Rangoli",
-"cat": "rangoli",
-"date": "2025-06-07",
-"w": 1200,
-"h": 1010,
-"cert": "MS-2025-0318"
-},
-{
 "id": "roses-stained-glass-style",
 "title": "Roses Stained Glass Style",
 "cat": "paintings",
@@ -1108,7 +1108,7 @@ window.ARTWORKS = [
 },
 {
 "id": "diya-and-namam-rangoli",
-"title": "Diya And Namam Rangoli",
+"title": "Shank Balaji Rangoli",
 "cat": "rangoli",
 "date": "2025-05-07",
 "w": 1200,
@@ -1162,7 +1162,7 @@ window.ARTWORKS = [
 },
 {
 "id": "colorful-knot-rangoli",
-"title": "Colorful Knot Rangoli",
+"title": "Colourful Fish Rangoli",
 "cat": "rangoli",
 "date": "2025-04-08",
 "w": 1200,
@@ -1630,7 +1630,7 @@ window.ARTWORKS = [
 },
 {
 "id": "shiva-pencil-sketch",
-"title": "Shiva Pencil Sketch",
+"title": "Ardhanarishwar Sketch",
 "cat": "drawings",
 "date": "2024-03-24",
 "w": 1200,
@@ -2485,7 +2485,7 @@ window.ARTWORKS = [
 },
 {
 "id": "colorful-flower-mandala-2",
-"title": "Colorful Flower Mandala",
+"title": "Colourful Mandala",
 "cat": "mandalas",
 "date": "2022-08-08",
 "w": 1200,
@@ -2584,7 +2584,7 @@ window.ARTWORKS = [
 },
 {
 "id": "beauty-beast",
-"title": "Beauty& Beast",
+"title": "Beauty& Beast in One",
 "cat": "drawings",
 "date": "2022-07-17",
 "w": 1200,
@@ -2791,7 +2791,7 @@ window.ARTWORKS = [
 },
 {
 "id": "shiva-and-parvati-half-faces",
-"title": "Shiva And Parvati Half Faces",
+"title": "Ardhanarishvara",
 "cat": "paintings",
 "date": "2022-02-28",
 "w": 895,
@@ -3124,7 +3124,7 @@ window.ARTWORKS = [
 },
 {
 "id": "femal-thinking",
-"title": "Femal Thinking",
+"title": "Female Thinking",
 "cat": "drawings",
 "date": "2021-11-04",
 "w": 1200,
@@ -3241,7 +3241,7 @@ window.ARTWORKS = [
 },
 {
 "id": "dushera-rangoli",
-"title": "Dushera Rangoli",
+"title": "Kolhapur Mahalakshmi Rangoli",
 "cat": "rangoli",
 "date": "2021-10-15",
 "w": 1200,
@@ -3402,15 +3402,6 @@ window.ARTWORKS = [
 "cert": "MS-2021-0042"
 },
 {
-"id": "ganesha-mandala",
-"title": "Ganesha Mandala",
-"cat": "mandalas",
-"date": "2021-09-07",
-"w": 1200,
-"h": 1200,
-"cert": "MS-2021-0041"
-},
-{
 "id": "wedding-couple-under-mandap",
 "title": "Wedding Couple Under Mandap",
 "cat": "drawings",
@@ -3565,8 +3556,8 @@ window.ARTWORKS = [
 },
 {
 "id": "butterflies-and-henna-hands-drawing",
-"title": "Butterflies And Henna Hands Drawing",
-"cat": "drawings",
+"title": "Mandala Sketch on Back",
+"cat": "mandalas",
 "date": "2021-07-25",
 "w": 733,
 "h": 1200,
@@ -4825,7 +4816,7 @@ window.ARTWORKS = [
 },
 {
 "id": "birds-on-branch-watercolor",
-"title": "Birds On Branch Watercolor",
+"title": "Birds on Branch Late Evening View",
 "cat": "paintings",
 "date": "",
 "w": 1200,

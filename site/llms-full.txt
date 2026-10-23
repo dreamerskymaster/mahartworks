@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 553 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 552 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -13,7 +13,7 @@
 
 - [Paintings](https://mah-artworks.pages.dev/paintings): 217 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
-- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 157 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
+- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 156 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 49 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 113 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 12 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
@@ -62,8 +62,8 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Mini Radha Krishna Canvas on Easel](https://mah-artworks.pages.dev/art/mini-radha-krishna-canvas-on-easel): October 2026
 - [Girl on Swing Oval Canvas in Progress](https://mah-artworks.pages.dev/art/girl-on-swing-oval-canvas-in-progress): October 2026
 - [Girl in Red Dress Brushstrokes](https://mah-artworks.pages.dev/art/girl-in-red-dress-brushstrokes): October 2026
-- [Foil Relief Flowers Art](https://mah-artworks.pages.dev/art/foil-relief-flowers-art): October 2026
-- [Flower Glass Painting Tile](https://mah-artworks.pages.dev/art/flower-glass-painting-tile): October 2026
+- [Alumium Foil Relief Flowers Art](https://mah-artworks.pages.dev/art/foil-relief-flowers-art): October 2026
+- [Flower Acrylic Sheet Painting](https://mah-artworks.pages.dev/art/flower-glass-painting-tile): October 2026
 - [Farewell Memories Portrait Painting](https://mah-artworks.pages.dev/art/farewell-memories-portrait-painting): October 2026
 - [Blue Krishna Face with Flute](https://mah-artworks.pages.dev/art/blue-krishna-face-with-flute-2): October 2026
 - [Saraswati Diamond Painting](https://mah-artworks.pages.dev/art/saraswati-diamond-painting): October 2026
@@ -173,7 +173,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [White Deer Under Moonlit Tree](https://mah-artworks.pages.dev/art/white-deer-under-moonlit-tree): March 2022
 - [Plastic Smile Faces Painting](https://mah-artworks.pages.dev/art/plastic-smile-faces-painting): March 2022
 - [Cartoon Mouse And Doodles](https://mah-artworks.pages.dev/art/cartoon-mouse-and-doodles): March 2022
-- [Shiva And Parvati Half Faces](https://mah-artworks.pages.dev/art/shiva-and-parvati-half-faces): February 2022
+- [Ardhanarishvara](https://mah-artworks.pages.dev/art/shiva-and-parvati-half-faces): February 2022
 - [Lovebirds And Cage At Sunset](https://mah-artworks.pages.dev/art/lovebirds-and-cage-at-sunset): February 2022
 - [Paisley Peacock In Circle](https://mah-artworks.pages.dev/art/paisley-peacock-in-circle): February 2022
 - [Girl In Ball Gown Under Arch](https://mah-artworks.pages.dev/art/girl-in-ball-gown-under-arch): February 2022
@@ -254,7 +254,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Christmas Night Santa Sleigh](https://mah-artworks.pages.dev/art/christmas-night-santa-sleigh)
 - [Butterflies And Flowers Collage](https://mah-artworks.pages.dev/art/butterflies-and-flowers-collage)
 - [Boat Birds And Dolphins Landscape](https://mah-artworks.pages.dev/art/boat-birds-and-dolphins-landscape)
-- [Birds On Branch Watercolor](https://mah-artworks.pages.dev/art/birds-on-branch-watercolor)
+- [Birds on Branch Late Evening View](https://mah-artworks.pages.dev/art/birds-on-branch-watercolor)
 - [Birds And Blossoms Heart Canvas](https://mah-artworks.pages.dev/art/birds-and-blossoms-heart-canvas)
 - [Bamboo And Flowers In Circle](https://mah-artworks.pages.dev/art/bamboo-and-flowers-in-circle)
 - [Avengers Superheroes Painting](https://mah-artworks.pages.dev/art/avengers-superheroes-painting)
@@ -276,7 +276,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Panchamukhi Hanuman Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting-2)
 - [Panchamukhi Hanuman Framed Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-framed)
 
-### Drawings & Sketches (157)
+### Drawings & Sketches (156)
 
 - [Village Home Doorway Line Drawing](https://mah-artworks.pages.dev/art/village-home-doorway-line-drawing): October 2026
 - [Peacock Zentangle Doodle](https://mah-artworks.pages.dev/art/peacock-zentangle-doodle): October 2026
@@ -292,7 +292,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Baby Ganesha With Parvati Drawing](https://mah-artworks.pages.dev/art/baby-ganesha-with-parvati-drawing): July 2024
 - [Village Women Carrying Pots Drawing](https://mah-artworks.pages.dev/art/village-women-carrying-pots-drawing): July 2024
 - [Shiva Parvati And Hanuman Drawing](https://mah-artworks.pages.dev/art/shiva-parvati-and-hanuman-drawing): July 2024
-- [Shiva Pencil Sketch](https://mah-artworks.pages.dev/art/shiva-pencil-sketch): March 2024
+- [Ardhanarishwar Sketch](https://mah-artworks.pages.dev/art/shiva-pencil-sketch): March 2024
 - [Zentangle Dots And Waves](https://mah-artworks.pages.dev/art/zentangle-dots-and-waves): December 2023
 - [Lotus Zentangle Pen Art](https://mah-artworks.pages.dev/art/lotus-zentangle-pen-art): December 2023
 - [Couple Embracing Pencil Sketch](https://mah-artworks.pages.dev/art/couple-embracing-pencil-sketch): December 2023
@@ -319,7 +319,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Woman With Swirl Hair Zentangle](https://mah-artworks.pages.dev/art/woman-with-swirl-hair-zentangle): July 2022
 - [Queen Before And After Sketch](https://mah-artworks.pages.dev/art/queen-before-and-after-sketch): July 2022
 - [Hiden in Face](https://mah-artworks.pages.dev/art/hiden-in-face): July 2022
-- [Beauty& Beast](https://mah-artworks.pages.dev/art/beauty-beast): July 2022
+- [Beauty& Beast in One](https://mah-artworks.pages.dev/art/beauty-beast): July 2022
 - [Krishna And Meera Under Tree](https://mah-artworks.pages.dev/art/krishna-and-meera-under-tree): July 2022
 - [Optical Illusion Face Sketch](https://mah-artworks.pages.dev/art/optical-illusion-face-sketch): March 2022
 - [Lake Village Pencil Sketch In Circle](https://mah-artworks.pages.dev/art/lake-village-pencil-sketch-in-circle): February 2022
@@ -335,7 +335,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Stylish Woman With Handbag](https://mah-artworks.pages.dev/art/stylish-woman-with-handbag): November 2021
 - [Woman In Saree Under Tree](https://mah-artworks.pages.dev/art/woman-in-saree-under-tree): November 2021
 - [Woman In Lehenga With Butterflies](https://mah-artworks.pages.dev/art/woman-in-lehenga-with-butterflies): November 2021
-- [Femal Thinking](https://mah-artworks.pages.dev/art/femal-thinking): November 2021
+- [Female Thinking](https://mah-artworks.pages.dev/art/femal-thinking): November 2021
 - [Girl And Beach Silhouette Sketch](https://mah-artworks.pages.dev/art/girl-and-beach-silhouette-sketch): November 2021
 - [Diwali Peacocks And Ganesha](https://mah-artworks.pages.dev/art/diwali-peacocks-and-ganesha): November 2021
 - [Woman In Green Outfit Drawing](https://mah-artworks.pages.dev/art/woman-in-green-outfit-drawing): October 2021
@@ -367,7 +367,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Love Doodles Drawing Page](https://mah-artworks.pages.dev/art/love-doodles-drawing-page): July 2021
 - [Guitar With Music Notes](https://mah-artworks.pages.dev/art/guitar-with-music-notes): July 2021
 - [Dancer And Moon Couple Drawing](https://mah-artworks.pages.dev/art/dancer-and-moon-couple-drawing): July 2021
-- [Butterflies And Henna Hands Drawing](https://mah-artworks.pages.dev/art/butterflies-and-henna-hands-drawing): July 2021
 - [Goddess Face Drawing](https://mah-artworks.pages.dev/art/goddess-face-drawing): July 2021
 - [Woman In Gown Drawing](https://mah-artworks.pages.dev/art/woman-in-gown-drawing): July 2021
 - [Krishna Playing Flute](https://mah-artworks.pages.dev/art/krishna-playing-flute): July 2021
@@ -445,7 +444,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-2): October 2026
 - [Ganesha Mandala](https://mah-artworks.pages.dev/art/ganesha-mandala-2): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
-- [Colorful Mandala on Desk](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
+- [Colourful Mandala](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
 - [Dot Mandala Orange And Blue](https://mah-artworks.pages.dev/art/dot-mandala-orange-and-blue): November 2024
 - [Orange And Blue Round Mandala](https://mah-artworks.pages.dev/art/orange-and-blue-round-mandala): December 2023
 - [Pink And Green Doodle Mandala](https://mah-artworks.pages.dev/art/pink-and-green-doodle-mandala): December 2023
@@ -475,14 +474,14 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Blue And Orange Mandala](https://mah-artworks.pages.dev/art/blue-and-orange-mandala-2): August 2022
 - [Rainbow Mandala](https://mah-artworks.pages.dev/art/rainbow-mandala): August 2022
 - [Green And Orange Mandala](https://mah-artworks.pages.dev/art/green-and-orange-mandala): August 2022
-- [Colorful Flower Mandala](https://mah-artworks.pages.dev/art/colorful-flower-mandala-2): August 2022
+- [Colourful Mandala](https://mah-artworks.pages.dev/art/colorful-flower-mandala-2): August 2022
 - [Butterfly Mandala With Cats](https://mah-artworks.pages.dev/art/butterfly-mandala-with-cats): January 2022
 - [Colorful Flower Mandala](https://mah-artworks.pages.dev/art/colorful-flower-mandala): January 2022
 - [Peacock With Diya Mandala](https://mah-artworks.pages.dev/art/peacock-with-diya-mandala): October 2021
 - [Rainbow Star Mandala](https://mah-artworks.pages.dev/art/rainbow-star-mandala): October 2021
-- [Ganesha Mandala](https://mah-artworks.pages.dev/art/ganesha-mandala): September 2021
 - [Colorful Fish And Birds Mandala](https://mah-artworks.pages.dev/art/colorful-fish-and-birds-mandala): August 2021
 - [Butterfly Mandala Flower](https://mah-artworks.pages.dev/art/butterfly-mandala-flower): July 2021
+- [Mandala Sketch on Back](https://mah-artworks.pages.dev/art/butterflies-and-henna-hands-drawing): July 2021
 - [Mother Child Mandala Sketch Page](https://mah-artworks.pages.dev/art/mother-child-mandala-sketch-page): June 2021
 - [Ganesha And Swan Mandala Sketches](https://mah-artworks.pages.dev/art/ganesha-and-swan-mandala-sketches): June 2021
 - [Mandala Around Blue Eye](https://mah-artworks.pages.dev/art/mandala-around-blue-eye)
@@ -491,6 +490,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 ### Rangoli & Kolam (113)
 
 - [Ganpati Rangoli](https://mah-artworks.pages.dev/art/ganpati-rangoli): October 2026
+- [Ganesha Flower Border Rangoli](https://mah-artworks.pages.dev/art/ganesha-flower-border-rangoli): October 2026
 - [Flower Kolam](https://mah-artworks.pages.dev/art/flower-kolam): October 2026
 - [Vat Purnima Rangoli](https://mah-artworks.pages.dev/art/vat-purnima-rangoli): October 2026
 - [Two Rangolis at Doorstep](https://mah-artworks.pages.dev/art/two-rangolis-at-doorstep): October 2026
@@ -505,7 +505,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Hanuman Jayanti Rangoli](https://mah-artworks.pages.dev/art/hanuman-jayanti-rangoli): October 2026
 - [Hanuman Jai Shri Ram Kolam](https://mah-artworks.pages.dev/art/hanuman-jai-shri-ram-kolam): October 2026
 - [Geometric Swirl Rangoli](https://mah-artworks.pages.dev/art/geometric-swirl-rangoli): October 2026
-- [Four Petals Swirl Rangoli](https://mah-artworks.pages.dev/art/four-petals-swirl-rangoli): October 2026
+- [Shank Rangoli](https://mah-artworks.pages.dev/art/four-petals-swirl-rangoli): October 2026
 - [Durga Face Rangoli](https://mah-artworks.pages.dev/art/durga-face-rangoli): October 2026
 - [Colorful Flower Rangoli](https://mah-artworks.pages.dev/art/colorful-flower-rangoli): October 2026
 - [Xmas Rangoli](https://mah-artworks.pages.dev/art/xmas-rangoli): October 2026
@@ -524,7 +524,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Peacocks Ganpati Star Rangoli](https://mah-artworks.pages.dev/art/peacocks-ganpati-star-rangoli): November 2025
 - [Shivling Ganesha Lotus Rangoli](https://mah-artworks.pages.dev/art/shivling-ganesha-lotus-rangoli): November 2025
 - [Ganesha Lotus Rangoli With Snowflakes](https://mah-artworks.pages.dev/art/ganesha-lotus-rangoli-with-snowflakes): November 2025
-- [Cube Pattern Flower Rangoli](https://mah-artworks.pages.dev/art/cube-pattern-flower-rangoli): October 2025
+- [3D Rangoli](https://mah-artworks.pages.dev/art/cube-pattern-flower-rangoli): October 2025
 - [Butterfly Rangoli](https://mah-artworks.pages.dev/art/butterfly-rangoli): October 2025
 - [Six Point Star Rangoli](https://mah-artworks.pages.dev/art/six-point-star-rangoli): October 2025
 - [Interlocked Squares Rangoli](https://mah-artworks.pages.dev/art/interlocked-squares-rangoli): October 2025
@@ -532,7 +532,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Blue And Purple Star Rangoli](https://mah-artworks.pages.dev/art/blue-and-purple-star-rangoli): October 2025
 - [Interlocked Star Rangoli](https://mah-artworks.pages.dev/art/interlocked-star-rangoli): October 2025
 - [Lakshmi Footprints Rangoli](https://mah-artworks.pages.dev/art/lakshmi-footprints-rangoli): September 2025
-- [Dusshera Rangoli](https://mah-artworks.pages.dev/art/dusshera-rangoli): September 2025
+- [Kolhapur Mahalakshmi Rangoli](https://mah-artworks.pages.dev/art/dusshera-rangoli): September 2025
 - [White Kolam With Purple Dots](https://mah-artworks.pages.dev/art/white-kolam-with-purple-dots): September 2025
 - [Colorful Stars Rangoli](https://mah-artworks.pages.dev/art/colorful-stars-rangoli): September 2025
 - [Ganesha Face Rangoli](https://mah-artworks.pages.dev/art/ganesha-face-rangoli): August 2025
@@ -547,16 +547,15 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Ganesha Colorful Lotus Rangoli](https://mah-artworks.pages.dev/art/ganesha-colorful-lotus-rangoli): June 2025
 - [Red Knot Rangoli](https://mah-artworks.pages.dev/art/red-knot-rangoli): June 2025
 - [Shree Ganesha Diya Rangoli](https://mah-artworks.pages.dev/art/shree-ganesha-diya-rangoli): June 2025
-- [Ganesha Flower Border Rangoli](https://mah-artworks.pages.dev/art/ganesha-flower-border-rangoli): June 2025
 - [Sikku Kolam Knot Pattern](https://mah-artworks.pages.dev/art/sikku-kolam-knot-pattern): May 2025
 - [Pink And Red Flower Rangoli](https://mah-artworks.pages.dev/art/pink-and-red-flower-rangoli): May 2025
 - [Happy Mothers Day Rangoli](https://mah-artworks.pages.dev/art/happy-mothers-day-rangoli): May 2025
-- [Diya And Namam Rangoli](https://mah-artworks.pages.dev/art/diya-and-namam-rangoli): May 2025
+- [Shank Balaji Rangoli](https://mah-artworks.pages.dev/art/diya-and-namam-rangoli): May 2025
 - [Colorful Star Flower Rangoli](https://mah-artworks.pages.dev/art/colorful-star-flower-rangoli): April 2025
 - [Jai Shri Hanuman Rangoli](https://mah-artworks.pages.dev/art/jai-shri-hanuman-rangoli): April 2025
 - [White Knot Kolam](https://mah-artworks.pages.dev/art/white-knot-kolam): April 2025
 - [Lotus And Shankh Rangoli](https://mah-artworks.pages.dev/art/lotus-and-shankh-rangoli): April 2025
-- [Colorful Knot Rangoli](https://mah-artworks.pages.dev/art/colorful-knot-rangoli): April 2025
+- [Colourful Fish Rangoli](https://mah-artworks.pages.dev/art/colorful-knot-rangoli): April 2025
 - [Jai Shri Ram Rangoli](https://mah-artworks.pages.dev/art/jai-shri-ram-rangoli): April 2025
 - [Peacock And Ganesha Flower Rangoli](https://mah-artworks.pages.dev/art/peacock-and-ganesha-flower-rangoli): April 2025
 - [Om Kolam With Swirls](https://mah-artworks.pages.dev/art/om-kolam-with-swirls): March 2025
@@ -585,7 +584,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Ganesha Flower Rangoli](https://mah-artworks.pages.dev/art/ganesha-flower-rangoli): January 2023
 - [Lovebirds Heart Rangoli](https://mah-artworks.pages.dev/art/lovebirds-heart-rangoli): February 2022
 - [Happy Diwali Swan Rangoli](https://mah-artworks.pages.dev/art/happy-diwali-swan-rangoli): November 2021
-- [Dushera Rangoli](https://mah-artworks.pages.dev/art/dushera-rangoli): October 2021
+- [Kolhapur Mahalakshmi Rangoli](https://mah-artworks.pages.dev/art/dushera-rangoli): October 2021
 - [Peacock Feather Rangoli Plate](https://mah-artworks.pages.dev/art/peacock-feather-rangoli-plate): October 2021
 - [Shivratri Kolam](https://mah-artworks.pages.dev/art/shivratri-kolam): March 2021
 - [Womens Day Rangoli](https://mah-artworks.pages.dev/art/womens-day-rangoli): March 2021

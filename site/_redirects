@@ -38,7 +38,6 @@
 /verify/MS-2021-0038 /art/sad-broken-heart-doodle#certificate 301
 /verify/MS-2021-0039 /art/madhubani#certificate 301
 /verify/MS-2021-0040 /art/wedding-couple-under-mandap#certificate 301
-/verify/MS-2021-0041 /art/ganesha-mandala#certificate 301
 /verify/MS-2021-0042 /art/ganesha-in-kalas#certificate 301
 /verify/MS-2021-0043 /art/shubh-labh-om-toranapainting#certificate 301
 /verify/MS-2021-0044 /art/cubist-faces-crayon-drawing#certificate 301
@@ -300,7 +299,6 @@
 /verify/MS-2025-0315 /art/pink-and-red-flower-rangoli#certificate 301
 /verify/MS-2025-0316 /art/sikku-kolam-knot-pattern#certificate 301
 /verify/MS-2025-0317 /art/roses-stained-glass-style#certificate 301
-/verify/MS-2025-0318 /art/ganesha-flower-border-rangoli#certificate 301
 /verify/MS-2025-0319 /art/shree-ganesha-diya-rangoli#certificate 301
 /verify/MS-2025-0320 /art/red-knot-rangoli#certificate 301
 /verify/MS-2025-0322 /art/ganesha-colorful-lotus-rangoli#certificate 301
@@ -553,4 +551,5 @@
 /verify/MS-2026-0591 /art/pink-petal-rainbow-mandala#certificate 301
 /verify/MS-2026-0592 /art/purple-border-petal-mandala#certificate 301
 /verify/MS-2026-0593 /art/ganpati-rangoli#certificate 301
+/verify/MS-2026-0594 /art/ganesha-flower-border-rangoli#certificate 301
 /verify/* /verify?n=:splat 302
