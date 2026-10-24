@@ -198,6 +198,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0587"
 },
 {
+"id": "mandala-art-8",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0597"
+},
+{
 "id": "mandala-art-4",
 "title": "Mandala Art",
 "cat": "mandalas",
