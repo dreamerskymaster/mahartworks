@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "colorful-rangoli",
+"title": "Colorful Rangoli",
+"cat": "rangoli",
+"date": "2026-10-24",
+"w": 691,
+"h": 984,
+"cert": "MS-2026-0611"
+},
+{
 "id": "pretty-woman",
 "title": "Pretty Woman",
 "cat": "paintings",
@@ -178,6 +187,15 @@ window.ARTWORKS = [
 "w": 1023,
 "h": 1200,
 "cert": "MS-2026-0587"
+},
+{
+"id": "mandala-art-8",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0597"
 },
 {
 "id": "mandala-art-4",
