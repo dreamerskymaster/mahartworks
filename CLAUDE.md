@@ -6,6 +6,8 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 ## Status (2026-10-14)
 - **Live and automatic:** gallery, artwork/category pages, certificates and /verify, policies. Her Drive edits go
   live within ~20 min. Nothing to do day to day.
+- **2026-10-25:** her email "Glass paintings have gone to craft" fixed in PR #13 (green; Ajith merges = publish).
+  Reply draft to her waits in ajithsri3103 Gmail Drafts; send it after the merge.
 - **Shop: built, not live.** PR #8 (branch `shop`) is green and mergeable but must wait (see Shop below).
 - **Pending, needs Ajith or his mom** (in order):
   1. Shop admin: she signs in once on the shop preview; then add her to `shop.admins` (SQL in `shop/README.md`).
@@ -121,6 +123,8 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 ## Content rules
 - "Sketch" = pencil only; coloured pen/crayon = "Drawing". Rangoli/kolam/mandala/oil are title-detected (`\boil\b`, so "Foil" doesn't count; Oil Paintings = `oils`),
   so avoid those words in titles of other paintings (a "Kolam Border" canvas once landed in Rangoli).
+- "Glass" in a title = Paintings, even on a door, tile or plate (her request 2026-10-25; checked after rangoli/mandala/oil,
+  before craft, in both `build.category` and `sync.type_named`). Two glass pieces had hand-set `craft` types before (PR #13).
 - Watermark: colour MS seal (style 1), see-through, bottom-right, on every picture; confirmed by Ajith 2026-10-12.
   Originals are never stamped.
 - Her story in About is her own words — quote verbatim, don't edit. Only change it when she asks (2026-10-13: she added "and oil painting").
