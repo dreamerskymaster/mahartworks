@@ -225,15 +225,6 @@ window.ARTWORKS = [
 "cert": "MS-2026-0587"
 },
 {
-"id": "mandala-art-8",
-"title": "Mandala Art",
-"cat": "mandalas",
-"date": "2026-10-22",
-"w": 1200,
-"h": 1200,
-"cert": "MS-2026-0597"
-},
-{
 "id": "mandala-art-4",
 "title": "Mandala Art",
 "cat": "mandalas",
@@ -1072,7 +1063,7 @@ window.ARTWORKS = [
 },
 {
 "id": "ganesha-face-rangoli",
-"title": "Ganesha Face Rangoli",
+"title": "Ganesha Rangoli",
 "cat": "rangoli",
 "date": "2025-08-27",
 "w": 1200,
@@ -1144,7 +1135,7 @@ window.ARTWORKS = [
 },
 {
 "id": "hibiscus-and-jasmine-rangoli",
-"title": "Hibiscus And Jasmine Rangoli",
+"title": "Ganesha in Hibicus Rangoli",
 "cat": "rangoli",
 "date": "2025-07-14",
 "w": 1200,
@@ -1153,7 +1144,7 @@ window.ARTWORKS = [
 },
 {
 "id": "ganesha-butterfly-rangoli",
-"title": "Ganesha Butterfly Rangoli",
+"title": "Ganesha Durva & Flower Rangoli",
 "cat": "rangoli",
 "date": "2025-07-14",
 "w": 1200,
@@ -3511,8 +3502,8 @@ window.ARTWORKS = [
 },
 {
 "id": "shubh-labh-om-toranapainting",
-"title": "Shubh Labh Om Toranapainting",
-"cat": "crafts",
+"title": "Shubh Labh Om Torana Painting",
+"cat": "paintings",
 "date": "2021-09-11",
 "w": 1200,
 "h": 900,
