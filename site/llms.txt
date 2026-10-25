@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 565 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 563 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,10 +11,10 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 227 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 226 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 57 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 56 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 117 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 9 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
