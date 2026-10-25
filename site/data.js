@@ -225,6 +225,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0587"
 },
 {
+"id": "mandala-art-8",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0597"
+},
+{
 "id": "mandala-art-4",
 "title": "Mandala Art",
 "cat": "mandalas",
@@ -1270,8 +1279,8 @@ window.ARTWORKS = [
 },
 {
 "id": "seven-running-horses-framed",
-"title": "Seven Running Horses Framed Oil Painting",
-"cat": "oils",
+"title": "Seven Running Horses Framed Painting",
+"cat": "paintings",
 "date": "2025-05-06",
 "w": 1200,
 "h": 998,
@@ -1657,7 +1666,7 @@ window.ARTWORKS = [
 },
 {
 "id": "navratri-golu-celebration",
-"title": "Navratri Golu Celebration",
+"title": "Navratri Golu Celebration Canvas Painting",
 "cat": "paintings",
 "date": "2024-10-05",
 "w": 1200,
@@ -2449,8 +2458,8 @@ window.ARTWORKS = [
 },
 {
 "id": "happy-dussehra-golu-doodle",
-"title": "Happy Dussehra Golu Doodle",
-"cat": "drawings",
+"title": "Happy Dussehra Golu Painting",
+"cat": "paintings",
 "date": "2022-09-30",
 "w": 1200,
 "h": 1200,
@@ -3907,8 +3916,8 @@ window.ARTWORKS = [
 },
 {
 "id": "waterfall-and-cherry-blossoms",
-"title": "Waterfall and Cherry Blossoms Oil Painting",
-"cat": "oils",
+"title": "Waterfall and Cherry Blossoms Painting",
+"cat": "paintings",
 "date": "",
 "w": 930,
 "h": 1200,
@@ -4249,8 +4258,8 @@ window.ARTWORKS = [
 },
 {
 "id": "panchamukhi-hanuman-painting-2",
-"title": "Panchamukhi Hanuman Oil Painting",
-"cat": "oils",
+"title": "Panchamukhi Hanuman Painting",
+"cat": "paintings",
 "date": "",
 "w": 956,
 "h": 1200,
@@ -4267,7 +4276,7 @@ window.ARTWORKS = [
 },
 {
 "id": "panchamukhi-hanuman-framed",
-"title": "Panchamukhi Hanuman Framed Oil Painting",
+"title": "Panchamukhi Hanuman Framed Oil & Acrylic Painting",
 "cat": "oils",
 "date": "",
 "w": 1021,
@@ -4663,7 +4672,7 @@ window.ARTWORKS = [
 },
 {
 "id": "forest-waterfall-diamond-arr",
-"title": "Forest & Waterfall Diamond Arr",
+"title": "Forest & Waterfall Diamond Painting",
 "cat": "paintings",
 "date": "",
 "w": 1080,

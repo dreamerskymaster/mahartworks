@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 564 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 565 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,10 +11,10 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 221 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
-- [Oil Paintings](https://mah-artworks.pages.dev/oils): 5 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
-- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 154 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 56 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 225 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Oil Paintings](https://mah-artworks.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
+- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 57 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 117 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 11 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
@@ -48,7 +48,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (221)
+### Paintings (225)
 
 - [Ganesh Puja](https://mah-artworks.pages.dev/art/ganesh-puja): October 2026
 - [Pretty Woman](https://mah-artworks.pages.dev/art/pretty-woman): October 2026
@@ -99,6 +99,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Roses Stained Glass Style](https://mah-artworks.pages.dev/art/roses-stained-glass-style): June 2025
 - [Orange Flowers Textured Canvas](https://mah-artworks.pages.dev/art/orange-flowers-textured-canvas): May 2025
 - [Day And Night Landscape Oval Canvas](https://mah-artworks.pages.dev/art/day-and-night-landscape-oval-canvas): May 2025
+- [Seven Running Horses Framed Painting](https://mah-artworks.pages.dev/art/seven-running-horses-framed): May 2025
 - [Flamenco Dancer Stained Glass Style](https://mah-artworks.pages.dev/art/flamenco-dancer-stained-glass-style): January 2025
 - [Couple With Drum Folk Painting](https://mah-artworks.pages.dev/art/couple-with-drum-folk-painting): November 2024
 - [Goddess With Diya Painting](https://mah-artworks.pages.dev/art/goddess-with-diya-painting): November 2024
@@ -114,7 +115,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Shiva Grief Quote Painting](https://mah-artworks.pages.dev/art/shiva-grief-quote-painting): October 2024
 - [Har Har Mahadev Shiva Hand](https://mah-artworks.pages.dev/art/har-har-mahadev-shiva-hand): October 2024
 - [Circles And Diagonal Stripes Pattern](https://mah-artworks.pages.dev/art/circles-and-diagonal-stripes-pattern): October 2024
-- [Navratri Golu Celebration](https://mah-artworks.pages.dev/art/navratri-golu-celebration): October 2024
+- [Navratri Golu Celebration Canvas Painting](https://mah-artworks.pages.dev/art/navratri-golu-celebration): October 2024
 - [Warli Village Scene Framed](https://mah-artworks.pages.dev/art/warli-village-scene-framed): August 2024
 - [Ganesha Mini Canvas On Easel](https://mah-artworks.pages.dev/art/ganesha-mini-canvas-on-easel): August 2024
 - [Birds Over Sunset Mini Canvas](https://mah-artworks.pages.dev/art/birds-over-sunset-mini-canvas): August 2024
@@ -143,6 +144,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Swing Under Moonlit Tree](https://mah-artworks.pages.dev/art/swing-under-moonlit-tree): February 2023
 - [African Women Dancer](https://mah-artworks.pages.dev/art/african-women-dancer): January 2023
 - [Warli Dancers On Sunset Wash](https://mah-artworks.pages.dev/art/warli-dancers-on-sunset-wash): November 2022
+- [Happy Dussehra Golu Painting](https://mah-artworks.pages.dev/art/happy-dussehra-golu-doodle): September 2022
 - [Ganesha And Durga Glitter Art](https://mah-artworks.pages.dev/art/ganesha-and-durga-glitter-art): September 2022
 - [Panda Switchboard Wall Art](https://mah-artworks.pages.dev/art/panda-switchboard-wall-art): September 2022
 - [Nature Face With Bird](https://mah-artworks.pages.dev/art/nature-face-with-bird): September 2022
@@ -211,6 +213,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Woman Artist At Easel](https://mah-artworks.pages.dev/art/woman-artist-at-easel)
 - [Wedding Garland Ceremony Painting](https://mah-artworks.pages.dev/art/wedding-garland-ceremony-painting)
 - [Waterfall Textured Painting](https://mah-artworks.pages.dev/art/waterfall-textured-painting)
+- [Waterfall and Cherry Blossoms Painting](https://mah-artworks.pages.dev/art/waterfall-and-cherry-blossoms)
 - [Warli Art Panels](https://mah-artworks.pages.dev/art/warli-art-panels)
 - [Village Couple By The River](https://mah-artworks.pages.dev/art/village-couple-by-the-river)
 - [Unicorn Silhouette Against Moon](https://mah-artworks.pages.dev/art/unicorn-silhouette-against-moon)
@@ -231,6 +234,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Radha Seeing Krishna Reflection](https://mah-artworks.pages.dev/art/radha-seeing-krishna-reflection)
 - [Radha Krishna Under Tree Night](https://mah-artworks.pages.dev/art/radha-krishna-under-tree-night)
 - [Purple Lotus Vines On Green](https://mah-artworks.pages.dev/art/purple-lotus-vines-on-green)
+- [Panchamukhi Hanuman Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting-2)
 - [Panchamukhi Hanuman Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting)
 - [Paisley Peacock Folk Design](https://mah-artworks.pages.dev/art/paisley-peacock-folk-design)
 - [Om Ganesha On Blue Textured Canvas](https://mah-artworks.pages.dev/art/om-ganesha-on-blue-textured-canvas)
@@ -251,7 +255,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Ganesha & Social Media](https://mah-artworks.pages.dev/art/ganesha-social-media)
 - [Ganesha & Balaji Painting](https://mah-artworks.pages.dev/art/ganesha-balaji-painting)
 - [Friends Therapy Quote Painting](https://mah-artworks.pages.dev/art/friends-therapy-quote-painting)
-- [Forest & Waterfall Diamond Arr](https://mah-artworks.pages.dev/art/forest-waterfall-diamond-arr)
+- [Forest & Waterfall Diamond Painting](https://mah-artworks.pages.dev/art/forest-waterfall-diamond-arr)
 - [Floral Hummingbirds Painting on Glass Door](https://mah-artworks.pages.dev/art/floral-hummingbirds-painting-on-glass-door)
 - [Family Portrait Three Faces](https://mah-artworks.pages.dev/art/family-portrait-three-faces)
 - [Dancing Woman Against Brick Wall](https://mah-artworks.pages.dev/art/dancing-woman-against-brick-wall)
@@ -272,15 +276,12 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Abstract Colorful Brushstrokes](https://mah-artworks.pages.dev/art/abstract-colorful-brushstrokes)
 - [Abstract Circles Red And Blue](https://mah-artworks.pages.dev/art/abstract-circles-red-and-blue)
 
-### Oil Paintings (5)
+### Oil Paintings (2)
 
 - [Kathakali Framed Oil Painting](https://mah-artworks.pages.dev/art/kathakali-face-framed): June 2025
-- [Seven Running Horses Framed Oil Painting](https://mah-artworks.pages.dev/art/seven-running-horses-framed): May 2025
-- [Waterfall and Cherry Blossoms Oil Painting](https://mah-artworks.pages.dev/art/waterfall-and-cherry-blossoms)
-- [Panchamukhi Hanuman Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting-2)
-- [Panchamukhi Hanuman Framed Oil Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-framed)
+- [Panchamukhi Hanuman Framed Oil & Acrylic Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-framed)
 
-### Drawings & Sketches (154)
+### Drawings & Sketches (153)
 
 - [Village Home Doorway Line Drawing](https://mah-artworks.pages.dev/art/village-home-doorway-line-drawing): October 2026
 - [Peacock Zentangle Doodle](https://mah-artworks.pages.dev/art/peacock-zentangle-doodle): October 2026
@@ -314,7 +315,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Beach With Sailboat And Starfish](https://mah-artworks.pages.dev/art/beach-with-sailboat-and-starfish): November 2023
 - [Peacock On Tree Silhouette](https://mah-artworks.pages.dev/art/peacock-on-tree-silhouette): May 2023
 - [Girl In Blue Dress Brushstrokes](https://mah-artworks.pages.dev/art/girl-in-blue-dress-brushstrokes): May 2023
-- [Happy Dussehra Golu Doodle](https://mah-artworks.pages.dev/art/happy-dussehra-golu-doodle): September 2022
 - [Elderly Couple Sitting Line Drawing](https://mah-artworks.pages.dev/art/elderly-couple-sitting-line-drawing): August 2022
 - [Peacock Line Art](https://mah-artworks.pages.dev/art/peacock-line-art): August 2022
 - [Geometric Shapes Line Art](https://mah-artworks.pages.dev/art/geometric-shapes-line-art): August 2022
@@ -437,7 +437,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Art Lies Even in Simple Lines](https://mah-artworks.pages.dev/art/art-lies-even-in-simple-lines)
 - [Abstract Faces In Frames](https://mah-artworks.pages.dev/art/abstract-faces-in-frames)
 
-### Mandalas (56)
+### Mandalas (57)
 
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-9): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-7): October 2026
@@ -451,6 +451,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
 - [Pink Petal Rainbow Mandala](https://mah-artworks.pages.dev/art/pink-petal-rainbow-mandala): October 2026
 - [Orange Sunburst Mandala](https://mah-artworks.pages.dev/art/orange-sunburst-mandala): October 2026
+- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-8): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-4): October 2026
 - [Ganesha Mandala](https://mah-artworks.pages.dev/art/ganesha-mandala-2): October 2026
 - [Colourful Mandala](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
