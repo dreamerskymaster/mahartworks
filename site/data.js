@@ -2423,7 +2423,7 @@ window.ARTWORKS = [
 {
 "id": "floral-vine-wall-glass-painting-art",
 "title": "Floral Vine Wall Glass Painting Art",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2022-12-24",
 "w": 442,
 "h": 1200,
@@ -3107,7 +3107,7 @@ window.ARTWORKS = [
 {
 "id": "ganesha-glass-door-painting",
 "title": "Ganesha Glass Door Painting",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2022-01-09",
 "w": 532,
 "h": 1200,
