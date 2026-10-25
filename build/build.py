@@ -33,6 +33,8 @@ def category(t, title):
         return "mandalas"
     if t == "oil" or re.search(r"\boil\b", s):     # "oil painting" in her filename ("Foil" doesn't count)
         return "oils"
+    if re.search(r"\bglass\b", s):              # glass paintings are paintings, even on a door or plate
+        return "paintings"
     if t == "craft":
         return "crafts"
     return "paintings" if t == "painting" else "drawings"

@@ -52,6 +52,8 @@ def type_named(title):
         return "rangoli"
     if re.search(r"\boil\b", title, re.I):
         return "oil"
+    if re.search(r"\bglass\b", title, re.I):   # "Glass painting on a plate" is a painting, not a craft
+        return "painting"
     if CRAFT.search(title):
         return "craft"
     if DRAWING.search(title):
