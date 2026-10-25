@@ -1,5 +1,41 @@
 window.ARTWORKS = [
 {
+"id": "dot-rangoli-design",
+"title": "Dot Rangoli Design",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1200,
+"h": 893,
+"cert": "MS-2026-0616"
+},
+{
+"id": "dot-rangoli",
+"title": "Dot Rangoli",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1009,
+"h": 1200,
+"cert": "MS-2026-0615"
+},
+{
+"id": "colourful-rangoli-design",
+"title": "Colourful Rangoli Design",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1200,
+"h": 865,
+"cert": "MS-2026-0614"
+},
+{
+"id": "colourful-rangoli",
+"title": "Colourful Rangoli",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1200,
+"h": 986,
+"cert": "MS-2026-0613"
+},
+{
 "id": "ganesh-puja",
 "title": "Ganesh Puja",
 "cat": "paintings",
@@ -7,15 +43,6 @@ window.ARTWORKS = [
 "w": 691,
 "h": 804,
 "cert": "MS-2026-0612"
-},
-{
-"id": "colorful-rangoli",
-"title": "Colorful Rangoli",
-"cat": "rangoli",
-"date": "2026-10-24",
-"w": 691,
-"h": 984,
-"cert": "MS-2026-0611"
 },
 {
 "id": "pretty-woman",
@@ -196,15 +223,6 @@ window.ARTWORKS = [
 "w": 1023,
 "h": 1200,
 "cert": "MS-2026-0587"
-},
-{
-"id": "mandala-art-8",
-"title": "Mandala Art",
-"cat": "mandalas",
-"date": "2026-10-22",
-"w": 1200,
-"h": 1200,
-"cert": "MS-2026-0597"
 },
 {
 "id": "mandala-art-4",
