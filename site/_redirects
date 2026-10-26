@@ -448,6 +448,7 @@
 /verify/MS-2026-0488 /art/om-ganesha-on-blue-textured-canvas#certificate 301
 /verify/MS-2026-0489 /art/paisley-peacock-folk-design#certificate 301
 /verify/MS-2026-0490 /art/panchamukhi-hanuman-framed#certificate 301
+/verify/MS-2026-0491 /art/panchamukhi-hanuman-painting#certificate 301
 /verify/MS-2026-0492 /art/panchamukhi-hanuman-painting-2#certificate 301
 /verify/MS-2026-0493 /art/patterned-sphere-pen-art#certificate 301
 /verify/MS-2026-0495 /art/people-in-beach#certificate 301
@@ -545,6 +546,7 @@
 /verify/MS-2026-0594 /art/ganesha-flower-border-rangoli#certificate 301
 /verify/MS-2026-0595 /art/boy-dog-gazing-sky#certificate 301
 /verify/MS-2026-0596 /art/mandala-art-3#certificate 301
+/verify/MS-2026-0597 /art/mandala-art-8#certificate 301
 /verify/MS-2026-0598 /art/3-image#certificate 301
 /verify/MS-2026-0599 /art/assorted-art#certificate 301
 /verify/MS-2026-0600 /art/astavinayak#certificate 301
@@ -563,4 +565,5 @@
 /verify/MS-2026-0614 /art/colourful-rangoli-design#certificate 301
 /verify/MS-2026-0615 /art/dot-rangoli#certificate 301
 /verify/MS-2026-0616 /art/dot-rangoli-design#certificate 301
+/verify/MS-2026-0617 /art/lippan-mirror-art-painting-on-mdf#certificate 301
 /verify/* /verify?n=:splat 302

@@ -2502,6 +2502,10 @@
 "MS-2026-0616": [
 "36863954afb77cb6f0ba9e37375ffd2c",
 "dot-rangoli-design"
+],
+"MS-2026-0617": [
+"f99b06b1d028fbe528792e7be990edb1",
+"lippan-mirror-art-painting-on-mdf"
 ]
 },
 "facts": {
@@ -2876,6 +2880,12 @@
 "hgt": 1083,
 "px": 2923200,
 "w": 1200
+},
+"202aa2cf8957444c133317ba9e3f10d0": {
+"h": 315572283253993863,
+"hgt": 1200,
+"px": 11466506,
+"w": 981
 },
 "213681a9fed36e78da6cfd1517b016bd": {
 "h": 15504534982026673067,
@@ -3314,6 +3324,12 @@
 "hgt": 1035,
 "px": 1071225,
 "w": 1035
+},
+"44408c2dd308850de63261916ad8b6b1": {
+"h": 1093003933752833934,
+"hgt": 1200,
+"px": 2951524,
+"w": 1200
 },
 "45ae50f45ae1339d50a9c1fa5afc0611": {
 "h": 6008907835363846881,
@@ -4015,6 +4031,12 @@
 "h": 7225257110893978403,
 "hgt": 900,
 "px": 12000000,
+"w": 1200
+},
+"7a641166ee040ceaa1ef52b39d9b88fe": {
+"h": 1093003933752833934,
+"hgt": 1200,
+"px": 2951524,
 "w": 1200
 },
 "7a77ff4c8a6b3b6a9466ad1492824622": {
@@ -7119,6 +7141,10 @@
 "71a18953ce79f0c0e79131961cecedbe",
 1
 ],
+"lippan-mirror-art-painting-on-mdf": [
+"f99b06b1d028fbe528792e7be990edb1",
+1
+],
 "lips-hearts-and-faces-sketchbook-page": [
 "16bdd61afd7036ceba7d111195eef087",
 1
@@ -7257,6 +7283,10 @@
 ],
 "mandala-art-7": [
 "ba0f01f998734863c50da6fce3468aec",
+1
+],
+"mandala-art-8": [
+"44408c2dd308850de63261916ad8b6b1",
 1
 ],
 "mandala-art-9": [
@@ -7425,6 +7455,10 @@
 ],
 "panchamukhi-hanuman-framed": [
 "1a61ffa097fd3fa19351dab15d0dc2b7",
+1
+],
+"panchamukhi-hanuman-painting": [
+"202aa2cf8957444c133317ba9e3f10d0",
 1
 ],
 "panchamukhi-hanuman-painting-2": [
