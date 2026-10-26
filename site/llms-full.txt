@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 565 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 563 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://mah-artworks.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,10 +11,10 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 227 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 226 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 56 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Mandalas](https://mah-artworks.pages.dev/mandalas): 55 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 117 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://mah-artworks.pages.dev/crafts): 10 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
@@ -48,7 +48,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (227)
+### Paintings (226)
 
 - [Ganesh Puja](https://mah-artworks.pages.dev/art/ganesh-puja): October 2026
 - [Pretty Woman](https://mah-artworks.pages.dev/art/pretty-woman): October 2026
@@ -84,7 +84,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Culture of India](https://mah-artworks.pages.dev/art/culture-of-india): September 2026
 - [Woman in Red Dress with Handbag](https://mah-artworks.pages.dev/art/woman-in-red-dress-with-handbag): September 2026
 - [Sitting Women on Black Canvas](https://mah-artworks.pages.dev/art/sitting-women-on-black-canvas): September 2026
-- [Panchamukhi Hanuman Painting](https://mah-artworks.pages.dev/art/panchamukhi-hanuman-painting): September 2026
 - [My Son’s Merit List Award Function](https://mah-artworks.pages.dev/art/my-son-s-merit-list-award-function): September 2026
 - [Musician and Ram Sita Folk Art](https://mah-artworks.pages.dev/art/musician-and-ram-sita-folk-art): September 2026
 - [Fish Relief Texture Art](https://mah-artworks.pages.dev/art/fish-relief-texture-art): September 2026
@@ -439,7 +438,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Art Lies Even in Simple Lines](https://mah-artworks.pages.dev/art/art-lies-even-in-simple-lines)
 - [Abstract Faces In Frames](https://mah-artworks.pages.dev/art/abstract-faces-in-frames)
 
-### Mandalas (56)
+### Mandalas (55)
 
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-9): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-7): October 2026
@@ -453,7 +452,6 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art): October 2026
 - [Pink Petal Rainbow Mandala](https://mah-artworks.pages.dev/art/pink-petal-rainbow-mandala): October 2026
 - [Orange Sunburst Mandala](https://mah-artworks.pages.dev/art/orange-sunburst-mandala): October 2026
-- [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-8): October 2026
 - [Mandala Art](https://mah-artworks.pages.dev/art/mandala-art-4): October 2026
 - [Ganesha Mandala](https://mah-artworks.pages.dev/art/ganesha-mandala-2): October 2026
 - [Colourful Mandala](https://mah-artworks.pages.dev/art/colorful-mandala-on-desk): October 2026
