@@ -225,6 +225,15 @@ window.ARTWORKS = [
 "cert": "MS-2026-0587"
 },
 {
+"id": "mandala-art-8",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-22",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0597"
+},
+{
 "id": "mandala-art-4",
 "title": "Mandala Art",
 "cat": "mandalas",
@@ -772,6 +781,15 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 973,
 "cert": "MS-2026-0379"
+},
+{
+"id": "panchamukhi-hanuman-painting",
+"title": "Panchamukhi Hanuman Painting",
+"cat": "paintings",
+"date": "2026-09-27",
+"w": 981,
+"h": 1200,
+"cert": "MS-2026-0491"
 },
 {
 "id": "my-son-s-merit-list-award-function",
@@ -1873,8 +1891,8 @@ window.ARTWORKS = [
 },
 {
 "id": "pink-and-green-doodle-mandala",
-"title": "Pink And Green Doodle Mandala",
-"cat": "mandalas",
+"title": "Lippan Art",
+"cat": "crafts",
 "date": "2023-12-15",
 "w": 1200,
 "h": 1200,
