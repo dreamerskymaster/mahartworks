@@ -58,13 +58,19 @@ class SyncTest(unittest.TestCase):
                                            ("Mirror work plate.jpg", "e7", "x"), ("Sea stone shell.jpg", "e8", "x")])
         self.assertEqual(rows["Pongal kolam.jpg"]["type"], "rangoli")
         self.assertEqual(rows["Ganesha pencil sketch.jpg"]["type"], "drawing")
-        self.assertEqual(rows["Mirror work plate.jpg"]["type"], "craft")
+        self.assertEqual(rows["Mirror work plate.jpg"]["type"], "painting")   # lippan/mirror art is painting
         self.assertEqual(rows["Sea stone shell.jpg"]["type"], "painting")   # no category word: painting
 
     def test_oil_painting_named_upload(self):
         rows, _ = self.run_sync(LISTING + [("Hanuman oil painting.jpg", "e5", "x"), ("Foil flowers.jpg", "e6", "x")])
         self.assertEqual(rows["Hanuman oil painting.jpg"]["type"], "oil")
         self.assertEqual(rows["Foil flowers.jpg"]["type"], "painting")
+
+    def test_only_doll_and_diya_are_crafts(self):
+        names = ["Best out of waste doll.jpg", "Painted diya holder.jpg", "Lippan art on mdf.jpg",
+                 "Golden peacocks embroidery.jpg", "Welcome door plaque.jpg"]
+        rows, _ = self.run_sync(LISTING + [(n, "f%d" % i, "x") for i, n in enumerate(names)])
+        self.assertEqual([rows[n]["type"] for n in names], ["craft", "craft", "painting", "painting", "painting"])
 
     def test_glass_painting_is_a_painting_not_a_craft(self):
         rows, _ = self.run_sync(LISTING + [("Glass painting on plate.jpg", "e5", "x")])

@@ -33,7 +33,7 @@ To pause everything: same page → "…" → Disable workflow.
 How the sync names things (`build/sync.py`):
 - **Title = her filename**, tidied: "Pongal kolam.jpg" → "Pongal Kolam". Trailing " 2", "(1)", "~3" are dropped.
 - **Category** from words in the name: rangoli/kolam/pookalam → Rangoli & Kolam; mandala → Mandalas; oil (as a word) → Oil Paintings;
-  sketch/drawing/pencil/crayon/doodle → Drawings; craft/mirror/embroidery/plate → Crafts;
+  sketch/drawing/pencil/crayon/doodle → Drawings; craft/doll/best out of waste/diya holder → Crafts;
   painting/canvas/acrylic/watercolour → Paintings; no category word → Paintings.
 - **Renaming** updates the title, and the category too when the new name has a category word
   ("… kolam" moves it to Rangoli & Kolam). With no such word it keeps its category. A photo is

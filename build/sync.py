@@ -27,7 +27,8 @@ CAMERA = re.compile(r"^(img|image|dsc|pxl|photo|preview|screenshot|fb_img|inshot
                     r"vid|adobe scan|[0-9a-f]{8}-|-?\d[\d\W_]*((orig|copy|edited)[\d\W_]*)*(\.\w+)?$)", re.I)
 SMALL = {"a", "an", "and", "at", "by", "for", "in", "of", "on", "or", "the", "to", "with"}
 DRAWING = re.compile(r"sketch|drawing|doodle|pencil|crayon|pen art|zentangle|line art|mandala", re.I)
-CRAFT = re.compile(r"craft|mirror|embroider|lippan|plate|diya holder|door plaque|clay|mehndi|quilling", re.I)
+# Only the doll and the diya holders are crafts; lippan, mirror work, embroidery and plaques are paintings (her email 2026-10-26).
+CRAFT = re.compile(r"craft|\bdolls?\b|best out (of )?waste|diya holder", re.I)
 
 
 def title_of(name):
