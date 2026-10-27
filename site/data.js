@@ -245,7 +245,7 @@ window.ARTWORKS = [
 {
 "id": "lippan-mirror-art-painting-on-mdf",
 "title": "Lippan Mirror Art Painting on Mdf",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2026-10-22",
 "w": 1153,
 "h": 1200,
@@ -254,7 +254,7 @@ window.ARTWORKS = [
 {
 "id": "lippan-mirror-art",
 "title": "Lippan Mirror Art Painting",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2026-10-22",
 "w": 1153,
 "h": 1200,
@@ -326,7 +326,7 @@ window.ARTWORKS = [
 {
 "id": "welcome-couple-door-plaque",
 "title": "Welcome Couple Door Plaque",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2026-10-14",
 "w": 1200,
 "h": 1140,
@@ -902,7 +902,7 @@ window.ARTWORKS = [
 {
 "id": "golden-peacocks-embroidery",
 "title": "Golden Peacocks Embroidery",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2026-01-24",
 "w": 1200,
 "h": 1178,
@@ -1541,7 +1541,7 @@ window.ARTWORKS = [
 {
 "id": "krishna-shank",
 "title": "Krishna & Shank Mirror & Painting on Cardboard",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2024-11-01",
 "w": 1143,
 "h": 1200,
@@ -1901,7 +1901,7 @@ window.ARTWORKS = [
 {
 "id": "pink-and-green-doodle-mandala",
 "title": "Lippan Art Painting on Mdf Board",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2023-12-15",
 "w": 1200,
 "h": 1200,
@@ -2144,7 +2144,7 @@ window.ARTWORKS = [
 {
 "id": "mirror-work-yellow-square-board",
 "title": "Mirror Work Yellow Square Board",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2023-08-19",
 "w": 1168,
 "h": 1200,
@@ -2153,7 +2153,7 @@ window.ARTWORKS = [
 {
 "id": "mirror-work-orange-round-plate",
 "title": "Mirror Work Orange Round Plate",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2023-08-16",
 "w": 1153,
 "h": 1200,
@@ -2693,7 +2693,7 @@ window.ARTWORKS = [
 {
 "id": "all-seeing-eye-painted-metal-box",
 "title": "All Seeing Eye Painted Metal Box",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2022-07-28",
 "w": 1055,
 "h": 1200,

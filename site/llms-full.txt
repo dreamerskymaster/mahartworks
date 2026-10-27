@@ -11,12 +11,12 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 227 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://mah-artworks.pages.dev/paintings): 236 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://mah-artworks.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://mah-artworks.pages.dev/mandalas): 56 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 117 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
-- [Crafts](https://mah-artworks.pages.dev/crafts): 11 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
+- [Crafts](https://mah-artworks.pages.dev/crafts): 2 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
 Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with its title, category, date and an enquiry link.
 
@@ -48,7 +48,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (227)
+### Paintings (236)
 
 - [Ganesh Puja](https://mah-artworks.pages.dev/art/ganesh-puja): October 2026
 - [Pretty Woman](https://mah-artworks.pages.dev/art/pretty-woman): October 2026
@@ -57,11 +57,14 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Assorted Art](https://mah-artworks.pages.dev/art/assorted-art): October 2026
 - [3 Image](https://mah-artworks.pages.dev/art/3-image): October 2026
 - [Nature](https://mah-artworks.pages.dev/art/nature): October 2026
+- [Lippan Mirror Art Painting on Mdf](https://mah-artworks.pages.dev/art/lippan-mirror-art-painting-on-mdf): October 2026
+- [Lippan Mirror Art Painting](https://mah-artworks.pages.dev/art/lippan-mirror-art): October 2026
 - [Happy Sad Face](https://mah-artworks.pages.dev/art/happy-sad-face): October 2026
 - [Glass Painting on Canvas](https://mah-artworks.pages.dev/art/glass-painting-on-canvas): October 2026
 - [Garden](https://mah-artworks.pages.dev/art/garden): October 2026
 - [Ganesha Pattachitra Style Painting](https://mah-artworks.pages.dev/art/ganesha-pattachitra-style-painting): October 2026
 - [African Dance](https://mah-artworks.pages.dev/art/african-dance): October 2026
+- [Welcome Couple Door Plaque](https://mah-artworks.pages.dev/art/welcome-couple-door-plaque): October 2026
 - [Red Moon Over Blue Sea](https://mah-artworks.pages.dev/art/red-moon-over-blue-sea): October 2026
 - [Pinwheel Design Mini Canvas](https://mah-artworks.pages.dev/art/pinwheel-design-mini-canvas): October 2026
 - [Murali Art](https://mah-artworks.pages.dev/art/murali-art): October 2026
@@ -90,6 +93,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Fish Relief Texture Art](https://mah-artworks.pages.dev/art/fish-relief-texture-art): September 2026
 - [Boy Hanging on Perimal Feet](https://mah-artworks.pages.dev/art/boy-hanging-on-perimal-feet): September 2026
 - [Folk Art Mother And Child Pair](https://mah-artworks.pages.dev/art/folk-art-mother-and-child-pair): March 2026
+- [Golden Peacocks Embroidery](https://mah-artworks.pages.dev/art/golden-peacocks-embroidery): January 2026
 - [Peacock And Flowers Glass Painting](https://mah-artworks.pages.dev/art/peacock-and-flowers-glass-painting): December 2025
 - [Tirupati Balaji With Hanging Diyas](https://mah-artworks.pages.dev/art/tirupati-balaji-with-hanging-diyas): November 2025
 - [Lord Venkateswara Painting](https://mah-artworks.pages.dev/art/lord-venkateswara-painting): October 2025
@@ -110,6 +114,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Radha Krishna With Deer](https://mah-artworks.pages.dev/art/radha-krishna-with-deer): November 2024
 - [Wild Flowers Painting](https://mah-artworks.pages.dev/art/wild-flowers-painting): November 2024
 - [Women Gathering Folk Painting](https://mah-artworks.pages.dev/art/women-gathering-folk-painting): November 2024
+- [Krishna & Shank Mirror & Painting on Cardboard](https://mah-artworks.pages.dev/art/krishna-shank): November 2024
 - [Birds On Branches Nine Panels](https://mah-artworks.pages.dev/art/birds-on-branches-nine-panels): October 2024
 - [Golden Buddha Under Tree](https://mah-artworks.pages.dev/art/golden-buddha-under-tree): October 2024
 - [Lakshmi On Lotus](https://mah-artworks.pages.dev/art/lakshmi-on-lotus): October 2024
@@ -123,6 +128,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Hibiscus On Colorful Tiles](https://mah-artworks.pages.dev/art/hibiscus-on-colorful-tiles): July 2024
 - [Jagannath Puppets Folk Art](https://mah-artworks.pages.dev/art/jagannath-puppets-folk-art): July 2024
 - [Cinderella In Garden](https://mah-artworks.pages.dev/art/cinderella-in-garden): January 2024
+- [Lippan Art Painting on Mdf Board](https://mah-artworks.pages.dev/art/pink-and-green-doodle-mandala): December 2023
 - [Ganesha Names Spiral Calligraphy](https://mah-artworks.pages.dev/art/ganesha-names-spiral-calligraphy): December 2023
 - [Madhubani Fish In Circle](https://mah-artworks.pages.dev/art/madhubani-fish-in-circle): December 2023
 - [Three Masks Abstract Faces](https://mah-artworks.pages.dev/art/three-masks-abstract-faces): November 2023
@@ -139,6 +145,8 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Girl In Pink Hat On Stars](https://mah-artworks.pages.dev/art/girl-in-pink-hat-on-stars): October 2023
 - [Oranges On Branch Watercolor](https://mah-artworks.pages.dev/art/oranges-on-branch-watercolor): September 2023
 - [Dancer Legs With Sunset](https://mah-artworks.pages.dev/art/dancer-legs-with-sunset): September 2023
+- [Mirror Work Yellow Square Board](https://mah-artworks.pages.dev/art/mirror-work-yellow-square-board): August 2023
+- [Mirror Work Orange Round Plate](https://mah-artworks.pages.dev/art/mirror-work-orange-round-plate): August 2023
 - [Bird And Branches On Hexagon Tile](https://mah-artworks.pages.dev/art/bird-and-branches-on-hexagon-tile): June 2023
 - [Buddha Silhouette At Sunset](https://mah-artworks.pages.dev/art/buddha-silhouette-at-sunset): May 2023
 - [Lovebirds In Heart Tree](https://mah-artworks.pages.dev/art/lovebirds-in-heart-tree): February 2023
@@ -160,6 +168,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Om With Lotus And Bells](https://mah-artworks.pages.dev/art/om-with-lotus-and-bells): August 2022
 - [Old Couple On Bench In Rain](https://mah-artworks.pages.dev/art/old-couple-on-bench-in-rain): August 2022
 - [Birds On Tree On Canvas](https://mah-artworks.pages.dev/art/birds-on-tree-on-canvas): August 2022
+- [All Seeing Eye Painted Metal Box](https://mah-artworks.pages.dev/art/all-seeing-eye-painted-metal-box): July 2022
 - [Bride And Groom Under Floral Arch](https://mah-artworks.pages.dev/art/bride-and-groom-under-floral-arch): July 2022
 - [Deer In Forest Watercolor](https://mah-artworks.pages.dev/art/deer-in-forest-watercolor): July 2022
 - [Stained Glass Arch Window](https://mah-artworks.pages.dev/art/stained-glass-arch-window): July 2022
@@ -618,16 +627,7 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 - [Floral And Geometric Rangoli](https://mah-artworks.pages.dev/art/floral-and-geometric-rangoli)
 - [Diwali Diya Rangoli](https://mah-artworks.pages.dev/art/diwali-diya-rangoli)
 
-### Crafts (11)
+### Crafts (2)
 
-- [Lippan Mirror Art Painting on Mdf](https://mah-artworks.pages.dev/art/lippan-mirror-art-painting-on-mdf): October 2026
-- [Lippan Mirror Art Painting](https://mah-artworks.pages.dev/art/lippan-mirror-art): October 2026
-- [Welcome Couple Door Plaque](https://mah-artworks.pages.dev/art/welcome-couple-door-plaque): October 2026
-- [Golden Peacocks Embroidery](https://mah-artworks.pages.dev/art/golden-peacocks-embroidery): January 2026
 - [Shubh Labh Painted Diya Holders](https://mah-artworks.pages.dev/art/shubh-labh-painted-diya-holders): October 2025
 - [Best Out Waste Tissue Art](https://mah-artworks.pages.dev/art/best-out-waste-tissue-art): November 2024
-- [Krishna & Shank Mirror & Painting on Cardboard](https://mah-artworks.pages.dev/art/krishna-shank): November 2024
-- [Lippan Art Painting on Mdf Board](https://mah-artworks.pages.dev/art/pink-and-green-doodle-mandala): December 2023
-- [Mirror Work Yellow Square Board](https://mah-artworks.pages.dev/art/mirror-work-yellow-square-board): August 2023
-- [Mirror Work Orange Round Plate](https://mah-artworks.pages.dev/art/mirror-work-orange-round-plate): August 2023
-- [All Seeing Eye Painted Metal Box](https://mah-artworks.pages.dev/art/all-seeing-eye-painted-metal-box): July 2022
