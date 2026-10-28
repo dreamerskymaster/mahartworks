@@ -158,7 +158,7 @@ class SyncTest(unittest.TestCase):
         self.assertIn("added: 0", out2)
         self.assertIn("skipped, duplicate copy: 0", out2)
         with open(self.last_catalog) as f:
-            self.assertEqual(sum(1 for line in f if line.startswith("Mandala art\t")), 3)
+            self.assertEqual(sum(1 for line in f if line.startswith("Mandala art.jpg\t")), 3)
 
     def test_same_picture_under_the_same_name_twice_is_one_copy(self):
         _, out = self.run_sync(LISTING + [("Lotus Pattern Drawing.jpg", "a1", "x")])
