@@ -142,7 +142,7 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   signature, which is the default for originals she signs by hand. `tests/e2e/fixtures/` uses a made-up test squiggle.
 
 ## Tests
-    python3 -m unittest discover -s tests -v          # 90 cases
+    python3 -m unittest discover -s tests -v          # 98 cases
     npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 60 browser cases (needs Chrome)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
 - `tests/test_brand.py`: logo in every header and footer, transparent logo files, butterfly icons, brand name in
