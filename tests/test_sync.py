@@ -148,11 +148,11 @@ class SyncTest(unittest.TestCase):
     def test_different_pictures_with_the_same_name_all_stay(self):
         # Drive allows two files with one name ("Mandala art", Oct 2026): they are different
         # artworks, not copies, and must not be dropped one run and re-added the next.
-        same = [("Mandala art", "m1", "x"), ("Mandala art", "m2", "x"), ("Mandala art", "m3", "x")]
+        same = [("Mandala art.jpg", "m1", "x"), ("Mandala art.jpg", "m2", "x"), ("Mandala art.jpg", "m3", "x")]
         rows1, out1 = self.run_sync(LISTING + same)
         self.assertIn("added: 3", out1)
         self.assertIn("skipped, duplicate copy: 0", out1)
-        cat = BASE + [{"file": "Mandala art", "type": "drawing", "title": "Mandala Art", "date": "x", "md5": m}
+        cat = BASE + [{"file": "Mandala art.jpg", "type": "drawing", "title": "Mandala Art", "date": "x", "md5": m}
                       for m in ("m1", "m2", "m3")]
         rows2, out2 = self.run_sync(LISTING + same, catalog=cat)
         self.assertIn("added: 0", out2)
