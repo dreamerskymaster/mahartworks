@@ -48,9 +48,12 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
   Safety stop: a run that would remove more than a third of the artworks publishes nothing.
-- **Tests:** `python3 -m unittest discover -s tests -v` (90) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
+- **Tests:** `python3 -m unittest discover -s tests -v` (98) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
   (60, real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
   case for any new naming rule or UI behaviour. Linux CI Chrome lays out slightly differently from a Mac — trust CI.
+- **Same-named files:** Drive allows several files with one name (2026-10: three different "Mandala art" drawings).
+  A file is its (name, md5) pair: sync keeps every pair, `drive.path(name, md5)` fetches the right one and the
+  build cache is keyed by md5. Before this fix the sync dropped and re-added them every run (~70 bot commits a day).
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/oil/other); sync keeps them
   unless she renames the file with a different category word.
 - Every Drive rename done for her is appended to `~/Documents/artwork-rename-backup/rename_log.tsv` (old, new) so it can be undone.
