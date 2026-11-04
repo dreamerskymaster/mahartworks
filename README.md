@@ -33,7 +33,7 @@ To pause everything: same page → "…" → Disable workflow.
 How the sync names things (`build/sync.py`):
 - **Title = her filename**, tidied: "Pongal kolam.jpg" → "Pongal Kolam". Trailing " 2", "(1)", "~3" are dropped.
 - **Category** from words in the name: rangoli/kolam/pookalam → Rangoli & Kolam; mandala → Mandalas; oil (as a word) → Oil Paintings;
-  sketch/drawing/pencil/crayon/doodle → Drawings; craft/mirror/embroidery/plate → Crafts;
+  sketch/drawing/pencil/crayon/doodle → Drawings; craft/doll/best out of waste/diya holder → Crafts;
   painting/canvas/acrylic/watercolour → Paintings; no category word → Paintings.
 - **Renaming** updates the title, and the category too when the new name has a category word
   ("… kolam" moves it to Rangoli & Kolam). With no such word it keeps its category. A photo is
@@ -142,7 +142,7 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   signature, which is the default for originals she signs by hand. `tests/e2e/fixtures/` uses a made-up test squiggle.
 
 ## Tests
-    python3 -m unittest discover -s tests -v          # 91 cases
+    python3 -m unittest discover -s tests -v          # 98 cases
     npm ci --prefix tests/e2e && npm test --prefix tests/e2e   # 60 browser cases (needs Chrome)
 - `tests/test_sync.py`: add / rename / delete / copy / video / camera-name / safety cases against a fake Drive.
 - `tests/test_brand.py`: logo in every header and footer, transparent logo files, butterfly icons, brand name in

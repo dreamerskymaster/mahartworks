@@ -1,12 +1,201 @@
 window.ARTWORKS = [
 {
-"id": "purple-border-petal-mandala",
-"title": "Purple Border Petal Mandala",
-"cat": "mandalas",
-"date": "2026-10-22",
-"w": 540,
+"id": "dot-rangoli-design",
+"title": "Dot Rangoli Design",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1200,
+"h": 893,
+"cert": "MS-2026-0616"
+},
+{
+"id": "dot-rangoli",
+"title": "Dot Rangoli",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1009,
 "h": 1200,
-"cert": "MS-2026-0592"
+"cert": "MS-2026-0615"
+},
+{
+"id": "colourful-rangoli-design",
+"title": "Colourful Rangoli Design",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1200,
+"h": 865,
+"cert": "MS-2026-0614"
+},
+{
+"id": "colourful-rangoli",
+"title": "Colourful Rangoli",
+"cat": "rangoli",
+"date": "2026-10-25",
+"w": 1200,
+"h": 986,
+"cert": "MS-2026-0613"
+},
+{
+"id": "ganesh-puja",
+"title": "Ganesh Puja",
+"cat": "paintings",
+"date": "2026-10-24",
+"w": 691,
+"h": 804,
+"cert": "MS-2026-0612"
+},
+{
+"id": "pretty-woman",
+"title": "Pretty Woman",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 900,
+"h": 1200,
+"cert": "MS-2026-0610"
+},
+{
+"id": "mandala-art-9",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0609"
+},
+{
+"id": "mandala-art-7",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0608"
+},
+{
+"id": "mandala-art-6",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0607"
+},
+{
+"id": "mandala-art-5",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0606"
+},
+{
+"id": "mandala-art-3",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 893,
+"cert": "MS-2026-0596"
+},
+{
+"id": "mandala-art-2",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0605"
+},
+{
+"id": "mandala-art-12",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 976,
+"h": 976,
+"cert": "MS-2026-0604"
+},
+{
+"id": "mandala-art-11",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0603"
+},
+{
+"id": "mandala-art-10",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0602"
+},
+{
+"id": "mandala-art",
+"title": "Mandala Art",
+"cat": "mandalas",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0601"
+},
+{
+"id": "ganpati-rangoli",
+"title": "Ganpati Rangoli",
+"cat": "rangoli",
+"date": "2026-10-23",
+"w": 1200,
+"h": 893,
+"cert": "MS-2026-0593"
+},
+{
+"id": "ganesha-flower-border-rangoli",
+"title": "Ganesha Flower Border Rangoli",
+"cat": "rangoli",
+"date": "2026-10-23",
+"w": 1200,
+"h": 1010,
+"cert": "MS-2026-0594"
+},
+{
+"id": "boy-dog-gazing-sky",
+"title": "Boy & Dog Gazing Sky",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1200,
+"h": 882,
+"cert": "MS-2026-0595"
+},
+{
+"id": "astavinayak",
+"title": "Astavinayak",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1200,
+"h": 911,
+"cert": "MS-2026-0600"
+},
+{
+"id": "assorted-art",
+"title": "Assorted Art",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1170,
+"h": 1170,
+"cert": "MS-2026-0599"
+},
+{
+"id": "3-image",
+"title": "3 Image",
+"cat": "paintings",
+"date": "2026-10-23",
+"w": 1024,
+"h": 767,
+"cert": "MS-2026-0598"
 },
 {
 "id": "pink-petal-rainbow-mandala",
@@ -36,7 +225,7 @@ window.ARTWORKS = [
 "cert": "MS-2026-0587"
 },
 {
-"id": "mandala-art-3",
+"id": "mandala-art-4",
 "title": "Mandala Art",
 "cat": "mandalas",
 "date": "2026-10-22",
@@ -45,18 +234,18 @@ window.ARTWORKS = [
 "cert": "MS-2026-0579"
 },
 {
-"id": "mandala-art-2",
-"title": "Mandala Art",
-"cat": "mandalas",
+"id": "lippan-mirror-art-painting-on-mdf",
+"title": "Lippan Mirror Art Painting on Mdf",
+"cat": "paintings",
 "date": "2026-10-22",
-"w": 1179,
+"w": 1153,
 "h": 1200,
-"cert": "MS-2026-0586"
+"cert": "MS-2026-0617"
 },
 {
 "id": "lippan-mirror-art",
-"title": "Lippan Mirror Art",
-"cat": "crafts",
+"title": "Lippan Mirror Art Painting",
+"cat": "paintings",
 "date": "2026-10-22",
 "w": 1153,
 "h": 1200,
@@ -126,18 +315,9 @@ window.ARTWORKS = [
 "cert": "MS-2026-0580"
 },
 {
-"id": "mandala-art",
-"title": "Mandala Art",
-"cat": "mandalas",
-"date": "2026-10-19",
-"w": 856,
-"h": 1200,
-"cert": "MS-2026-0577"
-},
-{
 "id": "welcome-couple-door-plaque",
 "title": "Welcome Couple Door Plaque",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2026-10-14",
 "w": 1200,
 "h": 1140,
@@ -253,7 +433,7 @@ window.ARTWORKS = [
 },
 {
 "id": "man-portrait-pencil-sketch",
-"title": "Man Portrait Pencil Sketch",
+"title": "My Hubby Pencil Potrait",
 "cat": "drawings",
 "date": "2026-10-14",
 "w": 1200,
@@ -325,7 +505,7 @@ window.ARTWORKS = [
 },
 {
 "id": "girl-on-swing-oval-canvas-in-progress",
-"title": "Girl on Swing Oval Canvas in Progress",
+"title": "Girl on Swing Oval Canvas",
 "cat": "paintings",
 "date": "2026-10-14",
 "w": 872,
@@ -352,7 +532,7 @@ window.ARTWORKS = [
 },
 {
 "id": "four-petals-swirl-rangoli",
-"title": "Four Petals Swirl Rangoli",
+"title": "Shank Rangoli",
 "cat": "rangoli",
 "date": "2026-10-14",
 "w": 1097,
@@ -361,7 +541,7 @@ window.ARTWORKS = [
 },
 {
 "id": "foil-relief-flowers-art",
-"title": "Foil Relief Flowers Art",
+"title": "Alumium Foil Relief Flowers Art",
 "cat": "paintings",
 "date": "2026-10-14",
 "w": 1200,
@@ -370,7 +550,7 @@ window.ARTWORKS = [
 },
 {
 "id": "flower-glass-painting-tile",
-"title": "Flower Glass Painting Tile",
+"title": "Flower Acrylic Sheet Painting",
 "cat": "paintings",
 "date": "2026-10-14",
 "w": 1147,
@@ -397,7 +577,7 @@ window.ARTWORKS = [
 },
 {
 "id": "colorful-mandala-on-desk",
-"title": "Colorful Mandala on Desk",
+"title": "Colourful Mandala",
 "cat": "mandalas",
 "date": "2026-10-14",
 "w": 1200,
@@ -704,7 +884,7 @@ window.ARTWORKS = [
 {
 "id": "golden-peacocks-embroidery",
 "title": "Golden Peacocks Embroidery",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2026-01-24",
 "w": 1200,
 "h": 1178,
@@ -766,7 +946,7 @@ window.ARTWORKS = [
 },
 {
 "id": "cube-pattern-flower-rangoli",
-"title": "Cube Pattern Flower Rangoli",
+"title": "3D Rangoli",
 "cat": "rangoli",
 "date": "2025-10-25",
 "w": 1200,
@@ -856,7 +1036,7 @@ window.ARTWORKS = [
 },
 {
 "id": "dusshera-rangoli",
-"title": "Dusshera Rangoli",
+"title": "Kolhapur Mahalakshmi Rangoli",
 "cat": "rangoli",
 "date": "2025-09-24",
 "w": 1200,
@@ -892,7 +1072,7 @@ window.ARTWORKS = [
 },
 {
 "id": "ganesha-face-rangoli",
-"title": "Ganesha Face Rangoli",
+"title": "Ganesha Rangoli",
 "cat": "rangoli",
 "date": "2025-08-27",
 "w": 1200,
@@ -963,17 +1143,8 @@ window.ARTWORKS = [
 "cert": "MS-2025-0330"
 },
 {
-"id": "blue-circle-rangoli-with-flowers",
-"title": "Blue Circle Rangoli With Flowers",
-"cat": "rangoli",
-"date": "2025-07-27",
-"w": 1200,
-"h": 677,
-"cert": "MS-2025-0329"
-},
-{
 "id": "hibiscus-and-jasmine-rangoli",
-"title": "Hibiscus And Jasmine Rangoli",
+"title": "Ganesha in Hibicus Rangoli",
 "cat": "rangoli",
 "date": "2025-07-14",
 "w": 1200,
@@ -982,7 +1153,7 @@ window.ARTWORKS = [
 },
 {
 "id": "ganesha-butterfly-rangoli",
-"title": "Ganesha Butterfly Rangoli",
+"title": "Ganesha Durva & Flower Rangoli",
 "cat": "rangoli",
 "date": "2025-07-14",
 "w": 1200,
@@ -1027,7 +1198,7 @@ window.ARTWORKS = [
 },
 {
 "id": "red-knot-rangoli",
-"title": "Red Knot Rangoli",
+"title": "3D Rangoli",
 "cat": "rangoli",
 "date": "2025-06-10",
 "w": 1200,
@@ -1042,15 +1213,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 825,
 "cert": "MS-2025-0319"
-},
-{
-"id": "ganesha-flower-border-rangoli",
-"title": "Ganesha Flower Border Rangoli",
-"cat": "rangoli",
-"date": "2025-06-07",
-"w": 1200,
-"h": 1010,
-"cert": "MS-2025-0318"
 },
 {
 "id": "roses-stained-glass-style",
@@ -1108,7 +1270,7 @@ window.ARTWORKS = [
 },
 {
 "id": "diya-and-namam-rangoli",
-"title": "Diya And Namam Rangoli",
+"title": "Shank Balaji Rangoli",
 "cat": "rangoli",
 "date": "2025-05-07",
 "w": 1200,
@@ -1117,8 +1279,8 @@ window.ARTWORKS = [
 },
 {
 "id": "seven-running-horses-framed",
-"title": "Seven Running Horses Framed Oil Painting",
-"cat": "oils",
+"title": "Seven Running Horses Framed Painting",
+"cat": "paintings",
 "date": "2025-05-06",
 "w": 1200,
 "h": 998,
@@ -1162,7 +1324,7 @@ window.ARTWORKS = [
 },
 {
 "id": "colorful-knot-rangoli",
-"title": "Colorful Knot Rangoli",
+"title": "Colourful Fish Rangoli",
 "cat": "rangoli",
 "date": "2025-04-08",
 "w": 1200,
@@ -1360,8 +1522,8 @@ window.ARTWORKS = [
 },
 {
 "id": "krishna-shank",
-"title": "Krishna & Shank",
-"cat": "crafts",
+"title": "Krishna & Shank Mirror & Painting on Cardboard",
+"cat": "paintings",
 "date": "2024-11-01",
 "w": 1143,
 "h": 1200,
@@ -1504,7 +1666,7 @@ window.ARTWORKS = [
 },
 {
 "id": "navratri-golu-celebration",
-"title": "Navratri Golu Celebration",
+"title": "Navratri Golu Celebration Canvas Painting",
 "cat": "paintings",
 "date": "2024-10-05",
 "w": 1200,
@@ -1519,24 +1681,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1151,
 "cert": "MS-2024-0261"
-},
-{
-"id": "krishna-sudhama",
-"title": "Krishna Sudhama",
-"cat": "paintings",
-"date": "2024-09-23",
-"w": 757,
-"h": 1200,
-"cert": "MS-2024-0260"
-},
-{
-"id": "shree-rangoli-with-flowers",
-"title": "Shree Rangoli With Flowers",
-"cat": "rangoli",
-"date": "2024-09-06",
-"w": 1200,
-"h": 947,
-"cert": "MS-2024-0259"
 },
 {
 "id": "warli-village-scene-framed",
@@ -1639,7 +1783,7 @@ window.ARTWORKS = [
 },
 {
 "id": "shiva-pencil-sketch",
-"title": "Shiva Pencil Sketch",
+"title": "Ardhanarishwar Sketch",
 "cat": "drawings",
 "date": "2024-03-24",
 "w": 1200,
@@ -1738,8 +1882,8 @@ window.ARTWORKS = [
 },
 {
 "id": "pink-and-green-doodle-mandala",
-"title": "Pink And Green Doodle Mandala",
-"cat": "mandalas",
+"title": "Lippan Art Painting on Mdf Board",
+"cat": "paintings",
 "date": "2023-12-15",
 "w": 1200,
 "h": 1200,
@@ -1801,7 +1945,7 @@ window.ARTWORKS = [
 },
 {
 "id": "woman-profile-with-jhumka",
-"title": "Woman Profile With Jhumka",
+"title": "Women Applying Tilak",
 "cat": "paintings",
 "date": "2023-11-27",
 "w": 1200,
@@ -1980,18 +2124,9 @@ window.ARTWORKS = [
 "cert": "MS-2023-0206"
 },
 {
-"id": "ganesha-triptych",
-"title": "Ganesha Triptych",
-"cat": "paintings",
-"date": "2023-09-19",
-"w": 1080,
-"h": 779,
-"cert": "MS-2023-0205"
-},
-{
 "id": "mirror-work-yellow-square-board",
 "title": "Mirror Work Yellow Square Board",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2023-08-19",
 "w": 1168,
 "h": 1200,
@@ -2000,7 +2135,7 @@ window.ARTWORKS = [
 {
 "id": "mirror-work-orange-round-plate",
 "title": "Mirror Work Orange Round Plate",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2023-08-16",
 "w": 1153,
 "h": 1200,
@@ -2295,18 +2430,9 @@ window.ARTWORKS = [
 "cert": "MS-2023-0170"
 },
 {
-"id": "hummingbird-stained-glass-style",
-"title": "Hummingbird Stained Glass Style",
-"cat": "paintings",
-"date": "2022-12-30",
-"w": 1080,
-"h": 787,
-"cert": "MS-2022-0168"
-},
-{
 "id": "floral-vine-wall-glass-painting-art",
 "title": "Floral Vine Wall Glass Painting Art",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2022-12-24",
 "w": 442,
 "h": 1200,
@@ -2332,8 +2458,8 @@ window.ARTWORKS = [
 },
 {
 "id": "happy-dussehra-golu-doodle",
-"title": "Happy Dussehra Golu Doodle",
-"cat": "drawings",
+"title": "Happy Dussehra Golu Painting",
+"cat": "paintings",
 "date": "2022-09-30",
 "w": 1200,
 "h": 1200,
@@ -2494,7 +2620,7 @@ window.ARTWORKS = [
 },
 {
 "id": "colorful-flower-mandala-2",
-"title": "Colorful Flower Mandala",
+"title": "Colourful Mandala",
 "cat": "mandalas",
 "date": "2022-08-08",
 "w": 1200,
@@ -2549,7 +2675,7 @@ window.ARTWORKS = [
 {
 "id": "all-seeing-eye-painted-metal-box",
 "title": "All Seeing Eye Painted Metal Box",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2022-07-28",
 "w": 1055,
 "h": 1200,
@@ -2593,7 +2719,7 @@ window.ARTWORKS = [
 },
 {
 "id": "beauty-beast",
-"title": "Beauty& Beast",
+"title": "Beauty& Beast in One",
 "cat": "drawings",
 "date": "2022-07-17",
 "w": 1200,
@@ -2800,7 +2926,7 @@ window.ARTWORKS = [
 },
 {
 "id": "shiva-and-parvati-half-faces",
-"title": "Shiva And Parvati Half Faces",
+"title": "Ardhanarishvara",
 "cat": "paintings",
 "date": "2022-02-28",
 "w": 895,
@@ -2990,7 +3116,7 @@ window.ARTWORKS = [
 {
 "id": "ganesha-glass-door-painting",
 "title": "Ganesha Glass Door Painting",
-"cat": "crafts",
+"cat": "paintings",
 "date": "2022-01-09",
 "w": 532,
 "h": 1200,
@@ -3133,7 +3259,7 @@ window.ARTWORKS = [
 },
 {
 "id": "femal-thinking",
-"title": "Femal Thinking",
+"title": "Female Thinking",
 "cat": "drawings",
 "date": "2021-11-04",
 "w": 1200,
@@ -3250,7 +3376,7 @@ window.ARTWORKS = [
 },
 {
 "id": "dushera-rangoli",
-"title": "Dushera Rangoli",
+"title": "Kolhapur Mahalakshmi Rangoli",
 "cat": "rangoli",
 "date": "2021-10-15",
 "w": 1200,
@@ -3312,6 +3438,15 @@ window.ARTWORKS = [
 "cert": "MS-2021-0053"
 },
 {
+"id": "toucan-with-flowers",
+"title": "Toucan with Flowers",
+"cat": "drawings",
+"date": "2021-09-26",
+"w": 1080,
+"h": 757,
+"cert": "MS-2021-0048"
+},
+{
 "id": "butterfly-and-red-flowers",
 "title": "Butterfly And Red Flowers",
 "cat": "drawings",
@@ -3330,15 +3465,6 @@ window.ARTWORKS = [
 "cert": "MS-2021-0051"
 },
 {
-"id": "astavinayak",
-"title": "Astavinayak",
-"cat": "drawings",
-"date": "2021-09-23",
-"w": 1200,
-"h": 911,
-"cert": "MS-2021-0050"
-},
-{
 "id": "ganesha-silhouette-triptych",
 "title": "Ganesha Silhouette Triptych",
 "cat": "drawings",
@@ -3346,15 +3472,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 863,
 "cert": "MS-2021-0049"
-},
-{
-"id": "toucan-with-flowers",
-"title": "Toucan With Flowers",
-"cat": "drawings",
-"date": "2021-09-18",
-"w": 1200,
-"h": 900,
-"cert": "MS-2021-0048"
 },
 {
 "id": "butterfly-on-flower-vine",
@@ -3394,8 +3511,8 @@ window.ARTWORKS = [
 },
 {
 "id": "shubh-labh-om-toranapainting",
-"title": "Shubh Labh Om Toranapainting",
-"cat": "crafts",
+"title": "Shubh Labh Om Torana Painting",
+"cat": "paintings",
 "date": "2021-09-11",
 "w": 1200,
 "h": 900,
@@ -3409,15 +3526,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 858,
 "cert": "MS-2021-0042"
-},
-{
-"id": "ganesha-mandala",
-"title": "Ganesha Mandala",
-"cat": "mandalas",
-"date": "2021-09-07",
-"w": 1200,
-"h": 1200,
-"cert": "MS-2021-0041"
 },
 {
 "id": "wedding-couple-under-mandap",
@@ -3484,7 +3592,7 @@ window.ARTWORKS = [
 },
 {
 "id": "man-in-robe-pencil-sketch",
-"title": "Man In Robe Pencil Sketch",
+"title": "Sai Baba Sketch",
 "cat": "drawings",
 "date": "2021-07-29",
 "w": 900,
@@ -3537,15 +3645,6 @@ window.ARTWORKS = [
 "cert": "MS-2021-0028"
 },
 {
-"id": "love-doodles-drawing-page",
-"title": "Love Doodles Drawing Page",
-"cat": "drawings",
-"date": "2021-07-25",
-"w": 1200,
-"h": 900,
-"cert": "MS-2021-0027"
-},
-{
 "id": "guitar-with-music-notes",
 "title": "Guitar With Music Notes",
 "cat": "drawings",
@@ -3574,8 +3673,8 @@ window.ARTWORKS = [
 },
 {
 "id": "butterflies-and-henna-hands-drawing",
-"title": "Butterflies And Henna Hands Drawing",
-"cat": "drawings",
+"title": "Mandala Sketch on Back",
+"cat": "mandalas",
 "date": "2021-07-25",
 "w": 733,
 "h": 1200,
@@ -3817,8 +3916,8 @@ window.ARTWORKS = [
 },
 {
 "id": "waterfall-and-cherry-blossoms",
-"title": "Waterfall and Cherry Blossoms Oil Painting",
-"cat": "oils",
+"title": "Waterfall and Cherry Blossoms Painting",
+"cat": "paintings",
 "date": "",
 "w": 930,
 "h": 1200,
@@ -3958,6 +4057,15 @@ window.ARTWORKS = [
 "w": 920,
 "h": 1200,
 "cert": "MS-2026-0516"
+},
+{
+"id": "shree-rangoli-with-flowers",
+"title": "Shree Rangoli With Flowers",
+"cat": "rangoli",
+"date": "",
+"w": 1200,
+"h": 947,
+"cert": "MS-2024-0259"
 },
 {
 "id": "shree-ganesha-puja-family",
@@ -4150,25 +4258,16 @@ window.ARTWORKS = [
 },
 {
 "id": "panchamukhi-hanuman-painting-2",
-"title": "Panchamukhi Hanuman Oil Painting",
-"cat": "oils",
+"title": "Panchamukhi Hanuman Painting",
+"cat": "paintings",
 "date": "",
 "w": 956,
 "h": 1200,
 "cert": "MS-2026-0492"
 },
 {
-"id": "panchamukhi-hanuman-painting",
-"title": "Panchamukhi Hanuman Painting",
-"cat": "paintings",
-"date": "",
-"w": 980,
-"h": 1200,
-"cert": "MS-2026-0491"
-},
-{
 "id": "panchamukhi-hanuman-framed",
-"title": "Panchamukhi Hanuman Framed Oil Painting",
+"title": "Panchamukhi Hanuman Framed Oil & Acrylic Painting",
 "cat": "oils",
 "date": "",
 "w": 1021,
@@ -4201,15 +4300,6 @@ window.ARTWORKS = [
 "w": 1024,
 "h": 767,
 "cert": "MS-2026-0487"
-},
-{
-"id": "night-sky-with-hearts-abstract",
-"title": "Night Sky With Hearts Abstract",
-"cat": "paintings",
-"date": "",
-"w": 882,
-"h": 1200,
-"cert": "MS-2026-0486"
 },
 {
 "id": "nandi-and-shiva-trishul-canvases",
@@ -4276,7 +4366,7 @@ window.ARTWORKS = [
 },
 {
 "id": "man-in-blazer-portrait",
-"title": "Man In Blazer Portrait",
+"title": "My Hubby Potrait",
 "cat": "paintings",
 "date": "",
 "w": 1026,
@@ -4438,7 +4528,7 @@ window.ARTWORKS = [
 },
 {
 "id": "half-face-lotus-rangoli",
-"title": "Half Face Lotus Rangoli",
+"title": "Dusshera Rangoli",
 "cat": "rangoli",
 "date": "",
 "w": 1200,
@@ -4573,7 +4663,7 @@ window.ARTWORKS = [
 },
 {
 "id": "forest-waterfall-diamond-arr",
-"title": "Forest & Waterfall Diamond Arr",
+"title": "Forest & Waterfall Diamond Painting",
 "cat": "paintings",
 "date": "",
 "w": 1080,
@@ -4834,7 +4924,7 @@ window.ARTWORKS = [
 },
 {
 "id": "birds-on-branch-watercolor",
-"title": "Birds On Branch Watercolor",
+"title": "Birds on Branch Late Evening View",
 "cat": "paintings",
 "date": "",
 "w": 1200,

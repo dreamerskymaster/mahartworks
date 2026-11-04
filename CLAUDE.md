@@ -3,14 +3,16 @@
 Ajith's site for his mom's art business in India. Live: https://mah-artworks.pages.dev.
 Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how-to; this file is the rules and status.
 
-## Status (2026-10-22)
+## Status (2026-11-03)
 - **Live and automatic:** the Vanna Reverie gallery, artwork/category pages, certificates and /verify, policies.
   Her Drive edits go live within ~20 min. Nothing to do day to day.
 - **2026-10-22:** her duplicate camera-named copies moved to the Drive subfolder "Duplicates - not on website",
   4 new photos named, names starting with a digit fixed (PR #11). Her plain-language guide was emailed to her.
-  Open question to her: "Lippan art" is the same file as "Pink And Green Doodle Mandala 2" (sync skips the copy).
-- **Shop: built, not live.** PR #8 (branch `shop`) is rebranded to Vanna Reverie and up to date with `main`
-  (2026-10-22). It must wait (see Shop below). It is the only branch besides `main`.
+- **2026-10-25/26:** her emails fixed: glass paintings → Paintings (PR #13, merged); Crafts trimmed to the doll and
+  diya holders only (2026-10-26). She marked our mail "Not spam" and deleted the duplicate pink mandala
+  (the "Lippan art" copy question is closed).
+- **Shop: built, not live.** PR #8 (branch `shop`) is rebranded to Vanna Reverie and was up to date with `main`
+  on 2026-10-22. It must wait (see Shop below). It is the only long-lived branch besides `main`.
 - **Pending, needs Ajith or his mom** (in order):
   1. Shop admin: she signs in once on the shop preview; then add her to `shop.admins` (SQL in `shop/README.md`).
   2. She enters her UPI ID in /admin → Settings.
@@ -58,9 +60,12 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
   Safety stop: a run that would remove more than a third of the artworks publishes nothing.
-- **Tests:** `python3 -m unittest discover -s tests -v` (91) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
-  (60 on `main`, 62 with the shop branch; real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
+- **Tests:** `python3 -m unittest discover -s tests -v` (98) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
+  (60, real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
   case for any new naming rule or UI behaviour. Linux CI Chrome lays out slightly differently from a Mac — trust CI.
+- **Same-named files:** Drive allows several files with one name (2026-10: three different "Mandala art" drawings).
+  A file is its (name, md5) pair: sync keeps every pair, `drive.path(name, md5)` fetches the right one and the
+  build cache is keyed by md5. Before this fix the sync dropped and re-added them every run (~70 bot commits a day).
 - Hand overrides live in the catalog `type` column (painting/drawing/craft/rangoli/oil/other); sync keeps them
   unless she renames the file with a different category word.
 - **Duplicates:** copies of published artworks go into the Drive subfolder "Duplicates - not on website" (2026-10-22:
@@ -148,6 +153,10 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 ## Content rules
 - "Sketch" = pencil only; coloured pen/crayon = "Drawing". Rangoli/kolam/mandala/oil are title-detected (`\boil\b`, so "Foil" doesn't count; Oil Paintings = `oils`),
   so avoid those words in titles of other paintings (a "Kolam Border" canvas once landed in Rangoli).
+- "Glass" in a title = Paintings, even on a door, tile or plate (her request 2026-10-25; checked after rangoli/mandala/oil,
+  before craft, in both `build.category` and `sync.type_named`). Two glass pieces had hand-set `craft` types before (PR #13).
+- Crafts = only the best-out-of-waste doll and the diya holders (her email 2026-10-26). Lippan, mirror work, embroidery,
+  door plaques, painted boxes/cardboard are Paintings. `CRAFT` in sync.py = craft|doll|best out of waste|diya holder.
 - Watermark: colour MS seal (style 1), see-through, bottom-right, on every picture; confirmed by Ajith 2026-10-12.
   Originals are never stamped.
 - Her story in About is her own words — quote verbatim, don't edit. Only change it when she asks (2026-10-13: she added "and oil painting").
