@@ -41,6 +41,7 @@ class SyncTest(unittest.TestCase):
             if "ALLOW_BIG_REMOVAL" not in env:
                 os.environ.pop("ALLOW_BIG_REMOVAL", None)
             sync.main()
+        self.last_catalog = path
         with open(path) as f:
             rows = {r["file"]: r for r in csv.DictReader(f, delimiter="\t")}
         return rows, out.getvalue()
@@ -142,6 +143,25 @@ class SyncTest(unittest.TestCase):
         rows, out = self.run_sync(LISTING + [("Lotus Pattern Drawing copy.jpg", "a1", "x")])
         self.assertIn("Lotus Pattern Drawing.jpg", rows)
         self.assertNotIn("Lotus Pattern Drawing copy.jpg", rows)
+        self.assertIn("skipped, duplicate copy: 1", out)
+
+    def test_different_pictures_with_the_same_name_all_stay(self):
+        # Drive allows two files with one name ("Mandala art", Oct 2026): they are different
+        # artworks, not copies, and must not be dropped one run and re-added the next.
+        same = [("Mandala art.jpg", "m1", "x"), ("Mandala art.jpg", "m2", "x"), ("Mandala art.jpg", "m3", "x")]
+        rows1, out1 = self.run_sync(LISTING + same)
+        self.assertIn("added: 3", out1)
+        self.assertIn("skipped, duplicate copy: 0", out1)
+        cat = BASE + [{"file": "Mandala art.jpg", "type": "drawing", "title": "Mandala Art", "date": "x", "md5": m}
+                      for m in ("m1", "m2", "m3")]
+        rows2, out2 = self.run_sync(LISTING + same, catalog=cat)
+        self.assertIn("added: 0", out2)
+        self.assertIn("skipped, duplicate copy: 0", out2)
+        with open(self.last_catalog) as f:
+            self.assertEqual(sum(1 for line in f if line.startswith("Mandala art.jpg\t")), 3)
+
+    def test_same_picture_under_the_same_name_twice_is_one_copy(self):
+        _, out = self.run_sync(LISTING + [("Lotus Pattern Drawing.jpg", "a1", "x")])
         self.assertIn("skipped, duplicate copy: 1", out)
 
     def test_video_is_skipped_and_reported(self):

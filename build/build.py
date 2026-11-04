@@ -72,9 +72,10 @@ def slug(s):
 
 def cached(r):
     """Resized, un-watermarked copy of an original (made on first use)."""
-    cp = os.path.join(CACHE, hashlib.md5(r["file"].encode()).hexdigest()[:12] + ".png")
+    # Keyed by the picture (md5) when known: two different files can share a name.
+    cp = os.path.join(CACHE, hashlib.md5((r.get("md5") or r["file"]).encode()).hexdigest()[:12] + ".png")
     if not os.path.exists(cp):
-        im = load(drive.path(r["file"]))
+        im = load(drive.path(r["file"], r.get("md5")))
         open(cp + ".px", "w").write(str(im.width * im.height))
         im.thumbnail((FULL, FULL), Image.LANCZOS)
         im.save(cp)

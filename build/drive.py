@@ -18,6 +18,7 @@ SRC = DOWNLOADS if USE_API else LOCAL
 
 _svc = None
 _ids = {}
+_ids_md5 = {}   # Drive allows several files with one name; the checksum tells them apart
 _mimes = {}
 # Drive names can lack an extension ("culture of india " — the Mac app adds one locally),
 # so the type falls back to the file's MIME type.
@@ -60,6 +61,8 @@ def listing():
             pageToken=token, supportsAllDrives=True, includeItemsFromAllDrives=True).execute()
         for f in r["files"]:
             _ids[f["name"]] = f["id"]
+            if f.get("md5Checksum"):
+                _ids_md5[f["md5Checksum"]] = f["id"]
             _mimes[f["name"]] = f.get("mimeType", "")
             out.append((f["name"], f.get("md5Checksum", ""), f["modifiedTime"][:10]))
         token = r.get("nextPageToken")
@@ -107,19 +110,36 @@ def _sniff(p):
     return ""
 
 
-def path(name):
-    """Local path to an original, downloading it first in CI (with an extension the loader knows)."""
-    p = os.path.join(SRC, name) if USE_API else local(name)
-    if USE_API:
-        e = ext(name)
-        p = os.path.join(SRC, name.strip() + ("" if name.strip().lower().endswith(e) else e))
-    if USE_API and not os.path.exists(p):
+def _md5_of(p):
+    h = hashlib.md5()
+    with open(p, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""):
+            h.update(chunk)
+    return h.hexdigest()
+
+
+def path(name, md5=None):
+    """Local path to an original, downloading it first in CI (with an extension the loader knows).
+    Pass the file's md5 so that one of several same-named files is the one fetched."""
+    if not USE_API:
+        p = local(name)
+        if md5 and os.path.isdir(LOCAL) and not (os.path.exists(p) and _md5_of(p) == md5):
+            for f in sorted(os.listdir(LOCAL)):        # the Mac shows them as "x (1).jpg", "x (2).jpg"
+                q = os.path.join(LOCAL, f)
+                if f.lower().startswith(name.strip().lower()) and os.path.isfile(q) and _md5_of(q) == md5:
+                    return q
+        return p
+    e = ext(name)
+    p = os.path.join(SRC, (md5[:8] + "-" if md5 else "") + name.strip()
+                     + ("" if name.strip().lower().endswith(e) else e))
+    if not os.path.exists(p):
         from googleapiclient.http import MediaIoBaseDownload
         if not _ids:
             listing()
         os.makedirs(DOWNLOADS, exist_ok=True)
         buf = io.FileIO(p, "wb")
-        dl = MediaIoBaseDownload(buf, _service().files().get_media(fileId=_ids[name], supportsAllDrives=True))
+        file_id = _ids_md5.get(md5) or _ids[name]
+        dl = MediaIoBaseDownload(buf, _service().files().get_media(fileId=file_id, supportsAllDrives=True))
         done = False
         while not done:
             _, done = dl.next_chunk()

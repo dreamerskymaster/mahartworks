@@ -82,16 +82,24 @@ def main():
     by_md5 = {r["md5"]: r for r in old if r.get("md5")}
     rows, added, renamed, waiting, skipped, copies = [], [], [], [], [], []
     listing = drive.listing()
-    names = {n for n, _, _ in listing}
+    # Drive allows several files with one name, so a file is its (name, md5) pair, not its name.
+    pairs, seen = {(n, m) for n, m, _ in listing}, set()
     for name, md5, modified in listing:
         if drive.ext(name) not in EXTS:
             skipped.append(repr(name))
             continue
-        known = by_file.get(name) if by_file.get(name, {}).get("md5") in ("", None, md5) else None
-        if not known and by_md5.get(md5) and by_md5[md5]["file"] in names:
-            copies.append(f"{name} (same picture as {by_md5[md5]['file']})")    # a copy, not a rename
+        if (name, md5) in seen:                       # same name and same picture, uploaded twice
+            copies.append(f"{name} (same picture as {name})")
             continue
-        known = known or by_md5.get(md5)
+        seen.add((name, md5))
+        owner = by_md5.get(md5)
+        known = by_file.get(name) if by_file.get(name, {}).get("md5") in ("", None, md5) else None
+        if not known and owner and owner["file"] == name:
+            known = owner                             # one of several same-named files
+        if not known and owner and (owner["file"], md5) in pairs:
+            copies.append(f"{name} (same picture as {owner['file']})")    # a copy, not a rename
+            continue
+        known = known or owner
         if known:
             r = dict(known, md5=md5)
             if known["file"] != name:
