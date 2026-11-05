@@ -5140,7 +5140,7 @@ window.ARTWORKS = [
 },
 {
 "id": "abstract-palette-knife-colors",
-"title": "Abstract Palette Knife Colors",
+"title": "Art with Aluminium Foil",
 "cat": "paintings",
 "date": "",
 "w": 819,
