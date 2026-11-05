@@ -567,4 +567,8 @@
 /verify/MS-2026-0616 /art/dot-rangoli-design#certificate 301
 /verify/MS-2026-0617 /art/lippan-mirror-art-painting-on-mdf#certificate 301
 /verify/MS-2026-0618 /art/stained-glass-art-in-canvas#certificate 301
+/verify/MS-2026-0619 /art/3d-rangoli#certificate 301
+/verify/MS-2026-0620 /art/3d-rangoli-2#certificate 301
+/verify/MS-2026-0621 /art/diwali-rangoli-made-in-temple#certificate 301
+/verify/MS-2026-0622 /art/vasu-dhanteras-rangoli#certificate 301
 /verify/* /verify?n=:splat 302

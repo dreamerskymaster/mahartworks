@@ -2510,6 +2510,22 @@
 "MS-2026-0618": [
 "3d6c84ab941670e629d16f901b6ec7ae",
 "stained-glass-art-in-canvas"
+],
+"MS-2026-0619": [
+"cda34765d99b0bdff32b5e50ff0388dc",
+"3d-rangoli"
+],
+"MS-2026-0620": [
+"fd7a0f3e6ccca99deabaf57e5e9230d1",
+"3d-rangoli-2"
+],
+"MS-2026-0621": [
+"0829c47abddd3e892cbe1b2287ee5480",
+"diwali-rangoli-made-in-temple"
+],
+"MS-2026-0622": [
+"b22be276ab4bec1249c924d063e0317e",
+"vasu-dhanteras-rangoli"
 ]
 },
 "facts": {
@@ -2602,6 +2618,12 @@
 "hgt": 1200,
 "px": 1410870,
 "w": 987
+},
+"0829c47abddd3e892cbe1b2287ee5480": {
+"h": 15122134254591796818,
+"hgt": 1166,
+"px": 8875614,
+"w": 1200
 },
 "08d1bf93aea6fdd4aebb10b1296199c1": {
 "h": 8029741369710847926,
@@ -4883,6 +4905,12 @@
 "px": 1075792,
 "w": 947
 },
+"b22be276ab4bec1249c924d063e0317e": {
+"h": 17470567512027360751,
+"hgt": 927,
+"px": 6083408,
+"w": 1200
+},
 "b24fddcca736d33ac40c25dbc7a43553": {
 "h": 9077170922442365526,
 "hgt": 959,
@@ -5211,6 +5239,12 @@
 "h": 14739321839240820218,
 "hgt": 1043,
 "px": 2492096,
+"w": 1200
+},
+"cda34765d99b0bdff32b5e50ff0388dc": {
+"h": 12728531057008429304,
+"hgt": 843,
+"px": 7805886,
 "w": 1200
 },
 "cdc830bde01652f09084c5303b1dc68a": {
@@ -5903,6 +5937,12 @@
 "px": 3490200,
 "w": 949
 },
+"fd7a0f3e6ccca99deabaf57e5e9230d1": {
+"h": 3731563671279836543,
+"hgt": 1200,
+"px": 3232274,
+"w": 976
+},
 "fdbf5a60ce74fff1c3f44595ae931795": {
 "h": 2097840867076683033,
 "hgt": 1200,
@@ -5949,6 +5989,14 @@
 "outputs": {
 "3-image": [
 "ec1dd3f13b1a786911a872142ac9d243",
+1
+],
+"3d-rangoli": [
+"cda34765d99b0bdff32b5e50ff0388dc",
+1
+],
+"3d-rangoli-2": [
+"fd7a0f3e6ccca99deabaf57e5e9230d1",
 1
 ],
 "3d-star-rangoli": [
@@ -6421,6 +6469,10 @@
 ],
 "diwali-peacocks-and-ganesha": [
 "579077483fa06bdb85e759de8a948549",
+1
+],
+"diwali-rangoli-made-in-temple": [
+"0829c47abddd3e892cbe1b2287ee5480",
 1
 ],
 "diya-and-namam-rangoli": [
@@ -8009,6 +8061,10 @@
 ],
 "unicorn-silhouette-against-moon": [
 "873159ab453a67246cf148279e3513d3",
+1
+],
+"vasu-dhanteras-rangoli": [
+"b22be276ab4bec1249c924d063e0317e",
 1
 ],
 "vat-purnima-rangoli": [

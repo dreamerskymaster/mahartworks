@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "vasu-dhanteras-rangoli",
+"title": "Vasu & Dhanteras Rangoli",
+"cat": "rangoli",
+"date": "2026-11-05",
+"w": 1200,
+"h": 927,
+"cert": "MS-2026-0622"
+},
+{
 "id": "stained-glass-art-in-canvas",
 "title": "Stained Glass Art in Canvas",
 "cat": "paintings",
@@ -7,6 +16,33 @@ window.ARTWORKS = [
 "w": 1185,
 "h": 863,
 "cert": "MS-2026-0618"
+},
+{
+"id": "diwali-rangoli-made-in-temple",
+"title": "Diwali Rangoli Made in Temple",
+"cat": "rangoli",
+"date": "2026-11-05",
+"w": 1200,
+"h": 1166,
+"cert": "MS-2026-0621"
+},
+{
+"id": "3d-rangoli-2",
+"title": "3D Rangoli",
+"cat": "rangoli",
+"date": "2026-11-05",
+"w": 976,
+"h": 1200,
+"cert": "MS-2026-0620"
+},
+{
+"id": "3d-rangoli",
+"title": "3D Rangoli",
+"cat": "rangoli",
+"date": "2026-11-05",
+"w": 1200,
+"h": 843,
+"cert": "MS-2026-0619"
 },
 {
 "id": "dot-rangoli-design",
