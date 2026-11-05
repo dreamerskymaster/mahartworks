@@ -2526,6 +2526,30 @@
 "MS-2026-0622": [
 "b22be276ab4bec1249c924d063e0317e",
 "vasu-dhanteras-rangoli"
+],
+"MS-2026-0623": [
+"195510294f80eaa16e9978caa101ccae",
+"branch-work"
+],
+"MS-2026-0624": [
+"b867c1f529a7c1a10777ddac0c34d496",
+"lets-grow-old-together"
+],
+"MS-2026-0625": [
+"90de3a308958219b90b46c4e133086b1",
+"love-is-caring-couple"
+],
+"MS-2026-0626": [
+"b10d36db0131773097b14374d4bcd75f",
+"madhubani-bird"
+],
+"MS-2026-0627": [
+"f08fdd40efcc53bf958e312179a616e0",
+"mandala-in-plants"
+],
+"MS-2026-0628": [
+"4da8dac136204edf57b101dd27501f4f",
+"peacock-mandala"
 ]
 },
 "facts": {
@@ -2852,6 +2876,12 @@
 "hgt": 1200,
 "px": 3719898,
 "w": 865
+},
+"195510294f80eaa16e9978caa101ccae": {
+"h": 2758783676488164139,
+"hgt": 1200,
+"px": 3911283,
+"w": 877
 },
 "19e01e4f4fa3b6e33d852407ba01ed41": {
 "h": 4231392213295614291,
@@ -3484,6 +3514,12 @@
 "w": 816
 },
 "4d9087b835bb615063b3f705d916d3d5": {
+"h": 11257454903484031926,
+"hgt": 1200,
+"px": 1764180,
+"w": 960
+},
+"4da8dac136204edf57b101dd27501f4f": {
 "h": 11257454903484031926,
 "hgt": 1200,
 "px": 1764180,
@@ -4389,6 +4425,12 @@
 "px": 3136320,
 "w": 960
 },
+"90de3a308958219b90b46c4e133086b1": {
+"h": 4665901419168449753,
+"hgt": 921,
+"px": 1753920,
+"w": 1200
+},
 "91b28d0e4debd45e271dba37cd355ee9": {
 "h": 731559298345665430,
 "hgt": 1171,
@@ -4899,6 +4941,12 @@
 "px": 3599766,
 "w": 1035
 },
+"b10d36db0131773097b14374d4bcd75f": {
+"h": 9961149885162695308,
+"hgt": 900,
+"px": 12000000,
+"w": 1200
+},
 "b1970ec873e9290c94ef1f7fb21f9c74": {
 "h": 5643739002662149067,
 "hgt": 1136,
@@ -4976,6 +5024,12 @@
 "hgt": 937,
 "px": 4784175,
 "w": 1200
+},
+"b867c1f529a7c1a10777ddac0c34d496": {
+"h": 9386064729392826466,
+"hgt": 1200,
+"px": 1394280,
+"w": 1004
 },
 "b892f0c276cce58697cd9a51f533def2": {
 "h": 2409770106781371777,
@@ -5805,6 +5859,12 @@
 "px": 9036720,
 "w": 1200
 },
+"f08fdd40efcc53bf958e312179a616e0": {
+"h": 15336646606278421724,
+"hgt": 1200,
+"px": 1459264,
+"w": 1200
+},
 "f1be47cd23e1e58317a9ca04e53b0ee4": {
 "h": 3617017463530906050,
 "hgt": 1072,
@@ -6229,6 +6289,10 @@
 ],
 "boy-hanging-on-perimal-feet": [
 "0ca45f8d061a40cc879927929517fc3e",
+1
+],
+"branch-work": [
+"195510294f80eaa16e9978caa101ccae",
 1
 ],
 "branches-and-bird-on-rainbow-wash": [
@@ -7183,6 +7247,10 @@
 "15a1aedbe1c615817e0c6d216f85a620",
 1
 ],
+"lets-grow-old-together": [
+"b867c1f529a7c1a10777ddac0c34d496",
+1
+],
 "lets-grow-old-together-couple": [
 "e363072aed339d978d5f9864bf86bd5c",
 1
@@ -7247,6 +7315,10 @@
 "b7d458d77d63cc6899e8d4d07530591c",
 1
 ],
+"love-is-caring-couple": [
+"90de3a308958219b90b46c4e133086b1",
+1
+],
 "lovebirds-and-cage-at-sunset": [
 "38377c1c12f8080ed2c852c02f34513d",
 1
@@ -7277,6 +7349,10 @@
 ],
 "madhubani": [
 "95d8811725cc25be115de1357780d893",
+1
+],
+"madhubani-bird": [
+"b10d36db0131773097b14374d4bcd75f",
 1
 ],
 "madhubani-fish-and-lotus": [
@@ -7353,6 +7429,10 @@
 ],
 "mandala-art-9": [
 "ee6091e6527059256f9e5f7ca61f5cd0",
+1
+],
+"mandala-in-plants": [
+"f08fdd40efcc53bf958e312179a616e0",
 1
 ],
 "mickey-minnie-valentines-day": [
@@ -7561,6 +7641,10 @@
 ],
 "peacock-line-art": [
 "4d9087b835bb615063b3f705d916d3d5",
+1
+],
+"peacock-mandala": [
+"4da8dac136204edf57b101dd27501f4f",
 1
 ],
 "peacock-on-tree-silhouette": [

@@ -18,6 +18,51 @@ window.ARTWORKS = [
 "cert": "MS-2026-0618"
 },
 {
+"id": "peacock-mandala",
+"title": "Peacock Mandala",
+"cat": "mandalas",
+"date": "2026-11-05",
+"w": 960,
+"h": 1200,
+"cert": "MS-2026-0628"
+},
+{
+"id": "mandala-in-plants",
+"title": "Mandala in Plants",
+"cat": "mandalas",
+"date": "2026-11-05",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0627"
+},
+{
+"id": "madhubani-bird",
+"title": "Madhubani Bird",
+"cat": "paintings",
+"date": "2026-11-05",
+"w": 1200,
+"h": 900,
+"cert": "MS-2026-0626"
+},
+{
+"id": "love-is-caring-couple",
+"title": "Love Is Caring Couple",
+"cat": "paintings",
+"date": "2026-11-05",
+"w": 1200,
+"h": 921,
+"cert": "MS-2026-0625"
+},
+{
+"id": "lets-grow-old-together",
+"title": "Lets Grow Old Together",
+"cat": "paintings",
+"date": "2026-11-05",
+"w": 1004,
+"h": 1200,
+"cert": "MS-2026-0624"
+},
+{
 "id": "diwali-rangoli-made-in-temple",
 "title": "Diwali Rangoli Made in Temple",
 "cat": "rangoli",
@@ -25,6 +70,15 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1166,
 "cert": "MS-2026-0621"
+},
+{
+"id": "branch-work",
+"title": "Branch Work",
+"cat": "paintings",
+"date": "2026-11-05",
+"w": 877,
+"h": 1200,
+"cert": "MS-2026-0623"
 },
 {
 "id": "3d-rangoli-2",
