@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "stained-glass-art-in-canvas",
+"title": "Stained Glass Art in Canvas",
+"cat": "paintings",
+"date": "2026-11-05",
+"w": 1185,
+"h": 863,
+"cert": "MS-2026-0618"
+},
+{
 "id": "dot-rangoli-design",
 "title": "Dot Rangoli Design",
 "cat": "rangoli",

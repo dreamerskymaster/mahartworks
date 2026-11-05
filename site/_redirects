@@ -566,4 +566,5 @@
 /verify/MS-2026-0615 /art/dot-rangoli#certificate 301
 /verify/MS-2026-0616 /art/dot-rangoli-design#certificate 301
 /verify/MS-2026-0617 /art/lippan-mirror-art-painting-on-mdf#certificate 301
+/verify/MS-2026-0618 /art/stained-glass-art-in-canvas#certificate 301
 /verify/* /verify?n=:splat 302

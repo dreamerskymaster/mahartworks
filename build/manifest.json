@@ -2506,6 +2506,10 @@
 "MS-2026-0617": [
 "f99b06b1d028fbe528792e7be990edb1",
 "lippan-mirror-art-painting-on-mdf"
+],
+"MS-2026-0618": [
+"3d6c84ab941670e629d16f901b6ec7ae",
+"stained-glass-art-in-canvas"
 ]
 },
 "facts": {
@@ -3264,6 +3268,12 @@
 "hgt": 1200,
 "px": 1228800,
 "w": 900
+},
+"3d6c84ab941670e629d16f901b6ec7ae": {
+"h": 2852864558657373509,
+"hgt": 863,
+"px": 1022655,
+"w": 1185
 },
 "3e7ee611e21afeeb1221240c6b529eb0": {
 "h": 10246658136774882063,
@@ -7847,6 +7857,10 @@
 ],
 "stained-glass-arch-window": [
 "16fe221f2e2ba9779be674247cd460a4",
+1
+],
+"stained-glass-art-in-canvas": [
+"3d6c84ab941670e629d16f901b6ec7ae",
 1
 ],
 "star-and-lotus-rangoli": [
