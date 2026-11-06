@@ -1,5 +1,10 @@
 # Vanna Reverie — Art portfolio of Mahalakshmi Srikanth
 
+[![Launch Video](https://img.shields.io/badge/Launch%20Video-MP4-ff0055?style=for-the-badge&logo=youtube&logoColor=white)](brag-output/brag.mp4)
+
+![Demo](docs/demo.gif)
+
+
 Live at **https://mah-artworks.pages.dev** · repo `dreamerskymaster/mahartworks`
 
 Static site in `site/` (plain HTML/CSS/JS, no build step on the server). The gallery images
