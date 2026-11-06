@@ -1,0 +1,14 @@
+{
+  "name": "mahartworks-shop-tests",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-concurrency=1 unit.test.mjs e2e.test.mjs",
+    "test:unit": "node --test unit.test.mjs",
+    "test:e2e": "node --test --test-concurrency=1 e2e.test.mjs",
+    "serve": "node serve.mjs"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^24.0.0"
+  }
+}

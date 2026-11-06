@@ -8,11 +8,8 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   Her Drive edits go live within ~20 min. Nothing to do day to day.
 - **2026-10-22:** her duplicate camera-named copies moved to the Drive subfolder "Duplicates - not on website",
   4 new photos named, names starting with a digit fixed (PR #11). Her plain-language guide was emailed to her.
-- **2026-10-25/26:** her emails fixed: glass paintings → Paintings (PR #13, merged); Crafts trimmed to the doll and
-  diya holders only (2026-10-26). She marked our mail "Not spam" and deleted the duplicate pink mandala
-  (the "Lippan art" copy question is closed).
-- **Shop: built, not live.** PR #8 (branch `shop`) is rebranded to Vanna Reverie and was up to date with `main`
-  on 2026-10-22. It must wait (see Shop below). It is the only long-lived branch besides `main`.
+- **2026-10-25/26:** her emails fixed: glass paintings → Paintings (PR #13, merged); Crafts trimmed to the doll and diya holders only (2026-10-26).
+- **Shop: merged to main, awaiting go-live checklist.** Preview: https://preview.mah-artworks-shop.pages.dev. See shop/README.md.
 - **Pending, needs Ajith or his mom** (in order):
   1. Shop admin: she signs in once on the shop preview; then add her to `shop.admins` (SQL in `shop/README.md`).
   2. She enters her UPI ID in /admin → Settings.
@@ -60,8 +57,7 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Renames:** title follows her new filename; type follows it too when the name has a category word
   (`type_named` in sync.py), else kept. `other` stays hidden. Camera names wait. Videos skipped.
   Safety stop: a run that would remove more than a third of the artworks publishes nothing.
-- **Tests:** `python3 -m unittest discover -s tests -v` (98) and `npm ci --prefix tests/e2e && npm test --prefix tests/e2e`
-  (60, real Chrome at phone/tablet/laptop sizes). Run both before pushing site changes; `test.yml` runs them in CI. Add a
+- **Tests:**  (98) and  (60, real Chrome at phone/tablet/laptop sizes), and  (49 shop cases). Run before pushing site changes;  runs them in CI.
   case for any new naming rule or UI behaviour. Linux CI Chrome lays out slightly differently from a Mac — trust CI.
 - **Same-named files:** Drive allows several files with one name (2026-10: three different "Mandala art" drawings).
   A file is its (name, md5) pair: sync keeps every pair, `drive.path(name, md5)` fetches the right one and the

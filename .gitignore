@@ -6,3 +6,5 @@ build/cache
 build/originals/
 __pycache__/
 tests/e2e/node_modules/
+tests/shop/node_modules/
+shop/.wrangler/

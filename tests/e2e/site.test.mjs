@@ -617,3 +617,21 @@ describe("certificates of authenticity", () => {
     await done(p);
   });
 });
+
+describe("shop links (the shop is a separate site, opened in a new tab)", () => {
+  test("viewer: 'Buy / check availability' opens the artwork in the shop", async () => {
+    const a = (await (async () => { const p = await open("laptop"); const x = await p.evaluate(() => ARTWORKS[0]); await done(p); return x; })());
+    const p = await open("phone", { path: `/#art/${a.id}` }); await sleep(400);
+    const buy = await p.$eval("#lb-cap .lb-buy", (l) => ({ href: l.href, target: l.target, rel: l.rel }));
+    assert.deepEqual(buy, { href: `https://mah-artworks-shop.pages.dev/p/${a.id}`, target: "_blank", rel: "noopener" });
+    assert.equal(await sideways(p), "", "phone viewer with the buy link");
+    await done(p);
+  });
+  test("menu and footer link to the shop in a new tab", async () => {
+    const p = await open("laptop");
+    const links = await p.$$eval('a[href="https://mah-artworks-shop.pages.dev/"]', (ls) => ls.map((l) => [l.closest("nav, footer").tagName, l.target, l.rel]));
+    assert.deepEqual(links, [["NAV", "_blank", "noopener"], ["FOOTER", "_blank", "noopener"]]);
+    assert.deepEqual(p.problems, []);
+    await done(p);
+  });
+});

@@ -20,6 +20,8 @@ const HERO = ["Kathakali Face Framed", "Radha Seeing Krishna Reflection", "Panch
 const SPOTLIGHT = ["Radha Seeing Krishna Reflection", "Kathakali Face Framed", "Panchamukhi Hanuman Painting",
   "Seven Running Horses Framed", "Tirupati Balaji Bead Embellished", "Ardhanarishvara Painting"];
 const PAGE = 48;
+// The shop is a separate site (shop/ in this repo); artworks open there in a new tab.
+const SHOP = "https://mah-artworks-shop.pages.dev";
 
 const art = window.ARTWORKS || [];
 const $ = (s) => document.querySelector(s);
@@ -69,7 +71,7 @@ function nav() {
   const spy = new IntersectionObserver((es) => es.forEach((e) => {
     if (e.isIntersecting) links.forEach((l) => l.classList.toggle("active", l.hash === "#" + e.target.id));
   }), { rootMargin: "-45% 0px -50% 0px" });
-  links.forEach((l) => { const s = document.querySelector(l.hash); if (s) spy.observe(s); });
+  links.forEach((l) => { const s = l.hash && document.querySelector(l.hash); if (s) spy.observe(s); });
 }
 
 /* ---------- hero + stats ---------- */
@@ -233,7 +235,8 @@ function openLb(i) {
   img.src = `img/${a.id}.webp`;
   img.alt = a.title;
   $("#lb-cap").innerHTML = `${esc(a.title)}<small>${[CAT_LABEL[a.cat], fmtDate(a.date)].filter(Boolean).join(" · ")}</small>` +
-    (a.cert ? `<small class="lb-cert">Certificate ${esc(a.cert)}</small>` : "");
+    (a.cert ? `<small class="lb-cert">Certificate ${esc(a.cert)}</small>` : "") +
+    `<a class="lb-buy" href="${SHOP}/p/${encodeURIComponent(a.id)}" target="_blank" rel="noopener">Buy / check availability<span class="sr-only"> (opens the shop in a new tab)</span></a>`;
   $("#lb-count").textContent = `${lbIndex + 1} / ${shown.length}`;
   [lbIndex - 1, lbIndex + 1].forEach((j) => { const n = shown[(j + shown.length) % shown.length]; new Image().src = `img/${n.id}.webp`; });
   history.replaceState(null, "", `#art/${a.id}`);
@@ -272,7 +275,7 @@ function viewer() {
     if (e.key === "ArrowLeft") openLb(lbIndex - 1);
     if (e.key === "ArrowRight") openLb(lbIndex + 1);
     if (e.key === "Tab") {                       // keep focus inside the viewer
-      const f = [...lb.querySelectorAll("button")];
+      const f = [...lb.querySelectorAll("button, a[href]")];
       const i = f.indexOf(document.activeElement);
       e.preventDefault(); f[(i + (e.shiftKey ? -1 : 1) + f.length) % f.length].focus();
     }

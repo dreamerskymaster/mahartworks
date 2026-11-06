@@ -1,0 +1,3 @@
+# Pretty addresses for artworks and orders (served by product.html and order.html).
+/p/*      /product  200
+/order/*  /order    200
