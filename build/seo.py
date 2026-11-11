@@ -11,7 +11,8 @@ This writes plain HTML they can read, all from data.js (never edit the outputs b
   site/_redirects             /verify/<number> -> /art/<id>#certificate for every certificate (Cloudflare Pages)
   site/sitemap.xml            every page, with <lastmod> and image entries
   site/llms.txt, llms-full.txt  a plain-text summary for AI assistants (llmstxt.org)
-  site/index.html             only between the <!-- seo:… --> markers: newest artworks and category links
+  site/index.html             only between the <!-- seo:… --> markers: newest artworks, category links, footer block
+  site/policies.html          only between <!-- seo:footextra --> markers: the footer's Subscribe/views/links block
 Output depends only on the inputs (no clock), so re-running with the same data changes nothing.
 """
 import html, json, os, re, sys
@@ -19,7 +20,7 @@ from urllib.parse import quote
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 SITE = os.path.join(HERE, "..", "site")
-BASE = "https://mah-artworks.pages.dev"
+BASE = "https://vanna-reverie.pages.dev"
 ARTIST = "Mahalakshmi Srikanth"
 BRAND = "Vanna Reverie"         # her art brand; she is the artist and the seller
 TAGLINE = "Every Stroke Tells a Story"
@@ -110,6 +111,37 @@ BRAND_LINK = ('<a class="brand" href="{home}"><img class="brand-logo" src="/bran
               'width="101" height="40"><span class="brand-by">by ' + ARTIST + '</span><span class="sr-only"> — home</span></a>')
 FOOT_LOGO = ('<img class="foot-logo" src="/brand/logo.webp" alt="' + BRAND + ' — ' + TAGLINE + '" width="280" height="134" '
              'loading="lazy" decoding="async">')
+# Her 2026-11-06 ask ("want something like this": the Nippon Gallery footer): a Subscribe box, a total-views counter
+# and a short list of links. js/footer.js talks to functions/api/ (subscribe, visits); without them (or without
+# JavaScript) the counter stays hidden and the box says it can't subscribe right now. Same block on every page.
+FOOT_EXTRA = """  <div class="foot-extra">
+    <section class="foot-sub" aria-labelledby="sub-h">
+      <p class="foot-h" id="sub-h">Subscribe</p>
+      <p class="foot-note">New artworks, by email. No spam; unsubscribe any time.</p>
+      <form class="sub-form" id="sub-form" novalidate>
+        <label class="sr-only" for="sub-email">Email address</label>
+        <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email" maxlength="254" required>
+        <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-solid" type="submit">Subscribe</button>
+        <p class="sub-msg" id="sub-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="foot-visits" id="visits" aria-label="Total views" hidden>
+      <p class="visits-n" id="visits-n"></p>
+      <p class="visits-l">Total views</p>
+    </section>
+    <nav class="foot-more" aria-labelledby="more-h">
+      <p class="foot-h" id="more-h">For art lovers</p>
+      <ul>
+        <li><a href="/#gallery">Gallery</a></li>
+        <li><a href="/#journey">Her journey</a></li>
+        <li><a href="/#about">About the artist</a></li>
+        <li><a href="/#contact">Commission a piece</a></li>
+        <li><a href="/verify">Verify a certificate</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script src="/js/footer.js" defer></script>"""
 
 def head(*, title, description, path, image=None, image_alt="", w=1200, h=630, og_type="website", data=None, noindex=False):
     url = BASE + path if path else None
@@ -162,6 +194,7 @@ def foot(art, year, current=None):
     return f"""<footer>
   {FOOT_LOGO}
   {browse_links(art, current)}
+{FOOT_EXTRA}
   <p>© <span id="year">{year}</span> {ARTIST}. All rights reserved.</p>
   <p class="small">All artworks and images on this site are the original work of {ARTIST} and are protected by copyright. They may not be copied, downloaded, reproduced or used in any form without written permission.</p>
   <ul class="foot-links">
@@ -283,7 +316,7 @@ def certificate(a, email):
       <p>Each original is accompanied by a Certificate of Authenticity signed by the artist. It carries this number,
         her MS seal and a QR code that opens this page.</p>
       <p class="coa-how">To verify a certificate, scan its QR code or enter its number at
-        <a href="/verify">mah-artworks.pages.dev/verify</a>: a genuine certificate for this artwork brings you back here.{ask}</p>
+        <a href="/verify">vanna-reverie.pages.dev/verify</a>: a genuine certificate for this artwork brings you back here.{ask}</p>
     </div>
   </section>"""
 
@@ -316,7 +349,7 @@ def verify_page(art, email, year):
     <div class="verify-result" id="cert-result" role="status" aria-live="polite"></div>
   </div>
   <noscript><p class="verify-help">This check needs JavaScript. You can also open
-    <strong>mah-artworks.pages.dev/verify/</strong> followed by the number.</p></noscript>
+    <strong>vanna-reverie.pages.dev/verify/</strong> followed by the number.</p></noscript>
   <p class="verify-help">A certificate is genuine only if its number opens the same artwork that it describes. For any doubt,
     ask through <a href="/#contact">her contact details</a>{write_to}.</p>
 </main>
@@ -475,7 +508,7 @@ def splice(doc, name, content):
     """Replace what is between <!-- seo:name --> and <!-- /seo:name --> (the markers stay)."""
     pat = re.compile(r"(<!-- seo:%s -->).*?(<!-- /seo:%s -->)" % (name, name), re.S)
     if not pat.search(doc):
-        raise SystemExit(f"index.html is missing the <!-- seo:{name} --> … <!-- /seo:{name} --> markers")
+        raise SystemExit(f"a page is missing the <!-- seo:{name} --> … <!-- /seo:{name} --> markers")
     return pat.sub(lambda m: m[1] + "\n" + content + "\n" + m[2], doc)
 
 
@@ -485,6 +518,7 @@ def home_blocks(doc, art):
     latest = (f'<noscript><div class="noscript-list"><p>Browse by category: {cats}</p>'
               f'<h3>Newest artworks</h3>{tiles(art[:LATEST])}</div></noscript>')
     doc = splice(doc, "latest", "    " + latest)
+    doc = splice(doc, "footextra", FOOT_EXTRA)
     return splice(doc, "browse", "  " + browse_links(art))
 
 
@@ -535,6 +569,9 @@ def generate(site=SITE):
     changed += write(os.path.join(site, "llms-full.txt"), llms(art, by_cat, ct, site, full=True))
     idx = os.path.join(site, "index.html")
     changed += write(idx, home_blocks(open(idx, encoding="utf-8").read(), art))
+    pol = os.path.join(site, "policies.html")             # hand-written, but its footer gets the same block
+    if os.path.exists(pol):
+        changed += write(pol, splice(open(pol, encoding="utf-8").read(), "footextra", FOOT_EXTRA))
     print(f"seo: {len(art)} artwork pages, {sum(1 for k in CAT if by_cat[k])} category pages "
           f"({changed} files written, {len(removed)} removed)")
     return {"artworks": len(art), "written": changed, "removed": removed}

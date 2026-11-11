@@ -3,7 +3,7 @@
   X-Frame-Options: DENY
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()
-  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://mah-artworks.pages.dev https://geyyqbgqknyngmbyfjxd.supabase.co; style-src 'self' 'unsafe-inline'; script-src 'self' https://mah-artworks.pages.dev; font-src 'self'; connect-src 'self' https://geyyqbgqknyngmbyfjxd.supabase.co https://mah-artworks.pages.dev; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; img-src 'self' data: https://vanna-reverie.pages.dev https://geyyqbgqknyngmbyfjxd.supabase.co; style-src 'self' 'unsafe-inline'; script-src 'self' https://vanna-reverie.pages.dev; font-src 'self'; connect-src 'self' https://geyyqbgqknyngmbyfjxd.supabase.co https://vanna-reverie.pages.dev; manifest-src 'self'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests
 
 /admin
   X-Robots-Tag: noindex, nofollow

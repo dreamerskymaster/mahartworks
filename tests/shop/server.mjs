@@ -12,7 +12,7 @@ import { handle as shippingQuote } from "../../shop/server/quote.js";
 
 const SHOP = fileURLToPath(new URL("../../shop/public/", import.meta.url));
 const SITE = fileURLToPath(new URL("../../site/", import.meta.url));
-const REMOTE = ["https://mah-artworks.pages.dev", "https://geyyqbgqknyngmbyfjxd.supabase.co"];
+const REMOTE = ["https://vanna-reverie.pages.dev", "https://geyyqbgqknyngmbyfjxd.supabase.co"];
 const TYPES = { ".html": "text/html; charset=utf-8", ".js": "text/javascript", ".css": "text/css", ".json": "application/json",
   ".png": "image/png", ".jpg": "image/jpeg", ".webp": "image/webp", ".woff2": "font/woff2", ".svg": "image/svg+xml", ".txt": "text/plain" };
 export const QUOTE_KEY = "test-quote-key";

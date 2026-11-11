@@ -50,6 +50,10 @@ export async function start() {
   const redirects = await redirectRules();
   const srv = createServer(async (req, res) => {
     let path = decodeURIComponent(new URL(req.url, "http://x").pathname);
+    // The footer API (functions/api/, a Cloudflare Pages Function) doesn't exist here: a zero count (the counter
+    // stays hidden) and a subscribe that is "unavailable", which is what the page does when the API is down.
+    if (path === "/api/visits") { res.writeHead(200, { "Content-Type": "application/json" }); return res.end('{"total":0}'); }
+    if (path.startsWith("/api/")) { res.writeHead(503, { "Content-Type": "application/json" }); return res.end('{"error":"unavailable"}'); }
     const to = redirect(redirects, path);
     if (to) { res.writeHead(to.code, { Location: to.location }); return res.end(); }
     if (path.endsWith(".html") && path !== "/index.html") { res.writeHead(308, { Location: path.slice(0, -5) }); return res.end(); }

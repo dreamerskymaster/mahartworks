@@ -21,7 +21,11 @@ const SPOTLIGHT = ["Radha Seeing Krishna Reflection", "Kathakali Face Framed", "
   "Seven Running Horses Framed", "Tirupati Balaji Bead Embellished", "Ardhanarishvara Painting"];
 const PAGE = 48;
 // The shop is a separate site (shop/ in this repo); artworks open there in a new tab.
+// SHOP_LIVE = false until the shop's production deploy exists (shop/README.md "Go live"): until then the menu and
+// footer shop links stay hidden and the viewer shows no Buy button, so nobody lands on a "not found" page.
 const SHOP = "https://mah-artworks-shop.pages.dev";
+const SHOP_LIVE = false;
+if (SHOP_LIVE) document.querySelectorAll(".shop-link").forEach((l) => { l.hidden = false; });
 
 const art = window.ARTWORKS || [];
 const $ = (s) => document.querySelector(s);
@@ -236,7 +240,7 @@ function openLb(i) {
   img.alt = a.title;
   $("#lb-cap").innerHTML = `${esc(a.title)}<small>${[CAT_LABEL[a.cat], fmtDate(a.date)].filter(Boolean).join(" · ")}</small>` +
     (a.cert ? `<small class="lb-cert">Certificate ${esc(a.cert)}</small>` : "") +
-    `<a class="lb-buy" href="${SHOP}/p/${encodeURIComponent(a.id)}" target="_blank" rel="noopener">Buy / check availability<span class="sr-only"> (opens the shop in a new tab)</span></a>`;
+    (SHOP_LIVE ? `<a class="lb-buy" href="${SHOP}/p/${encodeURIComponent(a.id)}" target="_blank" rel="noopener">Buy / check availability<span class="sr-only"> (opens the shop in a new tab)</span></a>` : "");
   $("#lb-count").textContent = `${lbIndex + 1} / ${shown.length}`;
   [lbIndex - 1, lbIndex + 1].forEach((j) => { const n = shown[(j + shown.length) % shown.length]; new Image().src = `img/${n.id}.webp`; });
   history.replaceState(null, "", `#art/${a.id}`);

@@ -115,7 +115,7 @@ def main():
     y = top + lg.height + 40
     d.text((P // 2, y), "Original art by Mahalakshmi Srikanth", font=font(32), fill=INK, anchor="mt")
     d.text((P // 2, y + 56), "PAINTINGS · SKETCHES · MANDALAS · RANGOLI", font=font(17), fill=GOLD_DARK, anchor="mt")
-    d.text((P // 2, y + 94), "mah-artworks.pages.dev", font=font(22), fill=MUTED, anchor="mt")
+    d.text((P // 2, y + 94), "vanna-reverie.pages.dev", font=font(22), fill=MUTED, anchor="mt")
     og.save(os.path.join(SITE, "og.jpg"), quality=86, optimize=True, progressive=True)
     print("brand/, icons and og.jpg written:", full.size, word.size, mark.size)
 

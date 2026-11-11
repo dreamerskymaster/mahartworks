@@ -3,5 +3,5 @@
 // database (row level security and the shop_* functions). Never put a secret or service-role key here.
 export const SUPABASE_URL = "https://geyyqbgqknyngmbyfjxd.supabase.co";
 export const SUPABASE_KEY = "sb_publishable_ft5X6G4nBOg-l-PD3tNC-g_h0UOqa78";
-export const MAIN_SITE = "https://mah-artworks.pages.dev";   // the gallery: images, data.js, certificate.js
+export const MAIN_SITE = "https://vanna-reverie.pages.dev";   // the gallery: images, data.js, certificate.js
 export const SHOP_SITE = "https://mah-artworks-shop.pages.dev";

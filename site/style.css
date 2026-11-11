@@ -509,3 +509,34 @@ html.calm .grain { display: none; }
   .coa-seal { width: 56px; }
   .verify-card img { width: 72px; height: 72px; }
 }
+
+/* ---------- footer: Subscribe box, total views, links (her 2026-11-06 ask; js/footer.js) ---------- */
+.shop-link[hidden] { display: none !important; }
+.foot-extra { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr) minmax(0, 1fr); gap: 1.6rem 2.4rem; align-items: start;
+  max-width: 980px; margin: 0 auto 2rem; padding: 1.8rem 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); text-align: left; }
+.foot-extra > .foot-sub { padding: 0; margin: 0; }   /* not the big page-section padding */
+.foot-h { font: 600 .72rem var(--sans); letter-spacing: .32em; text-transform: uppercase; color: var(--gold); margin: 0 0 .7rem !important; }
+.foot-note { font-size: .85rem; margin: 0 0 .8rem !important; }
+.sub-form { display: grid; gap: .6rem; position: relative; }
+.sub-form input[type="email"] { width: 100%; box-sizing: border-box; min-height: 46px; padding: .6rem 1.1rem; border-radius: 999px;
+  border: 1px solid var(--line); background: var(--bg-2); color: var(--text); font: 500 1rem var(--sans); }
+.sub-form input[type="email"]::placeholder { color: var(--muted); opacity: .7; }
+.sub-form input[type="email"]:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
+.sub-form .btn { width: 100%; }
+.sub-form .btn:disabled { opacity: .6; cursor: progress; }
+.sub-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
+.sub-msg { min-height: 1.3em; font-size: .85rem; margin: 0 !important; }
+.sub-msg.ok { color: var(--text); }
+.sub-msg.err { color: #e07a70; }
+.foot-extra > .foot-visits { background: var(--paper); color: var(--ink); border-radius: 10px; padding: 1.4rem 1rem; margin: 0; text-align: center; box-shadow: 0 6px 18px var(--shadow); }
+.foot-visits[hidden] { display: none; }
+.visits-n { font: 500 2.5rem/1.1 var(--serif); margin: 0 !important; font-variant-numeric: lining-nums tabular-nums; color: var(--ink); }
+.visits-l { font: 600 .68rem var(--sans); letter-spacing: .22em; text-transform: uppercase; color: #5d6178; margin: .35rem 0 0 !important; }
+.foot-more ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.foot-more a { color: var(--text); text-decoration: none; font-size: .95rem; }
+.foot-more a::before { content: "›"; color: var(--gold); margin-right: .55rem; font-weight: 600; }
+.foot-more a:hover { color: var(--gold); text-decoration: underline; }
+@media (max-width: 760px) {
+  .foot-extra { grid-template-columns: minmax(0, 1fr); max-width: 460px; }
+  .foot-visits { max-width: 260px; }
+}
