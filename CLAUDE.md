@@ -15,6 +15,8 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   23:10 (text in `~/Projects/vanna-reverie/private/`) with her private subscriber-list link and the pending list:
   2 camera-named photos (she deleted both as duplicates 11-10), the skipped .mp4, UPI ID + Rs 1 test, prices.
   23:39 a full overview email was sent too (private/email-to-amma-2026-11-10-overview.txt).
+- **2026-11-10 23:44 her ask, done (PR #20):** public contact is now **vannaart24@gmail.com** + Instagram **@vannaart24**
+  (CONTACT in app.js; policies, shop links, JSON-LD). She is still emailed at mahasriphoto24 (the address she writes from).
 - **2026-10-22:** her duplicate camera-named copies moved to the Drive subfolder "Duplicates - not on website",
   4 new photos named, names starting with a digit fixed (PR #11). Her plain-language guide was emailed to her.
 - **2026-10-25/26:** her emails fixed: glass paintings → Paintings (PR #13, merged); Crafts trimmed to the doll and diya holders only (2026-10-26).
