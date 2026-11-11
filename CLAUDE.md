@@ -10,7 +10,10 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **2026-11-10 (her 11-06 emails):** address moved to vanna-reverie.pages.dev (new Pages project; old one redirects);
   footer like the Nippon Gallery one she sent: Subscribe box, "Total views" counter (page loads, from 0 on 11-10),
   "For art lovers" links (README → Publishing → Footer API). Shop links hidden (`SHOP_LIVE = false` in app.js) because
-  the shop has no production deploy yet and they led to a Cloudflare 404 after the 11-05 merge.
+  the shop has no production deploy yet and they led to a Cloudflare 404 after the 11-05 merge. PR #17 merged
+  (f95b39e); old address verified 301 on every path. Email "Done: your new website address…" sent to her 11-10
+  23:10 (text in `~/Projects/vanna-reverie/private/`) with her private subscriber-list link and the pending list:
+  2 camera-named photos (PicsArt_09-21-01.35.48.jpg, PicsArt_09-21-06.05.39.jpg), the skipped .mp4, UPI ID + Rs 1 test, prices.
 - **2026-10-22:** her duplicate camera-named copies moved to the Drive subfolder "Duplicates - not on website",
   4 new photos named, names starting with a digit fixed (PR #11). Her plain-language guide was emailed to her.
 - **2026-10-25/26:** her emails fixed: glass paintings → Paintings (PR #13, merged); Crafts trimmed to the doll and diya holders only (2026-10-26).
