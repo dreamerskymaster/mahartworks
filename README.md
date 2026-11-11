@@ -28,7 +28,7 @@ page load adds one; `js/footer.js`), `subscribe` saves Subscribe-box addresses, 
 private list (copy all for Bcc, CSV, Remove). Data: the D1 database `vanna-reverie` (tables `counters`,
 `subscribers`), bound as `DB` on the project with the secret `LIST_KEY` and `COUNTER_NAME` (production
 `pageviews`, previews `pageviews-preview`). Shared helpers are in `api-lib/` (outside `functions/`, so they are not routes).
-`_headers` doesn't apply to Function responses, so each sets its own headers. The private list link is in Claude memory.
+`_headers` doesn't apply to Function responses, so each sets its own headers. The private list link is in `~/Projects/vanna-reverie/private/subscriber-list-link.txt` (outside the repo).
 
 Preview locally with `cd site && python3 -m http.server 8765`.
 
