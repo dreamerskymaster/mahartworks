@@ -360,8 +360,8 @@ describe("display settings and accessibility", () => {
     const p = await open("phone");
     const r = await p.evaluate(() => ({ links: [...document.querySelectorAll("#contact-links a")].map((a) => a.href),
       foot: document.querySelector("footer").textContent }));
-    assert.ok(r.links.some((l) => l.startsWith("mailto:mahasriphoto24@gmail.com")));
-    assert.ok(r.links.includes("https://instagram.com/mah_artworks"));
+    assert.ok(r.links.some((l) => l.startsWith("mailto:vannaart24@gmail.com")));
+    assert.ok(r.links.includes("https://instagram.com/vannaart24"));
     assert.match(r.foot, /Made by Ajith, for his only loving Mom/);
     assert.match(r.foot, new RegExp(`© ${new Date().getFullYear()} Mahalakshmi Srikanth`));
     await done(p);
@@ -577,7 +577,7 @@ describe("certificates of authenticity", () => {
       mail: document.querySelector("#cert-result a[href^='mailto:']")?.getAttribute("href") }));
     assert.equal(r.input, "MS-1999-9999");
     assert.match(r.text, /MS-1999-9999 is not a certificate issued by Mahalakshmi Srikanth/);
-    assert.match(r.mail || "", /^mailto:mahasriphoto24@gmail\.com\?subject=Certificate%20check/);
+    assert.match(r.mail || "", /^mailto:vannaart24@gmail\.com\?subject=Certificate%20check/);
     assert.doesNotMatch(r.text, /Genuine/);
     await done(p);
   });

@@ -16,7 +16,7 @@ function view(p) {
   const inCart = readCart().includes(p.id);
   const buyable = p.status === "available" && p.for_sale;
   const state = p.status === "sold" ? `<p class="notice"><strong>Sold.</strong> This original has found its home. Similar work can be commissioned —
-      <a href="mailto:mahasriphoto24@gmail.com">get in touch</a>.</p>`
+      <a href="mailto:vannaart24@gmail.com">get in touch</a>.</p>`
     : p.status === "reserved" ? `<p class="notice warn"><strong>Reserved.</strong> Someone is paying for this piece right now. If they don't, it will be available again within two days.</p>` : "";
   box.innerHTML = `<article class="product">
     <div class="gallery-main"><img src="${imgUrl(p.id)}" alt="${esc(p.title)}" decoding="async" fetchpriority="high"></div>

@@ -20,7 +20,7 @@ function render() {
   $("#products").innerHTML = list.length ? list.map(card).join("") : `<div class="empty" style="grid-column:1/-1">
     <h2>Nothing is for sale just yet</h2>
     <p>New pieces are added here as they become available. Meanwhile, enjoy the <a href="${MAIN_SITE}/">full gallery</a>,
-      or write to <a href="mailto:mahasriphoto24@gmail.com">mahasriphoto24@gmail.com</a> about any artwork or a commission.</p></div>`;
+      or write to <a href="mailto:vannaart24@gmail.com">vannaart24@gmail.com</a> about any artwork or a commission.</p></div>`;
 }
 
 function chips() {

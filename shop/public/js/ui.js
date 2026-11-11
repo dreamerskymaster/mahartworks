@@ -50,7 +50,7 @@ export function renderChrome(active = "") {
       <li><a href="${MAIN_SITE}/policies#privacy">Privacy</a></li>
       <li><a href="${MAIN_SITE}/policies#terms">Terms &amp; copyright</a></li>
       <li><a href="${MAIN_SITE}/policies#grievance">Grievance officer</a></li>
-      <li><a href="mailto:mahasriphoto24@gmail.com">mahasriphoto24@gmail.com</a></li>
+      <li><a href="mailto:vannaart24@gmail.com">vannaart24@gmail.com</a></li>
     </ul>
     <p class="small">© ${new Date().getFullYear()} Mahalakshmi Srikanth (trading as Vanna Reverie). Prices in Indian rupees, inclusive of all taxes; shipping shown before you pay.</p>
     <p class="love">Made by Ajith, for his only loving Mom <span aria-hidden="true">♥</span></p>`;
@@ -86,4 +86,4 @@ export function setBusy(btn, busy, text) {
 /** The "payments are not open yet" notice, shown until she saves her UPI ID in admin. */
 export const closedNotice = () => `<div class="notice warn" id="payments-closed"><p><strong>Payments are not open yet.</strong>
   You can browse and add artworks to your cart; online checkout opens soon. To buy now, write to
-  <a href="mailto:mahasriphoto24@gmail.com">mahasriphoto24@gmail.com</a>.</p></div>`;
+  <a href="mailto:vannaart24@gmail.com">vannaart24@gmail.com</a>.</p></div>`;

@@ -12,7 +12,7 @@ const phone = matchMedia("(hover: none) and (pointer: coarse)").matches;
 
 function payPanel(o) {
   if (!o.pay?.vpa) return `<section class="panel"><p class="notice warn">Online payment isn't open right now. Please email
-    <a href="mailto:mahasriphoto24@gmail.com">mahasriphoto24@gmail.com</a> with your order number ${esc(o.order_no)}.</p></section>`;
+    <a href="mailto:vannaart24@gmail.com">vannaart24@gmail.com</a> with your order number ${esc(o.order_no)}.</p></section>`;
   const link = buildUpiLink({ vpa: o.pay.vpa, payee: o.pay.payee || "Mahalakshmi Srikanth", amount: o.total_inr, orderNo: o.order_no });
   const pay = `<a class="btn btn-solid btn-block" id="upi-link" href="${esc(link)}">Pay ${formatINR(o.total_inr)} with a UPI app</a>`;
   const qr = `<div class="qr" id="qr">${qrSvg(link, `UPI QR code to pay ${formatINR(o.total_inr)}`)}</div>`;

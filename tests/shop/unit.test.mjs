@@ -181,7 +181,7 @@ describe("international enquiry", () => {
   });
   test("mailto asks for country and address", () => {
     const u = enquiryMailto({ title: "Lakshmi & Lotus", id: "lakshmi-lotus", cert: "MS-2026-0001" });
-    assert.ok(u.startsWith("mailto:mahasriphoto24@gmail.com?subject="));
+    assert.ok(u.startsWith("mailto:vannaart24@gmail.com?subject="));
     const q = new URLSearchParams(u.split("?")[1]);
     assert.equal(q.get("subject"), "Purchase enquiry: Lakshmi & Lotus (ID lakshmi-lotus, Certificate MS-2026-0001)");
     assert.match(q.get("body"), /My country: /); assert.match(q.get("body"), /shipping address/);

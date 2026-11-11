@@ -138,7 +138,7 @@ describe("listing and product page", () => {
   test("international enquiry: mailto with the title, ID and certificate", async () => {
     const p = await open("laptop", `/p/${A.id}`);
     const href = await p.$eval("#enquire", (a) => a.href);
-    assert.ok(href.startsWith("mailto:mahasriphoto24@gmail.com?"));
+    assert.ok(href.startsWith("mailto:vannaart24@gmail.com?"));
     const q = new URLSearchParams(href.split("?")[1]);
     assert.equal(q.get("subject"), `Purchase enquiry: ${A.title} (ID ${A.id}, Certificate ${A.cert})`);
     assert.match(q.get("body"), /My country: \nMy full shipping address/);

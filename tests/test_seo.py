@@ -192,7 +192,7 @@ class HomePageTest(unittest.TestCase):
         person = next(n for n in ns if n["@type"] == "Person")
         site = next(n for n in ns if n["@type"] == "WebSite")
         self.assertEqual(person["address"], {"@type": "PostalAddress", "addressLocality": "Mumbai", "addressCountry": "IN"})
-        self.assertIn("https://instagram.com/mah_artworks", person["sameAs"])
+        self.assertIn("https://instagram.com/vannaart24", person["sameAs"])
         self.assertIn("Rangoli", person["knowsAbout"])
         self.assertEqual(site["url"], BASE + "/")
         self.assertEqual(site["author"]["@id"], person["@id"])
@@ -289,7 +289,7 @@ class CertificateTest(unittest.TestCase):
         self.assertIn('id="cert-input"', doc)
         self.assertIn('<script src="/data.js" defer></script>', doc)
         self.assertIn('<script src="/js/verify.js" defer></script>', doc)
-        self.assertIn('data-email="mahasriphoto24@gmail.com"', doc)
+        self.assertIn('data-email="vannaart24@gmail.com"', doc)
         # the CSP forbids form submissions (form-action 'none'): the only form is the footer's Subscribe box, which has
         # no action and is sent by js/footer.js with fetch (connect-src 'self')
         self.assertEqual(re.findall(r"<form\b[^>]*>", doc), ['<form class="sub-form" id="sub-form" novalidate>'])
