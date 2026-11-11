@@ -30,4 +30,4 @@ Allow: /
 User-agent: Google-Extended
 Allow: /
 
-Sitemap: https://mah-artworks.pages.dev/sitemap.xml
+Sitemap: https://vanna-reverie.pages.dev/sitemap.xml

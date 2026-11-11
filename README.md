@@ -5,18 +5,30 @@
 ![Demo](docs/demo.gif)
 
 
-Live at **https://mah-artworks.pages.dev** · repo `dreamerskymaster/mahartworks`
+Live at **https://vanna-reverie.pages.dev** · repo `dreamerskymaster/mahartworks`
 
 Static site in `site/` (plain HTML/CSS/JS, no build step on the server). The gallery images
 are generated (by GitHub Actions, or on a Mac) from her "my artworks" Google Drive folder, which the build only reads.
 
 ## Publishing
-The Cloudflare Pages project `mah-artworks` is connected to this repo: **every push to `main`
-publishes the site** (build command: none, output directory: `site`). No `wrangler` needed.
+The Cloudflare Pages project `vanna-reverie` is connected to this repo: **every push to `main`
+publishes the site** (build command: none, output directory: `site`, Functions from `functions/`). No `wrangler` needed.
 
 Manual fallback, from the repo root:
 
-    npx wrangler pages deploy site --project-name mah-artworks --branch main
+    npx wrangler pages deploy site --project-name vanna-reverie --branch main
+
+**The old address** `mah-artworks.pages.dev` (project `mah-artworks`, since 2026-11-10) serves only
+`legacy-redirect/` (its root directory, and its only watched path): a `_redirects` that sends every path, with a
+301, to the same path on `vanna-reverie.pages.dev`. Printed certificate QR codes (`/verify/<number>`) and shared
+links keep working. It rebuilds only when `legacy-redirect/` changes.
+
+**Footer API** (`functions/api/`, Cloudflare Pages Functions, free): `visits` is the "Total views" counter (every
+page load adds one; `js/footer.js`), `subscribe` saves Subscribe-box addresses, and `subscribers?key=…` is her
+private list (copy all for Bcc, CSV, Remove). Data: the D1 database `vanna-reverie` (tables `counters`,
+`subscribers`), bound as `DB` on the project with the secret `LIST_KEY` and `COUNTER_NAME` (production
+`pageviews`, previews `pageviews-preview`). Shared helpers are in `api-lib/` (outside `functions/`, so they are not routes).
+`_headers` doesn't apply to Function responses, so each sets its own headers. The private list link is in Claude memory.
 
 Preview locally with `cd site && python3 -m http.server 8765`.
 
@@ -59,7 +71,7 @@ Plain HTML/CSS/JS, no framework or build step; designed phone-first and checked 
 - **Gallery:** category chips (swipeable on phones), search, 48 at a time with "Show more". Phones show titles
   under each piece; laptops show them on hover.
 - **Viewer:** arrows / swipe, counter, Share (phone share sheet, else copies the link). Each artwork has a link,
-  `https://mah-artworks.pages.dev/#art/<id>`, that opens it directly.
+  `https://vanna-reverie.pages.dev/#art/<id>`, that opens it directly.
 - **Display panel:** theme, text size, reduce motion, contrast, readable font, underline links.
 - **Brand:** Vanna Reverie, "Every Stroke Tells a Story". The logo (`build/assets/vanna-reverie-logo.png`) is in the
   header of every page (wordmark, with "by Mahalakshmi Srikanth" beside it on wide screens) and the footer (full logo).
@@ -94,19 +106,22 @@ meta-externalagent). To opt out of AI *training* only, change that group's `Allo
 and answers keep working. Keep `Google-Extended` allowed: blocking it also keeps her work out of Gemini's answers.
 
 **Submit the sitemap (one-time, needs Ajith).** Both are free; verification proves you own the site.
+(Done for the old address on 2026-11-05; after the 2026-11-10 move, repeat for `https://vanna-reverie.pages.dev/`.
+The HTML tag in `site/index.html` is tied to the Google account, so the new property may verify with it as is;
+then, in the OLD property, Settings → Change of address → the new property.)
 1. *Google Search Console*: <https://search.google.com/search-console> → Add property → **URL prefix**
-   `https://mah-artworks.pages.dev/` (a Domain property needs DNS, which a `pages.dev` address doesn't give you).
+   `https://vanna-reverie.pages.dev/` (a Domain property needs DNS, which a `pages.dev` address doesn't give you).
    Choose **HTML file**: download `googleXXXXXXXX.html`, put it in `site/` unchanged, push to `main`, wait for
-   the deploy (~1 min), check it opens at `https://mah-artworks.pages.dev/googleXXXXXXXX.html`, then press
+   the deploy (~1 min), check it opens at `https://vanna-reverie.pages.dev/googleXXXXXXXX.html`, then press
    Verify. (Or choose **HTML tag** and paste the `<meta name="google-site-verification" …>` line into the
    `<head>` of `site/index.html`.) Keep the file/tag afterwards, or verification lapses.
    Then **Sitemaps** → enter `sitemap.xml` → Submit. Optional: **URL inspection** → paste the home page and a
    couple of `/art/…` pages → Request indexing.
 2. *Bing Webmaster Tools* (also feeds ChatGPT search, Copilot and DuckDuckGo):
    <https://www.bing.com/webmasters> → sign in → **Import from Google Search Console** (easiest, once step 1 is
-   done), or Add site → `https://mah-artworks.pages.dev/` → **XML file** (`BingSiteAuth.xml` into `site/`, push,
+   done), or Add site → `https://vanna-reverie.pages.dev/` → **XML file** (`BingSiteAuth.xml` into `site/`, push,
    Verify) or **Meta tag** (`<meta name="msvalidate.01" …>` into `index.html`). Then Sitemaps →
-   `https://mah-artworks.pages.dev/sitemap.xml` → Submit.
+   `https://vanna-reverie.pages.dev/sitemap.xml` → Submit.
 Results take days to weeks. Perplexity, ChatGPT and Claude find the site through their own crawlers and through
 Bing/Google; there is nothing to submit to them.
 
@@ -120,7 +135,7 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
   issued. The first run numbered the 539 artworks then on the site by date, then id (undated ones last, as 2026):
   MS-2021-0001 … MS-2026-0539. The number is `cert` in `site/data.js`. Never edit the register by hand.
 - **Verification (public):** each artwork page has a "Certificate of Authenticity" section with its number
-  (`/art/<id>#certificate`); the gallery viewer shows it under the title. `https://mah-artworks.pages.dev/verify/<number>`
+  (`/art/<id>#certificate`); the gallery viewer shows it under the title. `https://vanna-reverie.pages.dev/verify/<number>`
   (what the QR code on a certificate opens) redirects to that section through `site/_redirects`, generated by
   `build/seo.py` (Cloudflare Pages allows 2,000 such rules; past ~1,900 artworks seo.py drops them and every
   `/verify/<number>` goes to the lookup page instead). `/verify` (`site/verify.html` + `site/js/verify.js`) looks a
@@ -132,7 +147,7 @@ Every artwork has a permanent certificate number, **`MS-<YYYY>-<NNNN>`**: YYYY i
       import { renderCertificate } from "/js/certificate.js";
       renderCertificate(container, { id, cert, title, category, medium, size, year, imageUrl,
                                      buyerName, issuedOn, signatureUrl,
-                                     verifyBase = "https://mah-artworks.pages.dev/verify/" });
+                                     verifyBase = "https://vanna-reverie.pages.dev/verify/" });
 
   `cert` and `title` are required (`cert` must be a real number from data.js); everything else is optional and left
   out when empty. `category` may be the data.js key (`paintings` → "Painting"); `issuedOn` is `YYYY-MM-DD` or a Date.

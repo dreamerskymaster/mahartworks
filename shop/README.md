@@ -1,6 +1,6 @@
 # The shop — mah-artworks-shop.pages.dev
 
-A small shop for Mahalakshmi's originals, separate from the gallery (mah-artworks.pages.dev). The gallery links to
+A small shop for Mahalakshmi's originals, separate from the gallery (vanna-reverie.pages.dev). The gallery links to
 it in a new tab: the menu and footer have a **Shop** link, and the artwork viewer has **Buy / check availability**.
 
 **Status:** preview only (`https://preview.mah-artworks-shop.pages.dev`). Production isn't deployed, and payments

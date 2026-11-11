@@ -2,7 +2,7 @@
 
 > Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 577 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
-- Website: https://mah-artworks.pages.dev/
+- Website: https://vanna-reverie.pages.dev/
 - Based in: Mumbai, Maharashtra, India
 - Making art since 2020: it began as a hobby after COVID, with sketching and crayons, then sketch pens, then acrylics.
 - Signature: every picture on the site carries her MS seal watermark.
@@ -11,41 +11,41 @@
 
 ## The collection
 
-- [Paintings](https://mah-artworks.pages.dev/paintings): 241 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
-- [Oil Paintings](https://mah-artworks.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
-- [Drawings & Sketches](https://mah-artworks.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://mah-artworks.pages.dev/mandalas): 58 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
-- [Rangoli & Kolam](https://mah-artworks.pages.dev/rangoli): 121 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
-- [Crafts](https://mah-artworks.pages.dev/crafts): 2 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
+- [Paintings](https://vanna-reverie.pages.dev/paintings): 241 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Oil Paintings](https://vanna-reverie.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
+- [Drawings & Sketches](https://vanna-reverie.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
+- [Mandalas](https://vanna-reverie.pages.dev/mandalas): 58 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Rangoli & Kolam](https://vanna-reverie.pages.dev/rangoli): 121 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
+- [Crafts](https://vanna-reverie.pages.dev/crafts): 2 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
-Every artwork has its own page at https://mah-artworks.pages.dev/art/<id>, with its title, category, date and an enquiry link.
+Every artwork has its own page at https://vanna-reverie.pages.dev/art/<id>, with its title, category, date and an enquiry link.
 
 ## Buying an artwork or commissioning one
 
 - Write by email or Instagram with the artwork's name or ID (shown on each artwork page). Availability, size, medium and the total price in Indian Rupees are confirmed in writing before payment; payment is by UPI or bank transfer.
 - Commissions: share the idea, size and medium for a written quote and timeline; a 50% advance confirms the work.
 - Rangoli and kolam are temporary floor art, shown for display; similar designs can be made on request.
-- [Orders & commissions](https://mah-artworks.pages.dev/policies#orders)
-- [Shipping, returns & refunds](https://mah-artworks.pages.dev/policies#shipping)
-- [Terms of use & copyright](https://mah-artworks.pages.dev/policies#terms): the artworks and images are her copyright; please link to an artwork's page rather than copying the picture.
-- [Privacy policy](https://mah-artworks.pages.dev/policies#privacy)
+- [Orders & commissions](https://vanna-reverie.pages.dev/policies#orders)
+- [Shipping, returns & refunds](https://vanna-reverie.pages.dev/policies#shipping)
+- [Terms of use & copyright](https://vanna-reverie.pages.dev/policies#terms): the artworks and images are her copyright; please link to an artwork's page rather than copying the picture.
+- [Privacy policy](https://vanna-reverie.pages.dev/policies#privacy)
 
 ## Newest artworks
 
-- [Vasu & Dhanteras Rangoli](https://mah-artworks.pages.dev/art/vasu-dhanteras-rangoli): Rangoli, November 2026
-- [Stained Glass Art in Canvas](https://mah-artworks.pages.dev/art/stained-glass-art-in-canvas): Painting, November 2026
-- [Peacock Mandala](https://mah-artworks.pages.dev/art/peacock-mandala): Mandala, November 2026
-- [Mandala in Plants](https://mah-artworks.pages.dev/art/mandala-in-plants): Mandala, November 2026
-- [Madhubani Bird](https://mah-artworks.pages.dev/art/madhubani-bird): Painting, November 2026
-- [Love Is Caring Couple](https://mah-artworks.pages.dev/art/love-is-caring-couple): Painting, November 2026
-- [Lets Grow Old Together](https://mah-artworks.pages.dev/art/lets-grow-old-together): Painting, November 2026
-- [Diwali Rangoli Made in Temple](https://mah-artworks.pages.dev/art/diwali-rangoli-made-in-temple): Rangoli, November 2026
-- [Branch Work](https://mah-artworks.pages.dev/art/branch-work): Painting, November 2026
-- [3D Rangoli](https://mah-artworks.pages.dev/art/3d-rangoli-2): Rangoli, November 2026
-- [3D Rangoli](https://mah-artworks.pages.dev/art/3d-rangoli): Rangoli, November 2026
-- [Dot Rangoli Design](https://mah-artworks.pages.dev/art/dot-rangoli-design): Rangoli, October 2026
+- [Vasu & Dhanteras Rangoli](https://vanna-reverie.pages.dev/art/vasu-dhanteras-rangoli): Rangoli, November 2026
+- [Stained Glass Art in Canvas](https://vanna-reverie.pages.dev/art/stained-glass-art-in-canvas): Painting, November 2026
+- [Peacock Mandala](https://vanna-reverie.pages.dev/art/peacock-mandala): Mandala, November 2026
+- [Mandala in Plants](https://vanna-reverie.pages.dev/art/mandala-in-plants): Mandala, November 2026
+- [Madhubani Bird](https://vanna-reverie.pages.dev/art/madhubani-bird): Painting, November 2026
+- [Love Is Caring Couple](https://vanna-reverie.pages.dev/art/love-is-caring-couple): Painting, November 2026
+- [Lets Grow Old Together](https://vanna-reverie.pages.dev/art/lets-grow-old-together): Painting, November 2026
+- [Diwali Rangoli Made in Temple](https://vanna-reverie.pages.dev/art/diwali-rangoli-made-in-temple): Rangoli, November 2026
+- [Branch Work](https://vanna-reverie.pages.dev/art/branch-work): Painting, November 2026
+- [3D Rangoli](https://vanna-reverie.pages.dev/art/3d-rangoli-2): Rangoli, November 2026
+- [3D Rangoli](https://vanna-reverie.pages.dev/art/3d-rangoli): Rangoli, November 2026
+- [Dot Rangoli Design](https://vanna-reverie.pages.dev/art/dot-rangoli-design): Rangoli, October 2026
 
 ## Optional
 
-- [Every artwork, with her story in her own words](https://mah-artworks.pages.dev/llms-full.txt)
-- [Sitemap](https://mah-artworks.pages.dev/sitemap.xml)
+- [Every artwork, with her story in her own words](https://vanna-reverie.pages.dev/llms-full.txt)
+- [Sitemap](https://vanna-reverie.pages.dev/sitemap.xml)

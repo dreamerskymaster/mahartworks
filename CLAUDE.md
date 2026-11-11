@@ -1,11 +1,16 @@
 # CLAUDE.md — Mahalakshmi Srikanth art portfolio
 
-Ajith's site for his mom's art business in India. Live: https://mah-artworks.pages.dev.
+Ajith's site for his mom's art business in India. Live: https://vanna-reverie.pages.dev
+(the old https://mah-artworks.pages.dev 301-redirects every path there since 2026-11-10).
 Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how-to; this file is the rules and status.
 
-## Status (2026-11-03)
+## Status (2026-11-10)
 - **Live and automatic:** the Vanna Reverie gallery, artwork/category pages, certificates and /verify, policies.
   Her Drive edits go live within ~20 min. Nothing to do day to day.
+- **2026-11-10 (her 11-06 emails):** address moved to vanna-reverie.pages.dev (new Pages project; old one redirects);
+  footer like the Nippon Gallery one she sent: Subscribe box, "Total views" counter (page loads, from 0 on 11-10),
+  "For art lovers" links (README → Publishing → Footer API). Shop links hidden (`SHOP_LIVE = false` in app.js) because
+  the shop has no production deploy yet and they led to a Cloudflare 404 after the 11-05 merge.
 - **2026-10-22:** her duplicate camera-named copies moved to the Drive subfolder "Duplicates - not on website",
   4 new photos named, names starting with a digit fixed (PR #11). Her plain-language guide was emailed to her.
 - **2026-10-25/26:** her emails fixed: glass paintings → Paintings (PR #13, merged); Crafts trimmed to the doll and diya holders only (2026-10-26).
@@ -17,9 +22,10 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
      `{{ .Token }}` to the Magic link template; add the shop's redirect URLs (exact steps in `shop/README.md`).
   4. Prices: /admin → Artworks → Import from the gallery, then price/size/weight/For sale per piece.
   5. Shiprocket: free account + KYC + pickup address, then the three Cloudflare secrets on the shop project.
-  6. "Go live": deploy the shop to production, then merge PR #8. (Preview redeployed with the new brand 2026-10-22.)
-     (Quote signing, checklist step 6, is already done.)
-  7. Google Search Console + Bing Webmaster Tools, submit `sitemap.xml` (README → Search engines).
+  6. "Go live": deploy the shop to production, then set `SHOP_LIVE = true` in `site/app.js` and restore the
+     visible-link e2e checks (the shop code is already on `main` since 2026-11-05). (Quote signing is already done.)
+  7. Search Console: verified + sitemap for the OLD address 2026-11-05; redo for https://vanna-reverie.pages.dev/,
+     then Change of address in the old property; Bing (import from Google). README → Search engines.
   8. Optional: ask GitHub Support to purge old `refs/pull/*` snapshots (see History); add GSTIN to policies if she registers.
 
 ## Where things live (one of each)
@@ -30,7 +36,11 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
 - **Her originals:** the Google Drive "my artworks" folder (below). Account details: Claude memory only.
 
 ## Deploy
-- Cloudflare Pages project `mah-artworks` (Ajith's Cloudflare account) is **Git-connected**: push to `main` = publish. Output dir `site`, no build command.
+- Cloudflare Pages project `vanna-reverie` (Ajith's Cloudflare account) is **Git-connected**: push to `main` = publish. Output dir `site`, no build command, Functions in `functions/` (footer API, D1 `vanna-reverie`).
+- The old project `mah-artworks` is also Git-connected but has root dir `legacy-redirect` and watches only that path:
+  it is just the 301 to the new address. Never point it back at `site/` (two live copies = duplicate content).
+- Pages free plan = 500 builds/month for the whole account (shared with Appa's `srikanthk`): keep the old project's
+  watch path narrow; the sync bot only commits when her Drive changes.
 - Don't also run `wrangler pages deploy` for normal changes. If you ever must, run it from the
   repo root on `site` — running wrangler *inside* `site/` writes `.wrangler/` there and it gets published.
 - Wrangler 4.x `pages project create` silently makes a Workers project unless `--force`.

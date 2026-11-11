@@ -7,7 +7,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "build"))
 import seo  # noqa: E402
 
 SITE = os.path.join(os.path.dirname(__file__), "..", "site")
-BASE = "https://mah-artworks.pages.dev"
+BASE = "https://vanna-reverie.pages.dev"
 SM = {"s": "http://www.sitemaps.org/schemas/sitemap/0.9", "i": "http://www.google.com/schemas/sitemap-image/1.1"}
 
 
@@ -126,7 +126,7 @@ class GeneratedPagesTest(unittest.TestCase):
                     self.assertIn("src=", attrs, f)
                     self.assertFalse(body.strip(), f)
             self.assertNotRegex(doc, r"\son[a-z]+=\"", f)
-            self.assertNotRegex(doc, r'(?:src|href)="(?:https?:)?//(?!mah-artworks\.pages\.dev|instagram\.com)', f"{f}: third-party request")
+            self.assertNotRegex(doc, r'(?:src|href)="(?:https?:)?//(?!vanna-reverie\.pages\.dev|instagram\.com)', f"{f}: third-party request")
 
     def test_local_links_and_files_exist(self):
         for f in self.files:
@@ -290,7 +290,9 @@ class CertificateTest(unittest.TestCase):
         self.assertIn('<script src="/data.js" defer></script>', doc)
         self.assertIn('<script src="/js/verify.js" defer></script>', doc)
         self.assertIn('data-email="mahasriphoto24@gmail.com"', doc)
-        self.assertNotIn("<form", doc, "the CSP forbids form submissions (form-action 'none')")
+        # the CSP forbids form submissions (form-action 'none'): the only form is the footer's Subscribe box, which has
+        # no action and is sent by js/footer.js with fetch (connect-src 'self')
+        self.assertEqual(re.findall(r"<form\b[^>]*>", doc), ['<form class="sub-form" id="sub-form" novalidate>'])
         self.assertEqual(re.findall(r'<link rel="canonical" href="([^"]+)"', doc), [f"{BASE}/verify"])
 
     def test_no_signature_image_is_published(self):

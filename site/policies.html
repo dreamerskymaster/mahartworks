@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<link rel="canonical" href="https://mah-artworks.pages.dev/policies">
+<link rel="canonical" href="https://vanna-reverie.pages.dev/policies">
 <title>Policies — Vanna Reverie</title>
 <meta name="description" content="Privacy policy, terms of use, copyright, orders, shipping, returns, grievance officer and accessibility statement for Vanna Reverie, the art of Mahalakshmi Srikanth.">
 <meta name="theme-color" content="#0d0f1c" media="(prefers-color-scheme: dark)">
@@ -26,7 +26,7 @@
 <main id="main" class="legal">
   <p class="eyebrow">Policies</p>
   <h1>Policies &amp; information</h1>
-  <p class="updated">Last updated: 13 October 2026</p>
+  <p class="updated">Last updated: 10 November 2026</p>
 
   <nav class="toc" aria-label="On this page">
     <ol>
@@ -58,7 +58,11 @@
     <p>This policy explains how personal data is handled, in line with the Digital Personal Data Protection Act, 2023, the Information Technology Act, 2000 and the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.</p>
 
     <h3>Browsing this website</h3>
-    <p>This gallery website does not use cookies, analytics, advertising or tracking of any kind, and it has no sign-up or contact forms. Fonts and images are served from this site itself, so no third party (such as Google) is contacted when you visit. Your display and accessibility choices are saved only in your own browser and never sent to us.</p>
+    <p>This gallery website does not use cookies, analytics, advertising or tracking of any kind, and it has no contact forms. Fonts and images are served from this site itself, so no third party (such as Google) is contacted when you visit. Your display and accessibility choices are saved only in your own browser and never sent to us.</p>
+    <p>The “Total views” number at the bottom of each page is a single running count: each page you open adds one to it. Nothing about you (no IP address, cookie or device detail) is stored with it.</p>
+
+    <h3>Subscribing to new artworks</h3>
+    <p>If you type your email address into the Subscribe box, we store that address, the date, the page you subscribed from and your country (as reported by our host, Cloudflare), so that we can email you about new artworks. The list is kept in a Cloudflare database and is seen only by us; we never sell or share it. To unsubscribe, reply to any of our emails or write to us, and your address will be deleted.</p>
     <p>The site is hosted on Cloudflare, which, like any web host, processes technical information such as your IP address and browser type for a short time to deliver pages and protect the site from abuse. We do not access or use this information.</p>
 
     <h3>The shop (mah-artworks-shop.pages.dev)</h3>
@@ -163,6 +167,36 @@
 
 <footer>
   <img class="foot-logo" src="/brand/logo.webp" alt="Vanna Reverie — Every Stroke Tells a Story" width="280" height="134" loading="lazy" decoding="async">
+<!-- seo:footextra -->
+  <div class="foot-extra">
+    <section class="foot-sub" aria-labelledby="sub-h">
+      <p class="foot-h" id="sub-h">Subscribe</p>
+      <p class="foot-note">New artworks, by email. No spam; unsubscribe any time.</p>
+      <form class="sub-form" id="sub-form" novalidate>
+        <label class="sr-only" for="sub-email">Email address</label>
+        <input id="sub-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="Email" maxlength="254" required>
+        <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn-solid" type="submit">Subscribe</button>
+        <p class="sub-msg" id="sub-msg" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    <section class="foot-visits" id="visits" aria-label="Total views" hidden>
+      <p class="visits-n" id="visits-n"></p>
+      <p class="visits-l">Total views</p>
+    </section>
+    <nav class="foot-more" aria-labelledby="more-h">
+      <p class="foot-h" id="more-h">For art lovers</p>
+      <ul>
+        <li><a href="/#gallery">Gallery</a></li>
+        <li><a href="/#journey">Her journey</a></li>
+        <li><a href="/#about">About the artist</a></li>
+        <li><a href="/#contact">Commission a piece</a></li>
+        <li><a href="/verify">Verify a certificate</a></li>
+      </ul>
+    </nav>
+  </div>
+  <script src="/js/footer.js" defer></script>
+<!-- /seo:footextra -->
   <p>© <span id="year">2026</span> Mahalakshmi Srikanth. All rights reserved.</p>
   <ul class="foot-links">
     <li><a href="#privacy">Privacy Policy</a></li>

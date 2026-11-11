@@ -1,0 +1,5 @@
+# The OLD address mah-artworks.pages.dev (Cloudflare Pages project "mah-artworks") serves only this folder since
+# 2026-11-10: every page moves permanently to the new address, same path (printed certificate QR codes keep working:
+# /verify/<number> lands on the new /verify/<number>, which then opens the artwork). The site itself is in site/,
+# served by the project "vanna-reverie". Don't add anything else here.
+/* https://vanna-reverie.pages.dev/:splat 301

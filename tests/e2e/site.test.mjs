@@ -288,7 +288,7 @@ describe("artwork and category pages (for search engines)", () => {
       const p = await open(device, { path: `/art/${a.id}` });
       assert.equal(await p.$eval("h1", (h) => h.textContent), a.title);
       assert.equal(await p.$eval(".art-figure img", (i) => i.complete && i.naturalWidth > 0), true, "artwork image loads");
-      assert.equal(await p.$eval('link[rel="canonical"]', (l) => l.href), `https://mah-artworks.pages.dev/art/${a.id}`);
+      assert.equal(await p.$eval('link[rel="canonical"]', (l) => l.href), `https://vanna-reverie.pages.dev/art/${a.id}`);
       const mail = decodeURIComponent(await p.$eval(".art-cta a[href^='mailto:']", (l) => l.href));
       assert.ok(mail.includes(`(ID ${a.id})`) && mail.includes(a.title), mail);
       assert.ok(await p.$$eval(".related .tiles a", (l) => l.length) > 0, "related artworks");
@@ -499,7 +499,7 @@ describe("certificates of authenticity", () => {
     });
     const code = jsQR(Uint8ClampedArray.from(px), 400, 400);
     assert.ok(code, "QR code could not be read");
-    assert.equal(code.data, `https://mah-artworks.pages.dev/verify/${cert}`);
+    assert.equal(code.data, `https://vanna-reverie.pages.dev/verify/${cert}`);
     // the encoder itself, on a known vector: "HELLO WORLD" at medium error correction is a version-1 (21×21) symbol
     const m = await p.evaluate(async () => (await import("/js/certificate.js")).qrMatrix("HELLO WORLD"));
     assert.equal(m.length, 21);
@@ -618,20 +618,49 @@ describe("certificates of authenticity", () => {
   });
 });
 
-describe("shop links (the shop is a separate site, opened in a new tab)", () => {
-  test("viewer: 'Buy / check availability' opens the artwork in the shop", async () => {
+// The shop is a separate site. Until its production deploy exists (SHOP_LIVE = false in app.js) every shop link is
+// hidden, so nobody lands on a "not found" page. When the shop goes live, flip SHOP_LIVE and restore the visible checks:
+// viewer "Buy / check availability" -> https://mah-artworks-shop.pages.dev/p/<id>, menu + footer links in a new tab.
+describe("shop links (hidden until the shop goes live)", () => {
+  test("viewer shows no Buy button", async () => {
     const a = (await (async () => { const p = await open("laptop"); const x = await p.evaluate(() => ARTWORKS[0]); await done(p); return x; })());
     const p = await open("phone", { path: `/#art/${a.id}` }); await sleep(400);
-    const buy = await p.$eval("#lb-cap .lb-buy", (l) => ({ href: l.href, target: l.target, rel: l.rel }));
-    assert.deepEqual(buy, { href: `https://mah-artworks-shop.pages.dev/p/${a.id}`, target: "_blank", rel: "noopener" });
-    assert.equal(await sideways(p), "", "phone viewer with the buy link");
+    assert.equal(await p.$("#lb-cap .lb-buy"), null);
+    assert.equal(await sideways(p), "", "phone viewer");
     await done(p);
   });
-  test("menu and footer link to the shop in a new tab", async () => {
+  test("menu and footer shop links exist but are hidden", async () => {
     const p = await open("laptop");
-    const links = await p.$$eval('a[href="https://mah-artworks-shop.pages.dev/"]', (ls) => ls.map((l) => [l.closest("nav, footer").tagName, l.target, l.rel]));
-    assert.deepEqual(links, [["NAV", "_blank", "noopener"], ["FOOTER", "_blank", "noopener"]]);
+    const links = await p.$$eval('a[href="https://mah-artworks-shop.pages.dev/"]', (ls) => ls.map((l) => [l.closest("nav, footer").tagName, l.target, l.rel, l.offsetParent === null]));
+    assert.deepEqual(links, [["NAV", "_blank", "noopener", true], ["FOOTER", "_blank", "noopener", true]]);
     assert.deepEqual(p.problems, []);
+    await done(p);
+  });
+});
+
+describe("footer: Subscribe box, total views, links (her 2026-11-06 ask)", () => {
+  test("every page has the block; the counter stays hidden while the count is 0", async () => {
+    for (const path of ["/", "/paintings", "/verify", "/policies"]) {
+      const p = await open("phone", { path }); await sleep(300);
+      assert.ok(await p.$("footer #sub-form #sub-email"), `${path}: subscribe box`);
+      assert.equal(await p.$eval("#visits", (v) => v.hidden), true, `${path}: counter hidden (the test server says 0)`);
+      const more = await p.$$eval(".foot-more a", (ls) => ls.map((l) => l.getAttribute("href")));
+      assert.deepEqual(more, ["/#gallery", "/#journey", "/#about", "/#contact", "/verify"], path);
+      assert.equal(await sideways(p), "", `${path}: phone footer`);
+      await done(p);
+    }
+  });
+  test("a bad address is refused in the page; a good one reports the API failure politely", async () => {
+    const p = await open("laptop", { path: "/policies" });
+    await p.type("#sub-email", "not-an-email");
+    await p.click("#sub-form button");
+    await sleep(200);
+    assert.equal(await p.$eval("#sub-msg", (m) => m.textContent), "Please enter a valid email address.");
+    await p.$eval("#sub-email", (i) => { i.value = ""; });
+    await p.type("#sub-email", "someone@example.com");
+    await p.click("#sub-form button");
+    await sleep(600);
+    assert.equal(await p.$eval("#sub-msg", (m) => m.textContent), "Sorry, that didn't work. Please try again later.");
     await done(p);
   });
 });

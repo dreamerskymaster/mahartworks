@@ -14,7 +14,7 @@ import { QrCode } from "./qrcodegen.js";
 
 export const ARTIST = "Mahalakshmi Srikanth";
 export const PLACE = "Mumbai, India";
-export const VERIFY_BASE = "https://mah-artworks.pages.dev/verify/";
+export const VERIFY_BASE = "https://vanna-reverie.pages.dev/verify/";
 export const CERT_PATTERN = /^MS-\d{4}-\d{4,}$/;
 const SEAL = new URL("../seal.png", import.meta.url).href;
 const CATEGORY = { paintings: "Painting", oils: "Oil painting", drawings: "Drawing", mandalas: "Mandala", rangoli: "Rangoli", crafts: "Craft" };
@@ -188,7 +188,7 @@ function rule(doc) {
  * @param {string} [o.buyerName]  printed as "Issued to …"
  * @param {string|Date} [o.issuedOn]  "YYYY-MM-DD" or a Date, printed as "on 12 October 2026"
  * @param {string} [o.signatureUrl]   her signature image, supplied at runtime from private storage only
- * @param {string} [o.verifyBase]     default "https://mah-artworks.pages.dev/verify/"
+ * @param {string} [o.verifyBase]     default "https://vanna-reverie.pages.dev/verify/"
  * @param {string} [o.sealUrl]        default: the site's seal.png next to /js/
  * @returns {HTMLElement} the certificate sheet (class "ms-coa-sheet")
  */
