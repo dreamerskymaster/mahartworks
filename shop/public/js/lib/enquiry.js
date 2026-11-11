@@ -1,5 +1,5 @@
 // Buyers outside India don't check out online: they write to her, and she quotes shipping and customs by email.
-export const ARTIST_EMAIL = "mahasriphoto24@gmail.com";
+export const ARTIST_EMAIL = "vannaart24@gmail.com";
 
 export function enquirySubject({ title, id, cert }) {
   const ref = [`ID ${id}`, cert ? `Certificate ${cert}` : ""].filter(Boolean).join(", ");
