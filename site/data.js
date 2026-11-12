@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "female-thinking-phase",
+"title": "Female Thinking Phase",
+"cat": "paintings",
+"date": "2026-11-12",
+"w": 1170,
+"h": 884,
+"cert": "MS-2026-0629"
+},
+{
 "id": "vasu-dhanteras-rangoli",
 "title": "Vasu & Dhanteras Rangoli",
 "cat": "rangoli",
