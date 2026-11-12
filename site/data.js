@@ -3376,7 +3376,7 @@ window.ARTWORKS = [
 },
 {
 "id": "femal-thinking",
-"title": "Female Thinking",
+"title": "Female Thinking Phases",
 "cat": "drawings",
 "date": "2021-11-04",
 "w": 1200,
