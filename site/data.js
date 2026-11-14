@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "potrait-of-my-family-as-kid",
+"title": "Potrait of My Family As Kid",
+"cat": "paintings",
+"date": "2026-11-14",
+"w": 991,
+"h": 1200,
+"cert": "MS-2026-0630"
+},
+{
 "id": "female-thinking-phase",
 "title": "Female Thinking Phase",
 "cat": "paintings",

@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 578 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 579 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://vanna-reverie.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -11,7 +11,7 @@
 
 ## The collection
 
-- [Paintings](https://vanna-reverie.pages.dev/paintings): 242 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
+- [Paintings](https://vanna-reverie.pages.dev/paintings): 243 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://vanna-reverie.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://vanna-reverie.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
 - [Mandalas](https://vanna-reverie.pages.dev/mandalas): 58 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
@@ -48,8 +48,9 @@ From life’s many roles to discovering my artist’s soul, every canvas reflect
 
 ## Every artwork
 
-### Paintings (242)
+### Paintings (243)
 
+- [Potrait of My Family As Kid](https://vanna-reverie.pages.dev/art/potrait-of-my-family-as-kid): November 2026
 - [Female Thinking Phase](https://vanna-reverie.pages.dev/art/female-thinking-phase): November 2026
 - [Stained Glass Art in Canvas](https://vanna-reverie.pages.dev/art/stained-glass-art-in-canvas): November 2026
 - [Madhubani Bird](https://vanna-reverie.pages.dev/art/madhubani-bird): November 2026
