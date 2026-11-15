@@ -32,6 +32,7 @@ Every artwork has its own page at https://vanna-reverie.pages.dev/art/<id>, with
 
 ## Newest artworks
 
+- [Hanuman & Saibaba](https://vanna-reverie.pages.dev/art/hanuman-saibaba): Painting, November 2026
 - [Potrait of My Family As Kid](https://vanna-reverie.pages.dev/art/potrait-of-my-family-as-kid): Painting, November 2026
 - [Female Thinking Phase](https://vanna-reverie.pages.dev/art/female-thinking-phase): Painting, November 2026
 - [Vasu & Dhanteras Rangoli](https://vanna-reverie.pages.dev/art/vasu-dhanteras-rangoli): Rangoli, November 2026
@@ -43,7 +44,6 @@ Every artwork has its own page at https://vanna-reverie.pages.dev/art/<id>, with
 - [Lets Grow Old Together](https://vanna-reverie.pages.dev/art/lets-grow-old-together): Painting, November 2026
 - [Diwali Rangoli Made in Temple](https://vanna-reverie.pages.dev/art/diwali-rangoli-made-in-temple): Rangoli, November 2026
 - [Branch Work](https://vanna-reverie.pages.dev/art/branch-work): Painting, November 2026
-- [3D Rangoli](https://vanna-reverie.pages.dev/art/3d-rangoli-2): Rangoli, November 2026
 
 ## Optional
 

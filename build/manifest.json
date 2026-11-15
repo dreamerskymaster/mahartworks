@@ -2558,6 +2558,10 @@
 "MS-2026-0630": [
 "3aa49d5151a7e100ee57072a02b526a9",
 "potrait-of-my-family-as-kid"
+],
+"MS-2026-0631": [
+"d32fc7d153d46d0d19f088247ebc01b2",
+"hanuman-saibaba"
 ]
 },
 "facts": {
@@ -4163,12 +4167,6 @@
 "px": 1119364,
 "w": 1058
 },
-"7eb954f4d59c018c297cbdbdea3671b3": {
-"h": 7139166599996609238,
-"hgt": 863,
-"px": 744769,
-"w": 863
-},
 "7f49e775ab3e55b53ec11a7fab7b48c1": {
 "h": 90385892200751360,
 "hgt": 1200,
@@ -5457,6 +5455,12 @@
 "h": 3430792041117518884,
 "hgt": 1121,
 "px": 3148740,
+"w": 1200
+},
+"d32fc7d153d46d0d19f088247ebc01b2": {
+"h": 56322040161683712,
+"hgt": 1200,
+"px": 47610000,
 "w": 1200
 },
 "d390073e278e1976c2cf2c2e823b6fe8": {
@@ -6983,10 +6987,6 @@
 "d307a8400b7cfee21243f75da08a0c6d",
 1
 ],
-"glass-painting-on-canvas": [
-"7eb954f4d59c018c297cbdbdea3671b3",
-1
-],
 "glowing-yellow-mandala": [
 "5997bdd0c054c9dfa3a1cf784c3e7bb3",
 1
@@ -7049,6 +7049,10 @@
 ],
 "hanuman-jayanti-rangoli-2": [
 "4956ae2bd643623b264e0c09bfed5142",
+1
+],
+"hanuman-saibaba": [
+"d32fc7d153d46d0d19f088247ebc01b2",
 1
 ],
 "happy-dhanteras-kalash-rangoli": [

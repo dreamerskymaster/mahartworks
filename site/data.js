@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "hanuman-saibaba",
+"title": "Hanuman & Saibaba",
+"cat": "paintings",
+"date": "2026-11-15",
+"w": 1200,
+"h": 1200,
+"cert": "MS-2026-0631"
+},
+{
 "id": "potrait-of-my-family-as-kid",
 "title": "Potrait of My Family As Kid",
 "cat": "paintings",
@@ -385,15 +394,6 @@ window.ARTWORKS = [
 "w": 1200,
 "h": 1200,
 "cert": "MS-2026-0585"
-},
-{
-"id": "glass-painting-on-canvas",
-"title": "Glass Painting on Canvas",
-"cat": "paintings",
-"date": "2026-10-22",
-"w": 863,
-"h": 863,
-"cert": "MS-2026-0584"
 },
 {
 "id": "garden",

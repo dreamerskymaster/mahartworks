@@ -535,7 +535,6 @@
 /verify/MS-2026-0581 /art/flower-kolam#certificate 301
 /verify/MS-2026-0582 /art/ganesha-mandala-2#certificate 301
 /verify/MS-2026-0583 /art/garden#certificate 301
-/verify/MS-2026-0584 /art/glass-painting-on-canvas#certificate 301
 /verify/MS-2026-0585 /art/happy-sad-face#certificate 301
 /verify/MS-2026-0587 /art/nature#certificate 301
 /verify/MS-2026-0588 /art/3d-star-rangoli#certificate 301
@@ -579,4 +578,5 @@
 /verify/MS-2026-0628 /art/peacock-mandala#certificate 301
 /verify/MS-2026-0629 /art/female-thinking-phase#certificate 301
 /verify/MS-2026-0630 /art/potrait-of-my-family-as-kid#certificate 301
+/verify/MS-2026-0631 /art/hanuman-saibaba#certificate 301
 /verify/* /verify?n=:splat 302
