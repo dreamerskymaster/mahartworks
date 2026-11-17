@@ -1,6 +1,6 @@
 # Mahalakshmi Srikanth — Vanna Reverie
 
-> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 579 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
+> Mahalakshmi Srikanth is an artist in Mumbai, India. She makes paintings, drawings and sketches, mandalas, rangoli and kolam, and handmade crafts. This website is her portfolio of 580 artworks; artworks and commissions can be enquired about by email. Vanna Reverie ("Every Stroke Tells a Story") is the name she sells her art under.
 
 - Website: https://vanna-reverie.pages.dev/
 - Based in: Mumbai, Maharashtra, India
@@ -14,7 +14,7 @@
 - [Paintings](https://vanna-reverie.pages.dev/paintings): 243 artworks. Paintings on canvas, glass and stone: Ganesha, Krishna and Radha, Indian folk art such as Madhubani and Warli, landscapes, sunsets and abstracts.
 - [Oil Paintings](https://vanna-reverie.pages.dev/oils): 2 artworks. Oil paintings on canvas: deities such as Panchamukhi Hanuman, Kathakali faces, running horses and landscapes.
 - [Drawings & Sketches](https://vanna-reverie.pages.dev/drawings): 153 artworks. Pencil sketches, line drawings, doodles and zentangle patterns in sketch pen and crayon, many from her sketchbook.
-- [Mandalas](https://vanna-reverie.pages.dev/mandalas): 58 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
+- [Mandalas](https://vanna-reverie.pages.dev/mandalas): 59 artworks. Hand-drawn mandalas: intricate circular patterns, in colour and in black and white.
 - [Rangoli & Kolam](https://vanna-reverie.pages.dev/rangoli): 121 artworks. Rangoli and kolam made for festivals and special days, such as Diwali, Onam, Pongal and Navratri. Rangoli is temporary floor art; similar designs can be made on request.
 - [Crafts](https://vanna-reverie.pages.dev/crafts): 2 artworks. Handmade crafts: mirror work, embroidery, painted plates, diya holders, door hangings and best-out-of-waste pieces.
 
@@ -32,6 +32,7 @@ Every artwork has its own page at https://vanna-reverie.pages.dev/art/<id>, with
 
 ## Newest artworks
 
+- [Sacred Harmony – the Divine Om Mandala](https://vanna-reverie.pages.dev/art/sacred-harmony-the-divine-om-mandala): Mandala, November 2026
 - [Hanuman & Saibaba](https://vanna-reverie.pages.dev/art/hanuman-saibaba): Painting, November 2026
 - [Potrait of My Family As Kid](https://vanna-reverie.pages.dev/art/potrait-of-my-family-as-kid): Painting, November 2026
 - [Female Thinking Phase](https://vanna-reverie.pages.dev/art/female-thinking-phase): Painting, November 2026
@@ -43,7 +44,6 @@ Every artwork has its own page at https://vanna-reverie.pages.dev/art/<id>, with
 - [Love Is Caring Couple](https://vanna-reverie.pages.dev/art/love-is-caring-couple): Painting, November 2026
 - [Lets Grow Old Together](https://vanna-reverie.pages.dev/art/lets-grow-old-together): Painting, November 2026
 - [Diwali Rangoli Made in Temple](https://vanna-reverie.pages.dev/art/diwali-rangoli-made-in-temple): Rangoli, November 2026
-- [Branch Work](https://vanna-reverie.pages.dev/art/branch-work): Painting, November 2026
 
 ## Optional
 

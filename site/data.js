@@ -1,5 +1,14 @@
 window.ARTWORKS = [
 {
+"id": "sacred-harmony-the-divine-om-mandala",
+"title": "Sacred Harmony \u2013 the Divine Om Mandala",
+"cat": "mandalas",
+"date": "2026-11-17",
+"w": 1200,
+"h": 1158,
+"cert": "MS-2026-0632"
+},
+{
 "id": "hanuman-saibaba",
 "title": "Hanuman & Saibaba",
 "cat": "paintings",
