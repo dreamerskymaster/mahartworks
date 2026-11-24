@@ -1,4 +1,4 @@
-// /api/subscribe — the footer's Subscribe box. POST {"email": "...", "website": "", "page": "/..."}.
+// /api/subscribe — the footer's Subscribe box. POST {"email": "...", "website": ""}.
 // Saves the address once (a repeat is a quiet success). "website" is a hidden honeypot field: bots fill it, people don't.
 import { json, sameOrigin, EMAIL } from "../../api-lib/footer-api.js";
 
@@ -20,10 +20,8 @@ export async function onRequest({ request, env }) {
   if (email.length > 254 || !EMAIL.test(email)) return json({ error: "email" }, 400);
   const { n } = await env.DB.prepare("SELECT COUNT(*) AS n FROM subscribers").first();
   if (n >= MAX_SUBSCRIBERS) return json({ error: "full" }, 503);
-  const page = String((body && body.page) || "").slice(0, 200);
-  await env.DB.prepare(
-    "INSERT INTO subscribers (email, site, page, country) VALUES (?, ?, ?, ?) ON CONFLICT(email) DO NOTHING",
-  ).bind(email, new URL(request.url).host, page, (request.cf && request.cf.country) || "").run();
+  // Only the address (and the date, a column default) is kept: no page, country or device details (data minimisation).
+  await env.DB.prepare("INSERT INTO subscribers (email) VALUES (?) ON CONFLICT(email) DO NOTHING").bind(email).run();
   return json({ ok: true });
 }
 

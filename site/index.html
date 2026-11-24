@@ -78,7 +78,7 @@
       <h2>Some things are worth discovering slowly</h2>
       <p class="hint" id="spot-hint">Move your cursor across the canvas…</p>
     </div>
-    <div class="spot-stage" id="spot-stage" tabindex="0" aria-describedby="spot-hint" aria-label="A painting hidden in the dark. Use the arrow keys to move the light.">
+    <div class="spot-stage" id="spot-stage" tabindex="0" role="application" aria-describedby="spot-hint" aria-label="A painting hidden in the dark. Use the arrow keys to move the light.">
       <img class="spot-dim" id="spot-dim" alt="" draggable="false">
       <img class="spot-lit" id="spot-lit" alt="" draggable="false">
     </div>
@@ -164,6 +164,8 @@
         <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button class="btn btn-solid" type="submit">Subscribe</button>
         <p class="sub-msg" id="sub-msg" role="status" aria-live="polite"></p>
+        <p class="sub-fine">We keep only your email address, to send you news of new artworks. You must be 18 or over.
+          <a href="/policies#subscribers">Privacy</a> · <a href="/unsubscribe">Unsubscribe</a></p>
       </form>
     </section>
     <section class="foot-visits" id="visits" aria-label="Total views" hidden>

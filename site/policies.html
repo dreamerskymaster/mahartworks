@@ -26,7 +26,7 @@
 <main id="main" class="legal">
   <p class="eyebrow">Policies</p>
   <h1>Policies &amp; information</h1>
-  <p class="updated">Last updated: 10 November 2026</p>
+  <p class="updated">Last updated: 23 November 2026</p>
 
   <nav class="toc" aria-label="On this page">
     <ol>
@@ -36,6 +36,7 @@
       <li><a href="#orders">Orders &amp; Commissions</a></li>
       <li><a href="#shipping">Shipping, Returns &amp; Refunds</a></li>
       <li><a href="#grievance">Grievance Officer</a></li>
+      <li><a href="#credits">Credits &amp; licences</a></li>
       <li><a href="#accessibility">Accessibility</a></li>
     </ol>
   </nav>
@@ -61,8 +62,12 @@
     <p>This gallery website does not use cookies, analytics, advertising or tracking of any kind, and it has no contact forms. Fonts and images are served from this site itself, so no third party (such as Google) is contacted when you visit. Your display and accessibility choices are saved only in your own browser and never sent to us.</p>
     <p>The “Total views” number at the bottom of each page is a single running count: each page you open adds one to it. Nothing about you (no IP address, cookie or device detail) is stored with it.</p>
 
-    <h3>Subscribing to new artworks</h3>
-    <p>If you type your email address into the Subscribe box, we store that address, the date, the page you subscribed from and your country (as reported by our host, Cloudflare), so that we can email you about new artworks. The list is kept in a Cloudflare database and is seen only by us; we never sell or share it. To unsubscribe, reply to any of our emails or write to us, and your address will be deleted.</p>
+    <h3 id="cookies">Cookies and local storage</h3>
+    <p>This website sets no cookies, so there is no cookie banner to accept. It keeps one small entry in your own browser's local storage, named <code>ms-prefs</code>, holding the Display choices you make (such as theme and text size); it is never sent to us and you can clear it from your browser's settings at any time. The shop site, when it opens, also uses local storage to keep your cart and to keep you signed in.</p>
+
+    <h3 id="subscribers">Subscribing to new artworks</h3>
+    <p>If you type your email address into the Subscribe box, we keep only that address and the date you subscribed, so that we can email you about new artworks. Subscribing is optional and is for adults (18 or over). The list is kept in a Cloudflare database and is seen only by us; we never sell or share it, and we send these emails ourselves, one by one, from our own email account.</p>
+    <p>Every email we send ends with an unsubscribe link. You can also unsubscribe at any time at <a href="/unsubscribe">vanna-reverie.pages.dev/unsubscribe</a>, or by replying to any of our emails; your address is then deleted from the list.</p>
     <p>The site is hosted on Cloudflare, which, like any web host, processes technical information such as your IP address and browser type for a short time to deliver pages and protect the site from abuse. We do not access or use this information.</p>
 
     <h3>The shop (mah-artworks-shop.pages.dev)</h3>
@@ -84,7 +89,8 @@
 
     <h3>Your rights</h3>
     <p>Under the Digital Personal Data Protection Act, 2023 you may ask us to tell you what personal data we hold about you, to correct or update it, or to erase it (unless we must keep it by law). You can edit or delete your saved addresses and details yourself on the shop's Account page. You may withdraw your consent at any time, and nominate another person to exercise these rights on your behalf. Write to the Grievance Officer below; we will respond within 30 days. If you are not satisfied, you may complain to the Data Protection Board of India.</p>
-    <p>We do not knowingly collect personal data from anyone under 18 without the consent of a parent or guardian.</p>
+    <p id="delete"><strong>Deleting your data.</strong> To leave the subscriber list, use the <a href="/unsubscribe">unsubscribe page</a>: your address is deleted at once. For anything else, email <a href="mailto:vannaart24@gmail.com?subject=Delete%20my%20data">vannaart24@gmail.com</a> with the subject “Delete my data” from the address you used with us. We delete it and confirm within 30 days, except records that tax law requires us to keep.</p>
+    <p>We do not knowingly collect personal data from anyone under 18 without the consent of a parent or guardian. If we learn that we hold such data, we delete it.</p>
 
     <h3>Security</h3>
     <p>We keep your information in password-protected accounts and share it only as described above. No method of storage or transmission is completely secure, but we take reasonable care to protect it.</p>
@@ -152,6 +158,12 @@
     <p class="note">If a consumer complaint is not resolved, you may also contact the National Consumer Helpline on 1915 or at <a href="https://consumerhelpline.gov.in" rel="noopener">consumerhelpline.gov.in</a>.</p>
   </section>
 
+  <section id="credits">
+    <h2>Credits &amp; licences</h2>
+    <p>All artworks and their photographs are by Mahalakshmi Srikanth. The Vanna Reverie logo, the butterfly icon and the “MS” seal belong to her.</p>
+    <p>The typefaces are Cormorant Garamond (Christian Thalmann) and Manrope (Mikhail Sharanda), both used under the SIL Open Font License 1.1, and served from this site (<a href="/fonts/OFL.txt">licence text</a>).</p>
+  </section>
+
   <section id="accessibility">
     <h2>Accessibility</h2>
     <p>We want everyone to be able to enjoy this art, in the spirit of the Rights of Persons with Disabilities Act, 2016. The site aims to meet the Web Content Accessibility Guidelines (WCAG) 2.1 at level AA.</p>
@@ -178,6 +190,8 @@
         <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button class="btn btn-solid" type="submit">Subscribe</button>
         <p class="sub-msg" id="sub-msg" role="status" aria-live="polite"></p>
+        <p class="sub-fine">We keep only your email address, to send you news of new artworks. You must be 18 or over.
+          <a href="/policies#subscribers">Privacy</a> · <a href="/unsubscribe">Unsubscribe</a></p>
       </form>
     </section>
     <section class="foot-visits" id="visits" aria-label="Total views" hidden>

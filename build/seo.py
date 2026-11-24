@@ -124,6 +124,8 @@ FOOT_EXTRA = """  <div class="foot-extra">
         <input class="hp" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true">
         <button class="btn btn-solid" type="submit">Subscribe</button>
         <p class="sub-msg" id="sub-msg" role="status" aria-live="polite"></p>
+        <p class="sub-fine">We keep only your email address, to send you news of new artworks. You must be 18 or over.
+          <a href="/policies#subscribers">Privacy</a> · <a href="/unsubscribe">Unsubscribe</a></p>
       </form>
     </section>
     <section class="foot-visits" id="visits" aria-label="Total views" hidden>
@@ -420,6 +422,34 @@ def not_found_page(art, year):
                 noindex=True) + body + foot(art, year)
 
 
+def unsubscribe_page(art, email, year):
+    """/unsubscribe: anyone can take an address off the subscriber list (the link she puts at the end of every email).
+    The answer is the same whether or not the address was on the list, so the page never reveals who subscribed."""
+    body = """
+<main id="main" class="page cat-page unsub-page">
+  <header class="cat-head">
+    <p class="eyebrow">Subscribe box</p>
+    <h1>Unsubscribe</h1>
+    <p class="lede">Enter your email address to stop getting emails about new artworks. Your address is deleted from
+      the list at once.</p>
+  </header>
+  <form class="unsub-form" id="unsub-form" novalidate>
+    <label for="unsub-email">Your email address</label>
+    <div class="verify-row">
+      <input id="unsub-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" required>
+      <button class="btn btn-solid" type="submit">Unsubscribe</button>
+    </div>
+    <p class="sub-msg" id="unsub-msg" role="status" aria-live="polite"></p>
+  </form>
+  <p class="verify-help">You can also write to <a href="mailto:%s?subject=Unsubscribe">%s</a> and we will remove you.
+    Our <a href="/policies#subscribers">privacy policy</a> explains what we keep.</p>
+</main>
+<script src="/js/unsubscribe.js" defer></script>
+""" % (e(email), e(email))
+    return head(title=f"Unsubscribe — {SITE_NAME}", description="Stop emails about new artworks from the Subscribe box.",
+                path=None, noindex=True) + body + foot(art, year)
+
+
 # ---------- text files for crawlers and AI assistants ----------
 
 def sitemap(art, by_cat, site):
@@ -563,6 +593,7 @@ def generate(site=SITE):
             os.remove(p)
     changed += write(os.path.join(site, "404.html"), not_found_page(art, year))
     changed += write(os.path.join(site, "verify.html"), verify_page(art, ct["email"], year))
+    changed += write(os.path.join(site, "unsubscribe.html"), unsubscribe_page(art, ct["email"], year))
     changed += write(os.path.join(site, "_redirects"), redirects(art))
     changed += write(os.path.join(site, "sitemap.xml"), sitemap(art, by_cat, site))
     changed += write(os.path.join(site, "llms.txt"), llms(art, by_cat, ct, site))

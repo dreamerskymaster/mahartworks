@@ -663,4 +663,24 @@ describe("footer: Subscribe box, total views, links (her 2026-11-06 ask)", () =>
     assert.equal(await p.$eval("#sub-msg", (m) => m.textContent), "Sorry, that didn't work. Please try again later.");
     await done(p);
   });
+  test("the box says what is kept, who may subscribe, and links to privacy and unsubscribe", async () => {
+    const p = await open("phone", { path: "/" });
+    const fine = await p.$eval("#sub-form .sub-fine", (f) => ({ t: f.textContent, links: [...f.querySelectorAll("a")].map((a) => a.getAttribute("href")) }));
+    assert.match(fine.t, /only your email address/);
+    assert.match(fine.t, /18 or over/);
+    assert.deepEqual(fine.links, ["/policies#subscribers", "/unsubscribe"]);
+    await done(p);
+  });
+  test("/unsubscribe: fills in ?email=, refuses a bad address, reports an API failure politely", async () => {
+    const p = await open("phone", { path: "/unsubscribe?email=someone%40example.com" }); await sleep(300);
+    assert.equal(await p.$eval('meta[name="robots"]', (m) => m.content), "noindex");
+    assert.equal(await p.$eval("#unsub-email", (i) => i.value), "someone@example.com");
+    await p.click("#unsub-form button"); await sleep(600);
+    assert.equal(await p.$eval("#unsub-msg", (m) => m.textContent), "Sorry, that didn't work. Please try again later, or email us.");
+    await p.$eval("#unsub-email", (i) => { i.value = "nope"; });
+    await p.click("#unsub-form button"); await sleep(200);
+    assert.equal(await p.$eval("#unsub-msg", (m) => m.textContent), "Please enter a valid email address.");
+    assert.equal(await sideways(p), "", "phone unsubscribe page");
+    await done(p);
+  });
 });
