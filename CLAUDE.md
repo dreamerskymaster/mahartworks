@@ -4,7 +4,7 @@ Ajith's site for his mom's art business in India. Live: https://vanna-reverie.pa
 (the old https://mah-artworks.pages.dev 301-redirects every path there since 2026-11-10).
 Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how-to; this file is the rules and status.
 
-## Status (2026-11-10)
+## Status (2026-11-23)
 - **Live and automatic:** the Vanna Reverie gallery, artwork/category pages, certificates and /verify, policies.
   Her Drive edits go live within ~20 min. Nothing to do day to day.
 - **2026-11-10 (her 11-06 emails):** address moved to vanna-reverie.pages.dev (new Pages project; old one redirects);
@@ -17,6 +17,13 @@ Repo: `dreamerskymaster/mahartworks` (public), branch `main`. README has the how
   23:39 a full overview email was sent too (private/email-to-amma-2026-11-10-overview.txt).
 - **2026-11-10 23:44 her ask, done (PR #20):** public contact is now **vannaart24@gmail.com** + Instagram **@vannaart24**
   (CONTACT in app.js; policies, shop links, JSON-LD). She is still emailed at mahasriphoto24 (the address she writes from).
+- **2026-11-23 legal/accessibility pass** (Ajith's 20-item "don't get sued" checklist): Subscribe box states what is
+  kept (email + date only; page/country no longer stored), adults only, links to privacy + `/unsubscribe` (new page +
+  `functions/api/unsubscribe.js`, same answer whether listed or not); private list page shows the unsubscribe line to
+  paste at the end of every email; policies gained Cookies & local storage, Deleting your data, Credits & licences
+  (fonts SIL OFL, `site/fonts/OFL.txt`); light-theme gold `#7d5a1c`, faded small text and the error red fixed for
+  WCAG AA (axe: 13 contrast failures -> 0), visible focus on the search and certificate inputs, gallery card images
+  `alt=""` inside the labelled card button. "Insured in transit" is backed by the shop's shipping quote (1 %, min Rs 50).
 - **2026-10-22:** her duplicate camera-named copies moved to the Drive subfolder "Duplicates - not on website",
   4 new photos named, names starting with a digit fixed (PR #11). Her plain-language guide was emailed to her.
 - **2026-10-25/26:** her emails fixed: glass paintings → Paintings (PR #13, merged); Crafts trimmed to the doll and diya holders only (2026-10-26).

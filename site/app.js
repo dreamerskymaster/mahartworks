@@ -191,8 +191,8 @@ function render() {
   const page = shown.slice(0, limit);
   $("#grid").innerHTML = page.map((a, i) =>
     `<figure class="card" tabindex="0" role="button" aria-label="Open ${esc(a.title)}" data-i="${i}">
-       <div class="frame"><img src="img/${a.id}.t.webp" alt="${esc(a.title)}" width="${a.w}" height="${a.h}" loading="lazy" decoding="async" draggable="false"></div>
-       <figcaption>${esc(a.title)}</figcaption></figure>`).join("")
+       <div class="frame"><img src="img/${a.id}.t.webp" alt="" width="${a.w}" height="${a.h}" loading="lazy" decoding="async" draggable="false"></div>
+       <figcaption aria-hidden="true">${esc(a.title)}</figcaption></figure>`).join("")
     + (shown.length > limit ? `<button type="button" class="btn more" id="more">Show more · ${shown.length - limit} left</button>` : "");
   $("#grid-status").textContent = shown.length
     ? `Showing ${page.length} of ${shown.length} artwork${shown.length === 1 ? "" : "s"}${query ? ` for “${query}”` : ""}`

@@ -23,7 +23,8 @@ Manual fallback, from the repo root:
 301, to the same path on `vanna-reverie.pages.dev`. Printed certificate QR codes (`/verify/<number>`) and shared
 links keep working. It rebuilds only when `legacy-redirect/` changes.
 
-**Footer API** (`functions/api/`, Cloudflare Pages Functions, free): `visits` is the "Total views" counter (every
+**Footer API** (`functions/api/`, Cloudflare Pages Functions, free; `unsubscribe` deletes an address for the public
+`/unsubscribe` page): `visits` is the "Total views" counter (every
 page load adds one; `js/footer.js`), `subscribe` saves Subscribe-box addresses, and `subscribers?key=…` is her
 private list (copy all for Bcc, CSV, Remove). Data: the D1 database `vanna-reverie` (tables `counters`,
 `subscribers`), bound as `DB` on the project with the secret `LIST_KEY` and `COUNTER_NAME` (production

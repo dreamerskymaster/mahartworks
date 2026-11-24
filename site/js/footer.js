@@ -32,7 +32,7 @@
     fetch("/api/subscribe", {
       method: "POST",
       headers: { "content-type": "application/json", accept: "application/json" },
-      body: JSON.stringify({ email, website: form.website ? form.website.value : "", page: location.pathname }),
+      body: JSON.stringify({ email, website: form.website ? form.website.value : "" }),
     })
       .then((r) => r.json().catch(() => ({})).then((d) => ({ ok: r.ok && d.ok, d })))
       .then(({ ok, d }) => {

@@ -40,9 +40,9 @@ export async function onRequest({ request, env }) {
   }
   if (request.method !== "GET") return notFound();
 
-  const { results } = await env.DB.prepare("SELECT email, created_at, country FROM subscribers ORDER BY created_at DESC").all();
+  const { results } = await env.DB.prepare("SELECT email, created_at FROM subscribers ORDER BY created_at DESC").all();
   if (url.searchParams.get("format") === "csv") {
-    const csv = ["email,subscribed_utc,country", ...results.map((r) => `${r.email},${r.created_at},${r.country || ""}`)].join("\n");
+    const csv = ["email,subscribed_utc", ...results.map((r) => `${r.email},${r.created_at}`)].join("\n");
     return new Response(csv + "\n", {
       headers: { "content-type": "text/csv; charset=utf-8", "content-disposition": 'attachment; filename="vanna-reverie-subscribers.csv"', "cache-control": "no-store", "x-robots-tag": "noindex" },
     });
@@ -50,7 +50,7 @@ export async function onRequest({ request, env }) {
   const removed = url.searchParams.get("removed");
   const k = esc(key);
   const rows = results
-    .map((r) => `<tr><td>${esc(r.email)}</td><td>${esc(r.created_at.slice(0, 10))}</td><td>${esc(r.country || "")}</td>
+    .map((r) => `<tr><td>${esc(r.email)}</td><td>${esc(r.created_at.slice(0, 10))}</td>
       <td><form method="post"><input type="hidden" name="key" value="${k}"><input type="hidden" name="remove" value="${esc(r.email)}"><button>Remove</button></form></td></tr>`)
     .join("");
   return page(`<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -62,15 +62,17 @@ export async function onRequest({ request, env }) {
   table { width: 100%; border-collapse: collapse; margin-top: 1rem; font-size: .95rem; }
   th, td { text-align: left; padding: .45rem .3rem; border-bottom: 1px solid #ddd3bc; word-break: break-all; }
   button { font: inherit; padding: .25rem .7rem; } .note { background: #efe6cf; padding: .6rem .8rem; border-radius: 8px; }
-  a { color: #8a6420; }
+  a { color: #7d5a1c; } .copy { background: #fff; border: 1px solid #ddd3bc; padding: .6rem .8rem; border-radius: 8px; }
 </style></head><body>
 <h1>Vanna Reverie — subscribers (${results.length})</h1>
 <p>People who typed their email in the <strong>Subscribe</strong> box at the bottom of your website. Keep this link private.</p>
 ${removed ? `<p class="note">Removed ${esc(removed)}.</p>` : ""}
 <p><strong>To email them all:</strong> press and hold in the box below, Select All, Copy. In Gmail, write your email and paste into <strong>Bcc</strong> (not To), so nobody sees the others' addresses.</p>
-<textarea readonly>${esc(results.map((r) => r.email).join(", "))}</textarea>
+<textarea readonly aria-label="All subscriber addresses">${esc(results.map((r) => r.email).join(", "))}</textarea>
+<p><strong>Always end the email with this line</strong> (copy and paste it), so anyone can stop your emails by themselves:</p>
+<p class="copy">Don't want these emails? Unsubscribe here: ${url.origin}/unsubscribe</p>
 <p><a href="?key=${encodeURIComponent(key)}&amp;format=csv">Download as a spreadsheet (CSV)</a></p>
 <p>If someone asks to stop getting your emails, press <strong>Remove</strong> next to their address.</p>
-<table><thead><tr><th>Email</th><th>Joined</th><th>Country</th><th></th></tr></thead><tbody>${rows || '<tr><td colspan="4">No subscribers yet.</td></tr>'}</tbody></table>
+<table><thead><tr><th>Email</th><th>Joined</th><th></th></tr></thead><tbody>${rows || '<tr><td colspan="3">No subscribers yet.</td></tr>'}</tbody></table>
 </body></html>`);
 }
